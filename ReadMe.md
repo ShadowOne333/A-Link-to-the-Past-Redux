@@ -79,26 +79,27 @@ Please refer to the A Link to the Past DX hack page by qwertymodo and Conn for m
 	but still want to use MSU-1 audio, simply IGNORE this patch.
 
 	You can get the FMV files from these links by Qwertymodo and Conn, respectively:
+	
+	* The Legend of Zelda: A Link to the Past [Optional Video] (-21dB):
+	http://www.mediafire.com/?k9zz4wa7i9ka3ov
 
-		*The Legend of Zelda: A Link to the Past [Optional Video] (-21dB):
-		http://www.mediafire.com/?k9zz4wa7i9ka3ov
-
-		*MSU Opening Intro and Audio:
-		http://dl.dropbox.com/s/9tfg549to1cpbrn/MSU%20Zelda%20Opening%20Intro%20and%20Audio.rar?dl=0
+	* MSU Opening Intro and Audio:
+	http://dl.dropbox.com/s/9tfg549to1cpbrn/MSU%20Zelda%20Opening%20Intro%20and%20Audio.rar?dl=0
 
 3. **Redux (Original Menu GFX):**
 	These patches include all of the bonuses from Redux, with the default item screen and HUD from vanilla ALttP.
+	
 	* Additionally inside this folder, you'll find optional patches EXCLUSIVE for the original GFX hack:
 
-	a) Green Agahnim (Original GFX):
+		a) Green Agahnim (Original GFX):
 		This set of patches are for use EXCLUSIVELY with Original GFX!
 		Using this will revert the color of Agahnim from Red+Blue to his original Green robe.
 
-	b) Green Agahnim+Triforce Subtitle (Original GFX):
+		b) Green Agahnim+Triforce Subtitle (Original GFX):
 		This set of patches are for use EXCLUSIVELY with Original GFX!
 		Using this will revert the color of Agahnim from Red+Blue to his original Green robe, and also adds the new "TRIFORCE OF THE GODS" subtitle alongside it.
 
-	c) Triforce of the Gods Subtitle (Original GFX):
+		c) Triforce of the Gods Subtitle (Original GFX):
 		This set of patches are for use EXCLUSIVELY with Original GFX!
 		Using this will change the subtitle in the title screen from "A LINK TO THE PAST" to match the original Japanese subtitle of "TRIFORCE OF THE GODS".
 
@@ -143,11 +144,11 @@ To play The Legend of Zelda: A Link to the Past Redux, the following is required
 * Snes9x 1.54.1 or above (any version which allows MSU-1 of Snes9x)
 * A Link to the Past SNES Unheadered/No-Intro ROM:
 
-	Legend of Zelda, The - A Link to the Past (USA)
-	No-Intro: Super Nintendo Entertainment System (v. 20210222-050638)
-	File/ROM SHA-1: 6D4F10A8B10E10DBE624CB23CF03B88BB8252973
-	File/ROM MD5: 608C22B8FF930C62DC2DE54BCD6EBA72
-	File/ROM CRC32: 777AAC2F
+		Legend of Zelda, The - A Link to the Past (USA)
+		No-Intro: Super Nintendo Entertainment System (v. 20210222-050638)
+		File/ROM SHA-1: 6D4F10A8B10E10DBE624CB23CF03B88BB8252973
+		File/ROM MD5: 608C22B8FF930C62DC2DE54BCD6EBA72
+		File/ROM CRC32: 777AAC2F
 
 * Lunar IPS
 * A Link to the Past Redux.ips patch
@@ -161,22 +162,22 @@ If you want to apply any of the optional patches, you can use each Optional patc
 Here's an example of how they should be.
 Let's say your ROM is named "redux.sfc", this how everything else should go (all files should go WITHIN the same folder):
 
-	redux.msu
-	redux.sfc
-	redux-1.pcm
-	redux-2.pcm
-	...
-	redux-34.pcm
+		redux.msu
+		redux.sfc
+		redux-1.pcm
+		redux-2.pcm
+		...
+		redux-34.pcm
 
 If you change the name of the ROM to anything else, you have to change each instance of "redux" in EACH file to whatever you choose the name to be. The track names should be the EXACT same name of the ROM, and you add a dash and the number for each track accordingly. "loz-redux-1.pcm, loz-redux-2.pcm",etc. For example, I always name my ROM like "The Legend of Zelda - A Link to the Past.smc"
 
-	The Legend of Zelda - A Link to the Past.msu
-	The Legend of Zelda - A Link to the Past.smc     <<------This one can be .sfc or .smc, doesn't matter.
-	The Legend of Zelda - A Link to the Past-1.pcm
-	The Legend of Zelda - A Link to the Past-2.pcm
-	...
-	The Legend of Zelda - A Link to the Past-34.pcm
-	The Legend of Zelda - A Link to the Past-35.pcm
+		The Legend of Zelda - A Link to the Past.msu
+		The Legend of Zelda - A Link to the Past.smc     <<------This one can be .sfc or .smc, doesn't matter.
+		The Legend of Zelda - A Link to the Past-1.pcm
+		The Legend of Zelda - A Link to the Past-2.pcm
+		...
+		The Legend of Zelda - A Link to the Past-34.pcm
+		The Legend of Zelda - A Link to the Past-35.pcm
 
 One thing you have to take into consideration is that the ROM should be in the same folder as the .msu and all the .pcm files.
 
