@@ -1,13 +1,13 @@
 @ECHO OFF
 
 SET dopause=0
-SET file_base=Zelda2_Redux
+SET file_base=Zelda3_Redux
 SET "out_folder=%~dp0out"
 SET "patches_folder=%~dp0\patches"
-SET "clean_rom=rom\Zelda II - The Adventure of Link (USA).nes"
-SET "patched_rom=%out_folder%\%file_base%.nes"
+SET "clean_rom=rom\Legend of Zelda, The - A Link to the Past (USA).sfc"
+SET "patched_rom=%out_folder%\%file_base%.sfc"
 SET "asm_file=code\main.asm"
-SET "checksum=353489a57f24a429572e76bd455bc51d821f7036"
+SET "checksum=6d4f10a8b10e10dbe624cb23cf03b88bb8252973"
 
 :: Check if the base ROM exists
 IF NOT EXIST "%clean_rom%" (
@@ -41,7 +41,7 @@ COPY "%clean_rom%" "%patched_rom%" >NUL
 if %errorlevel% NEQ 0 set errormessage=Could not copy file.&goto error
 
 :: Patch the Base ROM and create an IPS alongside the patched ROM
-bin\xkas.exe -o "%patched_rom%" "%asm_file%"
+bin\asar-win\asar.exe "%asm_file%" "%patched_rom%"
 if %errorlevel% NEQ 0 set errormessage=Could not patch rom.&goto error
 bin\flips.exe --create --ips "%clean_rom%" "%patched_rom%" "%patches_folder%\%file_base%.ips">NUL
 if %errorlevel% NEQ 0 set errormessage=Could not create ips.&goto error
