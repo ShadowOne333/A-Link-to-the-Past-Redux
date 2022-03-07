@@ -1,0 +1,9 @@
+=Full Hearts=
+x4F4AC
+Original: 	18 18 18 18 18 20 20 28 28 30 30 38 38 38 40 40 40 48 48 48 50
+Edited:		18 18 18 18 20 28 30 38 40 48 50 58 60 68 70 78 80 88 90 98 A0
+
+(This is a data table that uses your heart containers as an index number,
+and sets your starting health accordingly.)
+(There is an alternate method to this which eliminates the lookup entirely.
+However, I felt that this method was cleaner.)

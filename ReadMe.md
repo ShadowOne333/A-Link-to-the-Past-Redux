@@ -195,6 +195,7 @@ NOTE: As mentioned with the "Enable FMV" optional patch, track #35 is the one wh
 * **rainponcho** - For his help towards fixing the bug with the Bunny palette and also the glitch with the LR Item switch for New GFX.
 * **PowerPanda** - For his individual patches (Skip title, Start at Full Hearts and Kakariko Shortcut) which can be used as optional patches for Redux. 
 * **RPGHacker** repository for the [Asar](https://github.com/RPGHacker/asar) project which was used for the compilation of the source code in this repository.
+* **Skarsnik** - For his "scompress" project, which helped as a good tool for an open source solution to "zcompress": https://github.com/Skarsnik/sneshacking/tree/master/scompress
 
 
 -------------------

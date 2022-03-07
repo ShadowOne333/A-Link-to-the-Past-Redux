@@ -1,0 +1,8 @@
+# Ignore all ROM files
+*.sfc
+out/*.sfc
+rom/*.sfc
+
+# Ignore certain IPS and TXT files
+code/fixes/*.txt
+code/fixes/*.ips

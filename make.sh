@@ -1,6 +1,6 @@
 #! /bin/bash
 
-export	file_base=Zelda3_Redux
+export	file_base=Zelda3-Redux
 export  out_folder=out
 export	patches_folder=patches
 export  clean_rom=rom/Zelda3.sfc
@@ -8,47 +8,104 @@ export  patched_rom=$out_folder/$file_base.sfc
 export  asm_file=code/main.asm
 export	checksum=6d4f10a8b10e10dbe624cb23cf03b88bb8252973
 
-function jumpto
+# Help section
+Help()
 {
-    label=$1
-    cmd=$(sed -n "/$label:/{:a;n;p;ba};" $0 | grep -v ':$')
-    eval "$cmd"
-    exit
+   # Display Help
+   echo "Compile 'A Link to the Past Redux' with one of the following arguments:"
+   echo
+   echo "Syntax: make.sh [-r|g|s|c]"
+   echo "Options:"
+   echo "	-r     Compiles default Redux."
+   echo "	-g     Compiles Redux with Green Agahnim GFX."
+   echo "	-s     Compiles Redux with 'Trifoce of the Gods' subtitle."
+   echo "	-c     Compiles Redux with Green Agahnim and Subtitle."
+   echo
 }
 
-start=${1:-"start"}
-jumpto $start
+# Begin compilation
+Start()
+{
+# Check base ROM name
+	if [ -e rom/Legend\ of\ Zelda\,\ The\ -\ A\ Link\ to\ the\ Past\ \(USA\).sfc ]; then
+		echo "ROM detected. Verifying name..."; else
+		export error="ROM name is incorrect. Please, rename the ROM to 'Legend\ of\ Zelda\,\ The\ -\ A\ Link\ to\ the\ Past\ \(USA\).sfc' for the patching process to begin." && Error; fi
 
-start:
+# Copy base ROM into the /out/ folder
+	cd rom/ && cp Legend\ of\ Zelda\,\ The\ -\ A\ Link\ to\ the\ Past\ \(USA\).sfc Zelda3.sfc && cd ..
+	test ! -d "$out_folder" && mkdir "$out_folder"
+	test -f "$patched_rom" && rm "$patched_rom"
 
-if [ -e rom/Legend\ of\ Zelda\,\ The\ -\ A\ Link\ to\ the\ Past\ \(USA\).sfc ]; then
-	echo "ROM detected. Verifying name..."; else
-	export error="ROM name is incorrect. Please, rename the ROM to 'Legend\ of\ Zelda\,\ The\ -\ A\ Link\ to\ the\ Past\ \(USA\).sfc' for the patching process to begin." && jumpto ERROR; fi
+# SHA-1 sum verification
+	if [ -f "$clean_rom" ]; then
+		echo "Base ROM detected with proper name. Checking SHA-1..."; else
+		export error="Base ROM was not found. Place the 'Legend\ of\ Zelda\,\ The\ -\ A\ Link\ to\ the\ Past\ \(USA\).sfc' ROM inside the 'rom' folder." && Error; fi
 
-cd rom/ && cp Legend\ of\ Zelda\,\ The\ -\ A\ Link\ to\ the\ Past\ \(USA\).sfc Zelda3.sfc && cd ..
-test ! -d "$out_folder" && mkdir "$out_folder"
-test -f "$patched_rom" && rm "$patched_rom"
+	export	sha1=$(sha1sum "$clean_rom" | awk '{ print $1 }')
 
-if [ -f "$clean_rom" ]; then
-	echo "Base ROM detected with proper name. Checking SHA-1..."; else
-	export error="Base ROM was not found. Place the 'Legend\ of\ Zelda\,\ The\ -\ A\ Link\ to\ the\ Past\ \(USA\).sfc' ROM inside the 'rom' folder." && jumpto ERROR; fi
+# SHA-1 sum verified, begin patching...
+	if [ "$sha1" == "$checksum" ]; then
+		echo "Base ROM SHA-1 checksum verified. Patching..."; else
+		export error="Base ROM checksum is incorrect. Use a Zelda 2 ROM with the proper SHA-1 checksum for patching." && Error; fi
 
-export	sha1=$(sha1sum "$clean_rom" | awk '{ print $1 }')
+# Copy clean ROM into a base used for patching to keep clean ROM intact
+	cp "$clean_rom" "$patched_rom"
 
-if [ "$sha1" == "$checksum" ]; then
-	echo "Base ROM SHA-1 checksum verified. Patching..."; else
-	export error="Base ROM checksum is incorrect. Use a Zelda 2 ROM with the proper SHA-1 checksum for patching." && jumpto ERROR; fi
+# Compress the graphics back into the base patch ROM
+	echo "Compiling Redux with $graphics"
+	bin/scompress/scompress i out/Zelda3-Redux.sfc code/gfx/$graphics
 
-cp "$clean_rom" "$patched_rom"
-bin/asar-linux/asar-standalone "$asm_file" "$patched_rom"
-bin/flips --create --ips "$clean_rom" "$patched_rom" "$patches_folder/Zelda3_Redux.ips"
+# Start patching of the main.asm file and create IPS
+	bin/asar-linux/asar-standalone "$asm_file" "$patched_rom"
+	bin/flips --create --ips "$clean_rom" "$patched_rom" "$patches_folder/$file_base.ips"
 
-jumpto END
+# Jump to the "End" function
+	End
+}
 
-ERROR:
-echo "ERROR: $error"
+# Error message
+Error()
+{
+	echo "ERROR: $error"
+}
 
-END:
-rm $clean_rom
-sleep 1
-exit
+# Finish script
+End()
+{
+	rm $clean_rom
+	echo "Redux compilation finished successfully!"
+	sleep 1
+	exit
+}
+
+# Get the options
+if [[ $1 == "" ]]; then
+    Help;
+    exit;
+else
+	while getopts "hrgsc" option; do
+	case $option in
+		h) # Display Help
+			Help
+			exit;;
+		r) # Default Redux
+			export graphics=Redux.bin
+			Start;;
+		g) # Redux with Green Agahnim
+			export graphics=GreenAgahnim.bin
+			Start;;
+		s) # Redux with Triforce of the Gods subtitle
+			export graphics=Subtitle.bin
+			Start;;
+		c) # Redux with Green Agahnim and Subtitle
+			export graphics=AgahnimSubtitle.bin
+			Start;;
+		\?) # Invalid option
+			#echo "Error: Invalid option '$option'"
+			Help
+			exit;;
+	esac
+	done
+fi
+
+
