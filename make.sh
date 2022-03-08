@@ -52,8 +52,9 @@ Start()
 	cp "$clean_rom" "$patched_rom"
 
 # Compress the graphics back into the base patch ROM
-	echo "Compiling Redux with $graphics"
-	bin/scompress/scompress i out/Zelda3-Redux.sfc code/gfx/$graphics
+	echo "Compiling Redux with $graphics graphics"
+	wine bin/zcompress/zcompress.exe 1 87000 out/"$file_base".sfc code/gfx/$graphics
+	#bin/scompress/scompress i out/"$file_base".sfc code/gfx/$graphics
 
 # Start patching of the main.asm file and create IPS
 	bin/asar-linux/asar-standalone "$asm_file" "$patched_rom"
