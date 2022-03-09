@@ -6,6 +6,7 @@
 ;****************************************
 ;	Rom info
 ;****************************************
+arch snes.cpu		; Set processor architecture (SNES)
 lorom			; Switch to LoROM mapping mode
 ;banksize $8000		; Set the size of each bank
 ;header			; rom has a header
