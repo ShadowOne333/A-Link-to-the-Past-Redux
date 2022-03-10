@@ -1,10 +1,10 @@
 ;*****************************************************************
-; 	Palette and attribute modifications
+; 	Palette and sprite attributes modifications
 ;*****************************************************************
 
-; Change Agahnim's palette to red & blue (official artwork)
-;org $1BD5A4	; 0x0DD5A4
-	;dw $7FFF, $06FD, $7272, $5D8D, $14A5, $219D, $08D7
-	; Originally dw $7FFF, $4118, $1636, $3B1D, $14A5, $1F52, $120D
+; Change Link's hair colour to match his official artwork
+org $1BD308	; 0x0DD308
+	dw $7FFF, $237E, $11B7, $369E, $14A5, $065E, $1078, $06FE, $3647, $3B68, $0A4A, $12EF, $2A5C, $1571, $7A18
+	; Originally $7FFF, $237E, $11B7, $369E, $14A5, $065E, $1078, $599D, $3647, $3B68, $0A4A, $12EF, $2A5C, $1571, $7A18
 
 

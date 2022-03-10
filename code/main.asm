@@ -29,8 +29,10 @@ Internal_Rom_Header:
 	db $01   ; Country code (NTSC here)
 	db $01   ; Licensee (Nintendo here)
 	db $00   ; Game version
-	dw $50F2 ; Game image checksum
-	dw $AF0D ; Game image inverse checksum
+
+; Checksums, not necessary since Asar regenerates them
+	;dw $50F2 ; Game image checksum
+	;dw $AF0D ; Game image inverse checksum
 }
 
 warnpc $018000
@@ -39,6 +41,10 @@ warnpc $018000
 ;	Gameplay changes
 ;****************************************
 ;incsrc code/gameplay/*.asm	; 
+
+; 24 Items Menu (New GFX)
+incsrc code/fixes/24items_menu_shovel.asm	; Make the shovel a separate item for 24 Item menu
+incsrc code/fixes/flute_fix.asm		; Fix flute being digged up constantly for the 24 Items menu
 
 ;****************************************
 ;	Text changes
