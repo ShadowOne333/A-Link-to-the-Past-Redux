@@ -15,8 +15,9 @@ Help()
    # Display Help
    echo "Compile 'A Link to the Past Redux' with one of the following arguments:"
    echo
-   echo "Syntax: make.sh [-r|g|s|c]"
+   echo "Syntax: make.sh [-h|r|g|s|c]"
    echo "Options:"
+   echo "	-h     Prints this menu."
    echo "	-r     Compiles default Redux."
    echo "	-g     Compiles Redux with Green Agahnim GFX."
    echo "	-s     Compiles Redux with 'Triforce of the Gods' subtitle."
@@ -46,7 +47,7 @@ Start()
 # SHA-1 sum verification
 	if [ -f "$clean_rom" ]; then
 		echo; echo "Base ROM detected with proper name."
-		echo "Verifying SHA-1 checksum..."
+		echo "Verifying SHA-1 checksum hash..."
 	else
 		export error="Base ROM not found."
 		Error;
@@ -72,7 +73,7 @@ Start()
 
 # Compress the graphics back into the base patch ROM
 	echo; echo "Compressing Redux graphics from $graphics.bin using scompress..."
-	#wine bin/zcompress/zcompress.exe 1 87000 out/"$file_base".sfc code/gfx/$graphics
+	#WINEDEBUG=-all wine bin/zcompress/zcompress.exe 1 87000 out/"$file_base".sfc code/gfx/$graphics
 	bin/scompress/scompress iz out/"$file_base".sfc code/gfx/$graphics.bin
 	echo "Graphics compression finalized."
 
