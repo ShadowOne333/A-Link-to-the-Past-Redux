@@ -49,7 +49,8 @@ incsrc code/fixes/flute_fix.asm		; Fix flute being digged up constantly for the 
 ;****************************************
 ;	Text changes
 ;****************************************
-;incsrc code/text/*.asm		; 
+;incsrc code/text/dialogue1.asm		; 
+;incsrc code/text/dialogue2.asm		; 
 
 ;****************************************
 ;	Visual changes
