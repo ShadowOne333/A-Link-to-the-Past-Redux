@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/bash -e
 
 export	asar=bin/asar-linux/asar-standalone
 export	file_base=Zelda3-Redux

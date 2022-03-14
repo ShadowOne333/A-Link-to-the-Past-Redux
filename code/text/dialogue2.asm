@@ -1,11 +1,11 @@
 ;****************************************************************
-; 	Zelda 2 Redux - Text data
+; 	Zelda 3 Redux - Dialogue 2 data
 ;****************************************************************
 
 ;****************************************
 ; 	Table file
 ;****************************************
-table "code/text/text.tbl"
+table "code/text/text.tbl",ltr
 
 ;****************************************
 ; 	Control codes
@@ -19,9 +19,9 @@ table "code/text/text.tbl"
 ;****************************************
 ; Text pointer for dialogue table 2
 org $0ED3EE	; 0x0753EE
-	lda #$(dialogue_table2)	; lda #$1C	; A9 1C
+	lda #(dialogue_table2)	; lda #$1C	; A9 1C
 org $0ED3F4	; 0x0753F4	
-	lda #$(dialogue_table2>>8)	; lda #$8000	; A9 00 80
+	lda #(dialogue_table2)>>8	; lda #$8000	; A9 00 80
 
 ;****************************************
 ;	Dialogue
