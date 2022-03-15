@@ -110,15 +110,15 @@ org $0DED57	; 0x06ED57
 	lda $0202	; AD 02 02
 	rts
 
-	sta $02	; 85 02
-	db $E2,$30	;sep $30		; E2 30
+	sta $02		; 85 02
+	sep #$30	; E2 30
 	lda $7F5021	; AF 21 50 7F
 	cmp #$00	; C9 00
 	bne $06		; D0 06
 	cpx #$10	; E0 10
 	bne $02		; D0 02
-	ldx #$0D		; A2 0D
-	db $C2,$30	;rep $30		; C2 30
+	ldx #$0D	; A2 0D
+	rep #$30	; C2 30
 	rts
 
 	stz $0202	; 9C 02 02
