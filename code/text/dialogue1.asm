@@ -27,8 +27,8 @@ table "code/text/text.txt",ltr
 !B = $5C
 !X = $5D
 !Y = $5E
-;!\! = $60
-;!\¡ = $61
+;!! = $60
+;!¡ = $61
 !NextPic = $67
 !Choose = $68
 !Item = $69
@@ -55,7 +55,9 @@ table "code/text/text.txt",ltr
 !7D = $7D
 !WaitKey = $7E	; Wait for prompt or button input
 !End = $7F	; End current text message
-
+!in = $B4
+!it = B6
+!on = $C7
 
 ;****************************************
 ;	Text pointers
@@ -93,9 +95,9 @@ dialogue_table1:
 ;----------------------------------------
 .message_003:
 	db !Speed00
-	db "Save And Continue",!Line2
-	db "Save And Quit",!Line3
-	db "Do Not Save And Continue",!End
+	db "Save And C",!on,"t",!in,"ue",!Line2
+	db "Save And Qu",!it,!Line3
+	db "Do Not Save And C",!on,"t",!in,"ue",!End
 ;----------------------------------------
 
 warnpc $1D8000	; 0xE80000
