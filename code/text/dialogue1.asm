@@ -5,56 +5,17 @@
 ;****************************************
 ;    Include Table & Dictionary files
 ;****************************************
-incsrc "code/text/dictionary.txt"
+pushtable
 incsrc "code/text/main_font.txt"
 
 ;****************************************
 ; 	Definitions
 ;****************************************
+; Definitions for the Dictionary
+incsrc "code/text/dictionary.txt"
 
-!Dots = $43
-!Ankh1 = $47
-!Waves1 = $48
-!Snake1 = $49
-!LinkL = $4A
-!LinkR = $4B
-!Up = $4D
-!Down = $4E
-!Left = $4F
-!Right = $50
-!A = $5B
-!B = $5C
-!X = $5D
-!Y = $5E
-;! = $60
-;¡ = $61
-!NextPic = $67
-!Choose = $68
-!Item = $69
-!Name = $6A
-!Window = $6B		; 
-!Number = $6C		; 
-!Position = $6D		; 
-!ScrollSpd = $6E	; 
-!SelChng = $6F
-!70 = $70
-!Choose2 = $71
-!Choose3 = $72
-!Scroll = $73
-!Line1 = $74
-!Line2 = $75
-!Line3 = $76
-!Color = $77		; 
-!Wait = $78		; 
-!Sound = $79		; 
-!Speed00 = $7A,$00	; Speed 00 
-!Speed01 = $7A,$01	; Speed 01
-!Speed02 = $7A,$02	; Speed 02
-!7B = $7B
-!7C = $7C
-!7D = $7D
-!WaitKey = $7E	; Wait for prompt or button input
-!End = $7F	; End current text message
+; Control codes definitions
+incsrc "code/text/control_codes.txt"
 
 ;****************************************
 ;	Text pointers
@@ -78,17 +39,13 @@ dialogue_table1:
 ;----------------------------------------
 .message_001:
 	db !Speed00,!Line3
-	db $88,!_
-	db !Line2
-	db $88
-	db ">",!Choose,!End
+	db "!{4_}!{2_}",!Line2
+	db "!{4_}>",!Choose,!End
 ;----------------------------------------
 .message_002:
 	db !Speed00,!Line2
-	db $88,!_
-	db !Line3
-	db $88
-	db ">",!Choose,!End
+	db "!{4_}!{2_}",!Line3
+	db "!{4_}>",!Choose,!End
 ;----------------------------------------
 .message_003:
 	db !Speed00
@@ -96,5 +53,72 @@ dialogue_table1:
 	db "Save And Qu!{it}",!Line3
 	db "Do Not Save And C!{on}t!{in}ue",!End
 ;----------------------------------------
+.message_004:
+	db !Speed00
+	db "0- ",!{Number00},". 1- ",!{Number01},!Line2
+	db "2- ",!{Number02},". 3- ",!{Number03},!End
+;----------------------------------------
+.message_005:
+	db "!{You} c!{an}'t !{ent}!{er_}!{with} !{some}!{thin}g",!Line2
+	db "fol!{lo}!{wi}ng !{you}.",!End
+;----------------------------------------
+.message_006:
+	db !Speed00,!Line1
+	db ">",!Line2
+	db "!{2_}",!Line3
+	db "!{2_}",!Choose2,!End
+;----------------------------------------
+.message_007:
+	db !Speed00,!Line1
+	db "!{2_}",!Line2
+	db ">",!Line3
+	db "!{2_}",!Choose2,!End
+;----------------------------------------
+.message_008:
+	db !Speed00,!Line1
+	db "!{2_}",!Line2
+	db "!{2_}",!Line3
+	db ">",!Choose2,!End
+;----------------------------------------
+.message_009:
+	db !Speed00,!Line1
+	db ">",!Line2
+	db "!{2_}",!Choose3,!End
+;----------------------------------------
+.message_010:
+	db !Speed00,!Line1
+	db "!{2_}",!Line2
+	db ">",!Choose3,!End
+;----------------------------------------
+.message_011:
+	db !Speed00,!Line3
+	db "!{4_}",!Line2
+	db "!{2_}>",!SelChng,!End
+;----------------------------------------
+.message_012:
+	db !Speed00,!Line2
+	db "!{4_}",!Line3
+	db "!{2_}>",!SelChng,!End
+;----------------------------------------
+.message_013:
+	db "!{Name}, I'm !{go}!{ing_}!{out_}!{for} a",!Line2
+	db "!{wh}ile.!{2_}I'll !{be} !{ba}!{ck} by m!{or}n!{in}g.",!Line3
+	db "D!{on}'t leave !{the} hou!{se}.",!End
+;----------------------------------------
+.message_014:
+	db "Unnh!{Dots} !{Name}, I !{di}d!{nt_}!{wa}nt",!Line2
+	db "!{you} !{in}volv!{ed_}!{in} !{thi}s!{Dots}!{2_}I !{to}ld",!Line3
+	db "!{you} !{not} !{to} leave !{the} hou!{se}!{Dots}",!WaitKey,!Scroll
+	db "Take my sw!{or}d !{and_}!{sh}ield !{and}",!Scroll
+	db "l!{is}t!{en}.!{2_}!{You} !{can_}focus !{pow}!{er_}!{in}",!Scroll
+	db "!{the} b!{la}de (hold !{the} B But!{to}n).",!WaitKey,!Scroll
+	db "!{Dots}!{The}n !{re}lea!{se} !{it} us!{ing_}!{the}",!Scroll
+	db "!{se}c!{re}t technique !{ha}nd!{ed_}!{do}wn",!Scroll
+	db "by our peo!{ple}!{Dots}",!WaitKey,!Scroll
+	db "!{Name}, !{you} !{can_}!{do} !{it}!",!Scroll
+	db "Save !{the} Pr!{in}cess!{Dots}",!Scroll
+	db "Zelda !{is} !{you}r!{Dots} !{Dots} !{Dots}",!End
+;----------------------------------------
+
 
 warnpc $1D8000	; 0xE80000

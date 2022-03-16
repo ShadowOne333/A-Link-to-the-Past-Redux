@@ -206,6 +206,6 @@ NOTE: As mentioned with the "Enable FMV" optional patch, track #35 is the one wh
 A Link to the Past Redux is a project licensed under the terms of the GPLv3, which means that you are given legal permission to copy, distribute and/or modify this project, as long as:
 
 1. The source for the available modified project is shared and also available to the public without exception.
-2. The modified project subjects itself different naming convention, to differentiate it from the main and licensed Zelda 2 Redux project.
+2. The modified project subjects itself different naming convention, to differentiate it from the main and licensed A Link to the Past Redux project.
 
 You can find a copy of the license in the LICENSE file.
