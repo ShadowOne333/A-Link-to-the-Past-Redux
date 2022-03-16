@@ -3,17 +3,16 @@
 ;****************************************************************
 
 ;****************************************
-; 	Table file
+;    Include Table & Dictionary files
 ;****************************************
-table "code/text/text.txt",ltr
+incsrc "code/text/dictionary.txt"
+incsrc "code/text/main_font.txt"
 
 ;****************************************
 ; 	Definitions
 ;****************************************
-; Include dictionary file
-;incsrc "code/text/dictionary.asm"
 
-!dots = $43
+!Dots = $43
 !Ankh1 = $47
 !Waves1 = $48
 !Snake1 = $49
@@ -27,8 +26,8 @@ table "code/text/text.txt",ltr
 !B = $5C
 !X = $5D
 !Y = $5E
-;!! = $60
-;!¡ = $61
+;! = $60
+;¡ = $61
 !NextPic = $67
 !Choose = $68
 !Item = $69
@@ -49,15 +48,13 @@ table "code/text/text.txt",ltr
 !Wait = $78		; 
 !Sound = $79		; 
 !Speed00 = $7A,$00	; Speed 00 
-!Speed01 = $7A,$00	; Speed 01
+!Speed01 = $7A,$01	; Speed 01
+!Speed02 = $7A,$02	; Speed 02
 !7B = $7B
 !7C = $7C
 !7D = $7D
 !WaitKey = $7E	; Wait for prompt or button input
 !End = $7F	; End current text message
-!in = $B4
-!it = B6
-!on = $C7
 
 ;****************************************
 ;	Text pointers
@@ -81,23 +78,23 @@ dialogue_table1:
 ;----------------------------------------
 .message_001:
 	db !Speed00,!Line3
-	db $88,$8A
+	db $88,!_
 	db !Line2
 	db $88
 	db ">",!Choose,!End
 ;----------------------------------------
 .message_002:
 	db !Speed00,!Line2
-	db $88,$8A
+	db $88,!_
 	db !Line3
 	db $88
 	db ">",!Choose,!End
 ;----------------------------------------
 .message_003:
 	db !Speed00
-	db "Save And C",!on,"t",!in,"ue",!Line2
-	db "Save And Qu",!it,!Line3
-	db "Do Not Save And C",!on,"t",!in,"ue",!End
+	db "Save And C!{on}t!{in}ue",!Line2
+	db "Save And Qu!{it}",!Line3
+	db "Do Not Save And C!{on}t!{in}ue",!End
 ;----------------------------------------
 
 warnpc $1D8000	; 0xE80000
