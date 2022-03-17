@@ -5,7 +5,6 @@
 ;****************************************
 ;    Include Table & Dictionary files
 ;****************************************
-pushtable
 incsrc "code/text/main_font.txt"
 
 ;****************************************
@@ -55,8 +54,8 @@ dialogue_table1:
 ;----------------------------------------
 .message_004:
 	db !Speed00
-	db "0- ",!{Number00},". 1- ",!{Number01},!Line2
-	db "2- ",!{Number02},". 3- ",!{Number03},!End
+	db "0- !{Number00}. 1- !{Number01}",!Line2
+	db "2- !{Number02}. 3- !{Number03},!End
 ;----------------------------------------
 .message_005:
 	db "!{You} c!{an}'t !{ent}!{er_}!{with} !{some}!{thin}g",!Line2

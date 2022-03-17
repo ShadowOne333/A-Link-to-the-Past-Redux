@@ -1,0 +1,396 @@
+[Speed 00][3]      [2]    >[Choose]
+[Speed 00][2]      [3]    >[Choose]
+[Speed 00]Save and Continue[2]Save and Quit[3]Don't Save and Continue
+[Speed 00]0- [Number 00]. 1- [Number 01][2]2- [Number 02]. 3- [Number 03]
+I can't enter there while being[2]followed.
+[Speed 00][1]>[2]  [3]  [Choose3]
+[Speed 00][1]  [2]>[3]  [Choose3]
+[Speed 00][1]  [2]  [3]>[Choose3]
+[Speed 00][1]>[2]  [Choose2]
+[Speed 00][1]  [2]>[Choose2]
+[Speed 00][3]    [2]  >[Selchg]
+[Speed 00][2]    [3]  >[Selchg]
+[Name], I'm going out for a[2]little while.[Waitkey][3]Don't worry. I'll be back by[Scroll]morning. Please don't leave[Scroll]the house.
+Ugh[...] [Name], I didn't want to[2]drag you into this[...] I told you[3]not to leave home.[Waitkey][Scroll]But please[...] You must now take[Scroll]up my sword and shield[...][Waitkey][Scroll]If you hold B to channel power[Scroll]into the sword, you can[Scroll]unleash a technique that's[Waitkey][Scroll]long been passed down in our[Scroll]family. Be sure to make use of[Scroll]it, [Name][...][Waitkey][Scroll]Now, go rescue Princess Zelda.[Scroll]You are[...] the princess's[...][Scroll]only[...]
+Hey kid, what are you doing[2]wandering around at this time?[3]Only adults should be out this[Waitkey][Scroll]late.
+If you're lost, just push X to[2]check out your map. Did you[3]know that already, kid?
+Many objects can be lifted up[2]by pressing A while facing[3]them. Did you know that[Waitkey][Scroll]already, kid?
+Once you get your hands on a[2]sword, you can use it by[3]pressing B. Don't you forget!
+The glowing mark on your map[2]is your destination. Did you[3]know that already, kid?
+Press A in front of chests to[2]open them up. Did you know[3]that already, kid?
+You can learn a lot from us[2]soldiers. But you already knew[3]that, didn't you?
+First, meet with the elder of[2]the village, and then, obtain[3]the Master Sword.
+Oh, Princess Zelda, you are[2]safe! And you, [Name], appear[3]to be the one who rescued[Waitkey][Scroll]her.
+[Name], I sense that some kind[2]of evil spirit has taken[3]possession of the bishop.[Waitkey][Scroll]For any hope of defeating him,[Scroll]you must seek out the[Scroll]legendary blade that banishes[Waitkey][Scroll]evil known as the Master[Scroll]Sword.[Waitkey][Scroll]Some say that the elder of the[Scroll]nearby village is one of the[Scroll]descendants of the Seven[Waitkey][Scroll]Sages. I'd get started by[Scroll]paying him a visit, as he[Scroll]should have more to tell you.[Waitkey][Scroll]Let's mark his house on your[Scroll]map.[Sound 2D][Waitkey][Scroll]Now, when you depart, you[Scroll]must proceed with great[Scroll]caution. The castle guards will[Waitkey][Scroll]be out searching for both of[Scroll]you.[Waitkey][Scroll]I'll be keeping Princess Zelda[Scroll]safely hidden here with me. Do[Scroll]not be anxious.[Waitkey][Scroll]Do you understand?[Scroll]    > Yes[Scroll]       Not at all[Choose]
+If you defeat the bishop, the[2]people in the castle might[3]regain their sanity.[Waitkey][Scroll]Go collect all three pendants!
+Take those three pendants to[2]the forest. The Master Sword[3]awaits you there.
+Oh, [Name]! You were a second[2]too late. I[...] I was a coward[...][3]They abducted Zelda and took[Waitkey][Scroll]her to the castle[...][Waitkey][Scroll]She's probably being held on[Scroll]the top floor of the castle's[Scroll]tower.[Waitkey][Scroll]You must find Princess Zelda[Scroll]before they sacrifice her.[Scroll]P-please[...] s-save her[...]
+Thank you, [Name]. I had a[2]feeling you were near.
+Father, I indeed have [Name][2]to thank for my freedom.[Waitkey][3]When I was imprisoned, the[Scroll]bishop said, "Once you become[Scroll]the final sacrifice, the seal[Waitkey][Scroll]of the Seven Sages will be[Scroll]broken at last."[Waitkey][Scroll][Name], you must not let the[Scroll]kingdom of Hyrule fall into his[Scroll]clutches. If the seal is broken,[Waitkey][Scroll]demonic power will surely pour[Scroll]out into this land.[Waitkey][Scroll]Please defeat the bishop[Scroll]before it's too late! Protect[Scroll]our kingdom! I know you can do[Waitkey][Scroll]it. I know it[...]
+[Name], please be careful! I'll[2]be here, praying for your[3]safety!
+[Window 02][Speed 03]Help me[...][Waitkey][2]Please help me[...][Waitkey][3]I'm being held prisoner in the[Scroll]castle dungeon. My name is[Scroll]Zelda.[Waitkey][Scroll]Six maidens have already been[Scroll]sacrificed, and I'm going to be[Scroll]the last.[Waitkey][Scroll]The bishop who recently[Scroll]showed up at the castle,[Scroll]Agahnim, believes he can[Waitkey][Scroll]break the seal of the Seven[Scroll]Sages by doing this.[Waitkey][Scroll]I am here in the dungeon of the[Scroll]castle.[Waitkey][Scroll]Please help me[...]
+[Window 02][Speed 03]Help me[...][Waitkey][2]I'm being held prisoner in the[3]castle dungeon.[Waitkey][Scroll]There should be a passage from[Scroll]outside the castle leading[Scroll]directly into the courtyard.
+There's a secret passage[2]leading from the throne room[3]to the Chapel.[Waitkey][Scroll]The priest there will certainly[Scroll]help us.
+This display should be[2]moveable. Do you have a[3]Lantern? It's pitch black[Waitkey][Scroll]inside, and you can't see[Scroll]without one.[Waitkey][Scroll]If you're ready, let's get to[Scroll]it! Help me push it from the[Scroll]left!
+Try pulling this lever. Hold A[2]to grab it, then pull by[3]pressing down on the D-pad.
+All right, let's get out of here[2]before the bishop notices. I[3]happen to know an escape[Waitkey][Scroll]route.[Waitkey][Scroll]We should head to the main hall[Scroll]on the first floor. Let's go!
+[Name], listen carefully. The[2]castle guards are under the[3]spell of Agahnim's dark magic. I[Waitkey][Scroll]fear the worst for my father.[Waitkey][Scroll]And the bishop, I suspect he[Scroll]isn't even human. I think he's[Scroll]some kind of devil, and one[Waitkey][Scroll]with terrifying powers.[Waitkey][Scroll]Do you understand?[Scroll]    > Yes[Scroll]       Not at all[Choose]
+You should follow the markings[2]the elder made on your map[3]when you explore.[Waitkey][Scroll]If you don't know what to do[Scroll]next, you can also visit a[Scroll]fortune teller.
+[Name], you are wonderful! As[2]I thought, the power of the[3]Hero rests within you![Waitkey][Scroll]Now, all that's left is to obtain[Scroll]the Master Sword. You will[Scroll]defeat the bishop!
+[Window 02][Speed 03][Name]! Help! The castle[2]guards are coming into the[3]Chapel! AIEEEEE!
+After passing through these[2]sewers, we'll be very close to[3]the Chapel.[Waitkey][Scroll]Let's be careful.
+Beyond that door is the Chapel.[2]Go pull the switch over there.
+Oh, it's you, [Name]. What can[2]an old woman like me do for[3]you?[Waitkey][Scroll]The elder? I see[...] He's been[Scroll]away for a long time, ever[Scroll]since that bishop began[Waitkey][Scroll]sacrificing girls.[Waitkey][Scroll]What's this about the Master[Scroll]Sword? I don't remember the[Scroll]details exactly, but[...]
+Long ago, a people known as[2]the Hylians prospered in this[3]land.[Waitkey][Scroll]Legends tell of treasures they[Scroll]hid throughout our kingdom.[Waitkey][Scroll]Among them is the Master[Scroll]Sword, a blade forged to fend[Scroll]against demonic beings.[Waitkey][Scroll]That blade is said to be[Scroll]sleeping deep in the forest,[Scroll]even to this day[...][Waitkey][Scroll]Do you understand?[Scroll]    > Yes[Scroll]       Not at all[Choose]
+In any case, you should seek[2]out the elder. There must be[3]someone in the village who[Waitkey][Scroll]knows his whereabouts.[Waitkey][Scroll]Well, I suppose it's time for[Scroll]you to be on your way. And[Scroll][Name], please be careful[...]
+Oh, [Name]! What a fine young[2]man you've become. Please[3]save us villagers.
+Hey! Here is [Name], the[2]wanted man! Soldiers! Anyone![3]Come quickly!
+Hmmm[...] At last, you have[2]collected the three pendants![3]It's time to head to the Lost[Waitkey][Scroll]Woods.[Waitkey][Scroll]If you truly possess the[Scroll]courage, the sword itself shall[Scroll]choose you[...]
+I am too old to fight. My hope[2]rests entirely with you[...]
+I am indeed Sahasrahla, village[2]elder and descendant of the[3]Seven Sages.[Waitkey][Scroll][...][...]Truly? [Name], I'm surprised[Scroll]that a young man like you is[Scroll]searching for the sword of[Waitkey][Scroll]evil's bane.[Waitkey][Scroll]Not just anyone can wield this[Scroll]blade. We have a legend saying[Scroll]that only a Hero who defeats[Waitkey][Scroll]three great monsters and[Scroll]obtains three pendants can[Scroll]become its master.[Waitkey][Scroll]Will you accept this challenge?[Scroll]    > Yeah![Scroll]       Of Course![Choose]
+Good. You should first obtain[2]the Pendant of Courage from[3]the nearby temple.[Waitkey][Scroll]If you succeed, I'll have a tale[Scroll]to pass on to you. Now, head[Scroll]for the temple.
+There may be other descendants[2]of the Seven Sages hiding from[3]the castle soldiers. Seek them[Waitkey][Scroll]out.
+[Window 02][Speed 03][Name], it is I, Sahasrahla. The[2]world where you stand was[3]once called the Sacred Realm.[Waitkey][Scroll]But because demons now run[Scroll]rampant there, we refer to it[Scroll]as the Dark World.[Waitkey][Scroll]When the bishop broke the[Scroll]sages' seal, he opened a[Scroll]passage at the entrance of[Waitkey][Scroll]the castle that connects the[Scroll]Light and Dark Worlds.[Waitkey][Scroll]To save our world, you must[Scroll]take possession of the[Scroll]Golden Power![Waitkey][Scroll]Begin by rescuing the seven[Scroll]maidens descending from the[Scroll]Seven Sages. Their power will[Waitkey][Scroll]surely aid you.[Waitkey][Scroll]The maidens are confined in the[Scroll]lairs of monsters. Go first to[Scroll]the Shadow Temple.[Waitkey][Scroll][Name], you are our only hope.[Scroll]Please fulfill what I ask, and[Scroll]know that we are all counting[Waitkey][Scroll]on you!
+[Window 02][Speed 03]However, you won't accomplish[2]much in that form.[Waitkey][3]Seek the Moon Pearl in the[Scroll]tower on Hebra Mountain. It[Scroll]protects against the Dark[Waitkey][Scroll]World's magic so you can[Scroll]retain your heroic form.
+A helpful item is hidden in a[2]cave  east of Lake Hylia. Go[3]get it!
+Oh? So you've obtained the[2]Pendant of Courage! I shall now[3]relay the tale I spoke of.[Waitkey][Scroll]Long ago, there was a clan of[Scroll]warriors who protected the [Scroll]Hylian royal family. This clan,[Waitkey][Scroll]known as the Knights Kinsmen,[Scroll]were also guardians of the[Scroll]Pendant of Courage.[Waitkey][Scroll]At the time when the seal of[Scroll]the Seven Sages was created,[Scroll]most of them sadly perished in[Waitkey][Scroll]the fierce battles against the[Scroll]demons.[Waitkey][Scroll]But they say that a Hero will[Scroll]appear from the descendants[Scroll]of the Knights Kinsmen.[Waitkey][Scroll][...]I see. You must certainly be[Scroll]that Hero.[Waitkey][Scroll]Go and obtain the remaining[Scroll]pendants. And also, take this[Scroll]with you. This treasure has[Waitkey][Scroll]been handed down in my family[Scroll]for generations.
+I am indeed Sahasrahla, village[2]elder and descendant of the[3]Seven Sages.[Waitkey][Scroll][...]Truly? [Name], I'm[Scroll]surprised that a young man like[Scroll]you is searching for the sword[Waitkey][Scroll]of evil's bane.[Waitkey][Scroll]Not just anyone can wield this[Scroll]blade. We have a legend saying[Scroll]that only a Hero who defeats[Waitkey][Scroll]three great monsters and[Scroll]obtains three pendants can[Scroll]become its master.[Waitkey][Scroll]Ah, I see that you have already[Scroll]acquired the Pendant of[Scroll]Courage. Well then, let me tell[Waitkey][Scroll]you a little story.[Waitkey][Scroll]Long ago, there was a clan of[Scroll]warriors who protected the [Scroll]Hylian royal family. This clan,[Waitkey][Scroll]known as the Knights Kinsmen,[Scroll]were also guardians of the[Scroll]Pendant of Courage.[Waitkey][Scroll]At the time when the seal of[Scroll]the Seven Sages was created,[Scroll]most of them sadly perished[Waitkey][Scroll]in the fierce battles against[Scroll]the demons.[Waitkey][Scroll]But they say that a Hero will[Scroll]appear from the descendants[Scroll]of the Knights Kinsmen.[Waitkey][Scroll][...]I see. You must certainly[Scroll]be that Hero.[Waitkey][Scroll]Go and obtain the remaining[Scroll]pendants. And also, take this[Scroll]with you. This treasure has[Waitkey][Scroll]been handed down in my family[Scroll]for generations.
+100 rupees to anyone who[2]locates a girl descending from[3]the Seven Sages. - The King
+   [LinkL][LinkR]  WANTED![2][2]This is [Name], the criminal[3]who kidnapped Princess Zelda.[Waitkey][Scroll]Call a soldier if you see him!
+DANGER![2]Unauthorized travel to Hebra[3]Mountain is prohibited.
+This way [Up][2]         Lost Woods
+DANGER![2]Beware of deep water and Zora!
+Welcome to the Potion Shop.[2]The Waterfall of Wishing is[3]just ahead.  
+This cave leads back to the[2]village.
+This way [Down][2]         Lake Hylia[3]         Shop
+This way [Left][2]         Kakariko Village
+This way [Left][2]         Desert of Mystery
+This way [Up] [Right][2]         Potion Shop[3]         Waterfall of Wishing
+This way [Right] Eastern Temple[3]This way [Left] Hyrule Castle
+Lake Hylia
+Don't bother talking to me. I'm[2]just an eccentric middle-aged[3]man.[Waitkey][Scroll]PS - Please don't steal this[Scroll]sign.
+House of Lumberjacks[2]Bun and Yan
+This way [Down][2]       Kakariko Village
+Bubbling goo[...] Bubbling goo[...][2]Brewing up mushroom potions[3]for you[...]
+Hehehe[...] Thank you, young man.[2]Come back later and see my[3]assistant for a token of my[Waitkey][Scroll]thanks[...] Hehehe!
+Ah, the sweet smell of rotten[2]fruit! If you give me that[3]mushroom, I can finish my brew.[Waitkey][Scroll]Hehehe!
+If you want to buy the potion,[2]you'll need a bottle first.[3]Hehehe![Waitkey][Scroll]Here, try a sip of the Red[Scroll]Potion, free of charge. Hehehe!
+Red restores your health.[2]Green restores your magic[3]power. Blue restores both[Waitkey][Scroll]health and magic.[Waitkey][Scroll]Here, try a sip of the Red[Scroll]Potion, free of charge. Hehehe!
+Without a bottle, you won't be[2]buying any potions. Hehehe!
+You can't buy a potion if your[2]bottles are full. Hehehe!
+I got a Lantern! Now I can light[2]torches by pressing Y!
+It's a Boomerang! I'll equip it[2]with Start and give it a try!
+I found a Bow! Now I can shoot[2]arrows![Waitkey][3]Or at least until I run out.
+I borrowed a Shovel! Time to[2]find a good place to dig[3]holes. Let's get digging!
+Hey, it's the Magic Cape! I can[2]vanish into thin air with this![Waitkey][3]But I gotta watch my magic[Scroll]meter!
+This is Magic Powder! Let's[2]try sprinkling it on enemies[3]and various other things!
+I bought Zora's Flippers! I can[2]swim easily through deep water[3]now!
+I got the Power Gloves![2]Strength is swelling in both of[3]my arms.[Waitkey][Scroll]Lifting up stones will be a[Scroll]breeze now!
+I got the Pendant of Courage![2]Let's show it to the elder[3]Sahasrahla.[Waitkey][Scroll]Two more pendants remain!
+I got the Pendant of Wisdom![2]And I suddenly feel a bit[3]stronger![Waitkey][Scroll]Time to go for the final[Scroll]pendant.
+I got the Pendant of Power![2]Yeah![Waitkey][3]With all three pendants, it's[Scroll]time to head to the forest and[Scroll]retrieve the Master Sword!
+This Mushroom smells like[2]sweet, rotten fruit.[Waitkey][3]I can give it to someone by[Scroll]pressing Y.
+This is the Tome of Mudora! I[2]can use it to decipher the[3]ancient Hylian language!
+I found the Moon Pearl! It will[2]protect my body from the[3]twisted effects of the Golden[Waitkey][Scroll]Power.
+I found the Compass! Now, I can[2]pinpoint the boss monster's[3]location!
+I got a map! I can press X to[2]see the dungeon layout and my[3]location!
+I found the Ice Rod! It sends a[2]sharp chill cleaving through[3]the air.[Waitkey][Scroll]But I gotta watch my magic[Scroll]meter!
+I found the Fire Rod! It sends[2]crimson flames shooting[3]through the air.[Waitkey][Scroll]But I gotta watch my magic[Scroll]meter!
+This is the Ether Medallion! Its[2]magic summons icy winds from[3]the upper atmosphere.[Waitkey][Scroll]This will really drain my magic[Scroll]meter!
+This is the Bombos Medallion![2]Its magic makes the ground[3]erupt in fiery explosions.[Waitkey][Scroll]This will really drain my magic[Scroll]meter!
+This is the Quake Medallion! Its[2]magic causes violent tremors[3]and stuns nearby enemies.[Waitkey][Scroll]This will really drain my magic[Scroll]meter!
+I got the Magic Hammer! Let's[2]go pound some stakes into the [3]ground.[Waitkey][Scroll]Heck, I'll pound everything! Bam[Scroll]bam time!
+Oh, here's the Ocarina! Its[2]music surely has mysterious[3]power!
+I found the Cane of Somaria![2]What a mysterious staff[...][Waitkey][3]This should be a big help when I[Scroll]learn how to use it!
+BOING! This is the Hookshot! It[2]extends, it contracts, and[...][3]BOING! [Waitkey][Scroll]I'll grapple all kinds of things!
+I found some Bombs! After[2]placing a Bomb, I can pick it up[3]with A to throw it!
+I've got a Bottle! I can store[2]many different things inside[3]and use them later!
+I found the Big Key! Now I can[2]unlock doors and chests that[3]don't open with normal keys!
+I got the Titan's Mitts! I can[2]now lift the dark, heavy[3]stones that were impossible to[Waitkey][Scroll]budge!
+I received the Magic Mirror![2]It's blue, clear and beautiful[...][Waitkey][3]Gazing into it, I feel like I'm[Scroll]being swallowed up into another[Scroll]world[...]
+This is it! The Master Sword![Waitkey][2][...]No, I guess not. Too bad.
+[Window 02][Speed 03]The elder Sahasrahla's voice[2]echoes throughout the area[...][Waitkey][3][Name], you have done well in[Scroll]obtaining the Master Sword,[Scroll]the blade that repels evil.[Waitkey][Scroll]The sword's radiant power is[Scroll]now yours. With it, you'll[Scroll]surely overcome the bishop's[Waitkey][Scroll]evil magic.[Waitkey][Scroll]The fate of this kingdom is in[Scroll]your hands, [Name]. We are all[Scroll]counting on you[...]
+Hehe! Excellent. This is the Red[2]Potion. Drink it to restore your[3]health.
+Hehe! Excellent. This is the[2]Green Potion. Drink it to[3]restore your magic power.
+Hehe! Excellent. This is the[2]Blue Potion. Drink it to restore[3]your health and magic power.
+I borrowed a Bug-Catching Net![2]Hmm[...] I wonder if I can catch[3]other things besides insects.
+I found the Blue Tunic! Wearing[2]this decreases the damage I[3]take! Very cool!
+I found the Red Tunic! Wearing[2]this decreases the damage I[3]take even more than the Blue[Waitkey][Scroll]Tunic!
+All right! My sword just got[2]stronger! I feel its power[3]flowing through my body!
+I found the Mirror Shield! It[2]can deflect beams I couldn't[3]block with my old shield.
+I got the Cane of Byra! If I[2]wave it once through the air, a[3]ring of light will protect me!
+Eh? It's locked. If I had the[2]Big Key, I might be able to open[3]it!
+I don't have enough magic[2]power. I guess I can't use this[3]right now.
+I got the Pegasus Boots! If I[2]hold down A, I can ram into[3]enemies with a dash attack!
+What? That's amazing! I[2]haven't encountered a normal[3]person in hundreds of years.[Waitkey][Scroll]Gosh, I'd love to talk for a[Scroll]while. Here's a good story[...]
+It's about the gargoyle statue[2]in this village. They say you[3]can faintly hear a girl calling[Waitkey][Scroll]out for help from below.[Waitkey][Scroll]Sounds a bit sketchy, if I say[Scroll]so myself[...]
+They say the Triforce[2]transformed this realm because[3]of Ganon's wish.[Waitkey][Scroll]What was his wish, you ask? To[Scroll]become king of the entire[Scroll]world.[Waitkey][Scroll]I wonder if he'll succeed once[Scroll]he gathers enough energy from[Scroll]the Dark World[...]
+I was once walking through the[2]Lost Woods in the Light World,[3]and I stumbled into a magic[Waitkey][Scroll]portal.[Waitkey][Scroll]Before I knew it, I was standing[Scroll]in Skull Woods in the Dark[Scroll]World. It seems like the two[Waitkey][Scroll]forests are connected.
+I'm told that Bombs can easily[2]defeat the one-eyed giants[3]known as Hinox. That's my[Waitkey][Scroll]story!
+Sorry to bark like this, but[2]stop harassing us trees!
+I got the Pendant of Wisdom![2]Yeah![Waitkey][3]With all three pendants, it's[Scroll]time to head to the forest and[Scroll]retrieve the Master Sword!
+I got the Pendant of Power! And[2]I suddenly feel a bit stronger![Waitkey][3]Time to go for the final[Scroll]pendant.
+Well, let's get to it! This is[2]the Shooting Gallery. For 20[3]rupees, I'll give you 5 arrows.[Waitkey][Scroll]Consecutive hits will score you[Scroll]big profits![Waitkey][Scroll]How about it, kid?[Scroll]    > Let's play[Scroll]       I'm leaving[Choose]
+All right, go ahead and take[2]aim!
+Well, you can turn around and[2]walk right out the way you[3]came in. Have a nice day! See[Waitkey][Scroll]ya!
+You want to keep going, eh?[2]    > I'll keep going[3]       Better stop[Choose]
+      -Spring of Happiness-[2]Throw in some rupees and your[3]wishes will surely come true.[Waitkey][Scroll]Will you throw in rupees?[Scroll]    > Sure[Scroll]       I'd rather not[Choose]
+Select an item with the D-pad,[2]then press Y to toss it in.[Item]
+Hello there. Did you drop this?[2]    > Yes[3]       No, I didn't[Choose]
+I like honest people, so I'll[2]give you something better in[3]return.
+Are you sure this is not yours?[2]    > Really, it's not[3]       It actually is[Choose]
+You're a bald-faced liar! Take[2]this back at once!
+I got the Magic Boomerang! This[2]one flies faster and farther[3]than my old one.
+My shield just got bigger![2]Fireballs won't be a problem[3]anymore!
+Wow! These are the Silver[2]Arrows. I'll use them to finish[3]off Ganon!
+My bottle got filled with the[2]Green Potion! One heck of a[3]bargain!
+My sword got even stronger[2]than before! It feels warm to[3]the touch[...]
+Your happiness has increased[2]by [Number 03][Number 02] rupees. That brings your[3]total to [Number 01][Number 00].[Waitkey][Scroll]You feel a little happier than[Scroll]before.
+I will grant you a wish.[2]  >I want to carry more Bombs[3]    I want to carry more Arrows[Selchg]
+Then I'll increase your[2]capacity, allowing you to carry[3]a total of [Number 01][Number 00] Bombs.[Waitkey][Scroll]This small blessing is the least[Scroll]I can do.
+Then I'll increase your[2]capacity, allowing you to carry[3]a total of [Number 01][Number 00] Arrows.[Waitkey][Scroll]This small blessing is the least[Scroll]I can do.
+You are too strong for me to[2]aid you any further.[Waitkey][3]But there's a lovely lady and[Scroll]dear friend of mine you should[Scroll]meet at the Waterfall of[Waitkey][Scroll]Wishing.[Waitkey][Scroll]Here's your rupees, and my[Scroll]blessing as well.
+Ah[...] Watch your step. There[2]are holes in the ground. Could[3]you turn right here?[Waitkey][Scroll]By the way, do you happen to[Scroll]be searching for the Golden[Scroll]Power? The road ahead is full[Waitkey][Scroll]of monsters. Many brave men[Scroll]have disappeared on this[Scroll]mountain upon the same[Waitkey][Scroll]endeavor.[Waitkey][Scroll]Perhaps I say too much, but[Scroll]please don't be too zealous for[Scroll]this mad quest. 
+By the way, there's a heart in[2]the pot.
+Oh, turn right here[...][Waitkey][2]You know, I have a[3]granddaughter around your[Scroll]age. She was taken away to[Waitkey][Scroll]the castle and hasn't been[Scroll]heard from again.[Waitkey][Scroll]All this business about maidens[Scroll]being sacrificed must be part[Scroll]of the bishop's plot.[Waitkey][Scroll]He's been kidnapping girls who[Scroll]inherited the power of the[Scroll]Seven Sages, and he surely has[Waitkey][Scroll]some nefarious scheme in mind.
+We haven't met, but if you're[2]going up the mountain, will you[3]take me along? I lost my [Waitkey][Scroll]lantern.
+The maidens who were[2]sacrificed may still be alive[3]somewhere. I've got to believe[Waitkey][Scroll]that a Hero will appear to[Scroll]rescue them.[Waitkey][Scroll]Oh my. I've certainly rambled[Scroll]on, haven't I? Anyway, thank[Scroll]you for showing such kindness[Waitkey][Scroll]to an old man.[Waitkey][Scroll]And take this mirror. If you[Scroll]happen to wander into a magical[Scroll]portal, make sure you take a[Waitkey][Scroll]glance at your reflection.
+The bishop has surely deceived[2]our king, and he is using evil[3]magic to open some kind of [Waitkey][Scroll]passage.[Waitkey][Scroll]You must go to the tower atop[Scroll]this mountain to retrieve an[Scroll]orb called the Moon Pearl.[Waitkey][Scroll]All I can do for you is soothe[Scroll]your weariness[...] Come back any[Scroll]time.
+The Moon Pearl is an artifact[2]destined for the Hero who[3]ventures to the Sacred Realm.[Waitkey][Scroll]It will protect him from the[Scroll]magical power that changes[Scroll]peoples' forms.[Waitkey][Scroll]Now that I see you have[Scroll]obtained it, you must surely be[Scroll]the Hero I was waiting for.[Waitkey][Scroll]Please, go and rescue the[Scroll]maidens!
+Is that you, [Name]? It seems[2]the bishop connected the two[3]worlds somewhere near the[Waitkey][Scroll]castle.[Waitkey][Scroll]If you are heading to the Dark[Scroll]World, that should be your next[Scroll]destination.
+(mumbling sleepily) My son[2]loved playing the ocarina, but[3]went off searching for the[Waitkey][Scroll]Golden Power and never[Scroll]returned[...][Waitkey][Scroll]I wonder where he is and what[Scroll]he's up to now[...] Zzzzz[...][Scroll]Zzzzz[...]
+(mumbling sleepily) T-that's[2]my son's ocarina! That means[3]you met him! Where is he? Is he[Waitkey][Scroll]all right?[Waitkey][Scroll][...]I see. Even if you won't tell[Scroll]me, I see the truth written all[Scroll]over your face.
+Why don't you keep the[2]ocarina?[Waitkey][3]But I have a request. Play it in[Scroll]front of the bird in the village[Scroll]square. It would make my son[Waitkey][Scroll]very happy[...][Waitkey][Scroll]If only I could see him once[Scroll]more[...]
+Zzzzz[...] Zzzzz[...] (snoring loudly)
+Oh, [Name][...] The rumors say[2]you kidnapped the princess,[3]but I don't believe them.
+I[...] I give up![Waitkey][2]With legs like yours, it's no[3]wonder you managed to kidnap[Scroll]Princess Zelda.[Waitkey][Scroll]But you don't look like such a[Scroll]bad guy, you know.[Waitkey][Scroll]If you're this quick on your[Scroll]feet, you should try ramming[Scroll]into different things.[Waitkey][Scroll]For instance, the trees in this[Scroll]village might have some useful[Scroll]items in their branches.[Waitkey][Scroll]Just give it a try, OK?
+Hey! If you have enough time[2]to read this sign, you should[3]go to the goal immediately!
+I offer a Piece of Heart to one[2]wearing a cape.
+Catastrophe shall befall any[2]who throw something into this[3]pond!
+This way [Up] Skull Woods[2]This way [Down] Outcast Village
+[2]This way [Right] Cave
+[2]This way [Right] Shadow Temple
+[2]This way [Left] Bomb Shop
+[Left]  The Devil's Bog[2]         No Entrance[3]         No Escape
+This is the Outcast Village.[2]People without rupees are not[3]welcome here.
+The Waterfall of Wishing is just[2]around the corner.
+This way [Right][Up][2]Lake of Catastrophe
+Everyone has been acting[2]strangely since that bishop[3]Aghanim showed up.[Waitkey][Scroll]I wonder if I'll eventually get[Scroll]affected[...]
+Hey you! You're not allowed in[2]the castle, kid. Go get some[3]sleep!
+[Window 02][Name], it is I, Sahasrahla.[2]Let me give you some advice.[Waitkey][3]There's a treasure in this[Scroll]temple you can use to defeat[Scroll]monsters clad in even the[Waitkey][Scroll]strongest armor. Be sure to[Waitkey][Scroll]obtain it!
+[Window 02][Name], it is I, Sahasrahla.[2]An orb known as the Moon Pearl[3]is here in this tower.[Waitkey][Scroll]The holder of this orb will[Scroll]retain their original form in[Scroll]this world of monsters. You[Waitkey][Scroll]must obtain it before[Scroll]departing. Do not forget[...]
+  [Snake][X][Waves][B][Waves][B]   [Snake][X][Waves][B][Waves][B]   [Ankh][A][Waves][B][Waves][B][2]       [Ankh][A]   [Snake][X][Waves][B][Waves][B][Snake][X]   [Ankh][A][3]  [Snake][X][Waves][B][Waves][B]   [Ankh][A][Snake][X][Snake][X][Ankh][A]   [Waves][B][Waves][B][Ankh][A]
+The Hero's triumph on[2]Cataclysm's Eve wins three[3]symbols of virtue.[Waitkey][Scroll]The Master Sword, he will then[Scroll]retrieve, keeping the knight's[Scroll]line true.
+[Window 02][Name], listen well to the[2]words of I, Sahasrahla. You[3]must climb to the top of[Waitkey][Scroll]Spectacle Rock.[Waitkey][Scroll]And a little further, you will[Scroll]reach the Tower of Hera on[Scroll]the summit of Hebra Mountain.[Waitkey][Scroll]Please proceed carefully.
+[Window 02][Name], listen well. Objects[2]that exist in the two worlds[3]seem to imitate each other.[Waitkey][Scroll]If the form of an object[Scroll]changes in one world, its[Scroll]counterpart should also[Waitkey][Scroll]change. Please keep this in[Scroll]mind.
+[Window 02][Name][...] It's me, Zelda[...] Don't[2]be misled by the sorcery of[3]Blind the Thief! Be careful!
+[Window 02][Name], it is I, Sahasrahla.[2]You must ignite four torches in[3]order to open the way forward.
+          [Snake][X][Snake][X][Ankh][A][Waves][B]   [Snake][X][Waves][B][Waves][B][Snake][X][2]              [Ankh][A]   [Waves][B][Snake][X][Ankh][A][Waves][B][3]          [Waves][B][Waves][B][Snake][X][Waves][B]   [Ankh][A][Ankh][A][Snake][X][Ankh][A]
+Offer a prayer before this[2]stone tablet. If your wish is[3]heard, the way shall open[Waitkey][Scroll]before you.
+[Window 02]If you manage to stun Ganon,[2]be sure to finish him off with[3]Silver Arrows.[Waitkey][Scroll][Name], I know you shall[Scroll]prevail.
+[Window 02][Name], can you hear my[2]voice? It's me, Zelda. I am[3]imprisoned in Turtle Rock on[Waitkey][Scroll]top of Death Mountain.[Waitkey][Scroll]I know you'll come for me. I'll[Scroll]be waiting[...]
+[Window 02][Name], it is I, Saharsahla.[2]Be sure to acquire all the[3]treasures in each monster's[Waitkey][Scroll]lair.
+[Window 02]Listen well, [Name]. Even with[2]the Master Sword, you cannot[3]physically harm the bishop. You[Waitkey][Scroll]must find a way to turn his[Scroll]magic against him.
+[Window 02][Name], be careful not to use[2]up all your magic power. Only[3]proceed into the dungeon's[Waitkey][Scroll]depths if you carry potions[Scroll]that restore your magic.[Scroll]Please don't be reckless.
+[Window 02][Name], do you have any[2]potions that restore your[3]magic power? If not, you[Waitkey][Scroll]shouldn't venture any farther.
+[Window 02][Name], flames both great and[2]small shall protect you in this[3]place.
+[Window 02][Name], you cannot defeat the[2]Skeleton Swordsmen with blade[3]alone. Deliver a finishing "blow"[Waitkey][Scroll]after they've collapsed.
+[Window 02][Name], it is I, Sahasrahla[2]the elder. I have some advice.[Waitkey][3]You can gaze into the Magic[Scroll]Mirror to return to the[Scroll]entrance of any dungeon. Do[Waitkey][Scroll]not forget it!
+You've discovered my hidden[2]room. Keep this a secret[3]between us.
+I caught a bee![Waitkey][2]What should I do?[3]    > I'll put it in a bottle[Scroll]       Let's set it free[Choose]
+I caught a fairy![Waitkey][2]What should I do?[3]    > I'll put it in a bottle[Scroll]       Let's set it free[Choose]
+I don't have any empty[2]bottles. Oh well[...] I guess I'll set[3]it free.
+Your time was [Number 03][Number 02] minutes and[2][Number 01][Number 00] seconds.
+If you can reach the goal[2]within 15 seconds, I'll give you[3]something good.[Waitkey][Scroll]Ready, set[...][...]  GO!
+You succeeded![2]Congratulations! I present you[3]with a Piece of Heart!
+Looks like you failed. Too bad![2]Please try again!
+I don't have anything more to[2]give you. I'm sorry!
+You have to enter the maze[2]from the proper entrance, or I[3]can't clock your time[...]
+Hello, sir! Do you need a bottle[2]that can hold anything? I've[3]got one to sell for just 100[Waitkey][Scroll]rupees.[Waitkey][Scroll]What do you say?[Scroll]    > I'll buy it[Scroll]       Don't need it[Choose]
+Thank you for your purchase.[2]Now, hold it over your head[3]enthusiastically!
+Ah, that's too bad. Come back[2]when you've saved enough[3]rupees.
+Sorry, I'm sold out of bottles.[2]Come back another time.
+Wow! That bee is extremely[2]rare. I'll buy it for 100 rupees.[3]Here you go!
+Wow! Eating fish is good for[2]your health. I'll trade you all[3]this stuff for it!
+Yo [Name]! You seem to be in[2]a heap of trouble, but this is[3]all I can give you.
+Ah, it's you! I'm so glad to see[2]you again![Waitkey][3]So, what do you need?[Scroll]    > Temper my sword[Scroll]       Just dropping by[Choose]
+I'll give you a big discount![2]    >Here's 10 rupees[3]      Wait a minute[Choose]
+Sure you want it tempered?[2]    > I'm sure[3]       Hold on[Choose]
+We can't make it any stronger.[2]Sorry!
+Drop by anytime. Now, back to[2]work! Huff! Huff!
+Right it is! We'll have to hold on[2]to your sword for a bit.
+Your sword's nice and[2]tempered. Now hold it up to[3]the sky!
+If my lost partner returns, we[2]can temper your sword. But[3]there's nothing I can do for[Waitkey][Scroll]you now.
+Wow, look at that! You found[2]my partner! What a joyous[3]occasion![Waitkey][Scroll]Drop by again sometime! We'll[Scroll]take your sword and temper it[Scroll]perfectly!
+Ribbit, ribbit[...] Your form didn't[2]change! You're no ordinary[3]guy, are you?[Waitkey][Scroll]I used to live in Kakariko[Scroll]Village, and I wonder how my[Scroll]partner is doing there without[Waitkey][Scroll]me.[Waitkey][Scroll]Can you do me a favor? Please[Scroll]take me to him! I'm counting on[Scroll]you[...]
+I'm sorry, we're not done yet.[2]Please come back soon!
+(together) Thank you!
+Watch out! Amateurs shouldn't[2]try to do this. You're just[3]getting in the way!
+After wandering into this[2]world, my form changed to what[3]you see.[Waitkey][Scroll]Back in my world, I really[Scroll]enjoyed playing the ocarina.[Waitkey][Scroll]I have fond memories of a[Scroll]forest clearing where animals[Scroll]would gather around me.[Waitkey][Scroll]That's where I buried my[Scroll]ocarina along with some flower[Scroll]seeds.[Waitkey][Scroll]Will you try to find it for me?[Scroll]    > Yes[Scroll]       No way[Choose]
+Then I will lend you my shovel.[2]I'm counting on you!
+[...]I see. Well, that's fine.[2]Farewell. 
+Did you find my ocarina yet?[2]I hope you find it soon.
+Thank you, [Name]. [...]But it[2]looks like I can't play my[3]ocarina anymore.[Waitkey][Scroll]You should take it. And if you[Scroll]visit the village where I lived,[Scroll]please give it to a sleepy old[Waitkey][Scroll]man.[Waitkey][Scroll][Name][...] my senses are growing[Scroll]dim[...] Please let me hear the[Scroll]ocarina's music one last time[...]
+[Position 01][Speed 03]Jo-mon[...] jo-mon[...][Waitkey][2]First, find the elder[3]Sahasrahla.
+[Position 01][Speed 03]Emi-shi[...] emi-shi[...][Waitkey][2]Find the Tome of Mudora in the[3]village and take it to the[Scroll]desert.
+[Position 01][Speed 03]Emi-shi[...] emi-shi[...][Waitkey][2]A descendant of the Seven[3]Sages is living in the desert.
+[Position 01][Speed 03]Jo-mon[...] jo-mon[...][Waitkey][2]Find a mushroom in the forest[3]and take it to the Potion Shop.
+[Position 01][Speed 03]Jo-mon[...] jo-mon[...][Waitkey][2]Follow the river upstream to[3]find a lake full of Zora.
+[Position 01][Speed 03]Jo-mon[...] jo-mon[...][Waitkey][2]Search for the Moon Pearl in a[3]mountain tower.
+[Position 01][Speed 03]Jo-mon[...] jo-mon[...][Waitkey][2]The bishop's body cannot be[3]harmed, even by the Master[Scroll]Sword.
+[Position 01][Speed 03]Emi-shi[...] Emi-shi[...][Waitkey][2]Why not jump into the well near[3]the smithy?
+[Position 01]I'm not feeling well today.[2]Please come another time.
+[Position 01]Ah, what an interesting face[...][2]Would you like me to read your[3]fortune?[Waitkey][Scroll]I'll make it cheap[...][Scroll]    > Read my fortune[Scroll]       I'll pass[Choose]
+[Position 01]I'll just be taking [Number 00][Number 01] rupees.[2]Here's to your health! Weeyaa!
+[Position 01]Hmm[...] How unfortunate. I'll be[2]waiting for your return.
+[Position 01][Speed 03]Jo-mon[...] jo-mon[...][Waitkey][2]A stone object stands tall in[3]the Desert of Mystery.
+[Position 01][Speed 03]Emi-shi[...] emi-shi[...][Waitkey][2]For treasure, talk to gossip[3]sellers in Dark World caverns.
+[Position 01][Speed 03]Jo-mon[...] jo-mon[...][Waitkey][2]The smith's partner is located[3]in Outcast Village.
+[Position 01][Speed 03]Emi-shi[...] emi-shi[...][Waitkey][2]A treasure is laid to rest in[3]the Light World graveyard.
+[Position 01][Speed 03]Jo-mon[...] jo-mon[...][Waitkey][2]You'll purchase a new kind of[3]bomb at the Bomb Shop.
+[Position 01][Speed 03]Emi-shi[...] emi-shi[...][Waitkey][2]You'll find a secret inside the[3]Dark World Pyramid.
+[Position 01][Speed 03]Jo-mon[...] jo-mon[...][Waitkey][2]A barrier protects Ganon's[3]Tower on Death Mountain.
+[Position 01][Speed 03]Emi-shi[...] Emi-shi[...][Waitkey][2]You'll need Silver Arrows to[3]finish off Ganon.
+Hey, I've got a good story for[2]only 20 rupees.[Waitkey][3]What do you say?[Scroll]    > Here's the rupees[Scroll]       Not interested[Choose]
+Heh heh. Thanks. You know, if[2]you follow the river upstream,[3]you'll find a little pond.[Waitkey][Scroll]It might be fun throwing[Scroll]somethin' in. Who knows what[Scroll]could happen?[Waitkey][Scroll]Heh heh. Anyway, I'll see ya[Scroll]around.
+Heh heh. Well, I don't waste[2]time talkin' to folks with no[3]rupees. Get lost!
+Heh heh. Thanks. As a matter[2]of fact, I used to be a thief[3]back in the Light World.[Waitkey][Scroll]At one point, my fellow thieves[Scroll]got real spooked about gettin'[Scroll]caught, so they all turned tail[Waitkey][Scroll]and scampered off.[Waitkey][Scroll]One of them was a real champ[Scroll]with lockpicks. But these days,[Scroll]he hides it by pretendin' to be[Waitkey][Scroll]some middle-aged weirdo. Heh[Scroll]heh heh[...]
+Heh heh. Thanks. You know, I[2]saw this incredibly beautiful[3]woman in the Pyramid, but[Waitkey][Scroll]someone went and sealed off[Scroll]the door.[Waitkey][Scroll]I hear an ordinary bomb just[Scroll]won't do the trick[...]
+Heh heh. Thanks. As a matter[2]of fact, there's a monster[3]causin' the rainstorm in the[Waitkey][Scroll]bog.[Waitkey][Scroll]If the wind started blowin'[Scroll]strong enough, I bet the rain[Scroll]might stop.
+-cough- -cough- [Name], do[2]you have a bottle to keep a[3]bug in?[Waitkey][Scroll]I see. You don't have one[...][Scroll]-cough-
+I can't go outside because I've[2]been sick[...] -cough- -cough-[Waitkey][3]People are saying it's because[Scroll]of the monsters[...] something[Scroll]about their aura coming from[Waitkey][Scroll]the mountains and forests[...][Scroll]-cough-[Waitkey][Scroll]Anyway, check out this[Scroll]Bug-Catching Net. I'll use it[Scroll]when I'm better, but you can[Waitkey][Scroll]borrow it for now.
+Ugh[...] I hope I get better soon[...][2]-cough- -cough-
+[...][...][...][...][...][...][...]
+What gives, man?
+So, you know I used to be a[2]thief, right?[Waitkey][3]I can open the chest, but you'll[Scroll]have to keep this a secret[Scroll]between us.[Waitkey][Scroll]Do I have your word?[Scroll]    > I promise[Scroll]       I'll tell everyone[Choose]
+OK, if that's the way you want[2]it, you can drag that chest[3]around forever!
+Remember, don't say a word of[2]this to anyone[...]
+All right. Bring that chest over[2]here.[Waitkey][3]But seriously, be sure to keep[Scroll]this a secret.
+  [Ankh][A][Ankh][A]   [Ankh][A][Snake][X][Waves][B][Ankh][A][Waves][B]   [Waves][B][Snake][X][Waves][B][2]  [Waves][B][Snake][X][Snake][X]   [Waves][B][Snake][X][Snake][X][Waves][B][Ankh][A][3]  [Waves][B][Waves][B][Snake][X][Ankh][A][Waves][B]   [Snake][X][Waves][B][Ankh][A][Ankh][A][Snake][X]
+Hold the Master Sword up to[2]the sky, and you will receive[3]the magic of Ether.
+Hold the Master Sword up to[2]the sky, and you will receive[3]the magic of Bombos.
+Hey, you jerk! How dare you[2]wake me up from my deep sleep![Waitkey][3][...][...]Thank you for your kindness.[Waitkey][Scroll][...][...]Wait one minute! It's time to[Scroll]take my revenge, so get ready![Waitkey][Scroll][...][...]Is that OK with you?
+[...][...]Kekeke! Get what you[2]deserve! With this spell, your[3]magic consumption will be cut[Waitkey][Scroll]in half.[Waitkey][Scroll][...][...]Pretty cool, huh?[Waitkey][Scroll][...][...]It'll be brutal from here on[Scroll]out, so toughen up, or else![Waitkey][Scroll][...][...]Have a nice day. Take care!
+[ScrollSpd 00][Color 07][Speed 03][Window 02][NextPic]Long ago, in the beautiful land[2]of Hyrule, surrounded by[3]mountains and forests, legends[Wait 03][Scroll]told of an omnipotent and[Scroll]omniscient Golden Power.[Wait 05][Scroll]This Golden Power was hidden[Scroll]away in a Sacred Realm, with[Scroll]that realm's entrance[Wait 03][Scroll]eventually discovered in Hyrule[Scroll]itself.[Wait 05][NextPic][NextPic][Scroll]Many fought to gain entry to[Scroll]the Sacred Realm, yet none who[Scroll]succeeded were heard from[Wait 03][Scroll]again.[Wait 05][Scroll]And worse, a mysterious evil[Scroll]power began to flow out from[Scroll]there.[Wait 05][NextPic][NextPic][Scroll]The king of Hyrule commanded[Scroll]Seven Sages to seal off the[Scroll]passage to the Sacred Realm.[Wait 05][NextPic][NextPic][Scroll]And that seal should never[Scroll]have been broken.[Wait 05][Scroll]But just as those events had[Scroll]finally passed into legend[...]
+[Window 02][Color 07][Speed 03][1]The good king of Hyrule was[2]elminated through the[3]treachery of a mysterious[Wait 02][Scroll]bishop known as Agahnim,[Scroll]who had been plotting the[Scroll]whole time to break the seal.[Wait 04]
+[Window 02][Color 07][Speed 03][1]Agahnim manipulated the[2]castle soldiers into capturing[3]maidens descending from the[Wait 02][Scroll]Seven Sages. These girls were[Scroll]then sacrificed, one after[Scroll]another.[Wait 04]
+[Window 02][Color 07][Speed 03][1]The fateful hour where[2]Princess Zelda will be[3]sacrificed is drawing near.[Wait 03]
+It seems to be locked tight.[2]Guess I'll just carry it around[3]for now.
+100 rupees for 30 Bombs! 30[2]Bombs for just 100 rupees![3]Please buy some, mister!
+100 rupees for 30 Bombs! I also[2]have a new product in stock.[3]1 for only 100 rupees!
+Thank you very much.
+Thank you very much.  You can[2]set the bomb by pressing A.[3]Don't forget it!
+Ki ki! Give me 100 rupees, and[2]I'll open the door for you. Kiki[3]ki![Waitkey][Scroll]What do you say?[Scroll]    > Open it up[Scroll]       I'll try it myself[Choose]
+Ki ki! Hmph[...] Do it yourself,[2]then! Kiki ki!
+Ki ki! That's the spirit! I'll take[2]100 rupees! Kiki ki!
+I'm Kiki the monkey! I love[2]rupees more than anything. Can[3]you spare 10 rupees?[Waitkey][Scroll]What do you say?[Scroll]    > Here's 10 rupees[Scroll]       Not giving anything[Choose]
+Ki ki! That's the spirit! I'll be[2]your buddy for a while. Kiki ki!
+Ki ki! Hmph[...] I guess I have no[2]use for you. Bye bye! Kiki ki!
+Ki ki? What are you doing?[2]I don't want to go there!
+Phew! Thank you so much for[2]saving me. Now, please take me[3]outside.
+Gyaaah! Too bright!
+Err, wait a minute[...] Please[2]don't go this way.
+My name is Azinar. I sense that[2]something is happening in the[3]Sacred Realm sealed off by the[Waitkey][Scroll]Seven Sages.[Waitkey][Scroll]There is a prophecy of a Great[Scroll]Cataclysm that the Seven[Scroll]Sages passed down to their[Waitkey][Scroll]Hylian descendents.[Waitkey][Scroll]Part of it says, "The Hero will[Scroll]go to the Desert of Mystery,[Scroll]holding the Tome of Mudora."[Waitkey][Scroll]Obtain that tome, and you'll be[Scroll]able to understand the[Scroll]language of the Hylian people.[Waitkey][Scroll]I believe it's in the House of[Scroll]Writings in the village. Go and[Scroll]retrieve it, if you truly are to[Waitkey][Scroll]become this "Hero."
+With all three pendants, you[2]have proven yourself to[3]possess wisdom, courage and[Waitkey][Scroll]power.[Waitkey][Scroll]If you truly are courageous, go[Scroll]to the forest and claim the[Scroll]sleeping Master Sword as your[Waitkey][Scroll]own.
+Aha! That is the Tome of[2]Mudora! With it, you can[3]comprehend the language of[Waitkey][Scroll]the Hylians.
+You are the Hero, indeed. I am[2]certain you will return peace[3]to this land.
+Look at how you've grown[2]after your trial in the desert.[3]You are a very promising young[Waitkey][Scroll]man.
+Was it you who disturbed my[2]nap? Here, take this and go[3]away.
+I have nothing else to give[2]you, so take this instead!
+Yo [Name]! A strange mist has[2]fallen over the forest. If[3]you're heading in, please be[Waitkey][Scroll]careful.
+This tree feels kinda odd as we[2]cut it. Anyway, back to work!
+Looks like the forest mist[2]cleared up. Thanks! Now we can [3]go there again! Right, bro?
+Hey, [Name]! I'm fighting with[2]my younger brother, so I sealed[3]off the door to his room.
+So you broke through the wall,[2]eh?[Waitkey][3]Ah well[...] Maybe I'll go make up[Scroll]with him[...]
+Hey [Name], did you come from[2]my older brother's room? Is he[3]still angry?
+[Speed 02][Position 01][Window 02][Name], because of you, I was[2]able to escape from the[3]demon's clutches. Thank you.[Waitkey][Scroll]This world was once a Sacred[Scroll]Realm where the Triforce[Scroll]resided.[Waitkey][Scroll]But the Triforce was claimed[Scroll]by Ganon, the master of[Scroll]thieves, whose evil desires[Waitkey][Scroll]transformed this world.[Waitkey][Scroll]He has been plotting to[Scroll]conquer the Light World as[Scroll]soon as he gains enough[Waitkey][Scroll]power.[Waitkey][Scroll]Ganon used us seven maidens[Scroll]as the key to breaking the[Scroll]seal, for we inherited the[Waitkey][Scroll]power of the Seven Sages.[Waitkey][Scroll]He intends to open a larger[Scroll]passage near the castle. But[Scroll][Name], there is still time.[Waitkey][Scroll]Together, we maidens will be[Scroll]powerful enough to destroy[Scroll]the barrier surrounding Ganon's[Waitkey][Scroll]hiding place.[Waitkey][Scroll]I will now use my power to[Scroll]reveal the location of the[Scroll]other maidens.[Sound 2D][Waitkey][Scroll]I'm certain you will destroy[Scroll]Ganon, and we'll finally return[Scroll]to our original forms.
+[Speed 02][Position 01][Window 02][Name], because of you, I was[2]able to escape from the[3]demon's clutches. Thank you.[Waitkey][Scroll]The Triforce will grant the[Scroll]wishes of whoever touches it[Scroll]for as long as they live.[Waitkey][Scroll]That is why it was kept in the[Scroll]Sacred Realm, with its location[Scroll]passed down only among a[Waitkey][Scroll]select few.[Waitkey][Scroll]Yet this line of knowledge has[Scroll]been broken, and the[Scroll]Triforce's location lost.[Waitkey][Scroll]That is, until the Sacred Realm[Scroll]was discovered by a thief[Scroll]named Ganondorf.[Waitkey][Scroll]Our only blessing is that he[Scroll]never learned how to return to[Scroll]the Light World.[Waitkey][Scroll]Wait! You possess a Magical[Scroll]Mirror that only the Hero can[Scroll]use, do you not?[Waitkey][Scroll]There are other portals like[Scroll]the one on Hebra Mountain. If[Scroll]you use those along with[Waitkey][Scroll]the mirror to travel between[Scroll]the two worlds, you can surely[Scroll]reach the other evil monsters[Waitkey][Scroll]that lurk in the Dark World.[Waitkey][Scroll]I'm praying you'll be the one to[Scroll]defeat Ganondorf the thief -[Scroll]no, Ganon, King of Demons!
+[Speed 02][Position 01][Window 02][Name], because of you, I was[2]able to escape from the[3]demon's clutches. Thank you.[Waitkey][Scroll]Do you know the prophecy of[Scroll]the Great Cataclysm? This is[Scroll]how I heard it.[Waitkey][Scroll]If a person with an evil heart[Scroll]obtains the Triforce, a Hero[Scroll]is destined to appear.[Waitkey][Scroll]That hero alone will face[Scroll]the one who set off[Scroll]these destructive events.[Waitkey][Scroll]Should the Hero fail, the[Scroll]entire world will fall under the[Scroll]shroud of the adversary's evil[Waitkey][Scroll]heart.[Waitkey][Scroll]Only one descending from the[Scroll]Knights Kinsmen who protected[Scroll]the Hylian royal family can[Waitkey][Scroll]become this Hero.[Waitkey][Scroll]You are of that bloodline, are[Scroll]you not? Then it's up to you[Scroll]to rescue Princess Zelda!
+[Speed 02][Position 01][Window 02][Name], because of you, I was[2]able to escape from the[3]demon's clutches. Thank you.[Waitkey][Scroll]When the Seven Sages were[Scroll]sealing the passage to the[Scroll]Dark World, the Knights Kinsmen[Waitkey][Scroll]valiantly defended them from[Scroll]the attacks of demons.[Waitkey][Scroll]They say the bloodline of[Scroll]those knights was almost wiped[Scroll]out in the course of that[Waitkey][Scroll]battle[...][Waitkey][Scroll]You may just be the very last[Scroll]of their descendants.[Waitkey][Scroll]How incredible it is for the[Scroll]last of their bloodline to[Scroll]potentially become the Hero![Waitkey][Scroll]I'm certain that you have what[Scroll]it takes to defeat Ganon!
+[Speed 02][Position 01][Window 02][Name], because of you, I was[2]able to escape from the[3]demon's clutches. Thank you.[Waitkey][Scroll]It is said the Hylian people[Scroll]once wielded mysterious powers[Scroll]like that of the Seven Sages.[Waitkey][Scroll]Yet over time, Hylian blood has[Scroll]thinned, and even we [Scroll]descendants of the Seven[Waitkey][Scroll]Sages have much diminished[Scroll]powers.[Waitkey][Scroll]If shown the power of courage[Scroll]that the knights once[Scroll]possessed, the wisdom passed[Waitkey][Scroll]down to us by the Seven[Scroll]Sages will grow stronger![Waitkey][Scroll]Only a short time remains until[Scroll]the passage linking the two[Scroll]worlds at the castle opens[Waitkey][Scroll]completely.[Waitkey][Scroll]If you defeat Ganon, the Dark[Scroll]World will vanish along with[Scroll]him, and the Triforce will await[Waitkey][Scroll]a new master.[Waitkey][Scroll][Name], I believe in you. Don't[Scroll]ever give up.
+[Speed 02][Position 01][Window 02][Name], because of you, I was[2]able to escape from the[3]demon's clutches. Thank you.[Waitkey][Scroll]Ganon captured us because he[Scroll]couldn't break the seal of the[Scroll]Seven Sages with his power[Waitkey][Scroll]alone. He needed the powers we[Scroll]inherited.[Waitkey][Scroll]And so, using the bishop[Scroll]Agahnim as his pawn, he drew[Scroll]us into the Dark World.[Waitkey][Scroll]Once we finished breaking the[Scroll]seal, we were no longer of any[Scroll]use, so he trapped us in these[Waitkey][Scroll]crystals and handed us over to[Scroll]the monsters.[Waitkey][Scroll]But Ganon's failure to account[Scroll]for you will be his undoing.[Waitkey][Scroll][Name][...] Princess Zelda is[Scroll]waiting for you at Turtle Rock.[Scroll]Go to her.
+[Speed 02][Position 01][Window 02][Name], it's extraordinary[2]that you've come all this way.[3]Just as I thought, you truly[Waitkey][Scroll]are the legendary Hero, and[Scroll]I've felt this from the first[Scroll]time we met.[Waitkey][Scroll]Ganon put up a barrier around[Scroll]his tower on Death Mountain,[Scroll]and he's waiting for the right[Waitkey][Scroll]time to slip through a passage[Scroll]between the two worlds.[Waitkey][Scroll]If Ganon reaches the Light[Scroll]World, it might not be possible[Scroll]to catch him.[Waitkey][Scroll]But if he remains inside this[Scroll]closed-off realm, you can[Scroll]track him down wherever he[Waitkey][Scroll]runs.[Waitkey][Scroll]It's time to take the seven[Scroll]crystals to Ganon's Tower. We[Scroll]will breach its barrier with our[Waitkey][Scroll]combined powers.[Sound 2D][Waitkey][Scroll][Name][...] It is up to us to[Scroll]restore peace to our kingdom.
+[Speed 02][Position 01][Window 02]May the way of the Hero lead[2]to the Triforce.
+[Speed 02][Position 01][Window 02]Do you understand?[2]    >  Yes[3]        Not at all[Choose]
+[Name], the seven of us will[2]now combine our powers to[3]breach the barrier of Ganon's[Waitkey][Scroll]Tower!
+[Speed 02][Position 01][Window 02][Name], it's extraordinary[2]that you've come all this way.[3]Just as I thought, you truly[Waitkey][Scroll]are the legendary Hero, and[Scroll]I've felt this from the first[Scroll]time we met.[Waitkey][Scroll]Ganon put up a barrier around[Scroll]his tower on Death Mountain,[Scroll]and he's waiting for the right[Waitkey][Scroll]time to slip through a passage[Scroll]between the two worlds.[Waitkey][Scroll]If Ganon reaches the Light[Scroll]World, it might not be possible[Scroll]to catch him.[Waitkey][Scroll]But if he remains inside this[Scroll]closed-off realm, you can[Scroll]track him down wherever he[Waitkey][Scroll]runs.[Waitkey][Scroll]However, there are still[Scroll]maidens in need of your help.[Waitkey][Scroll]Once you save all of them,[Scroll]head to Ganon's Tower.[Waitkey][Scroll]With the blood of the Seven[Scroll]Sages in our veins, we'll surely[Scroll]breach Ganon's barrier.[Waitkey][Scroll][Name][...] It is up to us to[Scroll]restore peace to our kingdom.
+Ah, [Name] the magnificent! I[2]have been waiting for you! Heh[3]heh heh[...][Waitkey][Scroll]You know, I was actually hoping[Scroll]to destroy Zelda right before[Scroll]your eyes.[Waitkey][Scroll]Behold! The final moment of[Scroll]Princess Zelda!
+Muahahaha! With this final[2]sacrifice, the seal of the[3]Seven Sages is broken at last.[Waitkey][Scroll]It is only a matter of time[Scroll]before evil power engulfs this[Scroll]kingdom.[Waitkey][Scroll]You see, even the so-called[Scroll]"Legendary Hero" is no match[Scroll]for us demons possessing the[Waitkey][Scroll]Golden Power.[Waitkey][Scroll]Muahahaha! I must be going!
+What's this? You want to be[2]utterly destroyed? Well, I'll[3]make your wish come true!
+Urggh[...] Just as I suspected of[2]the "Hero."[Waitkey][3]But this is not the end. I'll[Scroll]draw you with me into the[Scroll]Dark World!
+Muahahaha! You have done well[2]to make it this far, oh [Name][3]the Magnificent.[Waitkey][Scroll]I am so very pleased to meet[Scroll]you once again.[Waitkey][Scroll]But I regret to inform you[Scroll]there will be no further[Scroll]meetings after this. [Waitkey][Scroll]Now DIE, damn you!
+Heya! What brings you around?[2]    >  I want the treasure[3]        Just visiting[Choose]
+Oh yeah? You can't just have[2]it for free. How about I sell[3]it for 500 rupees?[Waitkey][Scroll]What do you say?[Scroll]    >  Here's the rupees[Scroll]        Nevermind[Choose]
+Wahaha! Right, here's the[2]Flippers, and a little bonus![Waitkey][3]You have permission to use our[Scroll]secret waterways connecting[Scroll]Hyrule's rivers and lakes. Just[Waitkey][Scroll]swim into any whirlpool![Waitkey][Scroll]Now, take good care of those[Scroll]Flippers. Wahaha! Later! 
+Well, save your rupees and[2]come back when you've got the[3]dough. Wahaha! See ya around!
+Oh yeah? Come back anytime[2]you wanna see me again.[3]Wahaha! Bye now!
+Heya, [Name]! You wanna know[2]where the elder is? Just make[3]sure you keep it a secret from[Waitkey][Scroll]the bad guys![Waitkey][Scroll]He's hiding near a temple east[Scroll]of the castle. Look, I'll mark[Scroll]it on your map. Here you go![Sound 2D]
+Did you meet the elder? Once[2]the bad guys are all gone, he[3]can come back home to the[Waitkey][Scroll]village.
+Now, that's a face I haven't[2]seen around! I take it you're[3]here in search of the Golden[Waitkey][Scroll]Power.[Waitkey][Scroll]Unfortunately, it will only obey[Scroll]the one who first touches it.[Waitkey][Scroll]The man who created this world[Scroll]brought forth all that you see[Scroll]as a reflection of his heart.[Waitkey][Scroll]Yes, I too was blinded by[Scroll]avarice and have become a[Scroll]monster like the others.[Waitkey][Scroll]There is only one way to[Scroll]restore this place to what it[Scroll]was[...] A worthy Hero must[Waitkey][Scroll]overthrow the vile adversary[Scroll]and claim the Golden Power.[Waitkey][Scroll]Meanwhile, I'll be waiting[Scroll]patiently in this form.[Waitkey][Scroll]But how mischievous it was[Scroll]of this realm's original[Scroll]inhabitants to leave the Golden[Waitkey][Scroll]Power behind.[Waitkey][Scroll]Or to call it by its true name,[Scroll]the Triforce[...]
+       -Mysterious Spring-[2]Won't you throw something in?[Waitkey][3]What will you do?[Scroll]    > I'll toss an item[Scroll]       I'd rather not[Choose]
+Not gonna do it!
+Not gonna do it!
+I'll return this to you, but DO[2]NOT drop it again!
+How many rupees will you toss?[2]    > [Number 01][Number 00] rupees[3]       [Number 03][Number 02] rupees[Choose]
+You are an honest person. I like[2]that about you, so I'll give you[3]something valuable.[Waitkey][Scroll]These are Silver Arrows. You'll[Scroll]need these for delivering the[Scroll]finishing blow to Ganon![Waitkey][Scroll]You know, this extra weight I[Scroll]put on must be due to Ganon's[Scroll]magic, so please make sure to[Waitkey][Scroll]defeat him.
+[2]           Great blessings!
+[2]         Moderate blessings.
+[2]           Minor blessings.
+[2]           A terrible curse!
+By the way, your fortune for[2]today is[...]
+I found a Piece of Heart![2]                 [1HeartL][1HeartR]
+I found a Piece of Heart![2]                 [2HeartL][1HeartR]
+I found a Piece of Heart![2]                 [3HeartL][3HeartR]
+I found a Piece of Heart![2]                 [4HeartL][4HeartR][3]My heart level increased!
+I found a Heart Container![2]                 [4HeartL][4HeartR][3]My heart level increased!
+Weary traveler, come and let[2]me soothe your aches and[3]pains.[Waitkey][Scroll]Now, close your eyes for a[Scroll]moment[...]
+Eep! I'm tired of getting kicked[2]around like this.[Waitkey][3]Looks like you've turned into a[Scroll]bunny, haven't you?[Waitkey][Scroll]This world and our world might[Scroll]look similar, but they are[Scroll]really quite different! Whoever[Waitkey][Scroll]comes here changes to a[Scroll]different form reflecting their[Scroll]heart. I turned into a ball[Waitkey][Scroll]because I'm the first to bounce[Scroll]whenever there's trouble[...][Waitkey][Scroll]There's an orb called the Moon[Scroll]Pearl that might allow you to[Scroll]retain your original form.[Waitkey][Scroll]Ahh! Here he comes again[...]
+Eep! Oh, wow! Your form didn't[2]change! You're no ordinary guy,[3]are you?
+Hey! What's your problem, ya[2]damn rabbit?[Waitkey][3]I came here looking for the[Scroll]Golden Power, but got changed[Scroll]to this freakish form and can't[Waitkey][Scroll]get back home.[Waitkey][Scroll]If I could get the Moon Pearl[Scroll]from the Tower of Hera, it[Scroll]might be the key to getting[Waitkey][Scroll]back to my original form.[Waitkey][Scroll]Grr, you bastard! You're[Scroll]getting on my last nerve. Get[Scroll]lost! Shoo!
+What? Your form didn't[2]change? You got the Moon[3]Pearl, eh?
+In such a dangerous world, you[2]may need a few things. Select[3]whatever you like.
+Welcome! For 30 rupees, I'll let[2]you open 2 treasure chests.[3]Give it a shot![Waitkey][Scroll]What will you do?[Scroll]    > I'll play[Scroll]       Another time[Choose]
+I'll be here when you're ready[2]to play. Well, see ya around!
+Wait kid! You have to pay[2]rupees before opening chests!
+You can't open any more[2]chests. The game is over.
+All right! Go open whichever you[2]like!
+Welcome! Walk up to an item you[2]want and press A to buy it!
+If you buy that, you'll have no[2]use for it. Why not choose[3]something else?
+Thank you! You can always[2]return if you lose your shield.
+Thank you! That's the Red[2]Potion. Drink it to restore[3]your health.
+Thank you! These are Arrows.[2]You need a bow to use them.
+Thank you! After placing a[2]Bomb, you can pick it up with[3]the A button.
+Thank you! That's a bee. I[2]don't have a clue what you'd[3]use it for.
+Thank you! This restores one[2]heart.
+Uh oh[...] You'll need an empty[2]bottle for me to sell you that.
+You can't carry any more now,[2]but you may need some later!
+I never thought a brat like you[2]could manage to track me down[3]to this Pyramid.[Waitkey][Scroll]And to think you were able to[Scroll]somehow defeat my double, the[Scroll]Dark Bishop Agahnim, twice no[Waitkey][Scroll]less![Waitkey][Scroll]But even so, you will never[Scroll]wrest the Triforce from my[Scroll]hands.[Waitkey][Scroll]I will destroy you, little brat,[Scroll]and my wish to rule the worlds[Scroll]of light and darkness will[Waitkey][Scroll]finally be realized!
+Not bad, little brat! But let's[2]see how you do against my[3]ultimate technique of[Waitkey][Scroll]darkness! Take this!
+Hey, kid! This here's a hideout[2]for a gang of thieves. Ya can't[3]just come waltzing in![Waitkey][Scroll]Anyway, a former member's[Scroll]been hangin' around the[Scroll]entrance to the Desert of[Waitkey][Scroll]Mystery. I wonder what he's[Scroll]up to[...]
+Yo, [Name]! This used to be a[2]thief's hideout.[Waitkey][3]What was his name? Oh, yeah![Scroll]They called him Blind because[Scroll]he hated bright light so much.
+[Speed 02][Position 00][Window 02]Welcome, [Name][...] I am the[2]spirit of the Triforce.[Speed 01][Waitkey][1]                                          [2]                                          [3]                                          [Speed 02][1]The Triforce, also known as[2]the "Golden Power," was[3]bestowed by God, and fulfills[Waitkey][Scroll]the heart's desire of any[Scroll]who touch it.[Speed 01][Waitkey][1]                                          [2]                                          [3]                                          [Speed 02][1]If one with a righteous heart[2]touches it, a righteous wish[3]will be granted. But if one[Waitkey][Scroll]with an evil heart touches it,[Scroll]an evil wish will be granted.[Speed 01][Waitkey][1]                                          [2]                                          [3]                                          [Speed 02][1]The more heartfelt the wish,[2]the more powerfully the[3]Triforce will manifest it.[Speed 01][Waitkey][1]                                          [2]                                          [3]                                          [Speed 02][1]Ganon's wish was to conquer[2]these worlds. When he touched[3]the Triforce, that evil wish[Waitkey][Scroll]changed the Sacred Realm into[Scroll]the Dark World.[Speed 01][Waitkey][1]                                          [2]                                          [3]                                          [Speed 02][1]Ganon remained in this land,[2]biding his time, accumulating[3]power. He sought to conquer[Waitkey][Scroll]the Light World so his wish[Scroll]could be completely fulfilled.[Speed 01][Waitkey][1]                                          [2]                                          [3]                                          [Speed 02][1]The Triforce awaits a new[2]master. Its "Golden Power" is[3]in your hands.[Speed 01][Waitkey][1]                                          [2]                                          [3]                                          [Speed 02][1]Come and touch it with a wish[2]in your heart.
+Just take it, you greedy[2]bastard!
+-hic- I saw one heck of a[2]lady[...] She was absolutely[3]incredible[...] Up the river at[Waitkey][Scroll]the Waterfall of Wishing[...] What[Scroll]a beauty.[Waitkey][Scroll][Name], you've gotta go meet[Scroll]her at least once. You are[Scroll]gonna really like her.
+Keep this a secret between us.
+There's somethin' good in the[2]cave east of Lake Hylia.[3]Keep this a secret between us.
+You can earn a lot of rupees[2]by defeating enemies.[3]Keep this a secret between us.
+[Name], did you know that if[2]you shatter frozen enemies[3]with the Magic Hammer, you'll[Waitkey][Scroll]often get magic jars?
+You must searchrahla to find[2]Sahasrahla.
+As I thoughtrahla, you found[2]Sahasrahla
+I'm sorry, but you don't[2]seem to have enough rupees[...]
+Cluck cluck[...] oh, my! W-what's[2]this? I've become a human, and[3]can even speak the language![Waitkey][Scroll]Are you the boy who teases my[Scroll]friends so often? The[Scroll]weathercock is always[Waitkey][Scroll]watching, you know.[Waitkey][Scroll]Anyway, this human form is[Scroll]clucking inconvenient. How I'd[Scroll]love to be a bird again![Waitkey][Scroll]Cluck cluck[...]
+Let's see if you can win rupees[2]or if you lose em. A single[3]round costs 20 rupees.[Waitkey][Scroll]Will you try your luck?[Scroll]    >  I'll play[Scroll]        I'm outta here[Choose]
+All right! Go open whichever you[2]like!
+I see[...] That's too bad. Well,[2]save up your rupees and come[3]back another time.
+Let's see if you can win rupees[2]or if you lose em. A single[3]round costs 100 rupees.[Waitkey][Scroll]Will you try your luck?[Scroll]    >  I'll play[Scroll]        I'm outta here[Choose]
+Hey there, [Name]. I'm grateful[2]for the visit. It must've been[3]a real pain getting in.[Waitkey][Scroll]Let me make it up to you with[Scroll]an interesting story. There's a[Scroll]lake full of Zora near the[Waitkey][Scroll]source of the river.[Waitkey][Scroll]I heard those Zora have some[Scroll]kind of X-rated treasure. Heh[Scroll]heh heh. I'd really love a look[Waitkey][Scroll]at it.
+I'm grateful for the visit. It[2]must've been a real pain[3]getting in. Let me express my[Waitkey][Scroll]appreciation loud and clear -[Scroll]THANK YOU![Waitkey][Scroll]By the way, there used to be a[Scroll]kid here who communicated with[Scroll]animals by ocarina.[Waitkey][Scroll]He even had a pet bird carry[Scroll]him all over the kingdom. That[Scroll]ocarina must be full of[Waitkey][Scroll]mysterious power.
+[Position 00][Speed 00]>Start from [Name]'s House[2]  Start from the Chapel[Choose2]
+[Position 00][Speed 00]>Start from [Name]'s House[2]  Start from the Chapel[3]  Start from the Mountain Cave[Choose3]
+[Speed 00]> Continue Game[2]   Save and Quit[Choose2]
+Welcome to the Digging Game.[2]Dig as much as you like for 30[3]seconds straight. Any treasure[Waitkey][Scroll]you uncover is yours to keep![Waitkey][Scroll]How does 80 rupees sound?[Scroll]    > I want to dig[Scroll]       I don't want to dig[Choose]
+In that case, I'll lend you a[2]shovel. When you're ready,[3]press Y to dig!
+I see. Then I won't push it.[2]Please come back when you[3]have enough rupees.
+Looks like your time's up.[2]Please come back again!
+Come back another time! I'll be[2]waiting.
+I won't get into the details,[2]ibut it's not a good time. Please[3]come back later. Sorry.
