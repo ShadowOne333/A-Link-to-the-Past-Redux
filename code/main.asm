@@ -12,9 +12,18 @@ lorom			; Switch to LoROM mapping mode
 ;header			; rom has a header
 
 ;****************************************
+;	Global compilation flags
+;****************************************
+; This patch is only for A Link to the Past ROM
+check title "THE LEGEND OF ZELDA  "
+
+!fastrom = 0		; FastROM compilation
+!_snes_utils_inc = 0	; SNES Utils (by qwertymodo)
+!houlihan = 0		; Change the Houlihan's room name
+
+;****************************************
 ;	Internal ROM Header
 ;****************************************
-
 org $008000
 
 org $00FFB0	; 0x007FB0-0x007FFF
@@ -46,25 +55,32 @@ Internal_Rom_Header:
 warnpc $018000
 
 ;****************************************
+;	ALttP DX changes
+;****************************************
+;incsrc dx/loz3-dx.asm	; Code of ALttP DX (v1.6)
+
+;****************************************
 ;	Gameplay changes
 ;****************************************
-incsrc code/fixes/bugfixes.asm	; General bugfixes (most DX code)
-incsrc code/fixes/bunny_palette.asm	; Bunny palette fix (by rainponcho)
-incsrc code/gameplay/misc.asm	; Miscellaneous gameplay changes
-incsrc code/gameplay/move_blocks_infinitely.asm	; Allows movement of blocks several times
+;incsrc fixes/bugfixes.asm	; General bugfixes (most DX code)
+;incsrc fixes/bunny_palette.asm	; Bunny palette fix (by rainponcho)
+;incsrc gameplay/max_consumables.asm 	; Implement "Max Consumables Fix" by Kasuto
+;incsrc gameplay/misc.asm	; Miscellaneous gameplay changes
+;incsrc gameplay/move_blocks_infinitely.asm	; Allows movement of blocks several times
+
 
 ;****************************************
 ;	Text changes
 ;****************************************
 ; Main script text
-incsrc code/text/dialogue1.asm		; 1st dialogue table
-;incsrc code/text/dialogue2.asm		; 2nd dialogue table
+incsrc text/dialogue1.asm		; 1st dialogue table
+;incsrc text/dialogue2.asm		; 2nd dialogue table
 
 ; Item names text
-incsrc code/text/items.asm
+incsrc text/items.asm
 
 ; Credits text
-;incsrc code/text/credits.asm
+;incsrc text/credits.asm
 
 ;****************************************
 ;	Visual changes
