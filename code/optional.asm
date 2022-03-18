@@ -3,7 +3,7 @@
 ; Uncomment the desired Optional patches
 ;*****************************************************************
 
-; First optional patch
-;incsrc code/optional/*.asm
+; Remove the low health beeping
+;incsrc code/optional/remove_low_health_beep.asm
 
 
