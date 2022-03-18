@@ -56,14 +56,22 @@ incsrc code/gameplay/move_blocks_infinitely.asm	; Allows movement of blocks seve
 ;****************************************
 ;	Text changes
 ;****************************************
+; Main script text
 incsrc code/text/dialogue1.asm		; 1st dialogue table
 ;incsrc code/text/dialogue2.asm		; 2nd dialogue table
+
+; Item names text
+incsrc code/text/items.asm
+
+; Credits text
+;incsrc code/text/credits.asm
 
 ;****************************************
 ;	Visual changes
 ;****************************************
 ; Palette and color attribute modifications
 incsrc code/gfx/palettes.asm		; 
+
 ; 24 Items Menu (New GFX)
 incsrc code/menus/new_gfx.asm		; Main file for New GFX
 
