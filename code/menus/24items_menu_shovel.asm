@@ -28,10 +28,10 @@ org $07FBD0	; 0x03FBD0
 	lda $7EF34C	; AF 4C F3 7E
 	and #$03	; 29 03
 	cmp #$00	; C9 00
-	bne $06		; D0 06
+	bne +		; D0 06
 	lda $7EF34F	; AF 4F F3 7E
 	and #$03	; 29 03
-	rtl		; 6B
++	rtl		; 6B
 
 org $09850E	; 0x04850E
 ; A table of sorts?
@@ -58,21 +58,21 @@ org $0DE51D	; 0x06E51D
 	jmp $ED39	; 4C 39 ED
 	lda $7F5021	; AF 21 50 7F
 	cmp #$00	; C9 00
-	beq $04		; F0 04
+	beq +		; F0 04
 	jml $07A15B	; 5C 5B A1 07
-	lda $0202	; AD 02 02
++	lda $0202	; AD 02 02
 	cmp #$0D	; C9 0D
-	bne $08		; D0 08
+	bne +		; D0 08
 	lda $7EF34C 	; AF 4C F3 7E
 	jml $07A31D	; 5C 1D A3 07
-	lda $7EF34F 	; AF 4F F3 7E
++	lda $7EF34F 	; AF 4F F3 7E
 	cmp #$00	; C9 00
-	bne $04		; D0 04
+	bne +		; D0 04
 	jml $07A312 	; 5C 12 A3 07
-	cmp #$01	; C9 01
-	bne $04		; D0 04
++	cmp #$01	; C9 01
+	bne +		; D0 04
 	jml $07A32C	; 5C 2C A3 07
-	jml $07A31D	; 5C 1D A3 07
++	jml $07A31D	; 5C 1D A3 07
 
 org $0DEBB0	; 0x06EBB0
 	jsr $ED80	; 20 80 ED
@@ -89,12 +89,12 @@ org $0DED57	; 0x06ED57
 	tax		; AA
 	lda $7F5021	; AF 21 50 7F
 	cmp #$0001	; C9 01 00
-	beq $0B 	; F0 0B
+	beq +	 	; F0 0B
 	lda $7EF34F	; AF 4F F3 7E
 	and #$00FF	; 29 FF 00
 	tyx		; BB
 	jmp $EDF9	; 4C F9 ED
-	lda $7F5020	; AF 20 50 7F
++	lda $7F5020	; AF 20 50 7F
 	and #$00FF	; 29 FF 00
 	tax		; AA
 	lda $7EF35B,x	; BF 5B F3 7E
@@ -104,21 +104,21 @@ org $0DED57	; 0x06ED57
 	lda $0202	; AD 02 02
 	and #$00FF	; 29 FF 00
 	cmp #$0010	; C9 10 00
-	bne $04		; D0 04
+	bne +		; D0 04
 	lda #$0018	; A9 18 00
 	tax		; AA
-	lda $0202	; AD 02 02
++	lda $0202	; AD 02 02
 	rts
 
 	sta $02		; 85 02
 	sep #$30	; E2 30
 	lda $7F5021	; AF 21 50 7F
 	cmp #$00	; C9 00
-	bne $06		; D0 06
+	bne +		; D0 06
 	cpx #$10	; E0 10
 	bne $02		; D0 02
 	ldx #$0D	; A2 0D
-	rep #$30	; C2 30
++	rep #$30	; C2 30
 	rts
 
 	stz $0202	; 9C 02 02
@@ -162,11 +162,11 @@ org $0DEE8D	; 0x06EE8D
 
 	lda $7F5021	; AF 21 50 7F
 	cmp #$01	; C9 01
-	beq $03		; F0 03
+	beq +		; F0 03
 	lda #$10	; A9 10
 	rts
 
-	lda #$00	; A9 00
++	lda #$00	; A9 00
 	sta $7F5021	; 8F 21 50 7F
 	lda $7F5020	; AF 20 50 7F
 	clc		; 18

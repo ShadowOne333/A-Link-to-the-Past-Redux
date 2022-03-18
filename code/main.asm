@@ -62,12 +62,10 @@ incsrc code/text/dialogue1.asm		; 1st dialogue table
 ;****************************************
 ;	Visual changes
 ;****************************************
+; Palette and color attribute modifications
 incsrc code/gfx/palettes.asm		; 
-;incsrc code/menus/new_gfx.asm		; 
-
 ; 24 Items Menu (New GFX)
-incsrc code/fixes/24items_menu_shovel.asm	; Make the shovel a separate item for 24 Item menu
-incsrc code/fixes/flute_fix.asm		; Fix flute being digged up constantly for the 24 Items menu
+incsrc code/menus/new_gfx.asm		; Main file for New GFX
 
 ;****************************************
 ;	Optional patches

@@ -61,12 +61,12 @@ org $00ECBB	; 0x006CBB
 org $07FDD0	; 0x03FDD0
 	lda $02E0	; AD E0 02
 	and #$00FF	; 29 FF 00
-	beq $05		; F0 05
+	beq +		; F0 05
 	sep #$30	; E2 30
 	inc $15		; E6 15
 	rtl		; 6B
 
-	jsl $1BEE1D	; 22 1D EE 1B
++	jsl $1BEE1D	; 22 1D EE 1B
 	rtl		; 6B
 
 org $0ED73C	; 0x07573C
@@ -92,14 +92,14 @@ org $06E840	; 0x036840
 org $09F7C0	; 0x04F7C0
 	lda $0E20,x	; BD 20 0E
 	cmp #$88	; C9 88
-	bne $09		; D0 09
+	bne +		; D0 09
 	lda $0EF0	; AD F0 0E
-	bne $0A		; D0 0A
+	bne ++		; D0 0A
 	lda #$06	; A9 06
-	bra $02		; 80 02
-	lda #$04	; A9 04
-	jsl $06ECE0	; 22 E0 EC 06
-	rtl
+	bra +++		; 80 02
++	lda #$04	; A9 04
++++	jsl $06ECE0	; 22 E0 EC 06
+++	rtl
 
 ;----------------------------------------
 ; Death Counter Fix (by Conn)

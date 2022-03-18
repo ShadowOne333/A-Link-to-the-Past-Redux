@@ -11,14 +11,14 @@ org $01D87D	; 0x00D87D
 
 org $0EFE00	; 0x077E00
 	cmp #$2727	; Check if block is already moved
-	beq $0F		; If yes branch to after first RTL
+	beq +		; If yes branch to after first RTL
 	lda $7F2000,x	; Load block value (e.g., 70, 71, 72...)
 	sta $7ED010	; Store to intermediate (unused) 7E/D000 is icerod
 	lda $00		; Set old block value to 00 to indicate that it is moved
 	sta $7F2000,x
 	rtl
                   
-	lda $7ED010	; Branch here if 27 - load intermediate value
++	lda $7ED010	; Branch here if 27 - load intermediate value
 	sta $7F2000,x 	; Store intermediate instead of 27
 	rtl
 
@@ -34,19 +34,19 @@ org $899D76	; 0x049D76
 org $A2F1A0	; 0x1171A0
 	tay
 	cmp #$1F	; Is hookshot in use?
-	beq $04
+	beq +
 	sta $0C4A,x	; If not let the hookshot routine proceed
 	rtl
 
-	lda $05FD	; Check first byte whether block is currently in-move
++	lda $05FD	; Check first byte whether block is currently in-move
 	beq $01
 	rtl		; If yes, return
 
 	lda $05FC	; Check other byte whether block is currently in-move
-	beq $01
+	beq +
 	rtl
 
-	tya		; Restore overwritten byte
++	tya		; Restore overwritten byte
 	sta $0C4A,x	; Continue hookshot routine
 	rtl
 
