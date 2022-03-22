@@ -10,11 +10,107 @@ incsrc "code/text/items.txt"
 ;****************************************
 ; 	Pointers for item entries
 ;****************************************
+; Pointer for default text
+org $0DECD1	; 0x06ECD1
+	lda defaultStart,x	; BD C9 F1, LDA $F1C9,x
+	skip 3			; STA $122C,y
+	lda defaultEnd,x	; BD D9 F1, LDA $F1D9,x
+
+; Pointer for Bottle text
+org $0DEBD6	; 0x06EBD6
+	lda bottleStart,x	; BD 49 F4, LDA $F449,x
+	skip 3			; STA $122C,y
+	lda bottleEnd,x		; BD 59 F4, LDA $F459,x
+
+; Pointer for Magic Powder text
+org $0DEC0D	; 0x06EC0D
+	lda powderStart,x	; BD 49 F5, LDA $F549,x
+	skip 3			; STA $122C,y
+	lda powderEnd,x		; BD 59 F5, LDA $F559,x
+
+; Pointer for Flute/Ocarina text
+org $0DEC7B	; 0x06EC7B
+	lda fluteStart,x	; BD 69 F5, LDA $F569,x
+	skip 3			; STA $122C,y
+	lda fluteEnd,x		; BD 79 F5, LDA $F579,x
+
+; Pointer for Mirror text
+org $0DEC44	; 0x06EC44
+	lda mirrorStart,x	; BD A9 F5, LDA $F5A9,x
+	skip 3			; STA $122C,y
+	lda mirrorEnd,x		; BD B9 F5, LDA $F5B9,x
+
+; Pointer for Bow text
+org $0DECB1	; 0x06ECB1
+	lda bowStart,x		; BD C9 F5, LDA $F5C9,x
+	skip 3			; STA $122C,y
+	lda bowEnd,x		; BD D9 F5, LDA $F5D9,x
 
 ;****************************************
 ; 	Main item text
 ;****************************************
 
+;----------------------------------------
+; Default description
+;----------------------------------------
+; Start of the item's text in the Pause Screen
+org $DF1C9	; 0x06F1C9
+defaultStart:
+	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
+defaultEnd:	; 0x06F1D9, $0DF1D9
+	db $6B,$25,$6C,$25,!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
+;----------------------------------------
+; Bottle
+;----------------------------------------
+org $DF449	; 0x06F449
+bottleStart:
+	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
+bottleEnd:	; 0x06F449, $0DF459
+	db $6B,$25,$6C,$25,!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
+;----------------------------------------
+; Magic Powder
+;----------------------------------------
+org $DF549	; 0x06F549
+powderStart:
+	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
+powderEnd:	; 0x06F559, $0DF559
+	db $6B,$25,$6C,$25,!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
+;----------------------------------------
+; Flute / Ocarina
+;----------------------------------------
+org $DF569	; 0x06F569
+fluteStart:
+	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
+fluteEnd:	; 0x06F579, $0DF579
+	db $6B,$25,$6C,$25,!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
+;----------------------------------------
+; Mirror
+;----------------------------------------
+org $DF5A9	; 0x06F5A9
+mirrorStart:
+	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
+mirrorEnd:	; 0x06F5B9, $0DF5B9
+	db $6B,$25,$6C,$25,!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
+;----------------------------------------
+; Bow
+;----------------------------------------
+org $DF5C9	; 0x06F5C9
+bowStart:
+	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
+bowEnd:		; 0x06F5D9, $0DF5D9
+	db $6B,$25,$6C,$25,!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
 ; Bomb / Bombs
 ;----------------------------------------
