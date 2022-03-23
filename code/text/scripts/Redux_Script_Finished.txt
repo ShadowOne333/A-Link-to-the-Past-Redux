@@ -1,7 +1,6 @@
-
 [Speed 00][3]      [2]    >[Choose]
 [Speed 00][2]      [3]    >[Choose]
-[Speed 00]Save And Continue[2]Save And Quit[3]Do Not Save And Continue
+[Speed 00]Save and Continue[2]Save and Quit[3]Do Not Save and Continue
 [Speed 00]0- [Number 00]. 1- [Number 01][2]2- [Number 02]. 3- [Number 03]
 You can't enter with something[2]following you.
 [Speed 00][1]>[2]  [3]  [Choose3]
@@ -33,7 +32,7 @@ Yes, it was [Name] who helped[2]me escape from the dungeon![3]When I was captive
 [Window 02][Speed 03]Help me...[2]I am in the dungeon of the[3]castle.[Waitkey][Scroll]I know there is a hidden path[Scroll]from outside of the castle to[Scroll]the garden inside.
 There is a secret passage in[2]the throne room that leads[3]to the Sanctuary.[Waitkey][Scroll]I'm sure the old man there[Scroll]will help us.
 That ornamental shelf should[2]open.  Do you have a light?[3]It's pitch dark inside and you[Waitkey][Scroll]can't see without one.[Scroll]If you're ready, let's go![Scroll]Help me push it from the left!
-You have to pull the lever to[2]open the door.  (Press the [A][3]Button and hold Down on the[Waitkey][Scroll]Control Pad. )
+You have to pull the lever to[2]open the door.  (Press the [A][3]Button and hold Down on the[Waitkey][Scroll]Control Pad.)
 All right,  let's get out of here[2]before the priest notices.  I[3]know a secret path, but first[Waitkey][Scroll]we have to go to the[Scroll]first floor.  Let's go!
 [Name], listen carefully.  The[2]priest is magically controlling[3]all the soldiers in the castle.[Waitkey][Scroll]I fear the worst for[Scroll]my father...[Scroll]The priest is an inhuman fiend[Waitkey][Scroll]with strong magical powers![Scroll]...   ...   ...[Waitkey][Scroll]Do you understand?[Scroll]    > Yes[Scroll]       Not at all[Choose]
 You should follow the marks[2]the elder made on your map[3]when you explore.[Waitkey][Scroll]If you don't know what to do[Scroll]next, you can also visit a[Scroll]fortune teller.

@@ -37,7 +37,8 @@
 !Line1 = $74
 !Line2 = $75
 !Line3 = $76
-!Color07 = $77,$07	; Game only seems to reference Color #7 
+!Color07 = $77,$07	; Game only seems to reference Color #7
+!Wait01 = $78,$01	; 
 !Wait02 = $78,$02	; 
 !Wait03 = $78,$03	; 
 !Wait04 = $78,$04	; 
