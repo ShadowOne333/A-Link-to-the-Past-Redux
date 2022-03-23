@@ -16,7 +16,7 @@ org $0DECD1	; 0x06ECD1
 	skip 3			; STA $122C,y
 	lda defaultEnd,x	; BD D9 F1, LDA $F1D9,x
 
-; Pointer for Bottle text
+; Pointer for Mushroom (3) text
 org $0DEBD6	; 0x06EBD6
 	lda mushroom3Start,x	; BD 49 F4, LDA $F449,x
 	skip 3			; STA $122C,y
@@ -30,9 +30,9 @@ org $0DEC0D	; 0x06EC0D
 
 ; Pointer for Flute/Ocarina text
 org $0DEC7B	; 0x06EC7B
-	lda fluteStart,x	; BD 69 F5, LDA $F569,x
+	lda flute1Start,x	; BD 69 F5, LDA $F569,x
 	skip 3			; STA $122C,y
-	lda fluteEnd,x		; BD 79 F5, LDA $F579,x
+	lda flute1End,x		; BD 79 F5, LDA $F579,x
 
 ; Pointer for Mirror text
 org $0DEC44	; 0x06EC44
@@ -40,323 +40,345 @@ org $0DEC44	; 0x06EC44
 	skip 3			; STA $122C,y
 	lda mirrorEnd,x		; BD B9 F5, LDA $F5B9,x
 
-; Pointer for Bow text
+; Pointer for Bow & Arrows text
 org $0DECB1	; 0x06ECB1
-	lda bowStart,x		; BD C9 F5, LDA $F5C9,x
+	lda arrowsStart,x	; BD C9 F5, LDA $F5C9,x
 	skip 3			; STA $122C,y
-	lda bowEnd,x		; BD D9 F5, LDA $F5D9,x
+	lda arrowsEnd,x		; BD D9 F5, LDA $F5D9,x
 
 ;****************************************
 ; 	Main item text
 ;****************************************
 
 ;----------------------------------------
-; Default description
+; Default description / BOW
 ;----------------------------------------
 ; Start of the item's text in the Pause Screen
 org $DF1C9	; 0x06F1C9
 defaultStart:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,!Blank,"B_O_"
 defaultEnd:	; 0x06F1D9, $0DF1D9
-	db $6B,$25,$6C,$25,!Blank,!Blank
+	db "W_",!Blank,!Blank,!Blank
 	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Boomerang
+; BOOMERANG
 ;----------------------------------------
 org $DF1E9	; 0x06F1E9
 boomerangStart:
-	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,!Blank,!Blank,"B_O_O_M_E_"
 boomerangEnd:	; 0x06F1F9, $0DF1F9
-	db !Boomerang
+	db "R_A_N_G_",!Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Hookshot
+; HOOKSHOT
 ;----------------------------------------
 org $DF209	; 0x06F209
 hookshotStart:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db "H_O_O_K_"
 hookshotEnd:	; 0x06F219, $0DF219
-	db "H_O_O_K_S_H_O_T_"
+	db "S_H_O_T_"
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Bomb / Bombs
+; BOMBS
 ;----------------------------------------
 org $DF229	; 0x06F229
 bombStart:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,"B_O_M_"
 bombEnd:	; 0x06F239, $0DF239
-	db "B_O_M_B_"
+	db "B_S_",!Blank,!Blank
 	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Mushroom
+; MUSHROOM
 ;----------------------------------------
 org $DF249	; 0x06F249
 mushroomStart:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db "M_U_S_H_"
 mushroomEnd:	; 0x06F259, $0DF259
-	db "M_U_S_H_R_O_O_M_"
+	db "R_O_O_M_"
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Firerod
+; FIRE ROD
 ;----------------------------------------
 org $DF269	; 0x06F269
 firerodStart:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db "F_I_R_E_"
 firerodEnd:	; 0x06F279, $0DF279
-	db "F_I_R_E_R_O_D_",!Blank
+	db !Blank,"R_O_D_",!Blank
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Icerod
+; ICE ROD
 ;----------------------------------------
 org $DF289	; 0x06F289
 icerodStart:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db "I_C_E_",!Blank
 icerodEnd:	; 0x06F299, $0DF299
-	db "I_C_E_R_O_D_",!Blank,!Blank
+	db "R_O_D_",!Blank
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Bombos (Medallion)
+; BOMBOS (Medallion)
 ;----------------------------------------
 org $DF2A9	; 0x06F2A9
 bombosStart:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,"B_O_M_"
 bombosEnd:	; 0x06F2B9, $0DF2B9
-	db "B_O_M_B_O_S_",!Blank,!Blank
+	db "B_O_S_",!Blank
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Ether (Medallion)
+; ETHER (Medallion)
 ;----------------------------------------
 org $DF2C9	; 0x06F2C9
 etherStart:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,"E_T_H_"
 etherEnd:	; 0x06F2D9, $0DF2D9
-	db "E_T_H_E_R_",!Blank,!Blank
+	db "E_R_",!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Quake (Medallion)
+; QUAKE (Medallion)
 ;----------------------------------------
 org $DF2E9	; 0x06F2E9
 quakeStart:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,"Q_U_A_"
 quakeEnd:	; 0x06F2F9, $0DF2F9
-	db "Q_U_A_K_E_",!Blank,!Blank,!Blank
+	db "K_E_",!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Lamp
+; LANTERN
 ;----------------------------------------
 org $DF309	; 0x06F309
 lampStart:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db "L_A_N_T_"
 lampEnd:	; 0x06F319, $0DF319
-	db "L_A_M_P_",!Blank,!Blank,!Blank,!Blank
+	db "E_R_N_",!Blank
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Magic Hammer
+; MAGIC HAMMER
 ;----------------------------------------
 org $DF329	; 0x06F329
 hammerStart:
-	db "M_A_G_I_C_",!Blank,!Blank,!Blank
+	db !Blank,!Blank,"M_A_G_I_C_",!Blank
 hammerEnd:	; 0x06F339, $0DF339
-	db !Blank,!Blank,"H_A_M_M_E_R_"
+	db "H_A_M_M_E_R_",!Blank,!Blank
 ;----------------------------------------
-; Shovel
+; SHOVEL
 ;----------------------------------------
 org $DF349	; 0x06F349
 shovelStart:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,"S_H_O_"
 shovelEnd:	; 0x06F359, $0DF359
-	db "S_H_O_V_E_L_",!Blank,!Blank
+	db "V_E_L_",!Blank
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Bug-Catching Net
+; BUG-CATCHING NET
 ;----------------------------------------
 org $DF369	; 0x06F369
 bugStart:
-	db $00,$24,$01,$24,$02,$24,$03,$24
-	db $04,$24,$05,$24,$06,$24,$07,$24
-bugEnd:	; 0x06F379, $0DF379
-	db $08,$24,$09,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db "B_U_G_-_C_A_T_C_"
+bugEnd:		; 0x06F379, $0DF379
+	db "H_I_N_G_",!Blank,"N_E_T_"
 ;----------------------------------------
-; Book of Mudora
+; TOME OF MUDORA
 ;----------------------------------------
 org $DF389	; 0x06F389
 mudoraStart:
-	db "B_O_O_K_",!Blank,"O_F_",!Blank
+	db !Blank,"T_O_M_E_",!Blank,"O_F_"
 mudoraEnd:	; 0x06F399, $0DF399
-	db "M_U_D_O_R_A_",!Blank,!Blank
+	db !Blank,"M_U_D_O_R_A_",!Blank
 ;----------------------------------------
-; Mushroom (2)
+; MUSHROOM (2)
 ;----------------------------------------
 org $DF3A9	; 0x06F3A9
 mushroom2Start:
 	db !Blank,!Blank,!Blank,!Blank
+	db "M_U_S_H_"
 mushroom2End:	; 0x06F3B9, $0DF3B9
-	db "M_U_S_H_R_O_O_M_",!Blank
+	db "R_O_O_M_"
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Cane of Somaria
+; CANE OF SOMARIA
 ;----------------------------------------
 org $DF3C9	; 0x06F3C9
 somariaStart:
 	db "C_A_N_E_",!Blank,"O_F_",!Blank
 somariaEnd:	; 0x06F3D9, $0DF3D9
-	db !Blank,"S_O_M_A_R_I_A_"
+	db "S_O_M_A_R_I_A_",!Blank
 ;----------------------------------------
-; Cane of Byrna
+; CANE OF BYRNA
 ;----------------------------------------
 org $DF3E9	; 0x06F3E9
 byrnaStart:
-	db "C_A_N_E_",!Blank,"O_F_",!Blank
+	db !Blank,!Blank,"C_A_N_E_",!Blank,"O_"
 byrnaEnd:	; 0x06F3F9, $0DF3F9
-	db !Blank,!Blank,!Blank,"B_Y_R_N_A_"
+	db "F_",!Blank,"B_Y_R_A_",!Blank,!Blank
 ;----------------------------------------
-; Magic Cape
+; MAGIC CAPE
 ;----------------------------------------
 org $DF409	; 0x06F409
 capeStart:
-	db "M_A_G_I_C_",!Blank,!Blank,!Blank
+	db !Blank,!Blank,!Blank,"M_A_G_I_C_"
 capeEnd:	; 0x06F419, $0DF419
-	db !Blank,!Blank,!Blank,"C_A_P_E_",!Blank
+	db !Blank,"C_A_P_E_",!Blank,!Blank,!Blank
 ;----------------------------------------
-; Blank
+; BLANK
 ;----------------------------------------
 org $DF429	; 0x06F429
 blankStart:
 	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
 blankEnd:	; 0x06F439, $0DF439
 	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Mushroom (3)
+; MUSHROOM (3)
 ;----------------------------------------
 org $DF449	; 0x06F449
 mushroom3Start:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db "M_U_S_H_"
 mushroom3End:	; 0x06F459, $0DF459
-	db "M_U_S_H_R_O_O_M_",!Blank
+	db "R_O_O_M_"
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Bottle
+; BOTTLE
 ;----------------------------------------
 org $DF469	; 0x06F469
 bottleStart:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,"B_O_T_"
 bottleEnd:	; 0x06F479, $0DF479
-	db "B_O_T_T_L_E_",!Blank,!Blank
+	db "T_L_E_",!Blank
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Life Medicine
+; RED POTION
 ;----------------------------------------
 org $DF489	; 0x06F489
 lifeStart:
-	db "L_I_F_E_",!Blank,!Blank,!Blank,!Blank
+	db !Blank,!Blank,!Blank
+	db "R_E_D_",!Blank,"P_"
 lifeEnd:	; 0x06F499, $0DF499
-	db "M_E_D_I_C_I_N_E_"
+	db "O_T_I_O_N_",!Blank,!Blank,!Blank
 ;----------------------------------------
-; Magic Medicine
+; GREEN POTION
 ;----------------------------------------
 org $DF4A9	; 0x06F4A9
 magicStart:
-	db "M_A_G_I_C_",!Blank,!Blank,!Blank
+	db !Blank,!Blank
+	db "G_R_E_E_N_",!Blank
 magicEnd:	; 0x06F4B9, $0DF4B9
-	db "M_E_D_I_C_I_N_E_"
+	db "P_O_T_I_O_N_",!Blank,!Blank
 ;----------------------------------------
-; Cure-All Medicine
+; BLUE POTION
 ;----------------------------------------
 org $DF4C9	; 0x06F4C9
 cureallStart:
-	db "C_U_R_E_-_A_L_L_"
-cureallEnd:	; 0x06F4D9, $0DF4D9
-	db "M_E_D_I_C_I_N_E_"
+	db !Blank,!Blank
+	db "B_L_U_E_",!Blank,"P_"
+cureall:	; 0x06F4D9, $0DF4D9
+	db "O_T_I_O_N_",!Blank,!Blank,!Blank
 ;----------------------------------------
-; Faerie
+; FAIRY
 ;----------------------------------------
 org $DF4E9	; 0x06F4E9
 faerieStart:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,"F_A_I_"
 faerieEnd:	; 0x06F4F9, $0DF4F9
-	db "F_A_E_R_I_E_",!Blank,!Blank
+	db "R_Y_",!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Bee
+; BEE
 ;----------------------------------------
 org $DF509	; 0x06F509
 beeStart:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,!Blank,"B_E_"
 beeEnd:	; 0x06F519, $0DF519
-	db "B_E_E_",!Blank,!Blank,!Blank,!Blank,!Blank
+	db "E_",!Blank,!Blank,!Blank
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Good Bee
+; GOLDEN BEE
 ;----------------------------------------
 org $DF529	; 0x06F529
 goodbeeStart:
-	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,!Blank,!Blank
+	db "G_O_L_D_E_"
 goodbeeEnd:	; 0x06F539, $0DF539
-	db "G_O_O_D_",!Blank,"B_E_E_"
+	db "N_",!Blank,"B_E_E_"
+	db !Blank,!Blank,!Blank
 ;----------------------------------------
-; Magic Powder
+; MAGIC POWDER
 ;----------------------------------------
 org $DF549	; 0x06F549
 powderStart:
-	db "M_A_G_I_C_",!Blank,!Blank,!Blank
+	db !Blank,!Blank,"M_A_G_I_C_",!Blank
 powderEnd:	; 0x06F559, $0DF559
-	db !Blank,"P_O_W_D_E_R_",!Blank
+	db "P_O_W_D_E_R_",!Blank,!Blank
 ;----------------------------------------
-; Flute / Ocarina (1)
+; OCARINA (1)
 ;----------------------------------------
 org $DF569	; 0x06F569
 flute1Start:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db "O_C_A_R_"
 flute1End:	; 0x06F579, $0DF579
-	db "F_L_U_T_E_",!Blank,!Blank,!Blank
+	db "I_N_A_",!Blank
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Flute / Ocarina (2)
+; OCARINA (2)
 ;----------------------------------------
 org $DF589	; 0x06F589
 flute2Start:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db "O_C_A_R_"
 flute2End:	; 0x06F599, $0DF599
-	db "F_L_U_T_E_",!Blank,!Blank,!Blank
+	db "I_N_A_",!Blank
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Mirror
+; MAGIC MIRROR
 ;----------------------------------------
 org $DF5A9	; 0x06F5A9
 mirrorStart:
-	db "M_A_G_I_C_",!Blank,!Blank,!Blank
+	db !Blank,!Blank,"M_A_G_I_C_",!Blank
 mirrorEnd:	; 0x06F599, $0DF599
-	db !Blank,!Blank,"M_I_R_R_O_R_"
+	db "M_I_R_R_O_R_",!Blank,!Blank
 ;----------------------------------------
-; Bow & Arrows
+; BOW AND ARROWS
 ;----------------------------------------
 org $DF5C9	; 0x06F5C9
 arrowsStart:
-	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,"B_O_W_"
+	db !Blank,"A_N_D_"
 arrowsEnd:	; 0x06F5D9, $0DF5D9
-	db !Bow,!Ampersand,!Arrows
+	db !Blank,"A_R_R_O_W_S_",!Blank
 ;----------------------------------------
-; Bow 
+; BOW 
 ;----------------------------------------
 org $DF5E9	; 0x06F5E9
 bowStart:
 	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db !Blank,!Blank,"B_O_"
 bowEnd:		; 0x06F5F9, $0DF5F9
-	db !Bow,!Blank,!Blank
+	db "W_",!Blank,!Blank,!Blank
 	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Bow & Silver Arrows 
+; BOW & SILVER ARROWS
 ;----------------------------------------
 org $DF609	; 0x06F609
 silverStart:
-	db !Bow,!Blank,!Ampersand,!Blank,!Blank,!Blank
-silverEnd:	; 0x06F619, $0DF619
-	db !SilverArrows
+	db !Blank,!Blank,!Bow,!Ampersand
+	db !SilverArrows,!Blank,!Blank
+org $DF619	; 0x06F619, $0DF619
+silverEnd:
+	; Portion of the "Silver Arrows" text goes here
 ;----------------------------------------
 
-warnpc $0DF630
+warnpc $0DF629
