@@ -75,7 +75,7 @@ warnpc $018000
 ; Main script text
 incsrc text/vwf.asm			; Variable width font modifications 
 incsrc text/dialogue1.asm		; 1st dialogue table
-;incsrc text/dialogue2.asm		; 2nd dialogue table
+incsrc text/dialogue2.asm		; 2nd dialogue table
 
 ; Item names text
 incsrc text/items.asm

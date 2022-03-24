@@ -23,6 +23,13 @@ sed -i 's|\[Up\]|!{Up}|g' Retranslation.txt Redux.txt
 sed -i 's|\[Down\]|!{Down}|g' Retranslation.txt Redux.txt
 sed -i 's|\[Left\]|!{Left}|g' Retranslation.txt Redux.txt
 sed -i 's|\[Right\]|!{Right}|g' Retranslation.txt Redux.txt
+sed -i 's|\[1HeartL\]|!1HeartL|g' Retranslation.txt Redux.txt
+sed -i 's|\[1HeartR\]|!1HeartR|g' Retranslation.txt Redux.txt
+sed -i 's|\[2HeartL\]|!2HeartL|g' Retranslation.txt Redux.txt
+sed -i 's|\[3HeartL\]|!3HeartL|g' Retranslation.txt Redux.txt
+sed -i 's|\[3HeartR\]|!3HeartR|g' Retranslation.txt Redux.txt
+sed -i 's|\[4HeartL\]|!4HeartL|g' Retranslation.txt Redux.txt
+sed -i 's|\[4HeartR\]|!4HeartR|g' Retranslation.txt Redux.txt
 sed -i 's|\[Ankh2\]|!{Ankh2}|g' Retranslation.txt Redux.txt
 sed -i 's|\[Waves2\]|!{Waves2}|g' Retranslation.txt Redux.txt
 sed -i 's|\[NextPic\]|,!NextPic|g' Retranslation.txt Redux.txt
@@ -163,6 +170,10 @@ sed -i 's|{!{do}ts}|!{Dots}|g' Retranslation.txt Redux.txt
 sed -i 's|!Choo!{se}|!Choose|g' Retranslation.txt Redux.txt
 sed -i 's|!{L!{in}kL}|!{LinkL}|g' Retranslation.txt Redux.txt
 sed -i 's|!{L!{in}kR}|!{LinkR}|g' Retranslation.txt Redux.txt
+sed -i 's|1H!{ear}t|1Heart|g' Retranslation.txt Redux.txt
+sed -i 's|2H!{ear}t|2Heart|g' Retranslation.txt Redux.txt
+sed -i 's|3H!{ear}t|3Heart|g' Retranslation.txt Redux.txt
+sed -i 's|4H!{ear}t|4Heart|g' Retranslation.txt Redux.txt
 sed -i 's|!L!{in}e|!Line|g' Retranslation.txt Redux.txt
 sed -i 's|Line1|Line1\n\tdb |g' Retranslation.txt Redux.txt
 sed -i 's|Line2|Line2\n\tdb |g' Retranslation.txt Redux.txt
@@ -173,10 +184,12 @@ sed -i 's|!SelChng|!SelChng,!End\n|g' Retranslation.txt Redux.txt
 sed -i 's|!W!{in}!{do}w00|!Window00|g' Retranslation.txt Redux.txt
 sed -i 's|!W!{in}!{do}w01|!Window01|g' Retranslation.txt Redux.txt
 sed -i 's|!W!{in}!{do}w02|!Window02|g' Retranslation.txt Redux.txt
+sed -i 's|!Wa!{it}01|!Wait01|g' Retranslation.txt Redux.txt
 sed -i 's|!Wa!{it}02|!Wait02|g' Retranslation.txt Redux.txt
 sed -i 's|!Wa!{it}03|!Wait03|g' Retranslation.txt Redux.txt
 sed -i 's|!Wa!{it}04|!Wait04|g' Retranslation.txt Redux.txt
 sed -i 's|!Wa!{it}05|!Wait05|g' Retranslation.txt Redux.txt
+sed -i 's|!Wa!{it}09|!Wait09|g' Retranslation.txt Redux.txt
 sed -i 's|!Pos!{it}i!{on}00|!Position00|g' Retranslation.txt Redux.txt
 sed -i 's|!Pos!{it}i!{on}01|!Position01|g' Retranslation.txt Redux.txt
 sed -i 's|!Scrol!{lo}ut.|!Scroll\nout.|g' Retranslation.txt Redux.txt
@@ -227,6 +240,7 @@ sed -i 's|th!{er}e|!{the}!{re}|g' Retranslation.txt Redux.txt
 sed -i 's|f!{a!{st}}!{er_}|f!{ast}!{er_}|g' Retranslation.txt Redux.txt
 sed -i 's|bl!{a!{st}}s|bl!{ast}s|g' Retranslation.txt Redux.txt
 sed -i 's|d!{ev}!{a!{st}}!{at}!{ing_}|d!{ev}!{ast}!{at}!{ing_}|g' Retranslation.txt Redux.txt
+sed -i 's|Outc!{a!{st}}s|Outc!{ast}s|g' Retranslation.txt Redux.txt
 sed -i 's|l!{a!{st}}|l!{ast}|g' Retranslation.txt Redux.txt
 sed -i 's|E!{a!{st}}|E!{ast}|g' Retranslation.txt Redux.txt
 sed -i 's|E!{a!{st}}!{er}n|E!{ast}!{er}n|g' Retranslation.txt Redux.txt
