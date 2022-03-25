@@ -90,7 +90,7 @@ incsrc text/items.asm
 incsrc code/gfx/palettes.asm		; 
 
 ; 24 Items Menu (New GFX)
-incsrc code/menus/new_gfx.asm		; Main file for New GFX
+;incsrc code/menus/new_gfx.asm		; Main file for New GFX
 
 ;****************************************
 ;	Optional patches
@@ -99,5 +99,5 @@ incsrc code/menus/new_gfx.asm		; Main file for New GFX
 
 ; Include optional patches
 ; Uncomment desired patches inside "optional.asm" for them to compile
-;incsrc code/optional.asm
+incsrc code/optional.asm
 
