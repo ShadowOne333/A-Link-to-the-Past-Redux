@@ -55,19 +55,30 @@ Internal_Rom_Header:
 warnpc $018000
 
 ;****************************************
+;	Expand ROM to 2MB
+;****************************************
+; Hacky method of expansion, could be changed later on
+org $3FFFFF
+	db $00
+
+;****************************************
 ;	ALttP DX changes
 ;****************************************
 ;incsrc dx/loz3-dx.asm	; Code of ALttP DX (v1.6)
+;incsrc fixes/bugfixes.asm	; General bugfixes (most DX code)
 
 ;****************************************
 ;	Gameplay changes
 ;****************************************
-;incsrc fixes/bugfixes.asm	; General bugfixes (most DX code)
 ;incsrc fixes/bunny_palette.asm	; Bunny palette fix (by rainponcho)
 ;incsrc gameplay/max_consumables.asm 	; Implement "Max Consumables Fix" by Kasuto
 ;incsrc gameplay/misc.asm	; Miscellaneous gameplay changes
 ;incsrc gameplay/move_blocks_infinitely.asm	; Allows movement of blocks several times
 
+;****************************************
+;	Gameplay changes
+;****************************************
+incsrc layouts/overworld_layouts.asm	; Layout modifications to the overworld for Redux
 
 ;****************************************
 ;	Text changes
@@ -76,6 +87,8 @@ warnpc $018000
 incsrc text/vwf.asm			; Variable width font modifications 
 incsrc text/dialogue1.asm		; 1st dialogue table
 incsrc text/dialogue2.asm		; 2nd dialogue table
+;incsrc text/retranslation/dialogue1.asm	; 1st dialogue for the Retranslation & Sparrow
+;incsrc text/retranslation/dialogue2.asm	; 2nd dialogue for the Retranslation by Chiken Knife & Sparrow
 
 ; Item names text
 incsrc text/items.asm
@@ -87,7 +100,7 @@ incsrc text/items.asm
 ;	Visual changes
 ;****************************************
 ; Palette and color attribute modifications
-incsrc code/gfx/palettes.asm		; 
+incsrc gfx/palettes.asm		; 
 
 ; 24 Items Menu (New GFX)
 ;incsrc code/menus/new_gfx.asm		; Main file for New GFX

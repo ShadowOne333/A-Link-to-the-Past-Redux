@@ -240,10 +240,16 @@ sed -i 's|th!{er}e|!{the}!{re}|g' Retranslation.txt Redux.txt
 sed -i 's|f!{a!{st}}!{er_}|f!{ast}!{er_}|g' Retranslation.txt Redux.txt
 sed -i 's|bl!{a!{st}}s|bl!{ast}s|g' Retranslation.txt Redux.txt
 sed -i 's|d!{ev}!{a!{st}}!{at}!{ing_}|d!{ev}!{ast}!{at}!{ing_}|g' Retranslation.txt Redux.txt
-sed -i 's|Outc!{a!{st}}s|Outc!{ast}s|g' Retranslation.txt Redux.txt
+sed -i 's|Outc!{a!{st}}|Outc!{ast}|g' Retranslation.txt Redux.txt
+
 sed -i 's|l!{a!{st}}|l!{ast}|g' Retranslation.txt Redux.txt
 sed -i 's|E!{a!{st}}|E!{ast}|g' Retranslation.txt Redux.txt
 sed -i 's|E!{a!{st}}!{er}n|E!{ast}!{er}n|g' Retranslation.txt Redux.txt
+sed -i 's|C!{at}!{a!{st}}rophe|C!{at}!{ast}rophe|g' Retranslation.txt Redux.txt
+sed -i 's|!{ent}husi!{a!{st}}ically|!{ent}husi!{ast}ically|g' Retranslation.txt Redux.txt
+sed -i 's|p!{a!{st}}|p!{ast}|g' Retranslation.txt Redux.txt
+sed -i 's|w!{a!{st}}e|w!{ast}e|g' Retranslation.txt Redux.txt
+sed -i 's|b!{a!{st}}ard|b!{ast}ard|g' Retranslation.txt Redux.txt
 sed -i 's|l!{a!{st}}|l!{ast}|g' Retranslation.txt Redux.txt
 sed -i 's|e!{a!{st}}|e!{ast}|g' Retranslation.txt Redux.txt
 sed -i 's|t!{a!{st}}e|t!{ast}e|g' Retranslation.txt Redux.txt

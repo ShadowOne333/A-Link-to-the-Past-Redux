@@ -22,9 +22,8 @@ incsrc "code/text/control_codes.txt"
 ; Text pointer for dialogue table 2
 org $0ED436	; 0x075436
 	lda #(dialogue_table2)		; lda #$DF40	; A9 40 DF
-	sta $00		; 85 00
+	skip 2			; STA $00
 	lda #(dialogue_table2)>>16	; lda #$000E	; A9 0E 00
-	sta $02		; 85 02
 
 ;****************************************
 ;	Dialogue
