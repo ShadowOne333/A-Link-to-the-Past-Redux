@@ -64,7 +64,7 @@ org $3FFFFF
 ;****************************************
 ;	ALttP DX changes
 ;****************************************
-;incsrc dx/loz3-dx.asm	; Code of ALttP DX (v1.6)
+;incsrc loz3-dx/loz3-dx.asm	; Code of ALttP DX (v1.6)
 ;incsrc fixes/bugfixes.asm	; General bugfixes (most DX code)
 
 ;****************************************
