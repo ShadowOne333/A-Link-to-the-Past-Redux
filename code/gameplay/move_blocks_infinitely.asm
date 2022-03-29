@@ -17,7 +17,7 @@ org $0EFE00	; 0x077E00
 	lda $00		; Set old block value to 00 to indicate that it is moved
 	sta $7F2000,x
 	rtl
-                  
+
 +	lda $7ED010	; Branch here if 27 - load intermediate value
 	sta $7F2000,x 	; Store intermediate instead of 27
 	rtl

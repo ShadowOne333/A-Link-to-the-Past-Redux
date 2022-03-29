@@ -8,8 +8,6 @@
 ;****************************************
 arch snes.cpu		; Set processor architecture (SNES)
 lorom			; Switch to LoROM mapping mode
-;banksize $8000		; Set the size of each bank
-;header			; rom has a header
 
 ;****************************************
 ;	Global compilation flags
@@ -17,9 +15,12 @@ lorom			; Switch to LoROM mapping mode
 ; This patch is only for A Link to the Past ROM
 check title "THE LEGEND OF ZELDA  "
 
-!fastrom = 0		; FastROM compilation
-!_snes_utils_inc = 0	; SNES Utils (by qwertymodo)
+!fastrom = 1		; FastROM compilation
+!lorom = 1		; LoROM flag
+!hirom = 0		; HiROM flag
+!exhirom = 0		; ExHiROM flag
 !houlihan = 0		; Change the Houlihan's room name
+!_snes_utils_inc = 1	; SNES Utils (by qwertymodo)
 
 ;****************************************
 ;	Internal ROM Header
@@ -64,7 +65,7 @@ org $3FFFFF
 ;****************************************
 ;	ALttP DX changes
 ;****************************************
-;incsrc loz3-dx/loz3-dx.asm	; Code of ALttP DX (v1.6)
+incsrc loz3-dx/loz3-dx.asm	; Code of ALttP DX (v1.6)
 ;incsrc fixes/bugfixes.asm	; General bugfixes (most DX code)
 
 ;****************************************

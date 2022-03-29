@@ -15,29 +15,29 @@
 
 incsrc "snes_utils.inc"
 
-if !fastrom = 1 
-	incsrc "FastROM-ASM.asm"
-endif
+;if !fastrom = 1 
+;	incsrc "FastROM-ASM.asm"
+;endif
 
-if !houlihan
-	org $0E4356
-	 ;  B   e   n   _   W   h   i   t   m   a   n   .   _
-    	db $01,$1E,$27,$59,$16,$21,$22,$2D,$26,$1A,$27,$41,$59
-endif
+;if !houlihan = 1
+;	org $0E4356
+	;   B   e   n   _   W   h   i   t   m   a   n   .   _
+;	db $01,$1E,$27,$59,$16,$21,$22,$2D,$26,$1A,$27,$41,$59
+;endif
 
-;incsrc "code/dx/loz3-msu.asm"
-;incsrc "code/dx/Kholdstare_shell.asm"
-    
-fseek($07FB00)
-;incsrc "code/dx/ast_dashing.asm"
-;incsrc "code/dx/bunny_glove_fix.asm"
-;incsrc "code/dx/cane_somaria_fix.asm"
-;incsrc "code/dx/cape_fix.asm"
-;incsrc "code/dx/collect_items_sword.asm"
-;incsrc "code/dx/death_counter.asm"
-;incsrc "code/dx/flickering_fix.asm"
-;incsrc "code/dx/flute_fix.asm"
-;incsrc "code/dx/l_r_item_switch.asm"
-;incsrc "code/dx/mothula_l4.asm"
-;incsrc "code/dx/pott_l2sword.asm"
-;incsrc "code/dx/shield_fix.asm"
+incsrc "loz3-msu.asm"
+;incsrc "Kholdstare_shell.asm"
+
+%fseek($07FB00)
+;incsrc "ast_dashing.asm"
+;incsrc "bunny_glove_fix.asm"
+;incsrc "cane_somaria_fix.asm"
+;incsrc "cape_fix.asm"
+;incsrc "collect_items_sword.asm"
+;incsrc "death_counter.asm"
+;incsrc "flickering_fix.asm"
+;incsrc "flute_fix.asm"
+;incsrc "l_r_item_switch.asm"
+;incsrc "mothula_l4.asm"
+;incsrc "pott_l2sword.asm"
+;incsrc "shield_fix.asm"

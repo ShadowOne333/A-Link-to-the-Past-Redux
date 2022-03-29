@@ -19,14 +19,10 @@
 ;	jsf:   Jump to Subroutine Long FastROM.
 ;****************************************************************
 
-;if !{defined _snes_utils_inc} {
-	;define _snes_utils_inc()
+includeonce
 
-if !{defined(_snes_utils_inc)}
-
-	!_snes_utils_inc()
-
-	;architecture wdc65816
+;if not(defined("_snes_utils_inc"))
+	;!_snes_utils_inc = 1
 
 	if !fastrom = 1
 	    !rombank = $800000
@@ -34,85 +30,35 @@ if !{defined(_snes_utils_inc)}
 	    !rombank = $000000
 	endif
 
-	macro seek(variable address)
-		if !hirom
-			org (address) & $3FFFFF
-			base address
-		elseif !exhirom
-			org (address & 0x3FFFFF) | ((~address >> 1) & 0x400000)
-			base address
-		else	; default to lorom
-			org ((address & $7F0000) >> 1) | (address & $7FFF)
-			base address
-		endif
+	macro seek(address)
+		;origin ((<address>&$7F0000)>>1)|(<address>&$7FFF)
+		org <address>
 	endmacro
 
-	macro sseek(variable address)
-		if !hirom
-			org (address) & $3FFFFF
-			base address & ~{rombank}
-		elseif !exhirom
-			org (address & 0x3FFFFF) | ((~address >> 1) & 0x400000)
-			base address & ~{rombank}
-		else
-			org ((address & $7F0000) >> 1) | (address & $7FFF)
-			base address & ~{rombank}
-		endif
+	macro sseek(address)
+		;origin ((<address>&$7F0000)>>1)|(<address>&$7FFF)
+		org <address>&~!rombank
 	endmacro
 
-	macro fseek(variable address)
-		if !hirom
-			org (address) & $3FFFFF
-			base address | {rombank}
-		elseif !exhirom
-			org (address & 0x3FFFFF) | ((~address >> 1) & 0x400000)
-			base address | {rombank}
-		else
-			org ((address & $7F0000) >> 1) | (address & $7FFF)
-			base address | {rombank}
-		endif
+	macro fseek(address)
+		;origin ((address&$7F0000)>>1)|(address&$7FFF)
+		org <address>|!rombank
 	endmacro
 
-	macro org(variable address)
-	    seek(address)
+	macro jmf(address)
+		jml <address>|!rombank
 	endmacro
 
-	macro jmf(variable address)
-	    jml address | {rombank}
+	macro jsf(address)
+		jsl <address>|!rombank
 	endmacro
 
-	macro jsf(variable address)
-	    jsl address | {rombank}
-	endmacro
+	; checksum, save_state, load_state and assert_end macros from the original snes_utils were removed, given asar has built-in support for those already in the form of proper checksum calculation, pullpc, pushpc and warnpc
 
-	macro store_state()
-	    enqueue org, base, pc
-	endmacro
+	;if !input
+	;	org 0
+	;	insert "!input"
+	;	org 0
+	;endif
 
-	macro load_state()
-	    dequeue pc, base, org
-	endmacro
-
-	macro assert_end(variable address)
-		if pc() & ~{rombank} > (address & ~{rombank})
-			evaluate size((pc() & ~{rombank}) - (address & ~{rombank}))
-			seek(address)
-			evaluate offset(org())
-			error "{size} byte overrun occurred at file offset {offset}"
-		endif 
-	endmacro
-
-	macro checksum(variable sum)
-		store_state()
-		seek($FFDC)
-		dw sum^$FFFF, sum
-		load_state()
-	endmacro
-
-	if input
-	    org 0
-	    insert "{input}"
-	    org 0
-	endif
-
-endif	; _snes_utils_inc
+;endif	; _snes_utils_inc
