@@ -1,9 +1,9 @@
-macro seek(variable offset) {
-  org ((offset & $7F0000) >> 1) | (offset & $7FFF)
-  base offset
-}
+macro seek(offset)
+	;org ((offset & $7F0000) >> 1) | (offset & $7FFF)
+	org <offset>
+endmacro
 
-// Kholdstare_shell.asm
+; Kholdstare_shell.asm
 org 0x006C59
     db 0xA0
 
@@ -17,43 +17,43 @@ org 0x006CBF
     db 0xB0
 
 
-// alttp_msu.asm
-seek($8080D9)
+; alttp_msu.asm
+%seek($8080D9)
     jsl msu_main
     nop
     nop
 
 
-// alttp_msu.asm
-seek($8080F3)
+; alttp_msu.asm
+%seek($8080F3)
     jsl msu_check
     nop
     nop
 
 
-// flickering_fix.asm
-seek($80876B)
+; flickering_fix.asm
+%seek($80876B)
     jsl flickering_fix_2
     nop
     nop
 
 
-// alttp_msu.asm
-seek($80F40F)
+; alttp_msu.asm
+%seek($80F40F)
     jsl enter_house
     nop
     nop
     nop
 
 
-// alttp_msu.asm
-seek($80F9C3)
+; alttp_msu.asm
+%seek($80F9C3)
     jsl fade_out
     nop
 
 
-// pott_l2sword.asm
-seek($81DABD)
+; pott_l2sword.asm
+%seek($81DABD)
     jml sword_pot_smash
     nop
     nop
@@ -61,68 +61,68 @@ seek($81DABD)
     nop
 
 
-// pott_l2sword.asm
-seek($81DAFC)
+; pott_l2sword.asm
+%seek($81DAFC)
     jml sword_post_fix
     nop
 
 
-// mothula_l4.asm
-seek($828136)
+; mothula_l4.asm
+%seek($828136)
     jsl mothula_fix_1
 
 
-// pegasus_upgrade.asm
-seek($82857D)
+; pegasus_upgrade.asm
+%seek($82857D)
     jsl $07FF33
     nop
 
 
-// pegasus_upgrade.asm
-seek($828B13)
-    db $80  // beq -> bra
+; pegasus_upgrade.asm
+%seek($828B13)
+    db $80  ; beq -> bra
 
 
-// alttp_msu.asm
-seek($82934F)
+; alttp_msu.asm
+%seek($82934F)
     jsl enter_house
     nop
     nop
     nop
 
 
-// alttp_msu.asm
-seek($829A04)
+; alttp_msu.asm
+%seek($829A04)
     jsl fade_out
     nop
 
 
-// alttp_msu.asm
-seek($829B14)
+; alttp_msu.asm
+%seek($829B14)
     jsl fade_out
     nop
 
 
-// alttp_msu.asm
-seek($82A027)
+; alttp_msu.asm
+%seek($82A027)
     jsl fade_out
     nop
 
 
-// alttp_msu.asm
-seek($82AAB1)
+; alttp_msu.asm
+%seek($82AAB1)
     jsl fade_out
     nop
 
 
-// alttp_msu.asm
-seek($82AE7E)
+; alttp_msu.asm
+%seek($82AE7E)
     jsl fade_out
     nop
 
 
-// flickering_fix.asm
-seek($82C4C0)
+; flickering_fix.asm
+%seek($82C4C0)
 flickering_fix_1:
     stx $0FA0
     lda $10
@@ -139,8 +139,8 @@ flickering_fix_1:
     rtl
 
 
-// flickering_fix.asm
-seek($82C4E0)
+; flickering_fix.asm
+%seek($82C4E0)
 flickering_fix_2:
     sta $0AF2
     lda $10
@@ -153,75 +153,75 @@ flickering_fix_2:
     rtl
 
 
-// alttp_msu.asm
-seek($86B0D8)
+; alttp_msu.asm
+%seek($86B0D8)
     jsl map_open
     nop
 
 
-// alttp_msu.asm
-seek($86B112)
+; alttp_msu.asm
+%seek($86B112)
     jsl full_volume
     nop
 
 
-// alttp_msu.asm
-seek($86C621)
+; alttp_msu.asm
+%seek($86C621)
     jsl great_fairy
     nop
 
 
-// alttp_msu.asm
-seek($86C847)
+; alttp_msu.asm
+%seek($86C847)
     jsl great_fairy
     nop
 
 
-// shield_fix.asm
-seek($86D173)
+; shield_fix.asm
+%seek($86D173)
     jsl shield_fix
 
 
-// mothula_l4.asm
-seek($86E83F)
+; mothula_l4.asm
+%seek($86E83F)
     jsl mothula_fix_2
 
 
-// collect_items_sword.asm
-seek($86F725)
+; collect_items_sword.asm
+%seek($86F725)
     jsl collect_items_sword
 
 
-// pegasus_upgrade.asm
-seek($87911D)
+; pegasus_upgrade.asm
+%seek($87911D)
     jmp $FF40
     nop
 
 
-// alttp_msu.asm
-seek($87AA9C)
+; alttp_msu.asm
+%seek($87AA9C)
     jsl map_open
     nop
 
 
-// cane_somaria_fix.asm
-seek($87AED4)
+; cane_somaria_fix.asm
+%seek($87AED4)
     jmp cane_fix
 
 
-// pegasus_upgrade.asm
-seek($87BCB8)
+; pegasus_upgrade.asm
+%seek($87BCB8)
     jsl $07FF20
 
 
-// alttp_msu.asm
-seek($87EB90)
+; alttp_msu.asm
+%seek($87EB90)
     jsl full_volume
     nop
 
 
-// alttp_msu.asm
-seek($87F8A0)
+; alttp_msu.asm
+%seek($87F8A0)
 set_loop:
     lda $0129
     cmp #$01
@@ -260,8 +260,8 @@ set_loop:
     rts
 
 
-// alttp_msu.asm
-seek($87F8E0)
+; alttp_msu.asm
+%seek($87F8E0)
 msu_main:
     lda $4210
     jsr do_fade
@@ -270,8 +270,8 @@ msu_main:
     rtl
 
 
-// alttp_msu.asm
-seek($87F8F0)
+; alttp_msu.asm
+%seek($87F8F0)
 do_fade:
     lda $0133
     bne +
@@ -298,8 +298,8 @@ do_fade:
     rts
 
 
-// alttp_msu.asm
-seek($87F930)
+; alttp_msu.asm
+%seek($87F930)
 msu_check:
     sta $0133
     pha
@@ -318,8 +318,8 @@ msu_check:
     rtl
 
 
-// alttp_msu.asm
-seek($87F950)
+; alttp_msu.asm
+%seek($87F950)
 spc_play:
     lda $2000
     and #$08
@@ -334,8 +334,8 @@ spc_play:
     rts
 
 
-// alttp_msu.asm
-seek($87F970)
+; alttp_msu.asm
+%seek($87F970)
 track_select:
     lda $0133
     cmp #$F4
@@ -374,8 +374,8 @@ track_select:
     rts
 
 
-// alttp_msu.asm
-seek($87F9D0)
+; alttp_msu.asm
+%seek($87F9D0)
 fade_out:
     lda $2002
     cmp #$53
@@ -395,8 +395,8 @@ fade_out:
     rtl
 
 
-// alttp_msu.asm
-seek($87FA00)
+; alttp_msu.asm
+%seek($87FA00)
 map_open:
     lda $2002
     cmp #$53
@@ -409,8 +409,8 @@ map_open:
     rtl
 
 
-// alttp_msu.asm
-seek($87FA20)
+; alttp_msu.asm
+%seek($87FA20)
 full_volume:
     lda $2002
     cmp #$53
@@ -423,8 +423,8 @@ full_volume:
     rtl
 
 
-// alttp_msu.asm
-seek($87FA40)
+; alttp_msu.asm
+%seek($87FA40)
 enter_house:
     cmp #$FF
     bne +
@@ -450,8 +450,8 @@ enter_house:
 +;  rtl
 
 
-// alttp_msu.asm
-seek($87FA70)
+; alttp_msu.asm
+%seek($87FA70)
 unk_label:
     bne +
     ldx #$F3
@@ -470,8 +470,8 @@ unk_label:
     rtl
 
 
-// alttp_msu.asm
-seek($87FA90)
+; alttp_msu.asm
+%seek($87FA90)
 great_fairy:
     lda $2002
     cmp #$53
@@ -488,8 +488,8 @@ great_fairy:
     rtl
 
 
-// alttp_msu.asm
-seek($87FAB0)
+; alttp_msu.asm
+%seek($87FAB0)
 ganons_message:
     lda $2002
     cmp #$53
@@ -506,8 +506,8 @@ ganons_message:
     rtl
 
 
-// alttp_msu.asm
-seek($87FAD0)
+; alttp_msu.asm
+%seek($87FAD0)
 get_pendant:
     lda $2002
     cmp #$53
@@ -523,8 +523,8 @@ get_pendant:
 +;  jml $08C407
     
 
-// alttp_msu.asm
-seek($87FB00)
+; alttp_msu.asm
+%seek($87FB00)
 boss_victory:
     lda $2002
     cmp #$53
@@ -540,8 +540,8 @@ boss_victory:
 +;  jml $08C613
 
 
-// alttp_msu.asm
-seek($87FB30)
+; alttp_msu.asm
+%seek($87FB30)
 msu_play:
     lda $0127
     beq +
@@ -555,8 +555,8 @@ msu_play:
 +;  rts
 
 
-// cane_somaria_fix.asm
-seek($87FB50)
+; cane_somaria_fix.asm
+%seek($87FB50)
 cane_fix:
     lda $0C4A,x
     cmp #$2C
@@ -568,8 +568,8 @@ cane_fix:
 +;  jmp $AEDB
 
 
-// cape_fix.asm
-seek($87FB70)
+; cape_fix.asm
+%seek($87FB70)
 cape_fix:
     stz $0376
     rep #$30
@@ -577,21 +577,21 @@ cape_fix:
     rtl
 
 
-// bunny_glove_fix.asm
-seek($87FB80)
+; bunny_glove_fix.asm
+%seek($87FB80)
 bunny_glove_fix:
     lda $02E0
     and #$FF
     brk #$F0
     ora $E2
-    dw $E630 // bmi +$E6
+    dw $E630 ; bmi +$E6
     ora $6B,x
     jsl $1BEE1D
     rtl
 
 
-// flute_fix.asm
-seek($87FBA0)
+; flute_fix.asm
+%seek($87FBA0)
 flute_cancel_1:
     lda $F2
     ora $F0
@@ -607,8 +607,8 @@ flute_cancel_1:
 +;  rtl
 
 
-// flute_fix.asm
-seek($87FBC0)
+; flute_fix.asm
+%seek($87FBC0)
 flute_cancel_2:
     lda $7F5006
     cmp #$01
@@ -619,8 +619,8 @@ flute_cancel_2:
     rtl
 
 
-// flute_fix.asm
-seek($87FBE0)
+; flute_fix.asm
+%seek($87FBE0)
 flute_cancel_icon:
     sta $0B
     ldx #$10
@@ -646,8 +646,8 @@ flute_cancel_icon:
 +;  rtl
 
 
-// mothula_l4.asm
-seek($87FC10)
+; mothula_l4.asm
+%seek($87FC10)
 mothula_fix_1:
     lda #$01
     sta $7F6884
@@ -656,8 +656,8 @@ mothula_fix_1:
     rtl
 
 
-// mothula_l4.asm
-seek($87FC20)
+; mothula_l4.asm
+%seek($87FC20)
 mothula_fix_2:
     lda $0E20,x
     cmp #$88
@@ -672,8 +672,8 @@ mothula_fix_2:
     rtl
 
 
-// death_counter.asm
-seek($87FC40)
+; death_counter.asm
+%seek($87FC40)
 death_counter:
     lda $10
     cmp #$12
@@ -691,8 +691,8 @@ death_counter:
     rtl
 
 
-// shield_fix.asm
-seek($87FC60)
+; shield_fix.asm
+%seek($87FC60)
 shield_fix:
     phx
     phy
@@ -703,8 +703,8 @@ shield_fix:
     rtl
 
 
-// pott_l2sword.asm
-seek($87FC70)
+; pott_l2sword.asm
+%seek($87FC70)
 sword_pot_smash:
     lda $0301
     and #$0002
@@ -717,13 +717,13 @@ sword_pot_smash:
 +;  lda $7EF359
     and #$00FF
     cmp #$0001
-    bra +  // bra: L1+, bne: L2+
+    bra +  ; bra: L1+, bne: L2+
     jml $01DAB6
 +;  jml $01DAC5
 
 
-// pott_l2sword.asm
-seek($87FCA0)
+; pott_l2sword.asm
+%seek($87FCA0)
 sword_post_fix:
     cmp #$4040
     beq +
@@ -737,8 +737,8 @@ sword_post_fix:
 +;  jml $01DB01
 
 
-// pott_l2sword.asm
-seek($87FCC0)
+; pott_l2sword.asm
+%seek($87FCC0)
 sword_switch_fix:
     cmp #$1010
     bne ++
@@ -757,8 +757,8 @@ sword_switch_fix:
 +;  rtl
 
 
-// collect_items_sword.asm
-seek($87FE00)
+; collect_items_sword.asm
+%seek($87FE00)
 collect_items_sword:
     adc #$00
     sta $09
@@ -826,8 +826,8 @@ collect_items_sword:
     rtl
 
 
-// pegasus_upgrade.asm
-seek($87FF20)
+; pegasus_upgrade.asm
+%seek($87FF20)
     lda $5D
     cmp #$11
     bne +
@@ -838,18 +838,18 @@ seek($87FF20)
     rtl
 
 
-// pegasus_upgrade.asm
-seek($87FF33)
+; pegasus_upgrade.asm
+%seek($87FF33)
     stz $56
     stz $02E0
     stz $0372
     rtl
 
 
-// pegasus_upgrade.asm
-seek($87FF40)
+; pegasus_upgrade.asm
+%seek($87FF40)
     bit $F2
-    dw $3010 // bpl +$30
+    dw $3010 ; bpl +$30
     lda $F0
     and #$0F
     bne +
@@ -883,8 +883,8 @@ seek($87FF40)
     jmp $915E
 
 
-// pegasus_upgrade.asm
-seek($87FF8B)
+; pegasus_upgrade.asm
+%seek($87FF8B)
     lda $0130
     cmp #$F1
     beq +
@@ -896,8 +896,8 @@ seek($87FF8B)
 +;  jmp $9138
 
 
-// pegasus_upgrade.asm
-seek($87FFF4)
+; pegasus_upgrade.asm
+%seek($87FFF4)
     stz $02D6
     stz $5E
     stz $5D
@@ -905,63 +905,63 @@ seek($87FFF4)
     rtl
 
 
-// flickering_fix.asm
-seek($88832D)
+; flickering_fix.asm
+%seek($88832D)
     jsl flickering_fix_1
     nop
     nop
 
 
-// alttp_msu.asm
-seek($88C3FD)
+; alttp_msu.asm
+%seek($88C3FD)
     jml get_pendant
     nop
 
 
-// alttp_msu.asm
-seek($88C606)
+; alttp_msu.asm
+%seek($88C606)
     jml boss_victory
     nop
 
 
-// alttp_msu.asm
-seek($88CD07)
+; alttp_msu.asm
+%seek($88CD07)
     jsl fade_out
     nop
 
 
-// alttp_msu.asm
-seek($88D05C)
+; alttp_msu.asm
+%seek($88D05C)
     jsl full_volume
     nop
 
 
-// alttp_msu.asm
-seek($898D2C)
+; alttp_msu.asm
+%seek($898D2C)
     jsl map_open
     nop
 
 
-// pegasus_upgrade.asm
-seek($899F32)
+; pegasus_upgrade.asm
+%seek($899F32)
     jsl $07FFF4
     nop
 
 
-// alttp_msu.asm
-seek($89F2B2)
+; alttp_msu.asm
+%seek($89F2B2)
     jsl fade_out
     nop
 
 
-// alttp_msu.asm
-seek($89F50F)
+; alttp_msu.asm
+%seek($89F50F)
     jsl fade_out
     nop
 
 
-// death_counter.asm
-seek($89F597)
+; death_counter.asm
+%seek($89F597)
     jsl death_counter
     nop
     nop
@@ -970,85 +970,85 @@ seek($89F597)
     nop
 
 
-// flute_fix.asm
-seek($8AB78F)
+; flute_fix.asm
+%seek($8AB78F)
     jml flute_cancel_1
     nop
     nop
 
 
-// flute_fix.asm
-seek($8AB7D7)
+; flute_fix.asm
+%seek($8AB7D7)
     nop
     nop
 
 
-// flute_fix.asm
-seek($8AB7F6)
+; flute_fix.asm
+%seek($8AB7F6)
     jsl flute_cancel_icon
 
 
-// flute_fix.asm
-seek($8AB8ED)
+; flute_fix.asm
+%seek($8AB8ED)
     jsl flute_cancel_2
 
 
-// alttp_msu.asm
-seek($8AB940)
+; alttp_msu.asm
+%seek($8AB940)
     jsl unk_label
     nop
     nop
     nop
 
 
-// alttp_msu.asm
-seek($8ABA1E)
+; alttp_msu.asm
+%seek($8ABA1E)
     jsl map_open
     nop
 
 
-// alttp_msu.asm
-seek($8ABC90)
+; alttp_msu.asm
+%seek($8ABC90)
     jsl full_volume
     nop
 
 
-// alttp_msu.asm
-seek($8AEFB5)
+; alttp_msu.asm
+%seek($8AEFB5)
     jsl full_volume
     nop
 
 
-// alttp_msu.asm
-seek($8CCF7A)
+; alttp_msu.asm
+%seek($8CCF7A)
     jsl fade_out
     nop
 
 
-// alttp_msu.asm
-seek($8CF105)
+; alttp_msu.asm
+%seek($8CF105)
     jsl fade_out
     nop
 
 
-// cape_fix.asm
-seek($8DAA65)
+; cape_fix.asm
+%seek($8DAA65)
     jsl cape_fix
     nop
 
 
-// bunny_glove_fix.asm
-seek($8ED73C)
+; bunny_glove_fix.asm
+%seek($8ED73C)
     jsl bunny_glove_fix
 
 
-// alttp_msu.asm
-seek($8EDA31)
+; alttp_msu.asm
+%seek($8EDA31)
     jsl map_open
     nop
 
 
-// alttp_msu.asm
-seek($9D8D39)
+; alttp_msu.asm
+%seek($9D8D39)
     jsl ganons_message
     nop

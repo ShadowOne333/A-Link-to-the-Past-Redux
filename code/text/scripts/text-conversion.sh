@@ -203,7 +203,7 @@ sed -i "s|m!{a!{st}}!{er}|m!{ast}!{er}|g" Retranslation.txt Redux.txt
 sed -i 's|c!{a!{st}}le|c!{ast}le|g' Retranslation.txt Redux.txt
 sed -i 's|C!{a!{st}}le|C!{ast}le|g' Retranslation.txt Redux.txt
 sed -i 's|!{a!{in}}|!{ain}|g' Retranslation.txt Redux.txt
-sed -i 's|{a!{re}_}|!{are_}|g' Retranslation.txt Redux.txt
+sed -i 's|!{a!{re}_}|!{are_}|g' Retranslation.txt Redux.txt
 sed -i 's|!{!{!{an}d}_}|!{and_}|g' Retranslation.txt Redux.txt
 sed -i 's|!{!{an}d}|!{and}|g' Retranslation.txt Redux.txt
 sed -i "s|Do!{nt_}|D!{on}'t |g" Retranslation.txt Redux.txt

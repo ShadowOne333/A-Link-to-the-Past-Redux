@@ -62,6 +62,7 @@
 !7B = $7B
 !7C = $7C
 !7D = $7D
-!WaitKey = $7E	; Wait for prompt or button input
-!End = $7F	; End current text message
+!WaitKey = $7E		; Wait for prompt or button input
+!End = $7F		; End current text message
+!BankEnd = $80		; Marks the end of the current bank 
 

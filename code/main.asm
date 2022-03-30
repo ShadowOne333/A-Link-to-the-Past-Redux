@@ -15,7 +15,7 @@ lorom			; Switch to LoROM mapping mode
 ; This patch is only for A Link to the Past ROM
 check title "THE LEGEND OF ZELDA  "
 
-!fastrom = 1		; FastROM compilation
+!fastrom = 0		; FastROM compilation
 !lorom = 1		; LoROM flag
 !hirom = 0		; HiROM flag
 !exhirom = 0		; ExHiROM flag
@@ -77,17 +77,19 @@ incsrc gameplay/misc.asm	; Miscellaneous gameplay changes
 incsrc gameplay/move_blocks_infinitely.asm	; Allows movement of blocks several times
 
 ;****************************************
-;	Gameplay changes
+;	Map changes
 ;****************************************
-incsrc layouts/overworld_layouts.asm	; Layout modifications to the overworld for Redux
+;incsrc layouts/overworld_layouts.asm	; Layout modifications to the overworld for Redux
 
 ;****************************************
 ;	Text changes
 ;****************************************
-; Main script text
+; Main Red script text
 incsrc text/vwf.asm			; Variable width font modifications 
 incsrc text/dialogue1.asm		; 1st dialogue table
 incsrc text/dialogue2.asm		; 2nd dialogue table
+
+; Retranslation script text
 ;incsrc text/retranslation/dialogue1.asm	; 1st dialogue for the Retranslation & Sparrow
 ;incsrc text/retranslation/dialogue2.asm	; 2nd dialogue for the Retranslation by Chiken Knife & Sparrow
 
@@ -100,8 +102,8 @@ incsrc text/items.asm
 ;****************************************
 ;	Visual changes
 ;****************************************
-; Palette and color attribute modifications
-incsrc gfx/palettes.asm		; 
+; Main Redux palette and color attribute modifications
+incsrc gfx/palettes.asm
 
 ; 24 Items Menu (New GFX)
 ;incsrc code/menus/new_gfx.asm		; Main file for New GFX

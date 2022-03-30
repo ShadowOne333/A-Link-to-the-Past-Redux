@@ -71,11 +71,11 @@ dialogue_table2:
 ;----------------------------------------
 .message_361:
 	db "!{Tha}nk !{you} v!{er}y !{mu}ch.",!Line2
-	db "!{The}!{se} !!{are_}Arrows.!{2_}!{You} c!{an}'t",!Line3
+	db "!{The}!{se} !{are_}Arrows.!{2_}!{You} c!{an}'t",!Line3
 	db "u!{se} !{the}m w!{it}h!{out_}a Bow.",!End
 ;----------------------------------------
 .message_362:
-	db "!{The}!{se} !!{are_}Bombs.",!Line2
+	db "!{The}!{se} !{are_}Bombs.",!Line2
 	db "Did !{you} !{know} !{you} !{can_}pi!{ck} !{up}",!Line3
 	db "a Bomb !{you} al!{re}ady p!{la}c!{ed_}?",!WaitKey,!Scroll
 	db "(P!{re}ss !{the} A Butt!{on}).",!End
@@ -99,7 +99,7 @@ dialogue_table2:
 	db "now, but !{you} !{ma}y need",!Line3
 	db "!{so}!{me} l!{at}!{er}!",!End
 ;----------------------------------------
-.message_367:
+.message_367:	; Ganon's text
 	db "I n!{ev}!{er_}i!{ma}g!{in}!{ed_}a !{bo}y like !{you}",!Line2
 	db "could !{give_}!{me} !{so} !{mu}ch !{tr}ou!{ble}.",!Line3
 	db "It!{s_}un!{be}li!{ev}a!{ble} th!{at_}!{you}",!WaitKey,!Scroll
@@ -111,8 +111,8 @@ dialogue_table2:
 	db "!{bo}th L!{ight_}!{and_}Dark W!{or}lds",!Scroll
 	db "!{com}e !{tr}ue w!{it}h!{out_}de!{la}y.",!End
 ;----------------------------------------
-.message_368:
-	db "!{You} !!{are_}!{do}!{ing_}!{we}ll, !{la}d.!{2_}But",!Line2
+.message_368:	; Ganon's 2nd phase
+	db "!{You} !{are_}!{do}!{ing_}!{we}ll, !{la}d.!{2_}But",!Line2
 	db "!{can_}!{you} b!{re}ak through !{thi}s",!Line3
 	db "!{se}c!{re}t technique !{of} Darkness?",!WaitKey,!Scroll
 	db "En Garde!",!End
@@ -274,7 +274,7 @@ dialogue_table2:
 	db "!{you} op!{en_}!{on}e !{che}!{st}.!{2_}!{You} c!{an}",!Line3
 	db "keep !{wh}!{at_}!{is} !{in}side.",!WaitKey,!Scroll
 	db "Wh!{at_}!{wi}ll !{you} !{do}?",!Scroll
-	db "!{4_} >!{2_}Op!{en_}A Che!{st}",!Scroll
+	db "!{4_}>!{2_}Op!{en_}A Che!{st}",!Scroll
 	db "!{4_}!{4_} Escape",!Choose,!End
 ;----------------------------------------
 .message_383:
@@ -291,7 +291,7 @@ dialogue_table2:
 	db "op!{en_}!{on}e !{che}!{st} !{and_}keep !{the}",!Line3
 	db "t!{re}asu!{re_}th!{at_}!{is} !{in}side.",!WaitKey,!Scroll
 	db "Wh!{at_}!{wi}ll !{you} !{do}?",!Scroll
-	db "!{4_} >!{2_}Op!{en_}A Che!{st}",!Scroll
+	db "!{4_}>!{2_}Op!{en_}A Che!{st}",!Scroll
 	db "!{4_}!{4_} Escape",!Choose,!End
 ;----------------------------------------
 .message_386:
@@ -344,7 +344,7 @@ dialogue_table2:
 	db "!{be} !{you}rs !{to} keep.",!Scroll
 	db "It!{s_}!{on}!{ly_}80 R!{up}ees !{to} p!{la}y.",!WaitKey,!Scroll
 	db "Wh!{at_}!{do} !{you} say?",!Scroll
-	db "!{4_} > I !{wa}nt !{to} !{di}g",!Scroll
+	db "!{4_}> I !{wa}nt !{to} !{di}g",!Scroll
 	db "!{4_}!{4_}I !{do}!{nt_}!{wa}nt !{to} !{di}g",!Choose,!End
 ;----------------------------------------
 .message_392:

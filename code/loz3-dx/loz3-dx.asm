@@ -15,7 +15,7 @@
 
 incsrc "snes_utils.inc"
 
-if !fastrom = 1 
+if !fastrom = 1
 	incsrc "FastROM-ASM.asm"
 endif
 
