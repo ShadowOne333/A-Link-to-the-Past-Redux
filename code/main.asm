@@ -66,15 +66,15 @@ org $3FFFFF
 ;	ALttP DX changes
 ;****************************************
 incsrc loz3-dx/loz3-dx.asm	; Code of ALttP DX (v1.6)
-;incsrc fixes/bugfixes.asm	; General bugfixes (most DX code)
+incsrc fixes/bugfixes.asm	; General bugfixes (most DX code)
 
 ;****************************************
 ;	Gameplay changes
 ;****************************************
-;incsrc fixes/bunny_palette.asm	; Bunny palette fix (by rainponcho)
-;incsrc gameplay/max_consumables.asm 	; Implement "Max Consumables Fix" by Kasuto
-;incsrc gameplay/misc.asm	; Miscellaneous gameplay changes
-;incsrc gameplay/move_blocks_infinitely.asm	; Allows movement of blocks several times
+incsrc fixes/bunny_palette.asm	; Bunny palette fix (by rainponcho)
+incsrc gameplay/max_consumables.asm 	; Implement "Max Consumables Fix" by Kasuto
+incsrc gameplay/misc.asm	; Miscellaneous gameplay changes
+incsrc gameplay/move_blocks_infinitely.asm	; Allows movement of blocks several times
 
 ;****************************************
 ;	Gameplay changes

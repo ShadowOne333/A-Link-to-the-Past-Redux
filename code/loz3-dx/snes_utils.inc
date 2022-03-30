@@ -22,7 +22,7 @@
 includeonce
 
 ;if not(defined("_snes_utils_inc"))
-	;!_snes_utils_inc = 1
+;	!_snes_utils_inc = 1
 
 	if !fastrom = 1
 	    !rombank = $800000
@@ -45,6 +45,10 @@ includeonce
 		org <address>|!rombank
 	endmacro
 
+	macro origin(address)
+		org <address>+$8000
+	endmacro
+
 	macro jmf(address)
 		jml <address>|!rombank
 	endmacro
@@ -55,6 +59,7 @@ includeonce
 
 	; checksum, save_state, load_state and assert_end macros from the original snes_utils were removed, given asar has built-in support for those already in the form of proper checksum calculation, pullpc, pushpc and warnpc
 
+	; input=loz3.sfc
 	;if !input
 	;	org 0
 	;	insert "!input"

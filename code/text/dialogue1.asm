@@ -1449,7 +1449,7 @@ dialogue_table1:
 	db "!{to} !{the} !{en}!{tr}!{an}ce !{at_}!{an}y ti!{me}.",!Scroll
 	db "Do !{not} !{for}!{get} !{thi}s!",!End
 ;----------------------------------------
-.message_199:
+.message_199:	; Chris Houlihan room
 	db "My na!{me} !{is} Chr!{is} Houlih!{an}.",!Line2
 	db "!{Thi}s !{is} my !{to}p !{se}c!{re}t room.",!Line3
 	db "Keep !{it} !{be}t!{we}!{en_}us, OK?",!End
