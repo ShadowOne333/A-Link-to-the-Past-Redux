@@ -2,10 +2,19 @@
 ; 	Zelda 3 Redux - Credits text data
 ;****************************************************************
 
+macro row(str)
+	!i = 0
+	while !i < strlen("<str>")
+		db char("<str>",!i)*2
+		!i #= !i+1
+	endwhile
+endmacro
+
 ;----------------------------------------
 ; 	Table file
 ;----------------------------------------
-incsrc "code/text/credits.txt"
+incsrc "code/text/credits_small.txt"
+incsrc "code/text/credits_big.txt"
 
 ; First text is:
 ; the return of the king (small text)
@@ -52,8 +61,8 @@ incsrc "code/text/credits.txt"
 ;X=31                  X=4F                  X=17
 ;Y=32                  Y=50                  Y=18
 ;Z=33                  Z=51                  Z=19
-APOSTROPH=34                                  
-EMPTY=9F              EMPTY=9F               EMPTY=9F      
+;APOSTROPH=34                                  
+;EMPTY=9F              EMPTY=9F               EMPTY=9F      
 
 ;----------------------------------------
 
@@ -90,9 +99,45 @@ EMPTY=9F              EMPTY=9F               EMPTY=9F
 ;EMPTY= 9F
 
 
-;----------------------------------------
+;****************************************
+; 	Pointers for item entries
+;****************************************
+
+; Pointers for the flyover sequences credits
+org $0EC32C	; 0x07432C
+	lda credits_text,y
+	skip 7
+	lda credits_text,y
+	skip 18
+	lda credits_text,y
+
+; Pointers for ...
 
 
+;****************************************
+; 	Main credits text
+;****************************************
+
+org $0EBF4C	; 0x073F4C-0x074302
+credits_text:
+	db $62,$65,$00,$2B	; Length 22
+	db "the return of the king"
+
+	db $62,$E9,$00,$19	; Length 30
+	db "HYRULE CASTLE"	; First row
+	db $63,$09,$00,$19	; Length 30
+;	%row("HYRULE CASTLE")	; Second row
+
+;	db $62,$68,$00,$1B	; Length 14
+;	db " loyal priest "	; Originally "the loyal sage"
+
+;	db $62,$EB,$00,$11	; Length 9
+
+;	db $63,$0B,$00,$11
+
+
+org $0EB038	; 0x073038-0x073C6C
+credits_sequence:
 ;Lets say you want to change:
 ;the return of the king (22 letters)
 

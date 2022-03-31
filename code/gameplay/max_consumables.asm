@@ -31,7 +31,7 @@ org $06C6A7	; 0x0346A7
 
 ; Table from where to check against the above value
 org $06C6B2	; 0x0346B2
-	lda $0DDB40,x
+	lda $0DDB40,x	; Originally LDA $0DDB40,X ($0DDB50 in Max)
 
 ; No. Check if max amount has been reached for arrows
 org $06C72A	; 0x03472A
@@ -54,24 +54,24 @@ org $0DDC52	; 0x06DC52
 ; Fixes rupees getting "stuck" in the pond
 ; NOTE: This "fix" causes issues with the Heart Pieces being deleted upon reaching the max amount and getting the rupees back
 ; It's possible either 7E:F36A or 7E:F360 used in this code could be at fault for it. (Most likely F36A since it's closer to the health values in RAM, and F36B is confirmed to be part of the heart pieces)
-;org $06C6CF
-;	phb
-;	bra $78
+org $06C6CF
+	phb
+	bra $78
 
-;org $06C72C
-;	beq $99
+org $06C72C
+	beq $99
 
-; org $06C74A
-;	xba
-;	lda #$7E
-;	pha
-;	plb
-;	lda $F36A
-;	adc #$64
-;	rep #$21
-;	adc $F360
-;	sta $F360
-;	stz $F36A
-;	plb
-;	sep #$30
-;	rts
+org $06C74A	; 0x3474A
+	xba
+	lda #$7E
+	pha
+	plb
+	lda $F369	; Originally $F36A
+	adc #$64
+	rep #$21
+	adc $F360
+	sta $F360
+	stz $F369	; Originally $F36A
+	plb
+	sep #$30
+	rts

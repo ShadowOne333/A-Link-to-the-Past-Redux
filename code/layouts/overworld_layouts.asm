@@ -113,20 +113,135 @@ warnpc $02FD0D	; 0x017D0D
 ; Overworld map data, will be included as bin files since the amount of changes both Hyrule Magic & Super Zelda Editor do to these sections is far too large to be added manually.
 ; Almost the entire bank sections get changed when using those programs, so screw it,binary it is
 org $0B93D0	; 0x0593D0
-	incbin map_data.bin
+	;incbin map_data.bin
 warnpc $C8000	; 0x060000
 
 org $0CC118	; 0x064118
 	db $2D,$FE,$05,$00,$0C,$41,$06,$00
+
+;****************************************
+
 
 ; Object data
 org $1F8000	; 0x0F8000
 	incbin object_data.bin
 warnpc $208000	; 0x100000
 
-; Re-inclusion of the FastROM jumps is needed to fix some JSL/JML opcodes from map data
-;incsrc code/loz3-dx/FastROM-JSL.asm
-;incsrc code/loz3-dx/FastROM-JML.asm
-;incsrc code/loz3-dx/FastROM-tables.asm
+; Location of type, layout, and object information for each Dungeon room.
+; It's a table of 24 bit pointers with an entry for each room. (all 320 of them ;) )
+
+;size = 3C0h
+
+;140h entries each 3 bytes in length. Each long snes cpu address in the table points to a structure with the following layout:
+
+;byte layout:
+;byte0: aaaa bbbb. The a bits are transformed to aaaa0000 and select the type of  empty space to fill in. Hyrule Magic calls this 'Floor 1'
+;	Gets stored to $7E0490
+;	The b bits are transformed to bbbb0000 and are the what Hyrule Magic calls
+;	'Floor 2'
+;	Gets stored to $7E046A
+
+;byte1: aaab bbcd  The a bits are unused and should not be used
+;	The b bits determine the room's layout type, ranging from 0 to 7.
+;	The c and d bits are unknown, but I have a feeling it's related to $AA and $A9
+
+;After that the bytes come in 3 or 2 byte object structures, used by routine $01:88E4.
+;Objects are loaded until an object with value 0xFFFF occurs.
+;If a value 0xFFF0 is loaded, the game will start loading Type 2 objects
+;And will not go back to loading Type 1 objects until it is time to load the next layer. (Layer as in HM, not to be confused with the SNES' Backgrounds.
+;A value of 0xFFFF will also terminate the loading of Type 2 objects.
+;The routine immediately terminates if that happens during the loading of either object type.
+
+;Type 1 Object structure: (3 bytes)
+
+;Third Byte: Routine to use. If this byte is >= 0xF8 and < 0xFC, then it is a subtype 3 object. If the index is >= FC, it is a subtype 2 object. If not, it is a subtype 1 object.
+;	Subtype 1 Objects ------------------------------------------------------
+
+;	First and Second Byte:	High Byte	Low  Byte
+;                               yyyy yycc	xxxx xxaa
+
+;	The a bits are stored to $B2
+;	The c bits are stored to $B4
+;	The x and y bits are transformed into:  000y yyyy yxxx xxx0
+;	This is a tilemap address that indexes into $7E2000 and / or $7E4000
+
+;	Use the third byte * 2 as an index into the table at $8200
+;	This is the routine that is used to draw and otherwise handle the object.
+;	Subtype 1 objects have a maximum width and height of 4. width and height are measured in terms of 32 x 32 pixels. (<-- last part is questionable)
+
+;	Subtype 2 Objects ------------------------------------------------------
+
+;	Subtype 2 objects are those with an index >= 0xFC
+
+;	1st, 2nd, & 3rd bytes:  Third Byte Second Byte  Byte
+;                                ffdd dddd  eeee cccc   aaaa aabb
+			
+;	The a bits are unused, but after all they are the marker for this type of object subtype.
+            
+;	The b, c, e, and f bits are transformed into a VRAM tilemap address:
+			
+;	000c cccf fbbe eee0
+            
+;	Might I add this is one messed up format?
+
+;	The d bits are used as an index into the table at $8470. Since such indicies are going to be even, the d bits are transformed into: 0000 0000 0ddd ddd0
+
+;	Subtype 3 Objects ------------------------------------------------------
+
+;	Similar to Subtype 1, with a few small exceptions.
+
+;	The vram address is calculated the same way. However, $B2 and $B4 are not used as length or width dimensions here. The routine that is used is determined as follows:
+
+;	Take the original index (times two) that a Subtype 1 would have used. AND that with 0x000E. Then shift left 3 times to produce 0000 0000 0eee 0000. Then, OR in $B2 and $B4 and shift left once, so the final result is: 
+;	0000 0000 eeea abb0.
+
+;	Also, this value indexes into $85F0 instead of $8200.
+			
+;Type 2 Object Structure: (2 bytes)
+
+;	High Byte	Low Byte
+
+;	cccc cccc 	bbbb ddaa
+
+;	The a bits form a 2-bit value (0000 0aa0) that determines the routine to use for the object. In Hyrule Magic, corresponds to the "direction" of the door.
+			
+;	The b bits are transformed into 000b bbb0 and stored to $02 -> X.
+;	Corresponds to "Pos" of door objects in the Hyrule Magic. Note that these range from 0x00 to 0x16 (always even) which if you halve those values is 0 - 11 in decimal. This is easily verifiable in Hyrule Magic.
+
+;	The c bits are shifted into the lower byte and stored to $04 -> A and $0A. This is later used to grab the tiles used to draw the door and the area below it.
+;	In Hyrule Magic, corresponds to "type". Note the type is 1/2 of the number listed here.
+;	This is because to avoid using an ASL A command, the c bits are always even.
+			
+;	The d bits are unused.
+
+;	Next I'll go into the nitty gritty of the various types (the value of $04). Again note that we'll only be dealing with even values b/c that's what you'll see in the code. To convert between here [as well as the code] and Hyrule Magic, take the hex value here and divide by two.
+;	Convert to decimal and that's your Hyrule Magic "type."
+
+;	Types:	0x00 - Basic door. Index = $0460
+;		0x02 - Normal door?
+;		0x04 - ???
+;		0x06 - ???
+;		0x08 - Waterfall door (only used in Swamp palace; in one room at that!)
+;		0x0A - ???
+;		0x0C - Trap door (probably other types but this seems to be most common)
+;
+;		0x12 - Adds a property to some doors allowing you to exit to the overworld
+;				 (this is accomplished by writing to the tile attribute map)
+;		0x14 - Transition to dark room?
+;		0x16 - Toggles the target BG Link will emerge on. e.g. if Link starts on BG0 in the next
+;				 room he'll be on BG1.
+
+;		0x20 - Locked door specifically for BG0.
+;		0x22 - "
+;		0x24 - Locked door for either BG0 or BG1
+;		0x26 - "
+;		0x30 - Large exploded pathway resulting from a switch being pulled (unusual to have as a door as it's huge)
+;		0x32 - Sword activated door (e.g. ;Agahnim's room with the curtain door you have to slash)
+;		0x46 - warp door?
+
+;------------------------------------------------------
+
+;$F83C0 - Loaded when the header is loaded for each dungeon room. These appear to be the direct offset to where the door objects appear. The normal objects and the door objects are seperated by the byte sequence $FFF0. Apparently the offsets in this set are just there for convenience?
+
 
 

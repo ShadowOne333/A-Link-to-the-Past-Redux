@@ -1,5 +1,6 @@
 #! /bin/bash -e
 
+export	time=$(date +'%T %a %d/%b/%Y')
 export	asar=bin/asar-linux/asar-standalone
 export	file_base=Zelda3-Redux
 export  out_folder=out
@@ -86,7 +87,7 @@ Start()
 	bin/flips --create --ips "$clean_rom" "$patched_rom" "$patches_folder/$file_base.ips"
 
 # Finish script and jump to the "End" function
-	echo "Redux compilation finished!"
+	echo "Redux compilation finished at $time!"
 	End
 }
 

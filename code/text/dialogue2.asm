@@ -16,6 +16,9 @@ incsrc "code/text/dictionary.txt"
 ; Control codes definitions
 incsrc "code/text/control_codes.txt"
 
+!Choose2 = $72
+!Choose3 = $71
+
 ;****************************************
 ;	Text pointers
 ;****************************************
@@ -324,17 +327,19 @@ dialogue_table2:
 	db !Position00,!Speed00
 	db ">Start From !{Name}!{s_}Hou!{se}",!Line2
 	db "!{2_}Start From S!{an}ctuary",!Choose2,!End
+	; For some reason, this selection and the next one seem to be flipped in terms of the Control Code "Choose"
 ;----------------------------------------
 .message_389:
 	db !Position00,!Speed00
 	db ">Start From !{Name}!{s_}Hou!{se}",!Line2
-	db "!{2_}Start From S!{an}ctuary",!Line3
-	db "!{2_}Start From !{The} Mount!{ain} Cave",!Choose3,!End
+	db "!{2_}Start from !{the} S!{an}ctuary",!Line3
+	db "!{2_}Start from !{the} Mount!{ain} Cave",!Choose3,!End
 ;----------------------------------------
 .message_390:
 	db !Speed00
 	db "> C!{on}t!{in}ue Ga!{me}",!Line2
 	db "!{3_}Save !{and_}Qu!{it}",!Choose2,!End
+	; This line is also affected by the "Choose" flip
 ;----------------------------------------
 .message_391:
 	db "Wel!{com}e !{to} !{the} t!{re}asu!{re_}field.",!Line2
