@@ -15,11 +15,11 @@
 
 incsrc "snes_utils.inc"
 
-if !fastrom = 1
+if !fastrom == 1
 	incsrc "FastROM-ASM.asm"
 endif
 
-if !houlihan = 1
+if !houlihan == 1
 	;org $0E4356
 	dialogue1_table1.message_099:
 	db "My na!{me} !{is} "

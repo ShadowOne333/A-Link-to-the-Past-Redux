@@ -15,7 +15,7 @@ lorom			; Switch to LoROM mapping mode
 ; This patch is only for A Link to the Past ROM
 check title "THE LEGEND OF ZELDA  "
 
-!fastrom = 0		; FastROM compilation
+!fastrom = 1		; FastROM compilation
 !lorom = 1		; LoROM flag
 !hirom = 0		; HiROM flag
 !exhirom = 0		; ExHiROM flag

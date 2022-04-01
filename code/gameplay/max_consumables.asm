@@ -52,26 +52,26 @@ org $0DDC52	; 0x06DC52
 ;----------------------------------------
 
 ; Fixes rupees getting "stuck" in the pond
-; NOTE: This "fix" causes issues with the Heart Pieces being deleted upon reaching the max amount and getting the rupees back
-; It's possible either 7E:F36A or 7E:F360 used in this code could be at fault for it. (Most likely F36A since it's closer to the health values in RAM, and F36B is confirmed to be part of the heart pieces)
-org $06C6CF
-	phb
-	bra $78
+; NOTE: This "fix" causes issues with the Heart Pieces being deleted upon reaching the max amount of arrows/bombs, dropping more rupees into the fairy pond and getting the rupees back triggers the glitch.
+; It's confirmed the issue is with $F36A used in this code, specifically STZ $F36A is the one that erases the Heart Pieces, no matter what number of pieces one has.
+;org $06C6CF
+;	phb
+;	bra $78
 
-org $06C72C
-	beq $99
+;org $06C72C
+;	beq $99
 
-org $06C74A	; 0x3474A
-	xba
-	lda #$7E
-	pha
-	plb
-	lda $F369	; Originally $F36A
-	adc #$64
-	rep #$21
-	adc $F360
-	sta $F360
-	stz $F369	; Originally $F36A
-	plb
-	sep #$30
-	rts
+;org $06C74A	; 0x3474A
+;	xba
+;	lda #$7E
+;	pha
+;	plb
+;	lda $F36A	; Originally $F36A
+;	adc #$64
+;	rep #$21
+;	adc $F360
+;	sta $F360
+;	stz $F36A	; Originally $F36A
+;	plb
+;	sep #$30
+;	rts

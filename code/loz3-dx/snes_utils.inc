@@ -24,7 +24,7 @@ includeonce
 ;if not(defined("_snes_utils_inc"))
 ;	!_snes_utils_inc = 1
 
-	if !fastrom = 1
+	if !fastrom == 1
 	    !rombank = $800000
 	else
 	    !rombank = $000000

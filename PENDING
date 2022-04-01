@@ -1,0 +1,16 @@
+Pending things for Redux disassembly:
+
+- Map & Object data (Overworld and Dungeons)
+	o Ice Palace GBA
+	o Star of David for the Eastern Palace restored (From the Japanese ROM)
+	o New custom hieroglyphs to mimic those of the Japanese release.
+	o Sanctuary doorway restored
+	o Skull Statues restored. They appear in the Skull Woods Dungeon.
+	o Unused Zora sign near Zora’s Domain entrance restored.
+	o First warp point relocation, so it no longer drops you at the very beginning of the Death Mountain, but rather at the left side of the Heart Container you obtain after your first travel to the Dark World for convenience sake.
+
+- Proper fix for the Max Consumables "Fairy/Rupees fix"
+- Fix whatever is broken between Map/Object data and the FastROM implementation
+- Proper implementation of the New GFX hack (24 items menu) with LR switching (unknown if the LR Item Switch from DX v1.6 would work on New GFX, pending check)
+- Retranslation dialogue (and their proper patches)
+- Credits text

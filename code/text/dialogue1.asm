@@ -5,16 +5,16 @@
 ;****************************************
 ;    Include Table & Dictionary files
 ;****************************************
-incsrc "code/text/main_font.txt"
+incsrc "code/text/tbl/main_font.txt"
 
 ;****************************************
 ; 	Definitions
 ;****************************************
 ; Definitions for the Dictionary
-incsrc "code/text/dictionary.txt"
+incsrc "code/text/tbl/dictionary.txt"
 
 ; Control codes definitions
-incsrc "code/text/control_codes.txt"
+incsrc "code/text/tbl/control_codes.txt"
 
 ;****************************************
 ;	Text pointers
