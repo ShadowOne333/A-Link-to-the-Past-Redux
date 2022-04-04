@@ -12,17 +12,32 @@ incsrc "code/text/tbl/credits_big.txt"
 ;    Macros for credits texts
 ;----------------------------------------
 
-; Macro for coloured texts (yellow, green and red)
-; PENDING
-!Red = $00
-!Yellow = $1A
-!Green = $38
+; Macros for coloured texts (yellow, green and red)
+;!Red = $00
+;!Yellow = $1A
+;!Green = $38
+macro yellow(str)
+	!i = 0
+	while !i < stringlength("<str>")
+		db char("<str>",!i)-71
+		!i #= !i+1
+	endwhile
+endmacro
+
+macro green(str)
+	!i = 0
+	while !i < stringlength("<str>")
+		db char("<str>",!i)-41
+		!i #= !i+1
+	endwhile
+endmacro
+
 
 ; Macro for 2nd row big text
 macro row(str)
 	!i = 0
 	while !i < stringlength("<str>")
-		db char("<str>",!i)*2
+		db char("<str>",!i)/256	; +66
 		!i #= !i+1
 	endwhile
 endmacro
@@ -110,7 +125,6 @@ endmacro
 ;****************************************
 ; 	Pointers for item entries
 ;****************************************
-
 ; Pointers for the flyover and scrolling credits sequences
 org $0EC32C	; 0x07432C
 	lda credits_text,y	; Originally LDA $BF4C,y
@@ -126,309 +140,421 @@ org $0EBE54	; 0x073E54
 	skip 17
 	lda credits_roll,y	; Originally LDA $B178,y
 
-;****************************************
-; 	Main credits text
-;****************************************
+
+;***************************************************
+; 		Main credits text
+;***************************************************
+;----------------------------------------
+;	Flyover Sequence
+;----------------------------------------
+; 1st byte is Y position and 2nd byte is X position
+; 3rd byte is unknown what it does
+; Last 4th byte before each text is the length byte.
+; The "length byte" is the number of characters x2, and then the result should have 1 substracted from it.
+; i.e.: "HYRULE CASTLE" = [0D (length) * 2] = 1A - 1 = 19
 
 org $0EBF4C	; 0x073F4C-0x074302
 credits_text:
-	db $62,$65,$00,$2B	; Length 22
-	db "the return of the king"|!Yellow	; Color 1, Yellow
+	db $62,$67,$00,$23	; Length 22
+	%yellow("return of the king")	; Color 1, Yellow
 
 	db $62,$E9,$00,$19	; Length 30
 	db "HYRULE CASTLE"	; First row
 	db $63,$09,$00,$19	; Length 30
 	%row("HYRULE CASTLE")	; Second row
 
-	db $62,$68,$00,$1B	; Length 14
-;	db " loyal priest "	; Color 1, Yellow "the loyal sage"
-;	db $62,$EB,$00,$11	; Length 9
+	db $62,$68,$00,$17	; Length 14
+	%yellow("loyal priest")	; Color 1, Yellow "the loyal sage"
+	db $62,$EB,$00,$11	; Length 9
+	db "SANCTUARY"		; THE CHAPEL
+	db $63,$0B,$00,$11
+	%row("SANCTUARY")	; THE CHAPEL
 
-;	db $63,$0B,$00,$11
-;	...
+	db $62,$4F,$00,$01
+	db ","
 
-;	loyal priest - SANCTUARY	; Color 1, Yellow
-;	sahasralah's homecoming - KAKARIKO TOWN	; Color 1, Yellow
-;	vultures rule the desert - DESERT PALACE	; Color 1, Yellow
-;	the bully makes a friend - MOUNTAIN TOWER	; Color 1, Yellow
-;	your uncle recovers - YOUR HOUSE	; Color 1, Yellow
-;	flippers for sale - ZORA'S WATERFALL	; Color 1, Yellow
-;	the witch and assistant - MAGIC SHOP	; Color 1, Yellow
-;	twin lumberjacks - WOODSMEN'S HUT	; Color 1, Yellow
-;	flute boy plays again - HAUNTED GROVE	; Color 1, Yellow
-;	venus, queen of fairies - WISHING WELL	; Color 1, Yellow
-;	the dwarven swordsmiths	- SMITHERY	; Color 1, Yellow
-;	the bug-catching kid - KAKARIKO TOWN	; Color 1, Yellow
-;	the lost old man - DEATH MOUNTAIN	; Color 1, Yellow
-;	the forest thief - LOST WOODS	; Color 1, Yellow
-;	and the master sword	; Color 1, Yellow
-;	sleeps again...		; Color 2, Green
-;	FOREVER!
+	db $62,$65,$00,$2D
+	%yellow("sahasralah's homecoming")
+	db $62,$E9,$00,$1F
+	db "KAKARIKO VILLAGE"
+	db $63,$09,$00,$1F
+	%row("KAKARIKO VILLAGE")
+
+	db $62,$64,$00,$2F
+	%yellow("vultures rule the desert")
+	db $62,$E9,$00,$19
+	db "DESERT TEMPLE"
+	db $63,$09,$00,$19
+	%row("DESERT TEMPLE")
+
+	db $62,$64,$00,$2F
+	%yellow("the bully makes a friend")
+	db $62,$E9,$00,$19
+	db "TOWER OF HERA"
+	db $63,$09,$00,$19
+	%row("TOWER OF HERA")
+
+	db $62,$66,$00,$25
+	%yellow("your uncle recovers")
+	db $62,$EB,$00,$13
+	db "YOUR HOUSE"
+	db $63,$0B,$00,$13
+	%row("YOUR HOUSE")
+
+	db $62,$66,$00,$21
+	%yellow("flippers for sale")
+	db $62,$E8,$00,$1F
+	db "ZORA'S WATERFALL"
+	db $63,$08,$00,$1F
+	%row("ZORA'S WATERFALL")
+
+	db $62,$64,$00,$2D
+	%yellow("the witch and assistant")
+	db $62,$EB,$00,$15
+	db "POTION SHOP"
+	db $63,$0B,$00,$15
+	%row("POTION SHOP")
+
+	db $62,$68,$00,$1F
+	%yellow("twin lumberjacks")
+	db $62,$E9,$00,$1B
+	db "WOODSMEN'S HUT"
+	db $63,$09,$00,$1B
+	%row("WOODSMEN'S HUT")
+
+	db $62,$64,$00,$2D
+	%yellow("ocarina boy plays again")
+	db $62,$E9,$00,$19
+	db "HAUNTED GROVE"
+	db $63,$09,$00,$19
+	%row("HAUNTED GROVE")
+
+	db $62,$64,$00,$2D
+	%yellow("venus, queen of fairies")
+	db $62,$EA,$00,$17
+	db "WISHING WELL"	; SPRING OF LUCK
+	db $63,$0A,$00,$17
+	%row("WISHING WELL")	; SPRING OF LUCK
+
+	db $62,$66,$00,$25
+	%yellow("dwarven swordsmiths")
+	db $62,$EC,$00,$0B
+	db "SMITHY"
+	db $63,$0C,$00,$0B
+	%row("SMITHY")
+
+	db $62,$66,$00,$27
+	%yellow("the bug-catching kid")
+	db $62,$E9,$00,$1F
+	db "KAKARIKO VILLAGE"
+	db $63,$09,$00,$1F
+	%row("KAKARIKO VILLAGE")
+
+	db $62,$48,$00,$1F
+	%yellow("the lost old man")
+	db $62,$E9,$00,$1B
+	db "DEATH MOUNTAIN"	; HEBRA MOUNTAIN
+	db $63,$09,$00,$1B
+	%row("DEATH MOUNTAIN")	; HEBRA MOUNTAIN
+
+	db $62,$68,$00,$17
+	%yellow("forest thief")
+	db $62,$EB,$00,$13
+	db "LOST WOODS"
+	db $63,$0B,$00,$13
+	%row("LOST WOODS")
+
+	db $62,$66,$00,$27
+	%yellow("and the master sword")
+	db $62,$A8,$00,$1D
+	%green("sleeps again...")
+
+	db $62,$EC,$00,$0F
+	db "FOREVER!"
+	db $63,$0C,$00,$0F
+	%row("FOREVER!")
+
+warnpc $0EC2E1	; 0x0742E1
 
 ;----------------------------------------
+;		Epilogue
+;----------------------------------------
+
+; Last 2nd byte before each text is the length byte.
+; The "length byte" is the number of characters x2, and then the result should have 1 substracted from it.
+; i.e.: "HYRULE CASTLE" = [0D (length) * 2] = 1A - 1 = 19
+; The other byte (1st) is the X position where it will begin printing the text
 
 org $0EB178	; 0x073178
 credits_roll:
 	db $0723		; 0723-18
-	db "executive producer"	; Color 2, Green
+	%green("executive producer")	; Color 2, Green
 	db $FF
 	db $081F		; 081F-16
 	db "HIROSHI YAMAUCHI"	; 1st row
 	db $081F		; 081F-16
-	db "HIROSHI YAMAUCHI"	; 2nd row
+	%row("HIROSHI YAMAUCHI")	; 2nd row
 
 	db $0C0F		; 0C0F-8
-	db "producer"		; Color 1, Yellow
+	%yellow("producer")	; Color 1, Yellow
 	db $081F		; 081F-16
 	db "SHIGERU MIYAMOTO"	; 1st row
 	db $081F		; 081F-16
-	db "SHIGERU MIYAMOTO"	; 2nd row
+	%row("SHIGERU MIYAMOTO")	; 2nd row
 
 	db $0C0F		; 0C0F-8
 	db "director"		; Color 3, Red
 	db $091B		; 091B
 	db "TAKASHI TEZUKA"	; 1st row
 	db $091B
-	db "TAKASHI TEZUKA"	; 2nd row
+	%row("TAKASHI TEZUKA")	; 2nd row
 
 	db $0919		; 0919
-	db "script writer"	; Color 2, Green
+	%green("script writer")	; Color 2, Green
 	db $091B		; 091B
 	db "KENSUKE TANABE"	; 1st row
 	db $091B		; 091B
-	db "KENSUKE TANABE"	; 2nd row
+	%row("KENSUKE TANABE")	; 2nd row
 
 	db $0625		; 0625
-	db "assistant directors"	; Color 1, Yellow
+	%yellow("assistant directors")	; Color 1, Yellow
 	db $0721		; 0721
 	db "YASUHISA YAMAMURA"
 	db $0721		; 0721
-	db "YASUHISA YAMAMURA"
+	%row("YASUHISA YAMAMURA")
 	db $0919		; 0919
 	db "YOICHI YAMADA"
 	db $0919		; 0919
-	db "YOICHI YAMADA"
+	%row("YOICHI YAMADA")
 
 	db $0331		; 0331
-	db "screen graphics designers"	; Color 2, Green
+	%green("screen graphics designers")	; Color 2, Green
 	db $081F		; 081F
-	db "object designers"	; Color 1, Yellow
+	%yellow("object designers")	; Color 1, Yellow
 	db $081D		; 081D
 	db "SOICHIRO TOMITA"
 	db $081D		; 081D
-	db "SOICHIRO TOMITA"
+	%row("SOICHIRO TOMITA")
 	db $091B		; 091B
 	db "TAKAYA IMAMURA"
 	db $091B		; 091B
-	db "TAKAYA IMAMURA"
+	%row("TAKAYA IMAMURA")
 
 	db $0529		; 0529
-	db "background designers"	; Color 1, Yellow
+	%yellow("background designers")	; Color 1, Yellow
 	db $081D
 	db "MASANAO ARIMOTO"
 	db $081D
-	db "MASANAO ARIMOTO"
+	%row("MASANAO ARIMOTO")
 	db $0721		; 0721
 	db "TSUYOSHI WATANABE"
 	db $0721		; 0721
-	db "TSUYOSHI WATANABE"
+	%row("TSUYOSHI WATANABE")
 
 	db $081F	; 0x07335F
 	db "program director"	; Color 3, Red
 	db $081F
 	db "YOSHIHIKO NAKAGO"
 	db $081F
-	db "YOSHIHIKO NAKAGO"
+	%row("YOSHIHIKO NAKAGO")
 
 	db $081D	
-	db "main programmer"	; Color 2, Green
+	%green("main programmer")	; Color 2, Green
 	db $081F
 	db "YASUNARI SOEJIMA"
 	db $081F
-	db "YASUNARI SOEJIMA"
+	%row("YASUNARI SOEJIMA")
 	db $091B
 	db "KAZUAKI MORITA"
 	db $091B
-	db "KAZUAKI MORITA"
+	%row("KAZUAKI MORITA")
 
 	db $0A15	; 0x0733EA
-	db "programmers"
+	db "programmers"	; ???
 	db $081F
 	db "TATSUO NISHIYAMA"
 	db $081F
-	db "TATSUO NISHIYAMA"
+	%row("TATSUO NISHIYAMA")
 	db $081D
 	db "YUICHI YAMAMOTO"
 	db $081D
-	db "YUICHI YAMAMOTO"
+	%row("YUICHI YAMAMOTO")
 	db $081F
 	db "YOSHIHIRO NOMOTO"
 	db $081F
-	db "YOSHIHIRO NOMOTO"
+	%row("YOSHIHIRO NOMOTO")
 	db $1B11
 	db "EIJI NOTO"
 	db $1B11
-	db "EIJI NOTO"
+	%row("EIJI NOTO")
 	db $081D
 	db "SATORU TAKAHATA"
 	db $081D
-	db "SATORU TAKAHATA"
+	%row("SATORU TAKAHATA")
 
 	db $091B
 	db "sound composer"	; Color 3, Red
 	db $0B13
 	db "KOJI KONDO"
 	db $0B13
-	db "KOJI KONDO"
+	%row("KOJI KONDO")
 
 	db $0A17
-	db "coordinators"	; Color 2, Green
+	%green("coordinators")	; Color 2, Green
 	db $0B13
 	db "KEIZO KATO"
 	db $0B13
-	db "KEIZO KATO"
+	%row("KEIZO KATO")
 
 	db $0A19
 	db "TAKAO SHIMIZU"
 	db $0A19
-	db "TAKAO SHIMIZU"
+	%row("TAKAO SHIMIZU")
 
 	db $081F
-	db "printed art work"	; Color 1, Yellow
+	%yellow("printed art work")	; Color 1, Yellow
 	db $0919
 	db "YOICHI KOTABE"
 	db $0919
-	db "YOICHI KOTABE"
+	%row("YOICHI KOTABE")
 	db $0A17
 	db "HIDEKI FUJII"
 	db $0A17
-	db "HIDEKI FUJII"
+	%row("HIDEKI FUJII")
 	db $081F
 	db "YOSHIAKI KOIZUMI"
 	db $081F
-	db "YOSHIAKI KOIZUMI"
+	%row("YOSHIAKI KOIZUMI")
 	db $091B
 	db "YASUHIRO SAKAI"
 	db $091B
-	db "YASUHIRO SAKAI"
+	%row("YASUHIRO SAKAI")
 
 	db $081D
 	db "TOMOAKI KUROUME"
 	db $081D
-	db "TOMOAKI KUROUME"
+	%row("TOMOAKI KUROUME")
 
 	db $0721
 	db "special thanks to"	; Color 3, Red
 	db $0919
 	db "NOBUO OKAJIMA"
 	db $0919
-	db "NOBUO OKAJIMA"
+	%row("NOBUO OKAJIMA")
 	db $0721
 	db "YASUNORI TAKETANI"
 	db $0721
-	db "YASUNORI TAKETANI"
+	%row("YASUNORI TAKETANI")
 	db $0A17
 	db "KIYOSHI KODA"
 	db $0A17
-	db "KIYOSHI KODA"
+	%row("KIYOSHI KODA")
 	db $0723
 	db "TAKAMITSU KUZUHARA"
 	db $0723
-	db "TAKAMITSU KUZUHARA"
+	%row("TAKAMITSU KUZUHARA")
 	db $091B
 	db "HIRONOBU KAKUI"
 	db $091B
-	db "HIRONOBU KAKUI"
+	%row("HIRONOBU KAKUI")
 	db $0721
 	db "SHIGEKI YAMASHIRO"
 	db $0721
-	db "SHIGEKI YAMASHIRO"
+	%row("SHIGEKI YAMASHIRO")
 
 	db $0721
 	db "object programmer"	; Color 2, Green
 	db $091B
 	db "TOSHIO IWAWAKI"
 	db $091B
-	db "TOSHIO IWAWAKI"
+	%row("TOSHIO IWAWAKI")
 
 	db $0625
 	db "SHIGEHIRO KASAMATSU"
 	db $0625
-	db "SHIGEHIRO KASAMATSU"
+	%row("SHIGEHIRO KASAMATSU")
 
 	db $0A19
 	db "QUEST HISTORY"
 	db $0A19
-	db "QUEST HISTORY"
+	%row("QUEST HISTORY")
 
 	; 0x073713
 	db $0333
 	db "location            deaths"	; Color 3, Red
 
 	db $041F
-	db "hyrule castle"	; Color 1, Yellow (castle of hyrule)
+	%yellow("hyrule castle")	; Color 1, Yellow (castle of hyrule)
 	db $041B
-	db "castle dungeon"	; Color 2, Green
+	%green("castle dungeon")	; Color 2, Green
 	db $0415
-	db "eastern temple"	; Color 1, Yellow "east palace"
+	%yellow("eastern temple")	; Color 1, Yellow "east palace"
 	db $0419
-	db "desert temple"	; Color 2, Green "desert palace"
+	%green("desert temple")	; Color 2, Green "desert palace"
 	db $041B
-	db "tower of hera"	; Color 1, Yellow "mountain tower"
+	%yellow("tower of hera")	; Color 1, Yellow "mountain tower"
 
 	db $0819
 	db "1 SHADOW TEMPLE"	; "DARK PALACE"
 	db $0323
-	db "level1 SHADOW TEMPLE"	; Color 3, Red "DARK PALACE"
+	db "level"
+	%row("1 SHADOW TEMPLE")	; Color 3, Red "DARK PALACE"
 	db $081B
 	db "2 WATER SHRINE"	; "SWAMP PALACE"
 	db $0325
-	db "level2 WATER SHRINE"	; Color 3, Red "SWAMP PALACE"
+	db "level"
+	%row("2 WATER SHRINE")	; Color 3, Red "SWAMP PALACE"
 	db $0819
 	db "3 SKULL WOODS"
 	db $0323
-	db "level3 SKULL WOODS"	; Color 3, Red
+	db "level"
+	%row("3 SKULL WOODS")	; Color 3, Red
 	db $081B
 	db "4 OUTCAST VILLAGE"	; "THIEVES' TOWN"
 	db $0325
-	db "level4 OUTCAST VILLAGE"	; Color 3, Red "SWAMP PALACE"
+	db "level"
+	%row("4 OUTCAST VILLAGE")	; Color 3, Red "SWAMP PALACE"
 	db $0817
 	db "5 ICE TOWER"	; "ICE PALACE"
 	db $0321
-	db "level5 ICE TOWER"	; Color 3, Red "ICE PALACE"
+	db "level"
+	%row("5 ICE TOWER")	; Color 3, Red "ICE PALACE"
 	db $0819
 	db "6 DEVIL'S BOG"	; "MISERY MIRE"
 	db $0323
-	db "level6 DEVIL'S BOG"	; Color 3, Red "MISERY MIRE"
+	db "level"
+	%row("6 DEVIL'S BOG")	; Color 3, Red "MISERY MIRE"
 	db $0819
 	db "7 TURTLE ROCK"
 	db $0323
-	db "level7 TURTLE ROCK"	; Color 3, Red
+	db "level"
+	%row("7 TURTLE ROCK")	; Color 3, Red
 	db $081D
 	db "8 GANON'S TOWER"
 	db $0327
-	db "level8 GANON'S TOWER"	; Color 3, Red
+	db "level"
+	%row("8 GANON'S TOWER")	; Color 3, Red
 
 	db $0423
 	db "TOTAL LIVES LOST"	; "TOTAL GAMES PLAYED"
 	db $0423
-	db "TOTAL LIVES LOST"	; "TOTAL GAMES PLAYED"
+	%row("TOTAL LIVES LOST")	; "TOTAL GAMES PLAYED"
 
 	db $081F
 	db "YASUNARI NISHIDA"	; 1st row
 	db $081F
-	db "YASUNARI NISHIDA"	; 2nd row
+	%row("YASUNARI NISHIDA")	; 2nd row
 
 	db $052B
 	db "english script writers"	; Color 1, Yellow
 	db $0A17
 	db "DANIEL OWSEN"
 	db $0A17
-	db "DANIEL OWSEN"
+	%row("DANIEL OWSEN")
 	db $081D
 	db "HIROYUKI YAMADA"
 	db $081D
-	db "HIROYUKI YAMADA"
+	%row("HIROYUKI YAMADA")
 
 	;db $0568		; 6805
 	;db "SHIGEHIRO KASAMATSU"
