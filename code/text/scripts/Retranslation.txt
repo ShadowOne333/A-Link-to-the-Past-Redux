@@ -15,6 +15,7 @@
 
 	db !Speed000- !{Number00}. 1- !{Number01},!Line2
 	db 2- !{Number02}. 3- !{Number03}
+
 I c!{an}'t !{ent}!{er_}!{the}!{re} w!{hi}le !{be}!{in}g,!Line2
 	db fol!{lo}!{we}d.
 
@@ -60,6 +61,7 @@ I c!{an}'t !{ent}!{er_}!{the}!{re} w!{hi}le !{be}!{in}g,!Line2
 	db D!{on}'t w!{or}ry. I'll !{be} !{ba}!{ck} by,!Scroll
 	db m!{or}n!{in}g. Plea!{se} !{do}!{nt_}leave,!Scroll
 	db !{the} hou!{se}.
+
 Ugh!{Dots} !{Name}, I !{di}d!{nt_}!{wa}nt !{to},!Line2
 	db drag !{you} !{in}!{to} !{thi}s!{Dots} I !{to}ld !{you},!Line3
 	db !{not} !{to} leave ho!{me}.,!WaitKey,!Scroll
@@ -74,36 +76,52 @@ Ugh!{Dots} !{Name}, I !{di}d!{nt_}!{wa}nt !{to},!Line2
 	db Now, !{go} !{re}scue Pr!{in}cess Zelda.,!Scroll
 	db !{You} a!{re}!{Dots} !{the} pr!{in}cess's!{Dots},!Scroll
 	db !{on}ly!{Dots}
+
 Hey kid, !{wh}!{at_}!{are_}!{you} !{do}!{in}g,!Line2
 	db w!{and}!{er}!{ing_}ar!{ound} !{at_}!{thi}s ti!{me}?,!Line3
 	db On!{ly_}adults !{sh}ould !{be} !{out_}!{thi}s,!WaitKey,!Scroll
 	db l!{at}e.
+
 If !{you}'!{re_}!{lo}!{st}, !{just} pu!{sh} X !{to},!Line2
 	db !{che}!{ck} !{out_}!{you}r !{ma}p. Did !{you},!Line3
 	db !{know} th!{at_}al!{re}ady, kid?
+
 M!{an}y objects !{can_}!{be} lift!{ed_}!{up},!Line2
 	db by p!{re}ss!{ing_}A w!{hi}le fac!{in}g,!Line3
 	db !{the}m. Did !{you} !{know} !{tha}t,!WaitKey,!Scroll
 	db al!{re}ady, kid?
+
+
 Once !{you} !{get} !{you}r h!{and}s !{on} a,!Line2
 	db sw!{or}d, !{you} !{can_}u!{se} !{it} by,!Line3
 	db p!{re}ss!{ing_}B. D!{on}'t !{you} !{for}!{get}!
+
 !{The} g!{lo}w!{ing_}!{ma}rk !{on} !{you}r !{ma}p,!Line2
 	db !{is} !{you}r !{des}t!{in}!{at}i!{on}. Did !{you},!Line3
 	db !{know} th!{at_}al!{re}ady, kid?
+
+
 P!{re}ss A !{in} !{fro}nt !{of} !{che}!{st}s !{to},!Line2
 	db op!{en_}!{the}m !{up}. Did !{you} !{know},!Line3
 	db th!{at_}al!{re}ady, kid?
+
+
 !{You} !{can_}l!{ear}n a !{lo}t !{fro}m us,!Line2
 	db !{so}l!{di}!{er}s. But !{you} al!{re}ady knew,!Line3
 	db !{tha}t, !{di}d!{nt_}!{you}?
+
+
 Fir!{st}, !{me}et w!{it}h !{the} eld!{er_}!{of},!Line2
 	db !{the} vil!{la}ge, !{and_}!{the}n, obt!{ain},!Line3
 	db !{the} M!{ast}!{er_}Sw!{or}d.
+
+
 Oh, Pr!{in}cess Zelda, !{you} a!{re},!Line2
 	db safe! And !{you}, !{Name}, app!{ear},!Line3
 	db !{to} !{be} !{the} !{on}e !{wh}o !{re}scued,!WaitKey,!Scroll
 	db h!{er}.
+
+
 !{Name}, I s!{en}!{se} th!{at_}!{so}!{me} k!{in}d,!Line2
 	db !{of} !{ev}il spir!{it} !{has} tak!{en},!Line3
 	db pos!{se}ssi!{on} !{of} !{the} b!{is}hop.,!WaitKey,!Scroll
@@ -136,9 +154,13 @@ If !{you} defe!{at_}!{the} b!{is}hop, !{the},!Line2
 	db peo!{ple} !{in} !{the} c!{ast}le might,!Line3
 	db !{re}g!{ain} !{the}ir s!{an}!{it}y.,!WaitKey,!Scroll
 	db Go collect !{all_}th!{re}e p!{en}d!{an}ts!
+
+
 Take tho!{se} th!{re}e p!{en}d!{an}ts !{to},!Line2
 	db !{the} !{for}e!{st}. !{The} M!{ast}!{er_}Sw!{or}d,!Line3
 	db a!{wa}!{it}s !{you} !{the}!{re}.
+
+
 Oh, !{Name}! !{You} w!{er}e a !{se}c!{on}d,!Line2
 	db !{to}o l!{at}e. I!{Dots} I !{wa}s a co!{wa}rd!{Dots},!Line3
 	db !{The}y abduct!{ed_}Zelda !{and_}!{to}ok,!WaitKey,!Scroll
@@ -149,8 +171,12 @@ Oh, !{Name}! !{You} w!{er}e a !{se}c!{on}d,!Line2
 	db !{You} !{mu}!{st} f!{in}d Pr!{in}cess Zelda,!Scroll
 	db !{be}!{for}e !{the}y sacrifice h!{er}.,!Scroll
 	db P-!{ple}a!{se}!{Dots} s-save h!{er}!{Dots}
+
+
 !{Tha}nk !{you}, !{Name}. I !{ha}d a,!Line2
 	db feel!{ing_}!{you} w!{er}e n!{ear}.
+
+
 F!{at}h!{er}, I !{in}de!{ed_}!{have} !{Name},!Line2
 	db !{to} !{tha}nk !{for} my f!{re}e!{do}m.,!WaitKey,!Line3
 	db Wh!{en_}I !{wa}s impr!{is}!{on}ed, !{the},!Scroll
@@ -167,9 +193,13 @@ F!{at}h!{er}, I !{in}de!{ed_}!{have} !{Name},!Line2
 	db !{be}!{for}e !{it}!{s_}!{to}o l!{at}e! Protect,!Scroll
 	db our k!{in}g!{do}m! I !{know} !{you} !{can_}!{do},!WaitKey,!Scroll
 	db !{it}. I !{know} !{it}!{Dots}
+
+
 !{Name}, !{ple}a!{se} !{be} ca!{re}ful! I'll,!Line2
 	db !{be} h!{er}e, pray!{ing_}!{for} !{you}r,!Line3
 	db safety!
+
+
 	db !Window02,!Speed03Help !{me}!{Dots},!WaitKey,!Line2
 	db Plea!{se} help !{me}!{Dots},!WaitKey,!Line3
 	db I'm !{be}!{ing_}held pr!{is}!{on}!{er_}!{in} !{the},!Scroll
@@ -186,17 +216,23 @@ F!{at}h!{er}, I !{in}de!{ed_}!{have} !{Name},!Line2
 	db I am h!{er}e !{in} !{the} dunge!{on} !{of} !{the},!Scroll
 	db c!{ast}le.,!WaitKey,!Scroll
 	db Plea!{se} help !{me}!{Dots}
+
+
 	db !Window02,!Speed03Help !{me}!{Dots},!WaitKey,!Line2
 	db I'm !{be}!{ing_}held pr!{is}!{on}!{er_}!{in} !{the},!Line3
 	db c!{ast}le dunge!{on}.,!WaitKey,!Scroll
 	db !{The}!{re} !{sh}ould !{be} a passage !{fro}m,!Scroll
 	db outside !{the} c!{ast}le lea!{di}ng,!Scroll
 	db !{di}!{re}ct!{ly_}!{in}!{to} !{the} courtyard.
+
+
 !{The}!{re}!{s_}a !{se}c!{re}t passage,!Line2
 	db lead!{ing_}!{fro}m !{the} thr!{on}e room,!Line3
 	db !{to} !{the} C!{ha}pel.,!WaitKey,!Scroll
 	db !{The} prie!{st} !{the}!{re} !{wi}ll c!{er}t!{ain}ly,!Scroll
 	db help us.
+
+
 !{Thi}s !{di}sp!{la}y !{sh}ould !{be},!Line2
 	db movea!{ble}. Do !{you} !{have} a,!Line3
 	db L!{an}t!{er}n? It!{s_}p!{it}ch b!{la}!{ck},!WaitKey,!Scroll
@@ -205,15 +241,21 @@ F!{at}h!{er}, I !{in}de!{ed_}!{have} !{Name},!Line2
 	db If !{you}'!{re_}!{re}ady, let!{s_}!{get} !{to},!Scroll
 	db !{it}! Help !{me} pu!{sh} !{it} !{fro}m !{the},!Scroll
 	db left!
+
+
 Try pull!{ing_}!{thi}s l!{ev}!{er}. Hold A,!Line2
 	db !{to} grab !{it}, th!{en_}pull by,!Line3
 	db p!{re}ss!{ing_}!{do}wn !{on} !{the} D-pad.
+
+
 All right, let!{s_}!{get} !{out_}!{of} h!{er}e,!Line2
 	db !{be}!{for}e !{the} b!{is}hop !{not}ices. I,!Line3
 	db !{ha}pp!{en_}!{to} !{know} !{an} escape,!WaitKey,!Scroll
 	db route.,!WaitKey,!Scroll
 	db We !{sh}ould head !{to} !{the} m!{ain} !{ha}ll,!Scroll
 	db !{on} !{the} fir!{st} f!{lo}!{or}. Let!{s_}!{go}!
+
+
 !{Name}, l!{is}t!{en_}ca!{re}fully. !{The},!Line2
 	db c!{ast}le guards !{are_}und!{er_}!{the},!Line3
 	db spell !{of} Agahnim!{s_}dark !{ma}gic. I,!WaitKey,!Scroll
@@ -232,21 +274,31 @@ All right, let!{s_}!{get} !{out_}!{of} h!{er}e,!Line2
 	db If !{you} !{do}!{nt_}!{know} !{wh}!{at_}!{to} !{do},!Scroll
 	db next, !{you} !{can_}al!{so} v!{is}!{it} a,!Scroll
 	db !{for}tune tell!{er}.
+
+
 !{Name}, !{you} !{are_}w!{on}d!{er}ful! As,!Line2
 	db I thought, !{the} !{pow}!{er_}!{of} !{the},!Line3
 	db H!{er}o !{re}!{st}s w!{it}!{hi}n !{you}!,!WaitKey,!Scroll
 	db Now, !{all_}!{tha}t!{s_}left !{is} !{to} obt!{ain},!Scroll
 	db !{the} M!{ast}!{er_}Sw!{or}d. !{You} !{wi}ll,!Scroll
 	db defe!{at_}!{the} b!{is}hop!
+
+
 	db !Window02,!Speed03!{Name}! Help! !{The} c!{ast}le,!Line2
 	db guards !{are_}!{com}!{ing_}!{in}!{to} !{the},!Line3
 	db C!{ha}pel! AIEEEEE!
+
+
 Aft!{er_}pass!{ing_}through !{the}!{se},!Line2
 	db !{se}w!{er}s, !{we}'ll !{be} v!{er}y c!{lo}!{se} !{to},!Line3
 	db !{the} C!{ha}pel.,!WaitKey,!Scroll
 	db Let!{s_}!{be} ca!{re}ful.
+
+
 Bey!{on}d th!{at_}!{do}!{or} !{is} !{the} C!{ha}pel.,!Line2
 	db Go pull !{the} sw!{it}ch ov!{er_}!{the}!{re}.
+
+
 Oh, !{it}!{s_}!{you}, !{Name}. Wh!{at_}c!{an},!Line2
 	db !{an} old wom!{an} like !{me} !{do} !{for},!Line3
 	db !{you}?,!WaitKey,!Scroll
@@ -257,6 +309,8 @@ Oh, !{it}!{s_}!{you}, !{Name}. Wh!{at_}c!{an},!Line2
 	db Wh!{at}!{s_}!{thi}s a!{bo}ut !{the} M!{ast}!{er},!Scroll
 	db Sw!{or}d? I !{do}!{nt_}!{re}!{me}m!{be}r !{the},!Scroll
 	db details exactly, but!{Dots}
+
+
 L!{on}g a!{go}, a peo!{ple} !{know}n as,!Line2
 	db !{the} Hyli!{an}s !{pro}sp!{er}!{ed_}!{in} !{thi}s,!Line3
 	db l!{and}.,!WaitKey,!Scroll
@@ -272,6 +326,7 @@ L!{on}g a!{go}, a peo!{ple} !{know}n as,!Line2
 	db!{4_} > Yes,!Scroll
 	db!{4_}!{4_}Not !{at_}all,!Choose,!End
 
+
 In !{an}y ca!{se}, !{you} !{sh}ould !{se}ek,!Line2
 	db !{out_}!{the} eld!{er}. !{The}!{re} !{mu}!{st} !{be},!Line3
 	db !{so}!{me}!{on}e !{in} !{the} vil!{la}ge !{wh}o,!WaitKey,!Scroll
@@ -279,12 +334,18 @@ In !{an}y ca!{se}, !{you} !{sh}ould !{se}ek,!Line2
 	db Well, I s!{up}po!{se} !{it}!{s_}ti!{me} !{for},!Scroll
 	db !{you} !{to} !{be} !{on} !{you}r !{wa}y. And,!Scroll
 	db !{Name}, !{ple}a!{se} !{be} ca!{re}ful!{Dots}
+
+
 Oh, !{Name}! Wh!{at_}a f!{in}e !{you}ng,!Line2
 	db m!{an} !{you}'ve !{be}!{com}e. Plea!{se},!Line3
 	db save us vil!{la}g!{er}s.
+
+
 Hey! H!{er}e !{is} !{Name}, !{the},!Line2
 	db !{wa}nt!{ed_}m!{an}! Sol!{di}!{er}s! Any!{on}e!,!Line3
 	db Co!{me} qui!{ck}ly!
+
+
 Hmmm!{Dots} At l!{ast}, !{you} !{have},!Line2
 	db collect!{ed_}!{the} th!{re}e p!{en}d!{an}ts!,!Line3
 	db It!{s_}ti!{me} !{to} head !{to} !{the} Lo!{st},!WaitKey,!Scroll
@@ -292,8 +353,12 @@ Hmmm!{Dots} At l!{ast}, !{you} !{have},!Line2
 	db If !{you} !{tr}u!{ly_}pos!{se}ss !{the},!Scroll
 	db courage, !{the} sw!{or}d !{it}!{se}lf s!{ha}ll,!Scroll
 	db choo!{se} !{you}!{Dots}
+
+
 I am !{to}o old !{to} fight. My hope,!Line2
 	db !{re}!{st}s !{ent}i!{re}!{ly_}w!{it}h !{you}!{Dots}
+
+
 I am !{in}de!{ed_}Sa!{has}rah!{la}, vil!{la}ge,!Line2
 	db eld!{er_}!{and_}!{des}c!{en}d!{an}t !{of} !{the},!Line3
 	db S!{ev}!{en_}Sages.,!WaitKey,!Scroll
@@ -317,10 +382,14 @@ Good. !{You} !{sh}ould fir!{st} obt!{ain},!Line2
 	db If !{you} succeed, I'll !{have} a tale,!Scroll
 	db !{to} pass !{on} !{to} !{you}. Now, head,!Scroll
 	db !{for} !{the} tem!{ple}.
+
+
 !{The}!{re} !{ma}y !{be} oth!{er_}!{des}c!{en}d!{an}ts,!Line2
 	db !{of} !{the} S!{ev}!{en_}Sages !{hi}d!{ing_}!{fro}m,!Line3
 	db !{the} c!{ast}le !{so}l!{di}!{er}s. Seek !{the}m,!WaitKey,!Scroll
 	db out.
+
+
 	db !Window02,!Speed03!{Name}, !{it} !{is} I, Sa!{has}rah!{la}. !{The},!Line2
 	db w!{or}ld !{wh}!{er}e !{you} !{st}!{and_}!{wa}s,!Line3
 	db !{on}ce call!{ed_}!{the} Sacr!{ed_}Realm.,!WaitKey,!Scroll
@@ -346,6 +415,8 @@ Good. !{You} !{sh}ould fir!{st} obt!{ain},!Line2
 	db Plea!{se} fulfill !{wh}!{at_}I ask, !{and},!Scroll
 	db !{know} th!{at_}!{we} !{are_}!{all_}count!{in}g,!WaitKey,!Scroll
 	db !{on} !{you}!
+
+
 	db !Window02,!Speed03How!{ev}!{er}, !{you} wo!{nt_}ac!{com}pl!{is}h,!Line2
 	db !{mu}ch !{in} th!{at_}!{for}m.,!WaitKey,!Line3
 	db Seek !{the} Mo!{on} P!{ear}l !{in} !{the},!Scroll
@@ -353,9 +424,13 @@ Good. !{You} !{sh}ould fir!{st} obt!{ain},!Line2
 	db !{pro}tects ag!{ain}!{st} !{the} Dark,!WaitKey,!Scroll
 	db W!{or}ld!{s_}!{ma}gic !{so} !{you} c!{an},!Scroll
 	db !{re}t!{ain} !{you}r h!{er}oic !{for}m.
+
+
 A helpful !{it}em !{is} !{hi}dd!{en_}!{in} a,!Line2
 	db cave!{2_}e!{ast} !{of} Lake Hylia. Go,!Line3
 	db !{get} !{it}!
+
+
 Oh? So !{you}'ve obt!{ain}!{ed_}!{the},!Line2
 	db P!{en}d!{an}t !{of} Courage! I !{sh}!{all_}now,!Line3
 	db !{re}!{la}y !{the} tale I spoke !{of}.,!WaitKey,!Scroll
@@ -380,6 +455,8 @@ Oh? So !{you}'ve obt!{ain}!{ed_}!{the},!Line2
 	db w!{it}h !{you}. !{Thi}s t!{re}asu!{re_}!{has},!WaitKey,!Scroll
 	db !{be}!{en_}h!{and}!{ed_}!{do}wn !{in} my family,!Scroll
 	db !{for} g!{en}!{er}!{at}i!{on}s.
+
+
 I am !{in}de!{ed_}Sa!{has}rah!{la}, vil!{la}ge,!Line2
 	db eld!{er_}!{and_}!{des}c!{en}d!{an}t !{of} !{the},!Line3
 	db S!{ev}!{en_}Sages.,!WaitKey,!Scroll
@@ -418,191 +495,301 @@ I am !{in}de!{ed_}Sa!{has}rah!{la}, vil!{la}ge,!Line2
 	db w!{it}h !{you}. !{Thi}s t!{re}asu!{re_}!{has},!WaitKey,!Scroll
 	db !{be}!{en_}h!{and}!{ed_}!{do}wn !{in} my family,!Scroll
 	db !{for} g!{en}!{er}!{at}i!{on}s.
+
+
 100 r!{up}ees !{to} !{an}y!{on}e !{wh}o,!Line2
 	db !{lo}c!{at}es a girl !{des}c!{en}d!{ing_}!{fro}m,!Line3
 	db !{the} S!{ev}!{en_}Sages. - !{The} K!{in}g
+
+
 !{3_}!{LinkL}!{LinkR}!{2_}WANTED!,!Line2
 	db ,!Line2
 	db !{Thi}s !{is} !{Name}, !{the} crim!{in}al,!Line3
 	db !{wh}o kidnapp!{ed_}Pr!{in}cess Zelda.,!WaitKey,!Scroll
 	db C!{all_}a !{so}l!{di}!{er_}if !{you} !{se}e !{hi}m!
+
+
 DANGER!,!Line2
 	db Unauth!{or}iz!{ed_}!{tr}avel !{to} Hebra,!Line3
 	db Mount!{ain} !{is} !{pro}!{hi}b!{it}ed.
+
+
 !{Thi}s !{wa}y !{Up},!Line2
 	db !{4_}!{4_} Lo!{st} Woods
+
+
 DANGER!,!Line2
 	db Bew!{are_}!{of} deep w!{at}!{er_}!{and_}Z!{or}a!
+
+
 Wel!{com}e !{to} !{the} Poti!{on} Shop.,!Line2
 	db !{The} W!{at}!{er}f!{all_}!{of} W!{is}!{hi}ng !{is},!Line3
 	db !{just} ahead.!{2_}
+
+
 !{Thi}s cave leads !{ba}!{ck} !{to} !{the},!Line2
 	db vil!{la}ge.
+
+
 !{Thi}s !{wa}y !{Down},!Line2
 	db !{4_}!{4_} Lake Hylia,!Line3
 	db !{4_}!{4_} Shop
+
+
 !{Thi}s !{wa}y !{Left},!Line2
 	db !{4_}!{4_} Kakariko Vil!{la}ge
+
+
 !{Thi}s !{wa}y !{Left},!Line2
 	db !{4_}!{4_} Des!{er}t !{of} My!{st}!{er}y
+
+
 !{Thi}s !{wa}y !{Up} !{Right},!Line2
 	db !{4_}!{4_} Poti!{on} Shop,!Line3
 	db !{4_}!{4_} W!{at}!{er}f!{all_}!{of} W!{is}!{hi}ng
+
+
 !{Thi}s !{wa}y !{Right} E!{ast}!{er}n Tem!{ple},!Line3
 	db !{Thi}s !{wa}y !{Left} Hyrule C!{ast}le
+
+
 Lake Hylia
+
+
 D!{on}'t !{bo}th!{er_}talk!{ing_}!{to} !{me}. I'm,!Line2
 	db !{just} !{an} ecc!{en}!{tr}ic middle-aged,!Line3
 	db m!{an}.,!WaitKey,!Scroll
 	db PS - Plea!{se} !{do}!{nt_}!{st}eal !{thi}s,!Scroll
 	db sign.
+
+
 Hou!{se} !{of} Lum!{be}rja!{ck}s,!Line2
 	db Bun !{and_}Y!{an}
+
+
 !{Thi}s !{wa}y !{Down},!Line2
 	db !{4_}!{3_}Kakariko Vil!{la}ge
+
+
 Bubbl!{ing_}!{go}o!{Dots} Bubbl!{ing_}!{go}o!{Dots},!Line2
 	db B!{re}w!{ing_}!{up} !{mu}!{sh}room poti!{on}s,!Line3
 	db !{for} !{you}!{Dots}
+
+
 Hehehe!{Dots} !{Tha}nk !{you}, !{you}ng m!{an}.,!Line2
 	db Co!{me} !{ba}!{ck} l!{at}!{er_}!{and_}!{se}e my,!Line3
 	db ass!{is}t!{an}t !{for} a !{to}k!{en_}!{of} my,!WaitKey,!Scroll
 	db !{tha}nks!{Dots} Hehehe!
+
+
 Ah, !{the} s!{we}et s!{me}ll !{of} rott!{en},!Line2
 	db fru!{it}! If !{you} !{give_}!{me} !{tha}t,!Line3
 	db !{mu}!{sh}room, I !{can_}f!{in}!{is}h my b!{re}w.,!WaitKey,!Scroll
 	db Hehehe!
+
+
 If !{you} !{wa}nt !{to} buy !{the} poti!{on},,!Line2
 	db !{you}'ll ne!{ed_}a !{bo}ttle fir!{st}.,!Line3
 	db Hehehe!,!WaitKey,!Scroll
 	db H!{er}e, !{tr}y a sip !{of} !{the} Red,!Scroll
 	db Poti!{on}, f!{re}e !{of} c!{ha}rge. Hehehe!
+
+
 R!{ed_}!{re}!{st}!{or}es !{you}r health.,!Line2
 	db G!{re}!{en_}!{re}!{st}!{or}es !{you}r !{ma}gic,!Line3
 	db !{pow}!{er}. Blue !{re}!{st}!{or}es !{bo}th,!WaitKey,!Scroll
 	db health !{and_}!{ma}gic.,!WaitKey,!Scroll
 	db H!{er}e, !{tr}y a sip !{of} !{the} Red,!Scroll
 	db Poti!{on}, f!{re}e !{of} c!{ha}rge. Hehehe!
+
+
 W!{it}h!{out_}a !{bo}ttle, !{you} wo!{nt_}!{be},!Line2
 	db buy!{ing_}!{an}y poti!{on}s. Hehehe!
+
+
 !{You} c!{an}'t buy a poti!{on} if !{you}r,!Line2
 	db !{bo}ttles !{are_}full. Hehehe!
+
+
 I !{go}t a L!{an}t!{er}n! Now I !{can_}light,!Line2
 	db t!{or}!{che}s by p!{re}ss!{ing_}Y!
+
+
 It!{s_}a Boom!{er}!{an}g! I'll equip !{it},!Line2
 	db w!{it}h Start !{and_}!{give_}!{it} a !{tr}y!
+
+
 I f!{ound} a Bow! Now I !{can_}!{sh}oot,!Line2
 	db arrows!,!WaitKey,!Line3
 	db Or !{at_}le!{ast} until I run out.
+
+
 I !{bo}rrow!{ed_}a Shovel! Ti!{me} !{to},!Line2
 	db f!{in}d a !{go}od p!{la}ce !{to} !{di}g,!Line3
 	db holes. Let!{s_}!{get} !{di}gg!{in}g!
+
+
 Hey, !{it}!{s_}!{the} Magic Cape! I c!{an},!Line2
 	db v!{an}!{is}h !{in}!{to} !{thin} air w!{it}h !{thi}s!,!WaitKey,!Line3
 	db But I !{go}tta w!{at}ch my !{ma}gic,!Scroll
 	db !{me}t!{er}!
+
+
 !{Thi}s !{is} Magic Powd!{er}! Let's,!Line2
 	db !{tr}y spr!{in}kl!{ing_}!{it} !{on} !{en}emies,!Line3
 	db !{and_}various oth!{er_}!{thin}gs!
+
+
 I !{bo}ught Z!{or}a!{s_}Flipp!{er}s! I c!{an},!Line2
 	db s!{wi}m easi!{ly_}through deep w!{at}!{er},!Line3
 	db now!
+
+
 I !{go}t !{the} Pow!{er_}G!{lo}ves!,!Line2
 	db S!{tr}!{en}gth !{is} s!{we}ll!{ing_}!{in} !{bo}th !{of},!Line3
 	db my arms.,!WaitKey,!Scroll
 	db Lift!{ing_}!{up} !{st}!{on}es !{wi}ll !{be} a,!Scroll
 	db b!{re}eze now!
+
+
 I !{go}t !{the} P!{en}d!{an}t !{of} Courage!,!Line2
 	db Let!{s_}!{sh}ow !{it} !{to} !{the} eld!{er},!Line3
 	db Sa!{has}rah!{la}.,!WaitKey,!Scroll
 	db Two m!{or}e p!{en}d!{an}ts !{re}m!{ain}!
+
+
 I !{go}t !{the} P!{en}d!{an}t !{of} W!{is}!{do}m!,!Line2
 	db And I sudd!{en}!{ly_}feel a b!{it},!Line3
 	db !{st}r!{on}g!{er}!,!WaitKey,!Scroll
 	db Ti!{me} !{to} !{go} !{for} !{the} f!{in}al,!Scroll
 	db p!{en}d!{an}t.
+
+
 I !{go}t !{the} P!{en}d!{an}t !{of} Pow!{er}!,!Line2
 	db Yeah!,!WaitKey,!Line3
 	db W!{it}h !{all_}th!{re}e p!{en}d!{an}ts, !{it}'s,!Scroll
 	db ti!{me} !{to} head !{to} !{the} !{for}e!{st} !{and},!Scroll
 	db !{re}!{tr}i!{ev}e !{the} M!{ast}!{er_}Sw!{or}d!
+
+
 !{Thi}s Mu!{sh}room s!{me}lls like,!Line2
 	db s!{we}et, rott!{en_}fru!{it}.,!WaitKey,!Line3
 	db I !{can_}!{give_}!{it} !{to} !{so}!{me}!{on}e by,!Scroll
 	db p!{re}ss!{ing_}Y.
+
+
 !{Thi}s !{is} !{the} To!{me} !{of} Mu!{do}ra! I,!Line2
 	db !{can_}u!{se} !{it} !{to} deciph!{er_}!{the},!Line3
 	db !{an}ci!{ent} Hyli!{an} l!{an}guage!
+
+
 I f!{ound} !{the} Mo!{on} P!{ear}l! It !{wi}ll,!Line2
 	db !{pro}tect my !{bo}dy !{fro}m !{the},!Line3
 	db tw!{is}t!{ed_}effects !{of} !{the} Gold!{en},!WaitKey,!Scroll
 	db Pow!{er}.
+
+
 I f!{ound} !{the} Compass! Now, I c!{an},!Line2
 	db p!{in}po!{in}t !{the} !{bo}ss m!{on}!{st}!{er}'s,!Line3
 	db !{lo}c!{at}i!{on}!
+
+
 I !{go}t a !{ma}p! I !{can_}p!{re}ss X !{to},!Line2
 	db !{se}e !{the} dunge!{on} !{la}y!{out_}!{and_}my,!Line3
 	db !{lo}c!{at}i!{on}!
+
+
 I f!{ound} !{the} Ice Rod! It s!{en}ds a,!Line2
 	db s!{ha}rp c!{hi}ll cleav!{ing_}through,!Line3
 	db !{the} air.,!WaitKey,!Scroll
 	db But I !{go}tta w!{at}ch my !{ma}gic,!Scroll
 	db !{me}t!{er}!
+
+
 I f!{ound} !{the} Fi!{re_}Rod! It s!{en}ds,!Line2
 	db crims!{on} f!{la}!{me}s !{sh}oot!{in}g,!Line3
 	db through !{the} air.,!WaitKey,!Scroll
 	db But I !{go}tta w!{at}ch my !{ma}gic,!Scroll
 	db !{me}t!{er}!
+
+
 !{Thi}s !{is} !{the} Eth!{er_}Medalli!{on}! Its,!Line2
 	db !{ma}gic summ!{on}s icy w!{in}ds !{fro}m,!Line3
 	db !{the} !{up}p!{er_}!{at}mosph!{er}e.,!WaitKey,!Scroll
 	db !{Thi}s !{wi}ll !{re}al!{ly_}dr!{ain} my !{ma}gic,!Scroll
 	db !{me}t!{er}!
+
+
 !{Thi}s !{is} !{the} Bom!{bo}s Medalli!{on}!,!Line2
 	db Its !{ma}gic !{ma}kes !{the} gr!{ound},!Line3
 	db !{er}!{up}t !{in} fi!{er}y exp!{lo}si!{on}s.,!WaitKey,!Scroll
 	db !{Thi}s !{wi}ll !{re}al!{ly_}dr!{ain} my !{ma}gic,!Scroll
 	db !{me}t!{er}!
+
+
 !{Thi}s !{is} !{the} Quake Medalli!{on}! Its,!Line2
 	db !{ma}gic cau!{se}s viol!{ent} t!{re}m!{or}s,!Line3
 	db !{and_}!{st}uns n!{ear}by !{en}emies.,!WaitKey,!Scroll
 	db !{Thi}s !{wi}ll !{re}al!{ly_}dr!{ain} my !{ma}gic,!Scroll
 	db !{me}t!{er}!
+
+
 I !{go}t !{the} Magic Hamm!{er}! Let's,!Line2
 	db !{go} p!{ound} !{so}!{me} !{st}akes !{in}!{to} !{the} ,!Line3
 	db gr!{ound}.,!WaitKey,!Scroll
 	db He!{ck}, I'll p!{ound} !{ev}!{er}y!{thin}g! Bam,!Scroll
 	db !{ba}m ti!{me}!
+
+
 Oh, h!{er}e!{s_}!{the} Ocar!{in}a! Its,!Line2
 	db !{mu}sic su!{re}!{ly_}!{has} my!{st}!{er}ious,!Line3
 	db !{pow}!{er}!
+
+
 I f!{ound} !{the} C!{an}e !{of} So!{ma}ria!,!Line2
 	db Wh!{at_}a my!{st}!{er}ious !{st}aff!{Dots},!WaitKey,!Line3
 	db !{Thi}s !{sh}ould !{be} a big help !{wh}!{en_}I,!Scroll
 	db l!{ear}n how !{to} u!{se} !{it}!
+
+
 BOING! !{Thi}s !{is} !{the} Hook!{sh}ot! It,!Line2
 	db ext!{en}ds, !{it} c!{on}!{tr}acts, !{and}!{Dots},!Line3
 	db BOING! ,!WaitKey,!Scroll
 	db I'll grap!{ple} !{all_}k!{in}ds !{of} !{thin}gs!
+
+
 I f!{ound} !{so}!{me} Bombs! Aft!{er},!Line2
 	db p!{la}c!{ing_}a Bomb, I !{can_}pi!{ck} !{it} !{up},!Line3
 	db w!{it}h A !{to} throw !{it}!
+
+
 I've !{go}t a Bottle! I !{can_}!{st}!{or}e,!Line2
 	db m!{an}y !{di}ff!{er}!{ent} !{thin}gs !{in}side,!Line3
 	db !{and_}u!{se} !{the}m l!{at}!{er}!
+
+
 I f!{ound} !{the} Big Key! Now I c!{an},!Line2
 	db un!{lo}!{ck} !{do}!{or}s !{and_}!{che}!{st}s !{tha}t,!Line3
 	db !{do}!{nt_}op!{en_}w!{it}h n!{or}!{ma}l keys!
+
+
 I !{go}t !{the} T!{it}!{an}!{s_}M!{it}ts! I c!{an},!Line2
 	db now lift !{the} dark, heavy,!Line3
 	db !{st}!{on}es th!{at_}w!{er}e impossi!{ble} !{to},!WaitKey,!Scroll
 	db budge!
+
+
 I !{re}ceiv!{ed_}!{the} Magic Mirr!{or}!,!Line2
 	db It!{s_}blue, cl!{ear} !{and_}!{be}autiful!{Dots},!WaitKey,!Line3
 	db Gaz!{ing_}!{in}!{to} !{it}, I feel like I'm,!Scroll
 	db !{be}!{ing_}s!{wa}l!{lo}w!{ed_}!{up} !{in}!{to} !{an}oth!{er},!Scroll
 	db w!{or}ld!{Dots}
+
+
 !{Thi}s !{is} !{it}! !{The} M!{ast}!{er_}Sw!{or}d!,!WaitKey,!Line2
 	db !{Dots}No, I guess !{not}. Too !{ba}d.
+
+
 	db !Window02,!Speed03!{The} eld!{er_}Sa!{has}rah!{la}!{s_}voice,!Line2
 	db echoes through!{out_}!{the} a!{re}a!{Dots},!WaitKey,!Line3
 	db !{Name}, !{you} !{have} !{do}ne !{we}ll !{in},!Scroll
@@ -615,54 +802,84 @@ I !{re}ceiv!{ed_}!{the} Magic Mirr!{or}!,!Line2
 	db !{The} f!{at}e !{of} !{thi}s k!{in}g!{do}m !{is} !{in},!Scroll
 	db !{you}r h!{and}s, !{Name}. We !{are_}all,!Scroll
 	db count!{ing_}!{on} !{you}!{Dots}
+
+
 Hehe! Excell!{ent}. !{Thi}s !{is} !{the} Red,!Line2
 	db Poti!{on}. Dr!{in}k !{it} !{to} !{re}!{st}!{or}e !{you}r,!Line3
 	db health.
+
+
 Hehe! Excell!{ent}. !{Thi}s !{is} !{the},!Line2
 	db G!{re}!{en_}Poti!{on}. Dr!{in}k !{it} !{to},!Line3
 	db !{re}!{st}!{or}e !{you}r !{ma}gic !{pow}!{er}.
+
+
 Hehe! Excell!{ent}. !{Thi}s !{is} !{the},!Line2
 	db Blue Poti!{on}. Dr!{in}k !{it} !{to} !{re}!{st}!{or}e,!Line3
 	db !{you}r health !{and_}!{ma}gic !{pow}!{er}.
+
+
 I !{bo}rrow!{ed_}a Bug-C!{at}c!{hi}ng Net!,!Line2
 	db Hmm!{Dots} I w!{on}d!{er_}if I !{can_}c!{at}ch,!Line3
 	db oth!{er_}!{thin}gs !{be}si!{des} !{in}!{se}cts.
+
+
 I f!{ound} !{the} Blue Tunic! W!{ear}!{in}g,!Line2
 	db !{thi}s dec!{re}a!{se}s !{the} da!{ma}ge I,!Line3
 	db take! V!{er}y cool!
+
+
 I f!{ound} !{the} R!{ed_}Tunic! W!{ear}!{in}g,!Line2
 	db !{thi}s dec!{re}a!{se}s !{the} da!{ma}ge I,!Line3
 	db take !{ev}!{en_}m!{or}e !{tha}n !{the} Blue,!WaitKey,!Scroll
 	db Tunic!
+
+
 All right! My sw!{or}d !{just} !{go}t,!Line2
 	db !{st}r!{on}g!{er}! I feel !{it}s !{pow}!{er},!Line3
 	db f!{lo}w!{ing_}through my !{bo}dy!
+
+
 I f!{ound} !{the} Mirr!{or} S!{hi}eld! It,!Line2
 	db !{can_}deflect !{be}ams I couldn't,!Line3
 	db b!{lo}!{ck} w!{it}h my old !{sh}ield.
+
+
 I !{go}t !{the} C!{an}e !{of} Byra! If I,!Line2
 	db !{wa}ve !{it} !{on}ce through !{the} air, a,!Line3
 	db r!{ing_}!{of} l!{ight_}!{wi}ll !{pro}tect !{me}!
+
+
 Eh? It!{s_}!{lo}!{ck}ed. If I !{ha}d !{the},!Line2
 	db Big Key, I m!{ight_}!{be} a!{ble} !{to} op!{en},!Line3
 	db !{it}!
+
+
 I !{do}!{nt_}!{have} !{en}ough !{ma}gic,!Line2
 	db !{pow}!{er}. I guess I c!{an}'t u!{se} !{thi}s,!Line3
 	db r!{ight_}now.
+
+
 I !{go}t !{the} Pegasus Boots! If I,!Line2
 	db hold !{do}wn A, I !{can_}ram !{in}!{to},!Line3
 	db !{en}emies w!{it}h a da!{sh} !{at}ta!{ck}!
+
+
 Wh!{at}? !{Tha}t!{s_}a!{ma}z!{in}g! I,!Line2
 	db !{ha}v!{en}'t !{en}count!{er}!{ed_}a n!{or}!{ma}l,!Line3
 	db p!{er}s!{on} !{in} hund!{re}ds !{of} y!{ear}s.,!WaitKey,!Scroll
 	db Go!{sh}, I'd !{lo}ve !{to} talk !{for} a,!Scroll
 	db w!{hi}le. H!{er}e!{s_}a !{go}od !{st}!{or}y!{Dots}
+
+
 It!{s_}a!{bo}ut !{the} gar!{go}yle !{st}!{at}ue,!Line2
 	db !{in} !{thi}s vil!{la}ge. !{The}y say !{you},!Line3
 	db !{can_}f!{ain}t!{ly_}h!{ear} a girl call!{in}g,!WaitKey,!Scroll
 	db !{out_}!{for} help !{fro}m !{be}!{lo}w.,!WaitKey,!Scroll
 	db S!{ound}s a b!{it} sketchy, if I say,!Scroll
 	db !{so} my!{se}lf!{Dots}
+
+
 !{The}y say !{the} Tri!{for}ce,!Line2
 	db !{tr}!{an}s!{for}m!{ed_}!{thi}s !{re}alm !{be}cau!{se},!Line3
 	db !{of} G!{an}!{on}!{s_}w!{is}h.,!WaitKey,!Scroll
@@ -672,6 +889,8 @@ It!{s_}a!{bo}ut !{the} gar!{go}yle !{st}!{at}ue,!Line2
 	db I w!{on}d!{er_}if he'll succe!{ed_}!{on}ce,!Scroll
 	db he g!{at}h!{er}s !{en}ough !{en}!{er}gy !{fro}m,!Scroll
 	db !{the} Dark W!{or}ld!{Dots}
+
+
 I !{wa}s !{on}ce !{wa}lk!{ing_}through !{the},!Line2
 	db Lo!{st} Woods !{in} !{the} L!{ight_}W!{or}ld,,!Line3
 	db !{and_}I !{st}um!{ble}d !{in}!{to} a !{ma}gic,!WaitKey,!Scroll
@@ -680,21 +899,31 @@ I !{wa}s !{on}ce !{wa}lk!{ing_}through !{the},!Line2
 	db !{in} Skull Woods !{in} !{the} Dark,!Scroll
 	db W!{or}ld. It !{se}ems like !{the} two,!WaitKey,!Scroll
 	db !{for}e!{st}s !{are_}c!{on}nected.
+
+
 I'm !{to}ld th!{at_}Bombs !{can_}easily,!Line2
 	db defe!{at_}!{the} !{on}e-ey!{ed_}gi!{an}ts,!Line3
 	db !{know}n as H!{in}ox. !{Tha}t!{s_}my,!WaitKey,!Scroll
 	db !{st}!{or}y!
+
+
 S!{or}ry !{to} !{ba}rk like !{thi}s, but,!Line2
 	db !{st}op !{ha}rass!{ing_}us t!{re}es!
+
+
 I !{go}t !{the} P!{en}d!{an}t !{of} W!{is}!{do}m!,!Line2
 	db Yeah!,!WaitKey,!Line3
 	db W!{it}h !{all_}th!{re}e p!{en}d!{an}ts, !{it}'s,!Scroll
 	db ti!{me} !{to} head !{to} !{the} !{for}e!{st} !{and},!Scroll
 	db !{re}!{tr}i!{ev}e !{the} M!{ast}!{er_}Sw!{or}d!
+
+
 I !{go}t !{the} P!{en}d!{an}t !{of} Pow!{er}! And,!Line2
 	db I sudd!{en}!{ly_}feel a b!{it} !{st}r!{on}g!{er}!,!WaitKey,!Line3
 	db Ti!{me} !{to} !{go} !{for} !{the} f!{in}al,!Scroll
 	db p!{en}d!{an}t.
+
+
 Well, let!{s_}!{get} !{to} !{it}! !{Thi}s !{is},!Line2
 	db !{the} Shoot!{ing_}Gall!{er}y. F!{or} 20,!Line3
 	db r!{up}ees, I'll !{give_}!{you} 5 arrows.,!WaitKey,!Scroll
@@ -706,10 +935,14 @@ Well, let!{s_}!{get} !{to} !{it}! !{Thi}s !{is},!Line2
 
 All right, !{go} ahead !{and_}take,!Line2
 	db aim!
+
+
 Well, !{you} !{can_}turn ar!{ound} !{and},!Line2
 	db !{wa}lk r!{ight_}!{out_}!{the} !{wa}y !{you},!Line3
 	db ca!{me} !{in}. Have a nice day! See,!WaitKey,!Scroll
 	db ya!
+
+
 !{You} !{wa}nt !{to} keep !{go}!{in}g, eh?,!Line2
 	db !{4_}> I'll keep !{go}!{in}g,!Line3
 	db !{4_}!{3_}Bett!{er_}!{st}op,!Choose,!End
@@ -723,6 +956,8 @@ Well, !{you} !{can_}turn ar!{ound} !{and},!Line2
 
 Select !{an} !{it}em w!{it}h !{the} D-pad,,!Line2
 	db th!{en_}p!{re}ss Y !{to} !{to}ss !{it} !{in}.,!Item
+
+
 Hel!{lo} !{the}!{re}. Did !{you} drop !{thi}s?,!Line2
 	db !{4_}> Yes,!Line3
 	db !{4_}!{3_}No, I !{di}dn't,!Choose,!End
@@ -730,32 +965,47 @@ Hel!{lo} !{the}!{re}. Did !{you} drop !{thi}s?,!Line2
 I like h!{on}e!{st} peo!{ple}, !{so} I'll,!Line2
 	db !{give_}!{you} !{some}!{thin}g !{be}tt!{er_}!{in},!Line3
 	db !{re}turn.
+
+
 A!{re_}!{you} su!{re_}!{thi}s !{is} !{not} !{you}rs?,!Line2
 	db !{4_}> Really, !{it}!{s_}!{not},!Line3
 	db !{4_}!{3_}It actual!{ly_}!{is},!Choose,!End
 
 !{You}'!{re_}a !{ba}ld-fac!{ed_}liar! Take,!Line2
 	db !{thi}s !{ba}!{ck} !{at_}!{on}ce!
+
+
 I !{go}t !{the} Magic Boom!{er}!{an}g! !{Thi}s,!Line2
 	db !{on}e flies f!{ast}!{er_}!{and_}far!{the}r,!Line3
 	db !{tha}n my old !{on}e.
+
+
 My !{sh}ield !{just} !{go}t bigg!{er}!,!Line2
 	db Fi!{re}!{ba}lls wo!{nt_}!{be} a !{pro}!{ble}m,!Line3
 	db !{an}ym!{or}e!
+
 Wow! !{The}!{se} !{are_}!{the} Silv!{er},!Line2
 	db Arrows. I'll u!{se} !{the}m !{to} f!{in}!{is}h,!Line3
 	db !{of}f G!{an}!{on}!
+
+
 My !{bo}ttle !{go}t fill!{ed_}w!{it}h !{the},!Line2
 	db G!{re}!{en_}Poti!{on}! One he!{ck} !{of} a,!Line3
 	db !{ba}rg!{ain}!
+
+
 My sw!{or}d !{go}t !{ev}!{en_}!{st}r!{on}g!{er},!Line2
 	db !{tha}n !{be}!{for}e! It feels !{wa}rm !{to},!Line3
 	db !{the} !{to}uch!{Dots}
+
+
 !{You}r !{ha}pp!{in}ess !{has} !{in}c!{re}a!{se}d,!Line2
 	db by !{Number03}!{Number02} r!{up}ees. Th!{at_}br!{in}gs !{you}r,!Line3
 	db !{to}tal !{to} !{Number01}!{Number00}.,!WaitKey,!Scroll
 	db !{You} feel a l!{it}tle !{ha}ppi!{er_}!{tha}n,!Scroll
 	db !{be}!{for}e.
+
+
 I !{wi}ll gr!{an}t !{you} a w!{is}h.,!Line2
 	db !{2_}>I !{wa}nt !{to} carry m!{or}e Bombs,!Line3
 	db !{4_}I !{wa}nt !{to} carry m!{or}e Arrows,!SelChng,!End
@@ -765,11 +1015,15 @@ I !{wi}ll gr!{an}t !{you} a w!{is}h.,!Line2
 	db a !{to}tal !{of} !{Number01}!{Number00} Bombs.,!WaitKey,!Scroll
 	db !{Thi}s sm!{all_}!{ble}ss!{ing_}!{is} !{the} le!{ast},!Scroll
 	db I !{can_}!{do}.
+
+
 !{The}n I'll !{in}c!{re}a!{se} !{you}r,!Line2
 	db capac!{it}y, al!{lo}w!{ing_}!{you} !{to} carry,!Line3
 	db a !{to}tal !{of} !{Number01}!{Number00} Arrows.,!WaitKey,!Scroll
 	db !{Thi}s sm!{all_}!{ble}ss!{ing_}!{is} !{the} le!{ast},!Scroll
 	db I !{can_}!{do}.
+
+
 !{You} !{are_}!{to}o !{st}r!{on}g !{for} !{me} !{to},!Line2
 	db aid !{you} !{an}y fur!{the}r.,!WaitKey,!Line3
 	db But !{the}!{re}!{s_}a !{lo}ve!{ly_}!{la}dy !{and},!Scroll
@@ -778,6 +1032,8 @@ I !{wi}ll gr!{an}t !{you} a w!{is}h.,!Line2
 	db W!{is}!{hi}ng.,!WaitKey,!Scroll
 	db H!{er}e!{s_}!{you}r r!{up}ees, !{and_}my,!Scroll
 	db !{ble}ss!{ing_}as !{we}ll.
+
+
 Ah!{Dots} W!{at}ch !{you}r !{st}ep. !{The}!{re},!Line2
 	db !{are_}holes !{in} !{the} gr!{ound}. Could,!Line3
 	db !{you} turn r!{ight_}h!{er}e?,!WaitKey,!Scroll
@@ -791,8 +1047,12 @@ Ah!{Dots} W!{at}ch !{you}r !{st}ep. !{The}!{re},!Line2
 	db P!{er}!{ha}ps I say !{to}o !{mu}ch, but,!Scroll
 	db !{ple}a!{se} !{do}!{nt_}!{be} !{to}o zea!{lo}us !{for},!Scroll
 	db !{thi}s !{ma}d que!{st}. 
+
+
 By !{the} !{wa}y, !{the}!{re}!{s_}a h!{ear}t !{in},!Line2
 	db !{the} pot.
+
+
 Oh, turn r!{ight_}h!{er}e!{Dots},!WaitKey,!Line2
 	db !{You} !{know}, I !{have} a,!Line3
 	db gr!{and}daught!{er_}ar!{ound} !{you}r,!Scroll
@@ -806,10 +1066,14 @@ Oh, turn r!{ight_}h!{er}e!{Dots},!WaitKey,!Line2
 	db !{in}h!{er}!{it}!{ed_}!{the} !{pow}!{er_}!{of} !{the},!Scroll
 	db S!{ev}!{en_}Sages, !{and_}he su!{re}!{ly_}!{has},!WaitKey,!Scroll
 	db !{so}!{me} nefarious s!{che}!{me} !{in} m!{in}d.
+
+
 We !{ha}v!{en}'t !{me}t, but if !{you}'!{re},!Line2
 	db !{go}!{ing_}!{up} !{the} mount!{ain}, !{wi}ll !{you},!Line3
 	db take !{me} a!{lo}ng? I !{lo}!{st} my ,!WaitKey,!Scroll
 	db l!{an}t!{er}n.
+
+
 !{The} !{ma}id!{en}s !{wh}o w!{er}e,!Line2
 	db sacrific!{ed_}!{ma}y !{st}ill !{be} alive,!Line3
 	db !{so}!{me}!{wh}!{er}e. I've !{go}t !{to} !{be}li!{ev}e,!WaitKey,!Scroll
@@ -823,6 +1087,8 @@ We !{ha}v!{en}'t !{me}t, but if !{you}'!{re},!Line2
 	db !{ha}pp!{en_}!{to} w!{and}!{er_}!{in}!{to} a !{ma}gical,!Scroll
 	db p!{or}tal, !{ma}ke su!{re_}!{you} take a,!WaitKey,!Scroll
 	db gl!{an}ce !{at_}!{you}r !{re}flecti!{on}.
+
+
 !{The} b!{is}hop !{has} su!{re}!{ly_}deceived,!Line2
 	db our k!{in}g, !{and_}he !{is} us!{ing_}!{ev}il,!Line3
 	db !{ma}gic !{to} op!{en_}!{so}!{me} k!{in}d !{of} ,!WaitKey,!Scroll
@@ -833,6 +1099,8 @@ We !{ha}v!{en}'t !{me}t, but if !{you}'!{re},!Line2
 	db All I !{can_}!{do} !{for} !{you} !{is} !{so}o!{the},!Scroll
 	db !{you}r w!{ear}!{in}ess!{Dots} Co!{me} !{ba}!{ck} !{an}y,!Scroll
 	db ti!{me}.
+
+
 !{The} Mo!{on} P!{ear}l !{is} !{an} artifact,!Line2
 	db !{des}t!{in}!{ed_}!{for} !{the} H!{er}o !{wh}o,!Line3
 	db v!{ent}u!{re}s !{to} !{the} Sacr!{ed_}Realm.,!WaitKey,!Scroll
@@ -844,6 +1112,8 @@ We !{ha}v!{en}'t !{me}t, but if !{you}'!{re},!Line2
 	db !{the} H!{er}o I !{wa}s !{wa}!{it}!{ing_}!{for}.,!WaitKey,!Scroll
 	db Plea!{se}, !{go} !{and_}!{re}scue !{the},!Scroll
 	db !{ma}id!{en}s!
+
+
 Is th!{at_}!{you}, !{Name}? It !{se}ems,!Line2
 	db !{the} b!{is}hop c!{on}nect!{ed_}!{the} two,!Line3
 	db w!{or}lds !{so}!{me}!{wh}!{er}e n!{ear} !{the},!WaitKey,!Scroll
@@ -851,6 +1121,8 @@ Is th!{at_}!{you}, !{Name}? It !{se}ems,!Line2
 	db If !{you} !{are_}head!{ing_}!{to} !{the} Dark,!Scroll
 	db W!{or}ld, th!{at_}!{sh}ould !{be} !{you}r next,!Scroll
 	db !{des}t!{in}!{at}i!{on}.
+
+
 (!{mu}mbl!{ing_}sleepily) My s!{on},!Line2
 	db !{lo}v!{ed_}p!{la}y!{ing_}!{the} ocar!{in}a, but,!Line3
 	db w!{ent} !{of}f s!{ear}c!{hi}ng !{for} !{the},!WaitKey,!Scroll
@@ -859,6 +1131,8 @@ Is th!{at_}!{you}, !{Name}? It !{se}ems,!Line2
 	db I w!{on}d!{er_}!{wh}!{er}e he !{is} !{and_}!{wh}!{at},!Scroll
 	db he!{s_}!{up} !{to} now!{Dots} Zzzzz!{Dots},!Scroll
 	db Zzzzz!{Dots}
+
+
 (!{mu}mbl!{ing_}sleepily) T-!{tha}t's,!Line2
 	db my s!{on}!{s_}ocar!{in}a! Th!{at_}!{me}!{an}s,!Line3
 	db !{you} !{me}t !{hi}m! Wh!{er}e !{is} he? Is he,!WaitKey,!Scroll
@@ -866,6 +1140,8 @@ Is th!{at_}!{you}, !{Name}? It !{se}ems,!Line2
 	db !{Dots}I !{se}e. Ev!{en_}if !{you} wo!{nt_}tell,!Scroll
 	db !{me}, I !{se}e !{the} !{tr}uth wr!{it}t!{en_}all,!Scroll
 	db ov!{er_}!{you}r face.
+
+
 Why !{do}!{nt_}!{you} keep !{the},!Line2
 	db ocar!{in}a?,!WaitKey,!Line3
 	db But I !{have} a !{re}que!{st}. P!{la}y !{it} !{in},!Scroll
@@ -874,10 +1150,16 @@ Why !{do}!{nt_}!{you} keep !{the},!Line2
 	db v!{er}y !{ha}ppy!{Dots},!WaitKey,!Scroll
 	db If !{on}!{ly_}I could !{se}e !{hi}m !{on}ce,!Scroll
 	db m!{or}e!{Dots}
+
+
 Zzzzz!{Dots} Zzzzz!{Dots} (sn!{or}!{ing_}!{lo}udly)
+
+
 Oh, !{Name}!{Dots} !{The} rum!{or}s say,!Line2
 	db !{you} kidnapp!{ed_}!{the} pr!{in}cess,,!Line3
 	db but I !{do}!{nt_}!{be}li!{ev}e !{the}m.
+
+
 I!{Dots} I !{give_}!{up}!,!WaitKey,!Line2
 	db W!{it}h legs like !{you}rs, !{it}!{s_}no,!Line3
 	db w!{on}d!{er_}!{you} m!{an}ag!{ed_}!{to} kidnap,!Scroll
@@ -891,40 +1173,63 @@ I!{Dots} I !{give_}!{up}!,!WaitKey,!Line2
 	db vil!{la}ge m!{ight_}!{have} !{so}!{me} u!{se}ful,!Scroll
 	db !{it}ems !{in} !{the}ir br!{an}!{che}s.,!WaitKey,!Scroll
 	db Ju!{st} !{give_}!{it} a !{tr}y, OK?
+
+
 Hey! If !{you} !{have} !{en}ough ti!{me},!Line2
 	db !{to} !{re}ad !{thi}s sign, !{you} !{sh}ould,!Line3
 	db !{go} !{to} !{the} !{go}al im!{me}!{di}!{at}ely!
+
+
 I !{of}f!{er_}a Piece !{of} H!{ear}t !{to} !{on}e,!Line2
 	db w!{ear}!{ing_}a cape.
+
+
 C!{at}!{ast}rophe !{sh}!{all_}!{be}f!{all_}!{an}y,!Line2
 	db !{wh}o throw !{some}!{thin}g !{in}!{to} !{thi}s,!Line3
 	db p!{on}d!
+
+
 !{Thi}s !{wa}y !{Up} Skull Woods,!Line2
 	db !{Thi}s !{wa}y !{Down} Outc!{ast} Vil!{la}ge
+
 ,!Line2
 	db !{Thi}s !{wa}y !{Right} Cave
 ,!Line2
 	db !{Thi}s !{wa}y !{Right} S!{ha}!{do}w Tem!{ple}
 ,!Line2
 	db !{Thi}s !{wa}y !{Left} Bomb Shop
+
+
 !{Left}!{2_}!{The} D!{ev}il!{s_}Bog,!Line2
 	db !{4_}!{4_} No En!{tr}!{an}ce,!Line3
 	db !{4_}!{4_} No Escape
+
+
 !{Thi}s !{is} !{the} Outc!{ast} Vil!{la}ge.,!Line2
 	db Peo!{ple} w!{it}h!{out_}r!{up}ees !{are_}!{not},!Line3
 	db !{we}l!{com}e h!{er}e.
+
+
 !{The} W!{at}!{er}f!{all_}!{of} W!{is}!{hi}ng !{is} !{just},!Line2
 	db ar!{ound} !{the} c!{or}n!{er}.
+
+
 !{Thi}s !{wa}y !{Right}!{Up},!Line2
 	db Lake !{of} C!{at}!{ast}rophe
+
+
 Ev!{er}y!{on}e !{has} !{be}!{en_}act!{in}g,!Line2
 	db !{st}r!{an}ge!{ly_}s!{in}ce th!{at_}b!{is}hop,!Line3
 	db Agh!{an}im !{sh}ow!{ed_}!{up}.,!WaitKey,!Scroll
 	db I w!{on}d!{er_}if I'll !{ev}!{ent}ual!{ly_}!{get},!Scroll
 	db affected!{Dots}
+
+
 Hey !{you}! !{You}'!{re_}!{not} al!{lo}w!{ed_}!{in},!Line2
 	db !{the} c!{ast}le, kid. Go !{get} !{so}!{me},!Line3
 	db sleep!
+
+
 	db !Window02,"!{Name}, !{it} !{is} I, Sa!{has}rah!{la}.,!Line2
 	db Let !{me} !{give_}!{you} !{so}!{me} advice.,!WaitKey,!Line3
 	db !{The}!{re}!{s_}a t!{re}asu!{re_}!{in} !{thi}s,!Scroll
@@ -932,6 +1237,8 @@ Hey !{you}! !{You}'!{re_}!{not} al!{lo}w!{ed_}!{in},!Line2
 	db m!{on}!{st}!{er}s c!{la}d !{in} !{ev}!{en_}!{the},!WaitKey,!Scroll
 	db !{st}r!{on}ge!{st} arm!{or}. Be su!{re_}!{to},!WaitKey,!Scroll
 	db obt!{ain} !{it}!
+
+
 	db !Window02,"!{Name}, !{it} !{is} I, Sa!{has}rah!{la}.,!Line2
 	db An !{or}b !{know}n as !{the} Mo!{on} P!{ear}l,!Line3
 	db !{is} h!{er}e !{in} !{thi}s !{to}w!{er}.,!WaitKey,!Scroll
@@ -940,15 +1247,21 @@ Hey !{you}! !{You}'!{re_}!{not} al!{lo}w!{ed_}!{in},!Line2
 	db !{thi}s w!{or}ld !{of} m!{on}!{st}!{er}s. !{You},!WaitKey,!Scroll
 	db !{mu}!{st} obt!{ain} !{it} !{be}!{for}e,!Scroll
 	db depart!{in}g. Do !{not} !{for}!{get}!{Dots}
+
+
 !{2_}!{Snake1}X!{Waves1}B!{Waves1}B!{3_}!{Snake1}X!{Waves1}B!{Waves1}B!{3_}!{Ankh1}A!{Waves1}B!{Waves1}B,!Line2
 	db !{4_}!{3_}!{Ankh1}A!{3_}!{Snake1}X!{Waves1}B!{Waves1}B!{Snake1}X!{3_}!{Ankh1}A,!Line3
 	db !{2_}!{Snake1}X!{Waves1}B!{Waves1}B!{3_}!{Ankh1}A!{Snake1}X!{Snake1}X!{Ankh1}A!{3_}!{Waves1}B!{Waves1}B!{Ankh1}A
+
+
 !{The} H!{er}o!{s_}!{tr}iumph !{on},!Line2
 	db C!{at}aclysm!{s_}Eve w!{in}s th!{re}e,!Line3
 	db sym!{bo}ls !{of} virtue.,!WaitKey,!Scroll
 	db !{The} M!{ast}!{er_}Sw!{or}d, he !{wi}ll !{the}n,!Scroll
 	db !{re}!{tr}i!{ev}e, keep!{ing_}!{the} knight's,!Scroll
 	db l!{in}e !{tr}ue.
+
+
 	db !Window02,"!{Name}, l!{is}t!{en_}!{we}ll !{to} !{the},!Line2
 	db w!{or}ds !{of} I, Sa!{has}rah!{la}. !{You},!Line3
 	db !{mu}!{st} climb !{to} !{the} !{to}p !{of},!WaitKey,!Scroll
@@ -957,6 +1270,8 @@ Hey !{you}! !{You}'!{re_}!{not} al!{lo}w!{ed_}!{in},!Line2
 	db !{re}ach !{the} Tow!{er_}!{of} H!{er}a !{on},!Scroll
 	db !{the} summ!{it} !{of} Hebra Mount!{ain}.,!WaitKey,!Scroll
 	db Plea!{se} !{pro}ce!{ed_}ca!{re}fully.
+
+
 	db !Window02,"!{Name}, l!{is}t!{en_}!{we}ll. Objects,!Line2
 	db th!{at_}ex!{is}t !{in} !{the} two w!{or}lds,!Line3
 	db !{se}em !{to} im!{it}!{at}e each oth!{er}.,!WaitKey,!Scroll
@@ -965,65 +1280,95 @@ Hey !{you}! !{You}'!{re_}!{not} al!{lo}w!{ed_}!{in},!Line2
 	db count!{er}part !{sh}ould al!{so},!WaitKey,!Scroll
 	db ch!{an}ge. Plea!{se} keep !{thi}s !{in},!Scroll
 	db m!{in}d.
+
+
 	db !Window02,"!{Name}!{Dots} It!{s_}!{me}, Zelda!{Dots} D!{on}'t,!Line2
 	db !{be} m!{is}l!{ed_}by !{the} s!{or}c!{er}y !{of},!Line3
 	db Bl!{in}d !{the} !{Thi}ef! Be ca!{re}ful!
+
+
 	db !Window02,"!{Name}, !{it} !{is} I, Sa!{has}rah!{la}.,!Line2
 	db !{You} !{mu}!{st} ign!{it}e four t!{or}!{che}s !{in},!Line3
 	db !{or}d!{er_}!{to} op!{en_}!{the} !{wa}y !{for}!{wa}rd.
+
+
 !{4_}!{4_}!{2_}!{Snake1}X!{Snake1}X!{Ankh1}A!{Waves1}B!{3_}!{Snake1}X!{Waves1}B!{Waves1}B!{Snake1}X,!Line2
 	db !{4_}!{4_}!{4_}!{2_}!{Ankh1}A!{3_}!{Waves1}B!{Snake1}X!{Ankh1}A!{Waves1}B,!Line3
 	db !{4_}!{4_}!{2_}!{Waves1}B!{Waves1}B!{Snake1}X!{Waves1}B!{3_}!{Ankh1}A!{Ankh1}A!{Snake1}X!{Ankh1}A
+
+
 Off!{er_}a pray!{er_}!{be}!{for}e !{thi}s,!Line2
 	db !{st}!{on}e ta!{ble}t. If !{you}r w!{is}h !{is},!Line3
 	db h!{ear}d, !{the} !{wa}y !{sh}!{all_}op!{en},!WaitKey,!Scroll
 	db !{be}!{for}e !{you}.
+
+
 ,!Window02If !{you} m!{an}age !{to} !{st}un G!{an}!{on},,!Line2
 	db !{be} su!{re_}!{to} f!{in}!{is}h !{hi}m !{of}f w!{it}h,!Line3
 	db Silv!{er_}Arrows.,!WaitKey,!Scroll
 	db !{Name}, I !{know} !{you} s!{ha}ll,!Scroll
 	db pr!{ev}ail.
+
+
 	db !Window02,"!{Name}, !{can_}!{you} h!{ear} my,!Line2
 	db voice? It!{s_}!{me}, Zelda. I am,!Line3
 	db impr!{is}!{on}!{ed_}!{in} Turtle Ro!{ck} !{on},!WaitKey,!Scroll
 	db !{to}p !{of} De!{at}h Mount!{ain}.,!WaitKey,!Scroll
 	db I !{know} !{you}'ll !{com}e !{for} !{me}. I'll,!Scroll
 	db !{be} !{wa}!{it}!{in}g!{Dots}
+
+
 	db !Window02,"!{Name}, !{it} !{is} I, Sa!{ha}rsah!{la}.,!Line2
 	db Be su!{re_}!{to} acqui!{re_}!{all_}!{the},!Line3
 	db t!{re}asu!{re}s !{in} each m!{on}!{st}!{er}'s,!WaitKey,!Scroll
 	db !{la}ir.
+
+
 ,!Window02L!{is}t!{en_}!{we}ll, !{Name}. Ev!{en_}w!{it}h,!Line2
 	db !{the} M!{ast}!{er_}Sw!{or}d, !{you} c!{an}!{not},!Line3
 	db physical!{ly_}!{ha}rm !{the} b!{is}hop. !{You},!WaitKey,!Scroll
 	db !{mu}!{st} f!{in}d a !{wa}y !{to} turn !{hi}s,!Scroll
 	db !{ma}gic ag!{ain}!{st} !{hi}m.
+
+
 	db !Window02,"!{Name}, !{be} ca!{re}ful !{not} !{to} u!{se},!Line2
 	db !{up} !{all_}!{you}r !{ma}gic !{pow}!{er}. Only,!Line3
 	db !{pro}ce!{ed_}!{in}!{to} !{the} dunge!{on}'s,!WaitKey,!Scroll
 	db depths if !{you} carry poti!{on}s,!Scroll
 	db th!{at_}!{re}!{st}!{or}e !{you}r !{ma}gic.,!Scroll
 	db Plea!{se} !{do}!{nt_}!{be} !{re}!{ck}less.
+
+
 	db !Window02,"!{Name}, !{do} !{you} !{have} !{an}y,!Line2
 	db poti!{on}s th!{at_}!{re}!{st}!{or}e !{you}r,!Line3
 	db !{ma}gic !{pow}!{er}? If !{not}, !{you},!WaitKey,!Scroll
 	db !{sh}ould!{nt_}v!{ent}u!{re_}!{an}y far!{the}r.
+
+
 	db !Window02,"!{Name}, f!{la}!{me}s !{bo}th g!{re}!{at_}!{and},!Line2
 	db sm!{all_}!{sh}!{all_}!{pro}tect !{you} !{in} !{thi}s,!Line3
 	db p!{la}ce.
+
+
 	db !Window02,"!{Name}, !{you} c!{an}!{not} defe!{at_}!{the},!Line2
 	db Skelet!{on} Sw!{or}dsm!{en_}w!{it}h b!{la}de,!Line3
 	db a!{lo}ne. Deliv!{er_}a f!{in}!{is}!{hi}ng "b!{lo}w",!WaitKey,!Scroll
 	db aft!{er_}!{the}y've col!{la}p!{se}d.
+
+
 	db !Window02,"!{Name}, !{it} !{is} I, Sa!{has}rah!{la},!Line2
 	db !{the} eld!{er}. I !{have} !{so}!{me} advice.,!WaitKey,!Line3
 	db !{You} !{can_}gaze !{in}!{to} !{the} Magic,!Scroll
 	db Mirr!{or} !{to} !{re}turn !{to} !{the},!Scroll
 	db !{en}!{tr}!{an}ce !{of} !{an}y dunge!{on}. Do,!WaitKey,!Scroll
 	db !{not} !{for}!{get} !{it}!
+
+
 !{You}'ve !{di}scov!{er}!{ed_}my !{hi}dd!{en},!Line2
 	db room. Keep !{thi}s a !{se}c!{re}t,!Line3
 	db !{be}t!{we}!{en_}us.
+
+
 I caught a !{be}e!,!WaitKey,!Line2
 	db Wh!{at_}!{sh}ould I !{do}?,!Line3
 	db !{4_}> I'll put !{it} !{in} a !{bo}ttle,!Scroll
@@ -1037,22 +1382,36 @@ I caught a fairy!,!WaitKey,!Line2
 I !{do}!{nt_}!{have} !{an}y empty,!Line2
 	db !{bo}ttles. Oh !{we}ll!{Dots} I guess I'll !{se}t,!Line3
 	db !{it} f!{re}e.
+
+
 !{You}r ti!{me} !{wa}s !{Number03}!{Number02} m!{in}utes !{and},!Line2
 	db !{Number01}!{Number00} !{se}c!{on}ds.
+
+
 If !{you} !{can_}!{re}ach !{the} !{go}al,!Line2
 	db w!{it}!{hi}n 15 !{se}c!{on}ds, I'll !{give_}!{you},!Line3
 	db !{some}!{thin}g !{go}od.,!WaitKey,!Scroll
 	db Ready, !{se}t!{Dots}!{Dots}!{2_}GO!
+
+
 !{You} succeeded!,!Line2
 	db C!{on}gr!{at}ul!{at}i!{on}s! I p!{re}s!{ent} !{you},!Line3
 	db w!{it}h a Piece !{of} H!{ear}t!
+
+
 Looks like !{you} failed. Too !{ba}d!,!Line2
 	db Plea!{se} !{tr}y ag!{ain}!
+
+
 I !{do}!{nt_}!{have} !{an}y!{thin}g m!{or}e !{to},!Line2
 	db !{give_}!{you}. I'm s!{or}ry!
+
+
 !{You} !{have} !{to} !{ent}!{er_}!{the} !{ma}ze,!Line2
 	db !{fro}m !{the} !{pro}p!{er_}!{en}!{tr}!{an}ce, !{or} I,!Line3
 	db c!{an}'t c!{lo}!{ck} !{you}r ti!{me}!{Dots}
+
+
 Hel!{lo}, sir! Do !{you} ne!{ed_}a !{bo}ttle,!Line2
 	db th!{at_}!{can_}hold !{an}y!{thin}g? I've,!Line3
 	db !{go}t !{on}e !{to} !{se}ll !{for} !{just} 100,!WaitKey,!Scroll
@@ -1064,25 +1423,38 @@ Hel!{lo}, sir! Do !{you} ne!{ed_}a !{bo}ttle,!Line2
 !{Tha}nk !{you} !{for} !{you}r purc!{has}e.,!Line2
 	db Now, hold !{it} ov!{er_}!{you}r head,!Line3
 	db !{ent}husi!{ast}ically!
+
+
 Ah, !{tha}t!{s_}!{to}o !{ba}d. Co!{me} !{ba}!{ck},!Line2
 	db !{wh}!{en_}!{you}'ve sav!{ed_}!{en}ough,!Line3
 	db r!{up}ees.
+
+
 S!{or}ry, I'm !{so}ld !{out_}!{of} !{bo}ttles.,!Line2
 	db Co!{me} !{ba}!{ck} !{an}oth!{er_}ti!{me}.
+
+
 Wow! Th!{at_}!{be}e !{is} ext!{re}!{me}ly,!Line2
 	db ra!{re}. I'll buy !{it} !{for} 100 r!{up}ees.,!Line3
 	db H!{er}e !{you} !{go}!
+
+
 Wow! E!{at}!{ing_}f!{is}h !{is} !{go}od !{for},!Line2
 	db !{you}r health. I'll !{tr}ade !{you} all,!Line3
 	db !{thi}s !{st}uff !{for} !{it}!
+
+
 Yo !{Name}! !{You} !{se}em !{to} !{be} !{in},!Line2
 	db a heap !{of} !{tr}ou!{ble}, but !{thi}s !{is},!Line3
 	db !{all_}I !{can_}!{give_}!{you}.
+
+
 Ah, !{it}!{s_}!{you}! I'm !{so} g!{la}d !{to} !{se}e,!Line2
 	db !{you} ag!{ain}!,!WaitKey,!Line3
 	db So, !{wh}!{at_}!{do} !{you} need?,!Scroll
 	db!{4_} > Temp!{er_}my sw!{or}d,!Scroll
 	db!{4_}!{4_}Ju!{st} dropp!{ing_}by,!Choose,!End
+
 
 I'll !{give_}!{you} a big !{di}scount!,!Line2
 	db !{4_}>H!{er}e!{s_}10 r!{up}ees,!Line3
@@ -1094,23 +1466,35 @@ Su!{re_}!{you} !{wa}nt !{it} temp!{er}ed?,!Line2
 
 We c!{an}'t !{ma}ke !{it} !{an}y !{st}r!{on}g!{er}.,!Line2
 	db S!{or}ry!
+
+
 Drop by !{an}yti!{me}. Now, !{ba}!{ck} !{to},!Line2
 	db w!{or}k! Huff! Huff!
+
+
 R!{ight_}!{it} !{is}! We'll !{have} !{to} hold !{on},!Line2
 	db !{to} !{you}r sw!{or}d !{for} a b!{it}.
+
+
 !{You}r sw!{or}d!{s_}nice !{and},!Line2
 	db temp!{er}ed. Now hold !{it} !{up} !{to},!Line3
 	db !{the} sky!
+
+
 If my !{lo}!{st} partn!{er_}!{re}turns, !{we},!Line2
 	db !{can_}temp!{er_}!{you}r sw!{or}d. But,!Line3
 	db !{the}!{re}!{s_}!{not}!{hi}ng I !{can_}!{do} !{for},!WaitKey,!Scroll
 	db !{you} now.
+
+
 Wow, !{lo}ok !{at_}!{tha}t! !{You} f!{ound},!Line2
 	db my partn!{er}! Wh!{at_}a jo!{you}s,!Line3
 	db occasi!{on}!,!WaitKey,!Scroll
 	db Drop by ag!{ain} !{so}!{me}ti!{me}! We'll,!Scroll
 	db take !{you}r sw!{or}d !{and_}temp!{er_}!{it},!Scroll
 	db p!{er}fectly!
+
+
 Ribb!{it}, ribb!{it}!{Dots} !{You}r !{for}m !{di}dn't,!Line2
 	db ch!{an}ge! !{You}'!{re_}no !{or}!{di}nary,!Line3
 	db guy, !{are_}!{you}?,!WaitKey,!Scroll
@@ -1121,12 +1505,20 @@ Ribb!{it}, ribb!{it}!{Dots} !{You}r !{for}m !{di}dn't,!Line2
 	db C!{an} !{you} !{do} !{me} a fav!{or}? Plea!{se},!Scroll
 	db take !{me} !{to} !{hi}m! I'm count!{ing_}!{on},!Scroll
 	db !{you}!{Dots}
+
+
 I'm s!{or}ry, !{we}'!{re_}!{not} !{do}ne yet.,!Line2
 	db Plea!{se} !{com}e !{ba}!{ck} !{so}!{on}!
+
+
 (!{to}!{get}h!{er}) !{Tha}nk !{you}!
+
+
 W!{at}ch out! Am!{at}eurs !{sh}ouldn't,!Line2
 	db !{tr}y !{to} !{do} !{thi}s. !{You}'!{re_}!{just},!Line3
 	db !{get}t!{ing_}!{in} !{the} !{wa}y!
+
+
 Aft!{er_}w!{and}!{er}!{ing_}!{in}!{to} !{thi}s,!Line2
 	db w!{or}ld, my !{for}m ch!{an}g!{ed_}!{to} !{wh}!{at},!Line3
 	db !{you} !{se}e.,!WaitKey,!Scroll
@@ -1144,10 +1536,16 @@ Aft!{er_}w!{and}!{er}!{ing_}!{in}!{to} !{thi}s,!Line2
 
 !{The}n I !{wi}ll l!{en}d !{you} my !{sh}ovel.,!Line2
 	db I'm count!{ing_}!{on} !{you}!
+
+
 !{Dots}I !{se}e. Well, !{tha}t!{s_}f!{in}e.,!Line2
 	db Fa!{re}!{we}ll. 
+
+
 Did !{you} f!{in}d my ocar!{in}a yet?,!Line2
 	db I hope !{you} f!{in}d !{it} !{so}!{on}.
+
+
 !{Tha}nk !{you}, !{Name}. !{Dots}But !{it},!Line2
 	db !{lo}oks like I c!{an}'t p!{la}y my,!Line3
 	db ocar!{in}a !{an}ym!{or}e.,!WaitKey,!Scroll
@@ -1158,42 +1556,62 @@ Did !{you} f!{in}d my ocar!{in}a yet?,!Line2
 	db !{Name}!{Dots} my s!{en}!{se}s !{are_}grow!{in}g,!Scroll
 	db !{di}m!{Dots} Plea!{se} let !{me} h!{ear} !{the},!Scroll
 	db ocar!{in}a!{s_}!{mu}sic !{on}e l!{ast} ti!{me}!{Dots}
+
+
 ,!Position01
 	db !Speed03Jo-m!{on}!{Dots} jo-m!{on}!{Dots},!WaitKey,!Line2
 	db Fir!{st}, f!{in}d !{the} eld!{er},!Line3
 	db Sa!{has}rah!{la}.
+
+
 ,!Position01
 	db !Speed03Emi-s!{hi}!{Dots} emi-s!{hi}!{Dots},!WaitKey,!Line2
 	db F!{in}d !{the} To!{me} !{of} Mu!{do}ra !{in} !{the},!Line3
 	db vil!{la}ge !{and_}take !{it} !{to} !{the},!Scroll
 	db !{des}!{er}t.
+
+
 ,!Position01
 	db !Speed03Emi-s!{hi}!{Dots} emi-s!{hi}!{Dots},!WaitKey,!Line2
 	db A !{des}c!{en}d!{an}t !{of} !{the} S!{ev}!{en},!Line3
 	db Sages !{is} liv!{ing_}!{in} !{the} !{des}!{er}t.
+
+
 ,!Position01
 	db !Speed03Jo-m!{on}!{Dots} jo-m!{on}!{Dots},!WaitKey,!Line2
 	db F!{in}d a !{mu}!{sh}room !{in} !{the} !{for}e!{st},!Line3
 	db !{and_}take !{it} !{to} !{the} Poti!{on} Shop.
+
+
 ,!Position01
 	db !Speed03Jo-m!{on}!{Dots} jo-m!{on}!{Dots},!WaitKey,!Line2
 	db Fol!{lo}w !{the} riv!{er_}!{up}!{st}!{re}am !{to},!Line3
 	db f!{in}d a !{la}ke full !{of} Z!{or}a.
+
+
 ,!Position01
 	db !Speed03Jo-m!{on}!{Dots} jo-m!{on}!{Dots},!WaitKey,!Line2
 	db S!{ear}ch !{for} !{the} Mo!{on} P!{ear}l !{in} a,!Line3
 	db mount!{ain} !{to}w!{er}.
+
+
 ,!Position01
 	db !Speed03Jo-m!{on}!{Dots} jo-m!{on}!{Dots},!WaitKey,!Line2
 	db !{The} b!{is}hop!{s_}!{bo}dy c!{an}!{not} !{be},!Line3
 	db !{ha}r!{me}d, !{ev}!{en_}by !{the} M!{ast}!{er},!Scroll
 	db Sw!{or}d.
+
+
 ,!Position01
 	db !Speed03Emi-s!{hi}!{Dots} Emi-s!{hi}!{Dots},!WaitKey,!Line2
 	db Why !{not} jump !{in}!{to} !{the} !{we}ll n!{ear},!Line3
 	db !{the} sm!{it}hy?
+
+
 ,!Position01I'm !{not} feel!{ing_}!{we}ll !{to}day.,!Line2
 	db Plea!{se} !{com}e !{an}oth!{er_}ti!{me}.
+
+
 ,!Position01Ah, !{wh}!{at_}!{an} !{in}t!{er}e!{st}!{ing_}face!{Dots},!Line2
 	db Would !{you} like !{me} !{to} !{re}ad !{you}r,!Line3
 	db !{for}tune?,!WaitKey,!Scroll
@@ -1201,47 +1619,69 @@ Did !{you} f!{in}d my ocar!{in}a yet?,!Line2
 	db!{4_} > Read my !{for}tune,!Scroll
 	db!{4_}!{4_}I'll pass,!Choose,!End
 
+
 ,!Position01I'll !{just} !{be} tak!{ing_}!{Number00}!{Number01} r!{up}ees.,!Line2
 	db H!{er}e!{s_}!{to} !{you}r health! Weeyaa!
+
+
 ,!Position01Hmm!{Dots} How un!{for}tun!{at}e. I'll !{be},!Line2
 	db !{wa}!{it}!{ing_}!{for} !{you}r !{re}turn.
+
+
 ,!Position01
 	db !Speed03Jo-m!{on}!{Dots} jo-m!{on}!{Dots},!WaitKey,!Line2
 	db A !{st}!{on}e object !{st}!{and}s t!{all_}!{in},!Line3
 	db !{the} Des!{er}t !{of} My!{st}!{er}y.
+
+
 ,!Position01
 	db !Speed03Emi-s!{hi}!{Dots} emi-s!{hi}!{Dots},!WaitKey,!Line2
 	db F!{or} t!{re}asu!{re}, talk !{to} !{go}ssip,!Line3
 	db !{se}ll!{er}s !{in} Dark W!{or}ld cav!{er}ns.
+
+
 ,!Position01
 	db !Speed03Jo-m!{on}!{Dots} jo-m!{on}!{Dots},!WaitKey,!Line2
 	db !{The} sm!{it}h!{s_}partn!{er_}!{is} !{lo}c!{at}ed,!Line3
 	db !{in} Outc!{ast} Vil!{la}ge.
+
+
 ,!Position01
 	db !Speed03Emi-s!{hi}!{Dots} emi-s!{hi}!{Dots},!WaitKey,!Line2
 	db A t!{re}asu!{re_}!{is} !{la}id !{to} !{re}!{st} !{in},!Line3
 	db !{the} L!{ight_}W!{or}ld graveyard.
+
+
 ,!Position01
 	db !Speed03Jo-m!{on}!{Dots} jo-m!{on}!{Dots},!WaitKey,!Line2
 	db !{You}'ll purc!{has}e a new k!{in}d !{of},!Line3
 	db !{bo}mb !{at_}!{the} Bomb Shop.
+
+
 ,!Position01
 	db !Speed03Emi-s!{hi}!{Dots} emi-s!{hi}!{Dots},!WaitKey,!Line2
 	db !{You}'ll f!{in}d a !{se}c!{re}t !{in}side !{the},!Line3
 	db Dark W!{or}ld Pyramid.
+
+
 ,!Position01
 	db !Speed03Jo-m!{on}!{Dots} jo-m!{on}!{Dots},!WaitKey,!Line2
 	db A !{ba}rri!{er_}!{pro}tects G!{an}!{on}'s,!Line3
 	db Tow!{er_}!{on} De!{at}h Mount!{ain}.
+
+
 ,!Position01
 	db !Speed03Emi-s!{hi}!{Dots} Emi-s!{hi}!{Dots},!WaitKey,!Line2
 	db !{You}'ll ne!{ed_}Silv!{er_}Arrows !{to},!Line3
 	db f!{in}!{is}h !{of}f G!{an}!{on}.
+
+
 Hey, I've !{go}t a !{go}od !{st}!{or}y !{for},!Line2
 	db !{on}!{ly_}20 r!{up}ees.,!WaitKey,!Line3
 	db Wh!{at_}!{do} !{you} say?,!Scroll
 	db!{4_} > H!{er}e!{s_}!{the} r!{up}ees,!Scroll
 	db!{4_}!{4_}Not !{in}t!{er}e!{st}ed,!Choose,!End
+
 
 Heh heh. !{Tha}nks. !{You} !{know}, if,!Line2
 	db !{you} fol!{lo}w !{the} riv!{er_}!{up}!{st}!{re}am,,!Line3
@@ -1251,9 +1691,13 @@ Heh heh. !{Tha}nks. !{You} !{know}, if,!Line2
 	db could !{ha}pp!{en}?,!WaitKey,!Scroll
 	db Heh heh. Any!{wa}y, I'll !{se}e ya,!Scroll
 	db ar!{ound}.
+
+
 Heh heh. Well, I !{do}!{nt_}w!{ast}e,!Line2
 	db ti!{me} talk!{in}' !{to} folks w!{it}h no,!Line3
 	db r!{up}ees. Get !{lo}!{st}!
+
+
 Heh heh. !{Tha}nks. As a m!{at}t!{er},!Line2
 	db !{of} fact, I us!{ed_}!{to} !{be} a !{thi}ef,!Line3
 	db !{ba}!{ck} !{in} !{the} L!{ight_}W!{or}ld.,!WaitKey,!Scroll
@@ -1266,6 +1710,8 @@ Heh heh. !{Tha}nks. As a m!{at}t!{er},!Line2
 	db he !{hi}!{des} !{it} by p!{re}t!{en}!{di}n' !{to} !{be},!WaitKey,!Scroll
 	db !{so}!{me} middle-ag!{ed_}!{we}ir!{do}. Heh,!Scroll
 	db heh heh!{Dots}
+
+
 Heh heh. !{Tha}nks. !{You} !{know}, I,!Line2
 	db saw !{thi}s !{in}c!{re}!{di}b!{ly_}!{be}autiful,!Line3
 	db wom!{an} !{in} !{the} Pyramid, but,!WaitKey,!Scroll
@@ -1273,6 +1719,8 @@ Heh heh. !{Tha}nks. !{You} !{know}, I,!Line2
 	db !{the} !{do}!{or}.,!WaitKey,!Scroll
 	db I h!{ear} !{an} !{or}!{di}nary !{bo}mb !{just},!Scroll
 	db wo!{nt_}!{do} !{the} !{tr}i!{ck}!{Dots}
+
+
 Heh heh. !{Tha}nks. As a m!{at}t!{er},!Line2
 	db !{of} fact, !{the}!{re}!{s_}a m!{on}!{st}!{er},!Line3
 	db caus!{in}' !{the} r!{ain}!{st}!{or}m !{in} !{the},!WaitKey,!Scroll
@@ -1280,11 +1728,15 @@ Heh heh. !{Tha}nks. As a m!{at}t!{er},!Line2
 	db If !{the} w!{in}d !{st}art!{ed_}b!{lo}w!{in}',!Scroll
 	db !{st}r!{on}g !{en}ough, I !{be}t !{the} r!{ain},!Scroll
 	db m!{ight_}!{st}op.
+
+
 -cough- -cough- !{Name}, !{do},!Line2
 	db !{you} !{have} a !{bo}ttle !{to} keep a,!Line3
 	db bug !{in}?,!WaitKey,!Scroll
 	db I !{se}e. !{You} !{do}!{nt_}!{have} !{on}e!{Dots},!Scroll
 	db -cough-
+
+
 I c!{an}'t !{go} outside !{be}cau!{se} I've,!Line2
 	db !{be}!{en_}si!{ck}!{Dots} -cough- -cough-,!WaitKey,!Line3
 	db Peo!{ple} !{are_}say!{ing_}!{it}!{s_}!{be}cau!{se},!Scroll
@@ -1296,10 +1748,16 @@ I c!{an}'t !{go} outside !{be}cau!{se} I've,!Line2
 	db Bug-C!{at}c!{hi}ng Net. I'll u!{se} !{it},!Scroll
 	db !{wh}!{en_}I'm !{be}tt!{er}, but !{you} c!{an},!WaitKey,!Scroll
 	db !{bo}rrow !{it} !{for} now.
+
+
 Ugh!{Dots} I hope I !{get} !{be}tt!{er_}!{so}!{on}!{Dots},!Line2
 	db -cough- -cough-
+
+
 !{Dots}!{Dots}!{Dots}!{Dots}!{Dots}!{Dots}!{Dots}
+
 Wh!{at_}gives, m!{an}?
+
 So, !{you} !{know} I us!{ed_}!{to} !{be} a,!Line2
 	db !{thi}ef, right?,!WaitKey,!Line3
 	db I !{can_}op!{en_}!{the} !{che}!{st}, but !{you}'ll,!Scroll
@@ -1309,30 +1767,45 @@ So, !{you} !{know} I us!{ed_}!{to} !{be} a,!Line2
 	db!{4_} > I !{pro}m!{is}e,!Scroll
 	db!{4_}!{4_}I'll tell !{ev}!{er}y!{on}e,!Choose,!End
 
+
 OK, if !{tha}t!{s_}!{the} !{wa}y !{you} !{wa}nt,!Line2
 	db !{it}, !{you} !{can_}drag th!{at_}!{che}!{st},!Line3
 	db ar!{ound} !{for}!{ev}!{er}!
+
+
 Re!{me}m!{be}r, !{do}!{nt_}say a w!{or}d !{of},!Line2
 	db !{thi}s !{to} !{an}y!{on}e!{Dots}
+
+
 All right. Br!{ing_}th!{at_}!{che}!{st} ov!{er},!Line2
 	db h!{er}e.,!WaitKey,!Line3
 	db But s!{er}iously, !{be} su!{re_}!{to} keep,!Scroll
 	db !{thi}s a !{se}c!{re}t.
+
+
 !{2_}!{Ankh1}A!{Ankh1}A!{3_}!{Ankh1}A!{Snake1}X!{Waves1}B!{Ankh1}A!{Waves1}B!{3_}!{Waves1}B!{Snake1}X!{Waves1}B,!Line2
 	db !{2_}!{Waves1}B!{Snake1}X!{Snake1}X!{3_}!{Waves1}B!{Snake1}X!{Snake1}X!{Waves1}B!{Ankh1}A,!Line3
 	db !{2_}!{Waves1}B!{Waves1}B!{Snake1}X!{Ankh1}A!{Waves1}B!{3_}!{Snake1}X!{Waves1}B!{Ankh1}A!{Ankh1}A!{Snake1}X
+
+
 Hold !{the} M!{ast}!{er_}Sw!{or}d !{up} !{to},!Line2
 	db !{the} sky, !{and_}!{you} !{wi}ll !{re}ceive,!Line3
 	db !{the} !{ma}gic !{of} Eth!{er}.
+
+
 Hold !{the} M!{ast}!{er_}Sw!{or}d !{up} !{to},!Line2
 	db !{the} sky, !{and_}!{you} !{wi}ll !{re}ceive,!Line3
 	db !{the} !{ma}gic !{of} Bom!{bo}s.
+
+
 Hey, !{you} j!{er}k! How d!{are_}!{you},!Line2
 	db !{wa}ke !{me} !{up} !{fro}m my deep sleep!,!WaitKey,!Line3
 	db !{Dots}!{Dots}!{Tha}nk !{you} !{for} !{you}r k!{in}dness.,!WaitKey,!Scroll
 	db !{Dots}!{Dots}Wa!{it} !{on}e m!{in}ute! It!{s_}ti!{me} !{to},!Scroll
 	db take my r!{ev}!{en}ge, !{so} !{get} !{re}ady!,!WaitKey,!Scroll
 	db !{Dots}!{Dots}Is th!{at_}OK w!{it}h !{you}?
+
+
 !{Dots}!{Dots}Kekeke! Get !{wh}!{at_}!{you},!Line2
 	db !{des}!{er}ve! W!{it}h !{thi}s spell, !{you}r,!Line3
 	db !{ma}gic c!{on}sumpti!{on} !{wi}ll !{be} cut,!WaitKey,!Scroll
@@ -1341,6 +1814,8 @@ Hey, !{you} j!{er}k! How d!{are_}!{you},!Line2
 	db !{Dots}!{Dots}It'll !{be} brutal !{fro}m h!{er}e !{on},!Scroll
 	db out, !{so} !{to}ugh!{en_}!{up}, !{or} el!{se}!,!WaitKey,!Scroll
 	db !{Dots}!{Dots}Have a nice day. Take ca!{re}!
+
+
 ,!ScrollSpd00,!Color07
 	db !Speed03,!Window02,!NextPicL!{on}g a!{go}, !{in} !{the} !{be}autiful l!{and},!Line2
 	db !{of} Hyrule, surr!{ound}!{ed_}by,!Line3
@@ -1366,6 +1841,8 @@ Hey, !{you} j!{er}k! How d!{are_}!{you},!Line2
 	db !{have} !{be}!{en_}brok!{en}.,!Wait05,!Scroll
 	db But !{just} as tho!{se} !{ev}!{ent}s !{ha}d,!Scroll
 	db f!{in}al!{ly_}pass!{ed_}!{in}!{to} leg!{en}d!{Dots}
+
+
 ,!Window02,!Color07
 	db !Speed03,!Line1
 	db !{The} !{go}od k!{ing_}!{of} Hyrule !{wa}s,!Line2
@@ -1374,6 +1851,8 @@ Hey, !{you} j!{er}k! How d!{are_}!{you},!Line2
 	db b!{is}hop !{know}n as Agahnim,,!Scroll
 	db !{wh}o !{ha}d !{be}!{en_}p!{lo}tt!{ing_}!{the},!Scroll
 	db !{wh}ole ti!{me} !{to} b!{re}ak !{the} !{se}al.,!Wait04
+
+
 ,!Window02,!Color07
 	db !Speed03,!Line1
 	db Agahnim m!{an}ipul!{at}!{ed_}!{the},!Line2
@@ -1382,24 +1861,38 @@ Hey, !{you} j!{er}k! How d!{are_}!{you},!Line2
 	db S!{ev}!{en_}Sages. !{The}!{se} girls w!{er}e,!Scroll
 	db th!{en_}sacrificed, !{on}e aft!{er},!Scroll
 	db !{an}oth!{er}.,!Wait04
+
+
 ,!Window02,!Color07
 	db !Speed03,!Line1
 	db !{The} f!{at}eful hour !{wh}!{er}e,!Line2
 	db Pr!{in}cess Zelda !{wi}ll !{be},!Line3
 	db sacrific!{ed_}!{is} draw!{ing_}n!{ear}.,!Wait03
+
+
 It !{se}ems !{to} !{be} !{lo}!{ck}!{ed_}tight.,!Line2
 	db Guess I'll !{just} carry !{it} ar!{ound},!Line3
 	db !{for} now.
+
+
 100 r!{up}ees !{for} 30 Bombs! 30,!Line2
 	db Bombs !{for} !{just} 100 r!{up}ees!,!Line3
 	db Plea!{se} buy !{so}!{me}, m!{is}t!{er}!
+
+
 100 r!{up}ees !{for} 30 Bombs! I al!{so},!Line2
 	db !{have} a new !{pro}duct !{in} !{st}o!{ck}.,!Line3
 	db 1 !{for} !{on}!{ly_}100 r!{up}ees!
+
+
 !{Tha}nk !{you} v!{er}y !{mu}ch.
+
+
 !{Tha}nk !{you} v!{er}y !{mu}ch.!{2_}!{You} c!{an},!Line2
 	db !{se}t !{the} !{bo}mb by p!{re}ss!{ing_}A.,!Line3
 	db D!{on}'t !{for}!{get} !{it}!
+
+
 Ki ki! Give !{me} 100 r!{up}ees, !{and},!Line2
 	db I'll op!{en_}!{the} !{do}!{or} !{for} !{you}. Kiki,!Line3
 	db ki!,!WaitKey,!Scroll
@@ -1409,8 +1902,12 @@ Ki ki! Give !{me} 100 r!{up}ees, !{and},!Line2
 
 Ki ki! Hmph!{Dots} Do !{it} !{you}r!{se}lf,,!Line2
 	db !{the}n! Kiki ki!
+
+
 Ki ki! !{Tha}t!{s_}!{the} spir!{it}! I'll take,!Line2
 	db 100 r!{up}ees! Kiki ki!
+
+
 I'm Kiki !{the} m!{on}key! I !{lo}ve,!Line2
 	db r!{up}ees m!{or}e !{tha}n !{an}y!{thin}g. C!{an},!Line3
 	db !{you} sp!{are_}10 r!{up}ees?,!WaitKey,!Scroll
@@ -1418,18 +1915,31 @@ I'm Kiki !{the} m!{on}key! I !{lo}ve,!Line2
 	db!{4_} > H!{er}e!{s_}10 r!{up}ees,!Scroll
 	db!{4_}!{4_}Not giv!{ing_}!{an}y!{thin}g,!Choose,!End
 
+
 Ki ki! !{Tha}t!{s_}!{the} spir!{it}! I'll !{be},!Line2
 	db !{you}r buddy !{for} a w!{hi}le. Kiki ki!
+
+
 Ki ki! Hmph!{Dots} I guess I !{have} no,!Line2
 	db u!{se} !{for} !{you}. Bye bye! Kiki ki!
+
+
 Ki ki? Wh!{at_}!{are_}!{you} !{do}!{in}g?,!Line2
 	db I !{do}!{nt_}!{wa}nt !{to} !{go} !{the}!{re}!
+
+
 Phew! !{Tha}nk !{you} !{so} !{mu}ch !{for},!Line2
 	db sav!{ing_}!{me}. Now, !{ple}a!{se} take !{me},!Line3
 	db outside.
+
+
 Gyaaah! Too bright!
+
+
 Err, !{wa}!{it} a m!{in}ute!{Dots} Plea!{se},!Line2
 	db !{do}!{nt_}!{go} !{thi}s !{wa}y.
+
+
 My na!{me} !{is} Az!{in}ar. I s!{en}!{se} !{tha}t,!Line2
 	db !{some}!{thin}g !{is} !{ha}pp!{en}!{ing_}!{in} !{the},!Line3
 	db Sacr!{ed_}Realm !{se}al!{ed_}!{of}f by !{the},!WaitKey,!Scroll
@@ -1448,6 +1958,8 @@ My na!{me} !{is} Az!{in}ar. I s!{en}!{se} !{tha}t,!Line2
 	db Wr!{it}!{in}gs !{in} !{the} vil!{la}ge. Go !{and},!Scroll
 	db !{re}!{tr}i!{ev}e !{it}, if !{you} !{tr}u!{ly_}!{are_}!{to},!WaitKey,!Scroll
 	db !{be}!{com}e !{thi}s "H!{er}o."
+
+
 W!{it}h !{all_}th!{re}e p!{en}d!{an}ts, !{you},!Line2
 	db !{have} !{pro}v!{en_}!{you}r!{se}lf !{to},!Line3
 	db pos!{se}ss w!{is}!{do}m, courage !{and},!WaitKey,!Scroll
@@ -1456,26 +1968,41 @@ W!{it}h !{all_}th!{re}e p!{en}d!{an}ts, !{you},!Line2
 	db !{to} !{the} !{for}e!{st} !{and_}c!{la}im !{the},!Scroll
 	db sleep!{ing_}M!{ast}!{er_}Sw!{or}d as !{you}r,!WaitKey,!Scroll
 	db own.
+
+
 A!{ha}! Th!{at_}!{is} !{the} To!{me} !{of},!Line2
 	db Mu!{do}ra! W!{it}h !{it}, !{you} c!{an},!Line3
 	db !{com}p!{re}h!{en}d !{the} l!{an}guage !{of},!WaitKey,!Scroll
 	db !{the} Hyli!{an}s.
+
+
 !{You} !{are_}!{the} H!{er}o, !{in}deed. I am,!Line2
 	db c!{er}t!{ain} !{you} !{wi}ll !{re}turn peace,!Line3
 	db !{to} !{thi}s l!{and}.
+
+
 Look !{at_}how !{you}'ve grown,!Line2
 	db aft!{er_}!{you}r !{tr}ial !{in} !{the} !{des}!{er}t.,!Line3
 	db !{You} !{are_}a v!{er}y !{pro}m!{is}!{ing_}!{you}ng,!WaitKey,!Scroll
 	db m!{an}.
+
+
 Was !{it} !{you} !{wh}o !{di}!{st}ur!{be}d my,!Line2
 	db nap? H!{er}e, take !{thi}s !{and_}!{go},!Line3
 	db a!{wa}y.
+
+
 I !{have} !{not}!{hi}ng el!{se} !{to} give,!Line2
 	db !{you}, !{so} take !{thi}s !{in}!{st}ead!
+
+
 Yo !{Name}! A !{st}r!{an}ge m!{is}t !{has},!Line2
 	db fall!{en_}ov!{er_}!{the} !{for}e!{st}. If,!Line3
 	db !{you}'!{re_}head!{ing_}!{in}, !{ple}a!{se} !{be},!WaitKey,!Scroll
 	db ca!{re}ful.
+
+
+!PENDING
 !{Thi}s t!{re}e feels k!{in}da odd as !{we},!Line2
 	db cut !{it}. Any!{wa}y, !{ba}!{ck} !{to} w!{or}k!
 Looks like !{the} !{for}e!{st} m!{is}t,!Line2

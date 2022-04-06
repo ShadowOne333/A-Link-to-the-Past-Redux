@@ -36,6 +36,14 @@ org $0ED436	; 0x075436
 org $0EDF40	; 0x075F40
 dialogue_table2:
 ;----------------------------------------
+.message_352:
+	db "Hi, !{ma}y I help !{you}?!{2_}!{You} c!{an}",!Line2
+	db "op!{en_}two !{che}!{st}s !{for} 30 R!{up}ees.",!Line3
+	db "Why !{do}!{nt_}!{you} p!{la}y?",!WaitKey,!Scroll
+	db "Wh!{at_}!{wi}ll !{you} !{do}?",!Scroll
+	db "!{4_}> P!{la}y h!{er}e",!Scroll
+	db "!{4_}!{4_}May!{be} next ti!{me}",!Choose,!End
+;----------------------------------------
 .message_353:
 	db "Well, !{com}e !{ba}!{ck} !{and_}p!{la}y !{so}!{me}",!Line2
 	db "ti!{me}.!{2_}I'll !{be} !{wa}!{it}!{ing_}!{for} !{you}.",!Line3

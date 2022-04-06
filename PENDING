@@ -12,5 +12,6 @@ Pending things for Redux disassembly:
 - Proper fix for the Max Consumables "Fairy/Rupees fix"
 - Fix whatever is broken between Map/Object data and the FastROM implementation
 - Proper implementation of the New GFX hack (24 items menu) with LR switching (unknown if the LR Item Switch from DX v1.6 would work on New GFX, pending check)
+- Tilemap for the "TRIFORCE OF THE GODS" optional patch
 - Retranslation dialogue (and their proper patches)
 - Credits text

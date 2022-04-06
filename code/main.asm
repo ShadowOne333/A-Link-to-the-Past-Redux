@@ -86,8 +86,8 @@ incsrc gameplay/move_blocks_infinitely.asm	; Allows movement of blocks several t
 ;****************************************
 ; Main Red script text
 incsrc text/vwf.asm			; Variable width font modifications 
-incsrc text/dialogue1.asm		; 1st dialogue table
-incsrc text/dialogue2.asm		; 2nd dialogue table
+incsrc text/retranslation/dialogue1.asm		; 1st dialogue table
+incsrc text/retranslation/dialogue2.asm		; 2nd dialogue table
 
 ; Retranslation script text
 ;incsrc text/retranslation/dialogue1.asm	; 1st dialogue for the Retranslation & Sparrow

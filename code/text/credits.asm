@@ -147,11 +147,12 @@ org $0EBE54	; 0x073E54
 ;----------------------------------------
 ;	Flyover Sequence
 ;----------------------------------------
-; 1st byte is Y position and 2nd byte is X position
-; 3rd byte is unknown what it does
-; Last 4th byte before each text is the length byte.
-; The "length byte" is the number of characters x2, and then the result should have 1 substracted from it.
-; i.e.: "HYRULE CASTLE" = [0D (length) * 2] = 1A - 1 = 19
+; YY XX ZZ AA - Hedaer for each entry
+; YY XX - 1st byte is Y position and 2nd byte is X position
+; ZZ - 3rd byte is unknown what it does
+; AA - Last 4th byte before each text is the length byte.
+	; The "length byte" is the number of characters x2, and then the result should have 1 substracted from it.
+	; i.e.: "HYRULE CASTLE" = [0D (length) * 2] = 1A - 1 = 19
 
 org $0EBF4C	; 0x073F4C-0x074302
 credits_text:
@@ -280,10 +281,11 @@ warnpc $0EC2E1	; 0x0742E1
 ;		Epilogue
 ;----------------------------------------
 
-; Last 2nd byte before each text is the length byte.
-; The "length byte" is the number of characters x2, and then the result should have 1 substracted from it.
-; i.e.: "HYRULE CASTLE" = [0D (length) * 2] = 1A - 1 = 19
-; The other byte (1st) is the X position where it will begin printing the text
+; XX YY - Header for each entry
+; XX - X position where it will begin printing the text
+; YY - 2nd byte before each text is the "length byte".
+	; The "length byte" is the number of characters x2, and then the result should have 1 substracted from it.
+	; i.e.: "HYRULE CASTLE" = [0D (length) * 2] = 1A - 1 = 19
 
 org $0EB178	; 0x073178
 credits_roll:
@@ -340,7 +342,7 @@ credits_roll:
 	db $091B		; 091B
 	%row("TAKAYA IMAMURA")
 
-	db $0529		; 0529
+	db $0527		; 0529
 	%yellow("background designers")	; Color 1, Yellow
 	db $081D
 	db "MASANAO ARIMOTO"
@@ -370,7 +372,7 @@ credits_roll:
 	%row("KAZUAKI MORITA")
 
 	db $0A15	; 0x0733EA
-	db "programmers"	; ???
+	%yellow("programmers")		; Color 1, Yellow
 	db $081F
 	db "TATSUO NISHIYAMA"
 	db $081F
@@ -411,8 +413,8 @@ credits_roll:
 	db $0A19
 	%row("TAKAO SHIMIZU")
 
-	db $081F
-	%yellow("printed art work")	; Color 1, Yellow
+	db $081D
+	%yellow("printed artwork")	; Color 1, Yellow
 	db $0919
 	db "YOICHI KOTABE"
 	db $0919
@@ -546,7 +548,7 @@ credits_roll:
 	%row("YASUNARI NISHIDA")	; 2nd row
 
 	db $052B
-	db "english script writers"	; Color 1, Yellow
+	%yellow("english script writers")	; Color 1, Yellow
 	db $0A17
 	db "DANIEL OWSEN"
 	db $0A17

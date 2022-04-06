@@ -326,7 +326,8 @@ dialogue_table1:
 	db "!{can_}defe!{at_}!{the} !{ev}il prie!{st}!",!End
 ;----------------------------------------
 .message_040:
-	db "!Window02,!Speed03!{Name}!!{2_}Help!!{2_}!{The} !{so}l!{di}!{er}s",!Line2
+	db !Window02,!Speed03
+	db "!{Name}!!{2_}Help!!{2_}!{The} !{so}l!{di}!{er}s",!Line2
 	db "!{are_}!{com}!{ing_}!{to} !{the} S!{an}ctuary!",!Line3
 	db "AIEEEEEEE!",!WaitKey,!Scroll
 	db "!{Dots} !{Dots} !{Dots}",!End
