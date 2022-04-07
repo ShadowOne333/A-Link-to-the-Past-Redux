@@ -326,15 +326,15 @@ dialogue_table2:
 ;----------------------------------------
 .message_388:
 	db !Position00,!Speed00
-	db ">Start From !{Name}!{s_}Hou!{se}",!Line2
-	db "!{2_}Start From S!{an}ctuary",!Choose2,!End
+	db ">Start !{fro}m !{Name}!{s_}Hou!{se}",!Line2
+	db "!{2_}Start !{fro}m S!{an}ctuary",!Choose2,!End
 	; For some reason, this selection and the next one seem to be flipped in terms of the Control Code "Choose"
 ;----------------------------------------
 .message_389:
 	db !Position00,!Speed00
-	db ">Start From !{Name}!{s_}Hou!{se}",!Line2
-	db "!{2_}Start from !{the} S!{an}ctuary",!Line3
-	db "!{2_}Start from !{the} Mount!{ain} Cave",!Choose3,!End
+	db ">Start !{fro}m !{Name}!{s_}Hou!{se}",!Line2
+	db "!{2_}Start !{fro}m !{the} S!{an}ctuary",!Line3
+	db "!{2_}Start !{fro}m !{the} Mount!{ain} Cave",!Choose3,!End
 ;----------------------------------------
 .message_390:
 	db !Speed00
