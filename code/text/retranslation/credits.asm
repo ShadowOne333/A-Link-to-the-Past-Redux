@@ -155,7 +155,7 @@ org $0EBE54	; 0x073E54
 ;----------------------------------------
 ;	Flyover Sequence
 ;----------------------------------------
-; YY XX ZZ AA - Hedaer for each entry
+; YY XX ZZ AA - Header for each entry
 ; YY XX - 1st byte is Y position and 2nd byte is X position
 ; ZZ - 3rd byte is unknown what it does
 ; AA - Last 4th byte before each text is the length byte.

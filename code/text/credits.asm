@@ -137,9 +137,9 @@ endmacro
 org $0EC32C	; 0x07432C
 	lda credits_text,y	; Originally LDA $BF4C,y
 	skip 7
-	lda credits_text,y
+	lda credits_text,y	; Originally LDA $BF4C,y
 	skip 18
-	lda credits_text,y
+	lda credits_text,y	; Originally LDA $BF4C,y
 
 org $0EBE54	; 0x073E54
 	lda credits_roll,y	; Originally LDA $B178,y
@@ -148,6 +148,25 @@ org $0EBE54	; 0x073E54
 	skip 17
 	lda credits_roll,y	; Originally LDA $B178,y
 
+; 2-byte pointers for the credits flyover scenes
+org $0EC2E1
+	dw $0000
+	dw (credits_text_priest-credits_text_king)
+	dw (credits_text_sahasralah-credits_text_priest)
+	dw (credits_text_desert-credits_text_sahasralah)
+	dw (credits_text_tower-credits_text_desert)
+	dw (credits_text_house-credits_text_tower)
+	dw (credits_text_zora-credits_text_house)
+	dw (credits_text_witch-credits_text_zora)
+	dw (credits_text_lumberjacks-credits_text_witch)
+	dw (credits_text_ocarina-credits_text_lumberjacks)
+	dw (credits_text_venus-credits_text_ocarina)
+	dw (credits_text_smithies-credits_text_venus)
+	dw (credits_text_bug_kid-credits_text_smithies)
+	dw (credits_text_old_man-credits_text_bug_kid)
+	dw (credits_text_thief-credits_text_old_man)
+	dw (credits_text_master_sword-credits_text_thief)
+warnpc $0EC303
 
 ;***************************************************
 ; 		Main credits text
@@ -155,7 +174,7 @@ org $0EBE54	; 0x073E54
 ;----------------------------------------
 ;	Flyover Sequence
 ;----------------------------------------
-; YY XX ZZ AA - Hedaer for each entry
+; YY XX ZZ AA - Header for each entry
 ; YY XX - 1st byte is Y position and 2nd byte is X position
 ; ZZ - 3rd byte is unknown what it does
 ; AA - Last 4th byte before each text is the length byte.
@@ -164,26 +183,27 @@ org $0EBE54	; 0x073E54
 
 org $0EBF4C	; 0x073F4C-0x074302
 credits_text:
+
+.king:
 	db $62,$67,$00,$23	; Length 22
 	; Need to split up the spaces and special characters from the main text due to the macros not being able to have IF conditions to exclude $9F,$34 and $35 from the sum
-	%yellow("return") : db " " : %yellow("of") : db " " : %yellow("the") : db " " : %yellow("king")
-
+	%yellow("the") : db " " : %yellow("return") : db " " : %yellow("of") : db " " : %yellow("the") : db " " : %yellow("king")
 	db $62,$E9,$00,$19	; Length 30
 	db "HYRULE CASTLE"	; 1st row
 	db $63,$09,$00,$19	; Length 30
 	%row("HYRULE") : db " "	: %row("CASTLE")
 
+.priest:
 	db $62,$68,$00,$17	; Length 14
 	%yellow("loyal") : db " " : %yellow("priest")	; Color 1, Yellow "the loyal sage"
-	
 	db $62,$EB,$00,$11	; Length 9
 	db "SANCTUARY"		; THE CHAPEL
 	db $63,$0B,$00,$11
 	%row("SANCTUARY")	; THE CHAPEL
 
+.sahasralah:
 	db $62,$4F,$00,$01
 	db ","
-
 	db $62,$65,$00,$2D
 	%yellow("sahasralah") : db "'" : %yellow("s") : db " " : %yellow("homecoming")
 	db $62,$E9,$00,$1F
@@ -191,6 +211,7 @@ credits_text:
 	db $63,$09,$00,$1F
 	%row("KAKARIKO") : db " " : %row("VILLAGE")
 
+.desert:
 	db $62,$64,$00,$2F
 	%yellow("vultures") : db " " : %yellow("rule") : db " " : %yellow("the") : db " " : %yellow("desert")
 	db $62,$E9,$00,$19
@@ -198,6 +219,7 @@ credits_text:
 	db $63,$09,$00,$19
 	%row("DESERT") : db " " : %row("TEMPLE")
 
+.tower:
 	db $62,$64,$00,$2F
 	%yellow("the") : db " " : %yellow("bully") : db " " : %yellow("makes") : db " " : %yellow("a") : db " " : %yellow("friend")
 	db $62,$E9,$00,$19
@@ -205,6 +227,7 @@ credits_text:
 	db $63,$09,$00,$19
 	%row("TOWER") : db " " : %row("OF") : db " " : %row("HERA")
 
+.house:
 	db $62,$66,$00,$25
 	%yellow("your") : db " " : %yellow("uncle") : db " " : %yellow("recovers")
 	db $62,$EB,$00,$13
@@ -212,6 +235,7 @@ credits_text:
 	db $63,$0B,$00,$13
 	%row("YOUR") : db " " : %row("HOUSE")
 
+.zora:
 	db $62,$66,$00,$21
 	%yellow("flippers") : db " " : %yellow("for") : db " " : %yellow("sale")
 	db $62,$E8,$00,$1F
@@ -219,6 +243,7 @@ credits_text:
 	db $63,$08,$00,$1F
 	%row("ZORA") : db "'" : %row("S") : db " " : %row("WATERFALL")
 
+.witch:
 	db $62,$64,$00,$2D
 	%yellow("the") : db " " : %yellow("witch") : db " " : %yellow("and") : db " " : %yellow("assistant")
 	db $62,$EB,$00,$15
@@ -226,6 +251,7 @@ credits_text:
 	db $63,$0B,$00,$15
 	%row("POTION") : db " " : %row("SHOP")
 
+.lumberjacks:
 	db $62,$68,$00,$1F
 	%yellow("twin") : db " " : %yellow("lumberjacks")
 	db $62,$E9,$00,$1B
@@ -233,6 +259,7 @@ credits_text:
 	db $63,$09,$00,$1B
 	%row("WOODSMEN") : db "'" : %row("S") : db " " : %row("HUT")
 
+.ocarina:
 	db $62,$64,$00,$2D
 	%yellow("ocarina") : db " " : %yellow("boy") : db " " : %yellow("plays") : db " " : %yellow("again")
 	db $62,$E9,$00,$19
@@ -240,6 +267,7 @@ credits_text:
 	db $63,$09,$00,$19
 	%row("HAUNTED") : db " " : %row("GROVE")
 
+.venus:
 	db $62,$64,$00,$2D
 	%yellow("venus") : db "," : %yellow("queen") : db " " : %yellow("of") : db " " : %yellow("fairies")
 	db $62,$EA,$00,$17
@@ -247,6 +275,7 @@ credits_text:
 	db $63,$0A,$00,$17
 	%row("WISHING") : db " " : %row("WELL")	; SPRING OF LUCK
 
+.smithies:
 	db $62,$66,$00,$25
 	%yellow("dwarven") : db " " : %yellow("swordsmiths")
 	db $62,$EC,$00,$0B
@@ -254,6 +283,7 @@ credits_text:
 	db $63,$0C,$00,$0B
 	%row("SMITHY")
 
+.bug_kid:
 	db $62,$68,$00,$27
 	%yellow("bug") : db "-" : %yellow("catching") : db " " : %yellow("kid")
 	db $62,$E9,$00,$1F
@@ -261,6 +291,7 @@ credits_text:
 	db $63,$09,$00,$1F
 	%row("KAKARIKO") : db " " : %row("VILLAGE")
 
+.old_man:
 	db $62,$48,$00,$1F
 	%yellow("the") : db " " : %yellow("lost") : db " " : %yellow("old") : db " " : %yellow("man")
 	db $62,$E9,$00,$1B
@@ -268,6 +299,7 @@ credits_text:
 	db $63,$09,$00,$1B
 	%row("DEATH") : db " " : %row("MOUNTAIN")	; HEBRA MOUNTAIN
 
+.thief:
 	db $62,$68,$00,$17
 	%yellow("forest") : db " " : %yellow("thief")
 	db $62,$EB,$00,$13
@@ -275,11 +307,11 @@ credits_text:
 	db $63,$0B,$00,$13
 	%row("LOST") : db " " : %row("WOODS")
 
+.master_sword:
 	db $62,$66,$00,$27
 	%yellow("and") : db " " : %yellow("the") : db " " : %yellow("master") : db " " : %yellow("sword")
 	db $62,$A8,$00,$1D
 	%green("sleeps") : db " " : %green("again") : db "..."
-
 	db $62,$EC,$00,$0F
 	db "FOREVER!"
 	db $63,$0C,$00,$0F
