@@ -100,9 +100,9 @@ dialogue_table1:
 ;----------------------------------------
 .message_013:
 	db "!{Name}, I'm !{go}!{ing_}!{out_}!{for} a",!Line2
-	db "l!{it}tle w!{hi}le.",!Line3
+	db "l!{it}tle w!{hi}le.",!WaitKey,!Line3
 	db "D!{on}'t w!{or}ry. I'll !{be} !{ba}!{ck} by",!Scroll
-	db "m!{or}n!{in}g. Plea!{se} !{do}!{nt_}leave,"!Scroll
+	db "m!{or}n!{in}g. Plea!{se} !{do}!{nt_}leave",!Scroll
 	db "!{the} hou!{se}.",!End
 ;----------------------------------------
 .message_014:
@@ -205,6 +205,11 @@ dialogue_table1:
 	db "Go collect !{all_}th!{re}e p!{en}d!{an}ts!",!End
 ;----------------------------------------
 .message_026:
+	db "Take tho!{se} th!{re}e p!{en}d!{an}ts !{to}",!Line2
+	db "!{the} !{for}e!{st}. !{The} M!{ast}!{er_}Sw!{or}d",!Line3
+	db "a!{wa}!{it}s !{you} !{the}!{re}.",!End
+;----------------------------------------
+.message_027:
 	db "Oh, !{Name}! !{You} w!{er}e a !{se}c!{on}d",!Line2
 	db "!{to}o l!{at}e. I!{Dots} I !{wa}s a co!{wa}rd!{Dots}",!Line3
 	db "!{The}y abduct!{ed_}Zelda !{and_}!{to}ok",!WaitKey,!Scroll

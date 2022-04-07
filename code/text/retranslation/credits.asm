@@ -177,9 +177,9 @@ credits_text:
 	%yellow("loyal") : db " " : %yellow("priest")	; Color 1, Yellow "the loyal sage"
 	
 	db $62,$EB,$00,$11	; Length 9
-	db "SANCTUARY"		; THE CHAPEL
+	db "THE CHAPEL"		; THE CHAPEL
 	db $63,$0B,$00,$11
-	%row("SANCTUARY")	; THE CHAPEL
+	%row("THE") : db " " : %row("CHAPEL")	; THE CHAPEL
 
 	db $62,$4F,$00,$01
 	db ","
@@ -242,10 +242,10 @@ credits_text:
 
 	db $62,$64,$00,$2D
 	%yellow("venus") : db "," : %yellow("queen") : db " " : %yellow("of") : db " " : %yellow("fairies")
-	db $62,$EA,$00,$17
-	db "WISHING WELL"	; SPRING OF LUCK
-	db $63,$0A,$00,$17
-	%row("WISHING") : db " " : %row("WELL")	; SPRING OF LUCK
+	db $62,$EA,$00,$25
+	db "SPRING OF HAPPINESS"	; SPRING OF LUCK
+	db $63,$0A,$00,$25
+	%row("SPRING") : db " " : %row("OF") : db " " : %row("HAPPINESS")	; SPRING OF LUCK
 
 	db $62,$66,$00,$25
 	%yellow("dwarven") : db " " : %yellow("swordsmiths")
@@ -261,12 +261,12 @@ credits_text:
 	db $63,$09,$00,$1F
 	%row("KAKARIKO") : db " " : %row("VILLAGE")
 
-	db $62,$48,$00,$1F
-	%yellow("the") : db " " : %yellow("lost") : db " " : %yellow("old") : db " " : %yellow("man")
+	db $62,$48,$00,$17
+	%yellow("lost") : db " " : %yellow("old") : db " " : %yellow("man")
 	db $62,$E9,$00,$1B
-	db "DEATH MOUNTAIN"	; HEBRA MOUNTAIN
+	db "HEBRA MOUNTAIN"	; HEBRA MOUNTAIN
 	db $63,$09,$00,$1B
-	%row("DEATH") : db " " : %row("MOUNTAIN")	; HEBRA MOUNTAIN
+	%row("HEBRA") : db " " : %row("MOUNTAIN")	; HEBRA MOUNTAIN
 
 	db $62,$68,$00,$17
 	%yellow("forest") : db " " : %yellow("thief")
@@ -517,10 +517,10 @@ credits_roll:
 	db "level"
 	%num("1") : db " " : %row("SHADOW") : db " " : %row("TEMPLE")	; Color 3, Red "DARK PALACE"
 	db $08,$1B
-	db "2 SWAMP SHRINE"	; "SWAMP PALACE"
+	db "2 WATER SHRINE"	; "SWAMP PALACE"
 	db $03,$25
 	db "level"
-	%num("2") : db " " : %row("SWAMP") : db " " : %row("SHRINE")	; Color 3, Red "SWAMP PALACE"
+	%num("2") : db " " : %row("WATER") : db " " : %row("SHRINE")	; Color 3, Red "SWAMP PALACE"
 	db $08,$19
 	db "3 SKULL WOODS"
 	db $03,$23
@@ -537,10 +537,10 @@ credits_roll:
 	db "level"
 	%num("5") : db " " : %row("ICE") : db " " : %row("TOWER")	; Color 3, Red "ICE PALACE"
 	db $08,$19
-	db "6 MISERY MIRE"	; "MISERY MIRE"
+	db "6 DEVIL`S BOG"	; "MISERY MIRE"
 	db $03,$23
 	db "level"
-	%num("6") : db " " : %row("MISERY") : db " " : %row("MIRE")	; Color 3, Red "MISERY MIRE"
+	%num("6") : db " " : %row("DEVIL") : db $9D : %row("S") : db " " : %row("BOG")	; Color 3, Red "MISERY MIRE"
 	db $08,$19
 	db "7 TURTLE ROCK"
 	db $03,$23
@@ -562,16 +562,12 @@ credits_roll:
 	db $08,$1F
 	%row("YASUNARI") : db " " : %row("NISHIDA")	; 2nd row
 
-	db $05,$2B
-	%yellow("english") : db " " : %yellow("localization")	; Color 1, Yellow
-	db $0A,$17
-	db "DANIEL OWSEN"
-	db $0A,$17
-	%row("DANIEL") : db " " : %row("OWSEN")
-	db $08,$1D
-	db "HIROYUKI YAMADA"
-	db $08,$1D
-	%row("HIROYUKI") : db " " : %row("YAMADA")
+	db $05,$29
+	%yellow("english") : db " " : %yellow("retranslation")	; Color 1, Yellow
+	db $07,$21
+	db "TRANSLATION QUEST"
+	db $07,$21
+	%row("TRANSLATION") : db " " : %row("QUEST")
 
 ;----------------------------------------
 ; If there's free space afterwards, pad it out with $FF
