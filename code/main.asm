@@ -97,7 +97,7 @@ incsrc text/dialogue2.asm		; 2nd dialogue table
 incsrc text/items.asm
 
 ; Credits text
-incsrc text/retranslation/credits_ret.asm
+incsrc text/retranslation/credits.asm
 
 ;****************************************
 ;	Visual changes
