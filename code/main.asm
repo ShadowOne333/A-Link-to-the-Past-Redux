@@ -59,8 +59,7 @@ warnpc $018000
 ;	Expand ROM to 2MB
 ;****************************************
 ; Hacky method of expansion, could be changed later on
-org $3FFFFF
-	db $00
+org $3FFFFF : db $00
 
 ;****************************************
 ;	ALttP DX changes
@@ -84,14 +83,10 @@ incsrc gameplay/move_blocks_infinitely.asm	; Allows movement of blocks several t
 ;****************************************
 ;	Text changes
 ;****************************************
-; Main Red script text
+; Main Redux script text
 incsrc text/vwf.asm			; Variable width font modifications 
 incsrc text/dialogue1.asm		; 1st dialogue table
 incsrc text/dialogue2.asm		; 2nd dialogue table
-
-; Retranslation script text
-;incsrc text/retranslation/dialogue1.asm	; 1st dialogue for the Retranslation & Sparrow
-;incsrc text/retranslation/dialogue2.asm	; 2nd dialogue for the Retranslation by Chiken Knife & Sparrow
 
 ; Item names text
 incsrc text/items.asm

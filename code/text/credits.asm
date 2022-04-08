@@ -9,24 +9,11 @@ incsrc "code/text/tbl/credits_small.txt"
 incsrc "code/text/tbl/credits_big.txt"
 
 ;----------------------------------------
-;    Macros for credits texts
+;    Macros & Functions for credits text
 ;----------------------------------------
 
-macro new_line(N)
-	!i = 0
-	while !i < <N>
-		dw credits_roll_print_end-credits_roll
-		!i #= !i+1
-	endwhile
-endmacro
-
-macro repeat(N,cmd)
-    !i = 0
-    while !i < <N>
-        <cmd>
-        !i #= !i+1
-    endwhile
-endmacro
+; Function for calculating the length byte for all the credits
+function length(byte) = (byte*2)-1
 
 ; Macros for coloured texts (yellow, green and red)
 ;!Red = $00
@@ -66,6 +53,23 @@ macro num(str)
 		db char("<str>",!i)+73	; /256 or +66
 		!i #= !i+1
 	endwhile
+endmacro
+
+; New Line pointer for the Credits roll
+macro new_line(N)
+	!i = 0
+	while !i < <N>
+		dw credits_roll_print_end-credits_roll
+		!i #= !i+1
+	endwhile
+endmacro
+
+macro repeat(N,cmd)
+    !i = 0
+    while !i < <N>
+        <cmd>
+        !i #= !i+1
+    endwhile
 endmacro
 
 ;----------------------------------------
@@ -396,144 +400,142 @@ org $0EBF4C	; 0x073F4C-0x074302
 credits_text:
 
 .king:
-	db $62,$65,$00,$2B	; Length 22
+	db $62,$65,$00,length(22)	; Length 22
 	; Need to split up the spaces and special characters from the main text due to the macros not being able to have IF conditions to exclude $9F,$34 and $35 from the sum
 	%yellow("the") : db " " : %yellow("return") : db " " : %yellow("of") : db " " : %yellow("the") : db " " : %yellow("king")
-	db $62,$E9,$00,$19	; Length 30
+	db $62,$E9,$00,length(13)	; Length 13
 	db "HYRULE CASTLE"	; 1st row
-	db $63,$09,$00,$19	; Length 30
+	db $63,$09,$00,length(13)	; Length 13
 	%row("HYRULE") : db " "	: %row("CASTLE")
 
 .priest:
-	db $62,$68,$00,$1F	; Length 14
+	db $62,$68,$00,length(16)	; Length 16
 	%yellow("the") : db " " : %yellow("loyal") : db " " : %yellow("priest")	; Color 1, Yellow "the loyal sage"
-	db $62,$EB,$00,$11	; Length 9
+	db $62,$EB,$00,length(9)	; Length 9
 	db "SANCTUARY"		; THE CHAPEL
-	db $63,$0B,$00,$11
+	db $63,$0B,$00,length(9)
 	%row("SANCTUARY")	; THE CHAPEL
 
 .sahasralah:
-	db $62,$4F,$00,$01
+	db $62,$4F,$00,length(1)
 	db ","
-	db $62,$65,$00,$2D
+	db $62,$65,$00,length(23)
 	%yellow("sahasralah") : db "'" : %yellow("s") : db " " : %yellow("homecoming")
-	db $62,$E9,$00,$1F
+	db $62,$E9,$00,length(16)
 	db "KAKARIKO VILLAGE"
-	db $63,$09,$00,$1F
+	db $63,$09,$00,length(16)
 	%row("KAKARIKO") : db " " : %row("VILLAGE")
 
 .desert:
-	db $62,$64,$00,$2F
+	db $62,$64,$00,length(24)
 	%yellow("vultures") : db " " : %yellow("rule") : db " " : %yellow("the") : db " " : %yellow("desert")
-	db $62,$E9,$00,$19
+	db $62,$E9,$00,length(13)
 	db "DESERT TEMPLE"
-	db $63,$09,$00,$19
+	db $63,$09,$00,length(13)
 	%row("DESERT") : db " " : %row("TEMPLE")
 
 .tower:
-	db $62,$64,$00,$2F
+	db $62,$64,$00,length(24)
 	%yellow("the") : db " " : %yellow("bully") : db " " : %yellow("makes") : db " " : %yellow("a") : db " " : %yellow("friend")
-	db $62,$EA,$00,$19
+	db $62,$EA,$00,length(13)
 	db "TOWER OF HERA"
-	db $63,$0A,$00,$19
+	db $63,$0A,$00,length(13)
 	%row("TOWER") : db " " : %row("OF") : db " " : %row("HERA")
 
 .house:
-	db $62,$66,$00,$25
+	db $62,$66,$00,length(19)
 	%yellow("your") : db " " : %yellow("uncle") : db " " : %yellow("recovers")
-	db $62,$EB,$00,$13
+	db $62,$EB,$00,length(10)
 	db "YOUR HOUSE"
-	db $63,$0B,$00,$13
+	db $63,$0B,$00,length(10)
 	%row("YOUR") : db " " : %row("HOUSE")
 
 .zora:
-	db $62,$67,$00,$21
+	db $62,$67,$00,length(17)
 	%yellow("flippers") : db " " : %yellow("for") : db " " : %yellow("sale")
-	db $62,$E8,$00,$1F
+	db $62,$E8,$00,length(16)
 	db "ZORA`S WATERFALL"
-	db $63,$08,$00,$1F
+	db $63,$08,$00,length(16)
 	%row("ZORA") : db $9D : %row("S") : db " " : %row("WATERFALL")
 
 .witch:
-	db $62,$64,$00,$2D
+	db $62,$64,$00,length(23)
 	%yellow("the") : db " " : %yellow("witch") : db " " : %yellow("and") : db " " : %yellow("assistant")
-	db $62,$EA,$00,$15
+	db $62,$EA,$00,length(11)
 	db "POTION SHOP"
-	db $63,$0A,$00,$15
+	db $63,$0A,$00,length(11)
 	%row("POTION") : db " " : %row("SHOP")
 
 .lumberjacks:
-	db $62,$68,$00,$1F
+	db $62,$68,$00,length(16)
 	%yellow("twin") : db " " : %yellow("lumberjacks")
-	db $62,$E9,$00,$1B
+	db $62,$E9,$00,length(14)
 	db "WOODSMEN`S HUT"
-	db $63,$09,$00,$1B
+	db $63,$09,$00,length(14)
 	%row("WOODSMEN") : db $9D : %row("S") : db " " : %row("HUT")
 
 .ocarina:
-	db $62,$64,$00,$2D
+	db $62,$64,$00,length(23)
 	%yellow("ocarina") : db " " : %yellow("boy") : db " " : %yellow("plays") : db " " : %yellow("again")
-	db $62,$E9,$00,$19
+	db $62,$E9,$00,length(13)
 	db "HAUNTED GROVE"
-	db $63,$09,$00,$19
+	db $63,$09,$00,length(13)
 	%row("HAUNTED") : db " " : %row("GROVE")
 
 .venus:
-	db $62,$64,$00,$2D
+	db $62,$64,$00,length(23)
 	%yellow("venus") : db ", " : %yellow("queen") : db " " : %yellow("of") : db " " : %yellow("fairies")
-	db $62,$EA,$00,$17
+	db $62,$EA,$00,length(12)
 	db "WISHING WELL"	; SPRING OF LUCK
-	db $63,$0A,$00,$17
+	db $63,$0A,$00,length(12)
 	%row("WISHING") : db " " : %row("WELL")	; SPRING OF LUCK
 
 .smithies:
-	db $62,$66,$00,$25
+	db $62,$66,$00,length(19)
 	%yellow("dwarven") : db " " : %yellow("swordsmiths")
-	db $62,$EC,$00,$0B
+	db $62,$EC,$00,length(6)
 	db "SMITHY"
-	db $63,$0C,$00,$0B
+	db $63,$0C,$00,length(6)
 	%row("SMITHY")
 
 .bug_kid:
-	db $62,$69,$00,$1F
+	db $62,$69,$00,length(16)
 	%yellow("bug") : db "-" : %yellow("catching") : db " " : %yellow("kid")
-	db $62,$E9,$00,$1F
+	db $62,$E9,$00,length(16)
 	db "KAKARIKO VILLAGE"
-	db $63,$09,$00,$1F
+	db $63,$09,$00,length(16)
 	%row("KAKARIKO") : db " " : %row("VILLAGE")
 
 .old_man:
-	db $62,$48,$00,$1F
+	db $62,$48,$00,length(16)
 	%yellow("the") : db " " : %yellow("lost") : db " " : %yellow("old") : db " " : %yellow("man")
-	db $62,$E9,$00,$1B
+	db $62,$E9,$00,length(14)
 	db "DEATH MOUNTAIN"	; HEBRA MOUNTAIN
-	db $63,$09,$00,$1B
+	db $63,$09,$00,length(14)
 	%row("DEATH") : db " " : %row("MOUNTAIN")	; HEBRA MOUNTAIN
 
 .thief:
-	db $62,$6A,$00,$17
+	db $62,$6A,$00,length(12)
 	%yellow("forest") : db " " : %yellow("thief")
-	db $62,$EB,$00,$13
+	db $62,$EB,$00,length(10)
 	db "LOST WOODS"
-	db $63,$0B,$00,$13
+	db $63,$0B,$00,length(10)
 	%row("LOST") : db " " : %row("WOODS")
 
 .master_sword:
-	db $62,$66,$00,$27
+	db $62,$66,$00,length(20)
 	%yellow("and") : db " " : %yellow("the") : db " " : %yellow("master") : db " " : %yellow("sword")
-	db $62,$A8,$00,$1D
+	db $62,$A9,$00,length(15)
 	%green("sleeps") : db " " : %green("again") : db $52,$52,$52
-	db $62,$EC,$00,$0F
+	db $62,$EC,$00,length(8)
 	db "FOREVER!"
-	db $63,$0C,$00,$0F
+	db $63,$0C,$00,length(8)
 	%row("FOREVER")	: db $9E
 
 .text_end
 
 ;----------------------------------------
-padbyte $FF
-; This writes $FF $FF $FF $FF
-pad $0EB93D
+padbyte $FF : pad $0EB93D
 
 warnpc $0EC2E1	; 0x0742E1
 
@@ -550,369 +552,369 @@ warnpc $0EC2E1	; 0x0742E1
 org $0EB178	; 0x073178
 credits_roll:
 .exec_producer
-	db $07,$23		; 0723-18
+	db $07,length(18)	; 0723-18
 	%green("executive") : db " " : %green("producer")	; Color 2, Green
 .print_end
 	db $FF
 .hiroshi1
-	db $08,$1F		; 081F-16
+	db $08,length(16)	; 081F-16
 	db "HIROSHI YAMAUCHI"	; 1st row
 .hiroshi2
-	db $08,$1F		; 081F-16
+	db $08,length(16)	; 081F-16
 	%row("HIROSHI") : db " " : %row("YAMAUCHI")	; 2nd row
 .producer
-	db $0C,$0F		; 0C0F-8
+	db $0C,length(8)	; 0C0F-8
 	%yellow("producer")	; Color 1, Yellow
 .shigeru1
-	db $08,$1F		; 081F-16
+	db $08,length(16)	; 081F-16
 	db "SHIGERU MIYAMOTO"	; 1st row
 .shigeru2
-	db $08,$1F		; 081F-16
+	db $08,length(16)	; 081F-16
 	%row("SHIGERU") : db " " : %row("MIYAMOTO")	; 2nd row
 .director
-	db $0C,$0F		; 0C0F-8
+	db $0C,length(8)	; 0C0F-8
 	db "director"		; Color 3, Red
 .takashi1
-	db $09,$1B		; 091B
+	db $09,length(14)	; 091B
 	db "TAKASHI TEZUKA"	; 1st row
 .takashi2
-	db $09,$1B
+	db $09,length(14)
 	%row("TAKASHI") : db " " : %row("TEZUKA")	; 2nd row
 .script
-	db $09,$19		; 0919
+	db $09,length(13)	; 0919
 	%green("script") : db " " : %green("writer")	; Color 2, Green
 .tanabe1
-	db $09,$1B		; 091B
+	db $09,length(14)	; 091B
 	db "KENSUKE TANABE"	; 1st row
 .tanabe2
-	db $09,$1B		; 091B
+	db $09,length(14)	; 091B
 	%row("KENSUKE") : db " " : %row("TANABE")	; 2nd row
 .assis_director
-	db $06,$25		; 0625
+	db $06,length(19)	; 0625
 	%yellow("assistant") : db " " : %yellow("directors")	; Color 1, Yellow
 .yasuhisa1
-	db $07,$21		; 0721
+	db $07,length(17)	; 0721
 	db "YASUHISA YAMAMURA"
 .yasuhisa2
-	db $07,$21		; 0721
+	db $07,length(17)	; 0721
 	%row("YASUHISA") : db " " : %row("YAMAMURA")
 .yoichi_y1
-	db $09,$19		; 0919
+	db $09,length(13)	; 0919
 	db "YOICHI YAMADA"
 .yoichi_y2
-	db $09,$19		; 0919
+	db $09,length(13)	; 0919
 	%row("YOICHI") : db " " : %row("YAMADA")
 .screen_graphics
-	db $03,$31		; 0331
+	db $03,length(25)	; 0331
 	%green("screen") : db " " : %green("graphics") : db " " : %green("designers")	; Color 2, Green
 .object_design
-	db $08,$1F		; 081F
+	db $08,length(16)	; 081F
 	%yellow("object") : db " " : %yellow("designers")	; Color 1, Yellow
 .soichiro1
-	db $08,$1D		; 081D
+	db $08,length(15)	; 081D
 	db "SOICHIRO TOMITA"
 .soichiro2
-	db $08,$1D		; 081D
+	db $08,length(15)	; 081D
 	%row("SOICHIRO") : db " " : %row("TOMITA")
 .takaya1
-	db $09,$1B		; 091B
+	db $09,length(14)	; 091B
 	db "TAKAYA IMAMURA"
 .takaya2
-	db $09,$1B		; 091B
+	db $09,length(14)	; 091B
 	%row("TAKAYA") : db " " : %row("IMAMURA")
 .background
-	db $05,$27		; 0529
+	db $05,length(20)	; 0529
 	%yellow("background") : db " " : %yellow("designers")	; Color 1, Yellow
 .masanao1
-	db $08,$1D
+	db $08,length(15)
 	db "MASANAO ARIMOTO"
 .masanao2
-	db $08,$1D
+	db $08,length(15)
 	%row("MASANAO") : db " " : %row("ARIMOTO")
 .tsuyoshi1
-	db $07,$21		; 0721
+	db $07,length(17)	; 0721
 	db "TSUYOSHI WATANABE"
 .tsuyoshi2
-	db $07,$21		; 0721
+	db $07,length(17)	; 0721
 	%row("TSUYOSHI") : db " " : %row("WATANABE")
 .program_dir
-	db $08,$1F	; 0x07335F
+	db $08,length(16)	; 0x07335F
 	db "program director"	; Color 3, Red
 .toshihiko1
-	db $08,$1F
+	db $08,length(16)
 	db "TOSHIHIKO NAKAGO"
 .toshihiko2
-	db $08,$1F
+	db $08,length(16)
 	%row("TOSHIHIKO") : db " " : %row("NAKAGO")
 .main_prog
-	db $08,$1D	
+	db $08,length(15)
 	%green("main") : db " " : %green("programmer")	; Color 2, Green
 .yasunari_s1
-	db $08,$1F
+	db $08,length(16)
 	db "YASUNARI SOEJIMA"
 .yasunari_s2
-	db $08,$1F
+	db $08,length(16)
 	%row("YASUNARI") : db " " : %row("SOEJIMA")
 .kazuaki1
-	db $09,$1B
+	db $09,length(14)
 	db "KAZUAKI MORITA"
 .kazuaki2
-	db $09,$1B
+	db $09,length(14)
 	%row("KAZUAKI") : db " " : %row("MORITA")
 .programmers
-	db $0A,$15	; 0x0733EA
-	%yellow("programmers")		; Color 1, Yellow
+	db $0A,length(11)	; 0x0733EA
+	%yellow("programmers")	; Color 1, Yellow
 .tatsuo1
-	db $08,$1F
+	db $08,length(16)
 	db "TATSUO NISHIYAMA"
 .tatsuo2
-	db $08,$1F
+	db $08,length(16)
 	%row("TATSUO") : db " " : %row("NISHIYAMA")
 .yuichi1
-	db $08,$1D
+	db $08,length(15)
 	db "YUICHI YAMAMOTO"
 .yuichi2
-	db $08,$1D
+	db $08,length(15)
 	%row("YUICHI") : db " " : %row("YAMAMOTO")
 .yoshihiro1
-	db $08,$1F
+	db $08,length(16)
 	db "YOSHIHIRO NOMOTO"
 .yoshihiro2
-	db $08,$1F
+	db $08,length(16)
 	%row("YOSHIHIRO") : db " " : %row("NOMOTO")
 .eiji1
-	db $0B,$11
+	db $0B,length(9)
 	db "EIJI NOTO"
 .eiji2
-	db $0B,$11
+	db $0B,length(9)
 	%row("EIJI") : db " " : %row("NOTO")
 .satoru1
-	db $08,$1D
+	db $08,length(15)
 	db "SATORU TAKAHATA"
 .satoru2
-	db $08,$1D
+	db $08,length(15)
 	%row("SATORU") : db " " : %row("TAKAHATA")
 .sound
-	db $09,$1B
+	db $09,length(14)
 	db "sound composer"	; Color 3, Red
 .koji1
-	db $0B,$13
+	db $0B,length(10)
 	db "KOJI KONDO"
 .koji2
-	db $0B,$13
+	db $0B,length(10)
 	%row("KOJI") : db " " : %row("KONDO")
 .coord
-	db $0A,$17
+	db $0A,length(12)
 	%green("coordinators")	; Color 2, Green
 .keizo1
-	db $0B,$13
+	db $0B,length(10)
 	db "KEIZO KATO"
 .keizo2
-	db $0B,$13
+	db $0B,length(10)
 	%row("KEIZO") : db " " : %row("KATO")
 .takao1
-	db $0A,$19
+	db $0A,length(13)
 	db "TAKAO SHIMIZU"
 .takao2
-	db $0A,$19
+	db $0A,length(13)
 	%row("TAKAO") : db " " : %row("SHIMIZU")
 .artwork
-	db $08,$1D
+	db $08,length(15)
 	%yellow("printed") : db " " : %yellow("artwork")	; Color 1, Yellow
 .yoichi_k1
-	db $09,$19
+	db $09,length(13)
 	db "YOICHI KOTABE"
 .yoichi_k2
-	db $09,$19
+	db $09,length(13)
 	%row("YOICHI") : db " " : %row("KOTABE")
 .hideki1
-	db $0A,$17
+	db $0A,length(12)
 	db "HIDEKI FUJII"
 .hideki2
-	db $0A,$17
+	db $0A,length(12)
 	%row("HIDEKI") : db " " : %row("FUJII")
 .yoshiaki1
-	db $08,$1F
+	db $08,length(16)
 	db "YOSHIAKI KOIZUMI"
 .yoshiaki2
-	db $08,$1F
+	db $08,length(16)
 	%row("YOSHIAKI") : db " " : %row("KOIZUMI")
 .yasuhiro1
-	db $09,$1B
+	db $09,length(14)
 	db "YASUHIRO SAKAI"
 .yasuhiro2
-	db $09,$1B
+	db $09,length(14)
 	%row("YASUHIRO") : db " " : %row("SAKAI")
 .tomoaki1
-	db $08,$1D
+	db $08,length(15)
 	db "TOMOAKI KUROUME"
 .tomoaki2
-	db $08,$1D
+	db $08,length(15)
 	%row("TOMOAKI") : db " " : %row("KUROUME")
 .thanks
-	db $07,$21
+	db $07,length(17)
 	db "special thanks to"	; Color 3, Red
 .nobuo1
-	db $09,$19
+	db $09,length(13)
 	db "NOBUO OKAJIMA"
 .nobuo2
-	db $09,$19
+	db $09,length(13)
 	%row("NOBUO") : db " " : %row("OKAJIMA")
 .yasunori1
-	db $07,$21
+	db $07,length(17)
 	db "YASUNORI TAKETANI"
 .yasunori2
-	db $07,$21
+	db $07,length(17)
 	%row("YASUNORI") : db " " : %row("TAKETANI")
 .kiyoshi1
-	db $0A,$17
+	db $0A,length(12)
 	db "KIYOSHI KODA"
 .kiyoshi2
-	db $0A,$17
+	db $0A,length(12)
 	%row("KIYOSHI") : db " " : %row("KODA")
 .takamitsu1
-	db $07,$23
+	db $07,length(18)
 	db "TAKAMITSU KUZUHARA"
 .takamitsu2
-	db $07,$23
+	db $07,length(18)
 	%row("TAKAMITSU") : db " " : %row("KUZUHARA")
 .hironobu1
-	db $09,$1B
+	db $09,length(14)
 	db "HIRONOBU KAKUI"
 .hironobu2
-	db $09,$1B
+	db $09,length(14)
 	%row("HIRONOBU") : db " " : %row("KAKUI")
 .shigeki1
-	db $07,$21
+	db $07,length(17)
 	db "SHIGEKI YAMASHIRO"
 .shigeki2
-	db $07,$21
+	db $07,length(17)
 	%row("SHIGEKI") : db " " : %row("YAMASHIRO")
 .object_prog
-	db $07,$21
+	db $07,length(17)
 	%green("object") : db " " : %green("programmer")	; Color 2, Green
 .toshio1
-	db $09,$1B
+	db $09,length(14)
 	db "TOSHIO IWAWAKI"
 .toshio2
-	db $09,$1B
+	db $09,length(14)
 	%row("TOSHIO") : db " " : %row("IWAWAKI")
 .shigehiro1
-	db $06,$25
+	db $06,length(19)
 	db "SHIGEHIRO KASAMATSU"
 .shigehiro2
-	db $06,$25
+	db $06,length(19)
 	%row("SHIGEHIRO") : db " " : %row("KASAMATSU")
 
 .quest1
-	db $0A,$19
+	db $0A,length(13)
 	db "QUEST HISTORY"
 .quest2
-	db $0A,$19
+	db $0A,length(13)
 	%row("QUEST") : db " " : %row("HISTORY")
 .location
 	; 0x073713
-	db $03,$33
+	db $03,length(26)
 	db "location            deaths"	; Color 3, Red
 
 .hyrule
-	db $04,$19
+	db $04,length(13)
 	%yellow("hyrule") : db " " : %yellow("castle")	; Color 1, Yellow (castle of hyrule)
 .dungeon
-	db $04,$1B
+	db $04,length(14)
 	%green("castle") : db " " : %green("dungeon")	; Color 2, Green
 .east
-	db $04,$1B
+	db $04,length(14)
 	%yellow("eastern") : db " " : %yellow("temple")	; Color 1, Yellow "east palace"
 .desert
-	db $04,$19
+	db $04,length(13)
 	%green("desert") : db " " : %green("temple")	; Color 2, Green "desert palace"
 .tower
-	db $04,$19
+	db $04,length(13)
 	%yellow("tower") : db " " : %yellow("of") : db " " : %yellow("hera")	; Color 1, Yellow "mountain tower"
 
 .dark1
-	db $08,$1D
+	db $08,length(15)
 	db "1 SHADOW TEMPLE"	; "DARK PALACE"
 .dark2
-	db $03,$27
+	db $03,length(20)
 	db "level"
 	%num("1") : db " " : %row("SHADOW") : db " " : %row("TEMPLE")	; Color 3, Red "DARK PALACE"
 .swamp1
-	db $08,$1B
+	db $08,length(14)
 	db "2 SWAMP SHRINE"	; "SWAMP PALACE"
 .swamp2
-	db $03,$25
+	db $03,length(19)
 	db "level"
 	%num("2") : db " " : %row("SWAMP") : db " " : %row("SHRINE")	; Color 3, Red "SWAMP PALACE"
 .skull1
-	db $08,$19
+	db $08,length(13)
 	db "3 SKULL WOODS"
 .skull2
-	db $03,$23
+	db $03,length(18)
 	db "level"
 	%num("3") : db " " : %row("SKULL") : db " " : %row("WOODS")	; Color 3, Red
 .outcast1
-	db $08,$21
+	db $08,length(17)
 	db "4 OUTCAST VILLAGE"	; "THIEVES' TOWN"
 .outcast2
-	db $03,$2B
+	db $03,length(22)
 	db "level"
 	%num("4") : db " " : %row("OUTCAST") : db " " : %row("VILLAGE")	; Color 3, Red "SWAMP PALACE"
 .ice1
-	db $08,$15
+	db $08,length(11)
 	db "5 ICE TOWER"	; "ICE PALACE"
 .ice2
-	db $03,$1F
+	db $03,length(16)
 	db "level"
 	%num("5") : db " " : %row("ICE") : db " " : %row("TOWER")	; Color 3, Red "ICE PALACE"
 .misery1
-	db $08,$19
+	db $08,length(13)
 	db "6 MISERY MIRE"	; "MISERY MIRE"
 .misery2
-	db $03,$23
+	db $03,length(18)
 	db "level"
 	%num("6") : db " " : %row("MISERY") : db " " : %row("MIRE")	; Color 3, Red "MISERY MIRE"
 .turtle1
-	db $08,$19
+	db $08,length(13)
 	db "7 TURTLE ROCK"
 .turtle2
-	db $03,$23
+	db $03,length(18)
 	db "level"
 	%num("7") : db " " : %row("TURTLE") : db " " : %row("ROCK")	; Color 3, Red
 .ganon1
-	db $08,$1D
+	db $08,length(15)
 	db "8 GANON`S TOWER"
 .ganon2
-	db $03,$27
+	db $03,length(20)
 	db "level"
 	%num("8") : db " " : %row("GANON") : db $9D : %row("S") : db " " : %row("TOWER")	; Color 3, Red
 .total1
-	db $04,$1F
+	db $04,length(16)
 	db "TOTAL LIVES LOST"	; "TOTAL GAMES PLAYED"
 .total2
-	db $04,$1F
+	db $04,length(16)
 	%row("TOTAL") : db " " : %row("LIVES") : db " " : %row("LOST")	; "TOTAL GAMES PLAYED"
 .yasunari_n1
-	db $08,$1F
+	db $08,length(16)
 	db "YASUNARI NISHIDA"	; 1st row
 .yasunari_n2
-	db $08,$1F
+	db $08,length(16)
 	%row("YASUNARI") : db " " : %row("NISHIDA")	; 2nd row
 .english
-	db $06,$27
+	db $06,length(20)
 	%yellow("english") : db " " : %yellow("localization")	; Color 1, Yellow
 .daniel1
-	db $0A,$17
+	db $0A,length(12)
 	db "DANIEL OWSEN"
 .daniel2
-	db $0A,$17
+	db $0A,length(12)
 	%row("DANIEL") : db " " : %row("OWSEN")
 .hiroyuki1
-	db $08,$1D
+	db $08,length(15)
 	db "HIROYUKI YAMADA"
 .hiroyuki2
-	db $08,$1D
+	db $08,length(15)
 	%row("HIROYUKI") : db " " : %row("YAMADA")
 
 .roll_end

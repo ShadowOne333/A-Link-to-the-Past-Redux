@@ -111,7 +111,7 @@ overworld_map:
 warnpc $02FD0D	; 0x017D0D
 
 ; Overworld map data, will be included as bin files since the amount of changes both Hyrule Magic & Super Zelda Editor do to these sections is far too large to be added manually.
-; Almost the entire bank sections get changed when using those programs, so screw it,binary it is
+; Almost the entire bank sections get changed when using those programs, so screw it, binary it is
 org $0B93D0	; 0x0593D0
 	;incbin map_data.bin
 warnpc $C8000	; 0x060000
