@@ -15,6 +15,7 @@ lorom			; Switch to LoROM mapping mode
 ; This patch is only for A Link to the Past ROM
 check title "THE LEGEND OF ZELDA  "
 
+!newgfx = 0		; New GFX
 !fastrom = 1		; FastROM compilation
 !lorom = 1		; LoROM flag
 !hirom = 0		; HiROM flag
@@ -39,8 +40,12 @@ Internal_Rom_Header:
 	db $FF		; Cartridge type (Subnumber)
 
 	db "THE LEGEND OF ZELDA  "
-	
-	db $30		; ROM layout / Map mode ($20 for SlowROM)
+
+if !fastrom == 1
+	db $30		; ROM layout / Map mode ($30 for FastROM)
+else
+	db $20		; ROM layout / Map mode ($20 for SlowROM)
+endif
 	db $02		; Cartridge type
 	db $0A		; ROM size
 	db $03		; RAM size (SRAM size)
@@ -65,7 +70,7 @@ org $3FFFFF : db $00
 ;	ALttP DX changes
 ;****************************************
 incsrc loz3-dx/loz3-dx.asm	; Code of ALttP DX (v1.6)
-incsrc fixes/bugfixes.asm	; General bugfixes (most DX code)
+incsrc fixes/bugfixes.asm	; General bugfixes from Zeldix.net
 
 ;****************************************
 ;	Gameplay changes
@@ -88,8 +93,10 @@ incsrc text/vwf.asm			; Variable width font modifications
 incsrc text/dialogue1.asm		; 1st dialogue table
 incsrc text/dialogue2.asm		; 2nd dialogue table
 
-; Item names text
-incsrc text/items.asm
+; Item names text (Included in New GFX)
+;if !newgfx == 0
+;	incsrc text/items.asm
+;endif
 
 ; Credits text
 incsrc text/credits.asm
@@ -101,7 +108,9 @@ incsrc text/credits.asm
 incsrc gfx/palettes.asm
 
 ; 24 Items Menu (New GFX)
-;incsrc code/menus/new_gfx.asm		; Main file for New GFX
+if !newgfx == 1
+	incsrc code/menus/new_gfx.asm		; Main file for New GFX
+endif
 
 ;****************************************
 ;	Optional patches

@@ -39,7 +39,11 @@ incsrc "collect_items_sword.asm"
 incsrc "death_counter.asm"
 incsrc "flickering_fix.asm"
 incsrc "flute_fix.asm"
-incsrc "l_r_item_switch.asm"
+
+if !newgfx == 0
+	incsrc "l_r_item_switch.asm"
+endif
+
 incsrc "mothula_l4.asm"
 incsrc "pott_l2sword.asm"
 incsrc "shield_fix.asm"

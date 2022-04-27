@@ -10,7 +10,7 @@ org $06B05A	; 0x3305A
 org $079AF9	; 0x039AF9
 	ldx #$A313	; A2 13 A3
 
-org $07A166	; 0x3A166
+org $07A166	; 0x03A166
 	lda $7F5020	; AF 20 50 7F
 
 org $07A313	; 0x03A313

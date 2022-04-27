@@ -23,7 +23,7 @@ org $07FBBA	; 0x03FBBA
 ;	Main code for LR item switch
 ;****************************************
 
-org $3FFF40
+org $3FFF40	; 0x1FFF40
 swap_item_next:
 	phx
 
@@ -144,4 +144,4 @@ swap_item_prev_bottle:
 
 ;----------------------------------------
 
-warnpc $3FFFF0
+warnpc $FFFFF0	; 0x3FFFF0

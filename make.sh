@@ -73,9 +73,12 @@ Start()
 	cp "$clean_rom" "$patched_rom"
 
 # Compress the graphics back into the base patch ROM
-	echo; echo "Compressing Redux graphics from $graphics.bin using scompress..."
-	#WINEDEBUG=-all wine bin/zcompress/zcompress.exe 1 87000 out/"$file_base".sfc code/gfx/$graphics
-	bin/scompress/scompress iz out/"$file_base".sfc code/gfx/$graphics.bin
+	echo; echo "Compressing Redux graphics from $graphics.bin using zcompress..."
+	# Force a button press so zcompress exits on its own
+	xdotool key $(xdotool search --name "zcompress.exe") KP_Space
+	WINEDEBUG=-all wine bin/zcompress/zcompress.exe 1 87000 out/"$file_base".sfc code/gfx/$graphics.bin
+# Sadly, scompress doesn't work properly with New GFX, as it doesn't put the 2bpp graphics into the game properly
+	#bin/scompress/scompress iz out/"$file_base".sfc code/gfx/$graphics.bin
 	echo "Graphics compression finalized."
 
 # Start patching of the main.asm file and create IPS
