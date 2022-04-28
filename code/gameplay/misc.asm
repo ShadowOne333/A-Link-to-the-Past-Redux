@@ -9,7 +9,7 @@ org $09F6A8	; 0x04F6A8
 
 ;----------------------------------------
 ; Modify flipper's price to 300 rupees (needs change in text, too)
-;org $0059A99	; 0x029A99
+;org $059A99	; 0x029A99
 ;	sbc #$012C		; Originally SBC #$01F4
 
 ;----------------------------------------

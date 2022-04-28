@@ -4,7 +4,8 @@
 ; Apply the patch after you inserted Euclid's code for a 24 items menu (do not apply the Parallel_Worlds_shovel.ips)
 
 org $06B05A	; 0x3305A
-	jsl $07FBD0	; 22 D0 FB 07
+; Moved for compatibility with the ALTTP DX namespaces codes
+	jsl $07FFE0	; Originally $07FBD0, 22 D0 FB 07
 	nop #02		; EA EA
 
 org $079AF9	; 0x039AF9
@@ -24,7 +25,8 @@ org $07A3CF	; 0x03A3CF
 	jsl $0DEDC1	; 22 C1 ED 0D
 	nop
 
-org $07FBD0	; 0x03FBD0
+; Moved for compatibility with the ALTTP DX namespaces codes
+org $07FFE0	; 0x03FFE0 - Originally $07FBD0, 0x03FBD0
 	lda $7EF34C	; AF 4C F3 7E
 	and #$03	; 29 03
 	cmp #$00	; C9 00

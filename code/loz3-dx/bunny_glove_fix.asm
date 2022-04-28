@@ -31,11 +31,12 @@ namespace off
 namespace bunny_glove_fix
 	init:
 		lda $02E0
-		and #$FF
-		brk #$F0
-		ora $E2
-		dw $E630	; BMI +$E6
-		ora $6B,x
+		and #$00FF
+		bra +
+		sep #$30
+		inc $15
+		rtl
+	+
 		%jsf($1BEE1D)
 		rtl
 namespace off

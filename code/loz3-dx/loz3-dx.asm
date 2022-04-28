@@ -40,7 +40,9 @@ incsrc "death_counter.asm"
 incsrc "flickering_fix.asm"
 incsrc "flute_fix.asm"
 
-if !newgfx == 0
+if !newgfx == 1
+	incsrc "code/menus/l_r_item_switch_24items.asm"
+else
 	incsrc "l_r_item_switch.asm"
 endif
 
