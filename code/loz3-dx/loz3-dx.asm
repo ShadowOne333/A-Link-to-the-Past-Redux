@@ -21,7 +21,7 @@ endif
 
 if !houlihan == 1
 	;org $0E4356
-	dialogue1_table1.message_099:
+	dialogue1_table1_message_099:
 	db "My na!{me} !{is} "
 	;   B   e   n   _   W   h   i   t   m   a   n   .   _
 	db $01,$1E,$27,$59,$16,$21,$22,$2D,$26,$1A,$27,$41,$59

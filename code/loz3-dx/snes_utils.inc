@@ -57,7 +57,7 @@ includeonce
 		jsl <address>|!rombank
 	endmacro
 
-	; checksum, save_state, load_state and assert_end macros from the original snes_utils were removed, given asar has built-in support for those already in the form of proper checksum calculation, pullpc, pushpc and warnpc
+	; checksum, save_state, load_state and assert_end macros from the original snes_utils were removed, since asar has built-in support for those already in the form of proper checksum calculation, pullpc, pushpc and warnpc
 
 	; input=loz3.sfc
 	;if !input

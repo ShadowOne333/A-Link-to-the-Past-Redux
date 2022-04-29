@@ -1,7 +1,7 @@
 ;****************************************************************
 ; 	Max Consumables Fix (by Kasuto)
 ;****************************************************************
-
+;----------------------------------------
 ; Table for decimal/hex Bomb/Arrow counters
 org $0DDB40	; 0x06DB40
 	; Bomb counter values (in Decimal)
@@ -24,7 +24,6 @@ org $0DDB40	; 0x06DB40
 	;db $3C,$41,$46,$4B,$50,$55,$5A,$63
 
 ;----------------------------------------
-
 ; No. Check if max amount has been reached for bombs
 org $06C6A7	; 0x0346A7
 	cmp #$07	; Originally CMP #$0F (#$0F in Max)
@@ -50,28 +49,29 @@ org $0DDC52	; 0x06DC52
 	cmp $DB58,y	; Originally CMP $DB58,y ($DB50 in Max)
 
 ;----------------------------------------
-
 ; Fixes rupees getting "stuck" in the pond
-; NOTE: This "fix" causes issues with the Heart Pieces being deleted upon reaching the max amount of arrows/bombs, dropping more rupees into the fairy pond and getting the rupees back triggers the glitch.
-; It's confirmed the issue is with $F36A used in this code, specifically STZ $F36A is the one that erases the Heart Pieces, no matter what number of pieces one has.
-;org $06C6CF
-;	phb
-;	bra $78
+;----------------------------------------
+; The original code had a bug that overwrote Heart Pieces if you went over the max amount of rupees while already maxed out in bombs/arrows.  The processor was through rep #$21 in 2 byte mode so stz $F36A also zero'd $F36B, where the pieces are stored. 
+; Shifting the STZ $F36A below SEP #$30, where processor is set to 1 byte mode therefore should fix the problem (thanks to Conn for the fix)
+org $06C6CF
+	phb
+	bra $78
 
-;org $06C72C
-;	beq $99
+org $06C72C
+	beq $99
 
-;org $06C74A	; 0x3474A
-;	xba
-;	lda #$7E
-;	pha
-;	plb
-;	lda $F36A	; Originally $F36A
-;	adc #$64
-;	rep #$21
-;	adc $F360
-;	sta $F360
-;	stz $F36A	; Originally $F36A
-;	plb
-;	sep #$30
-;	rts
+org $06C74A	; 0x3474A
+	xba
+	lda #$7E
+	pha
+	plb
+	lda $F36A
+	adc #$64
+	rep #$21
+	adc $F360
+	sta $F360
+	;stz $F36A
+	plb
+	sep #$30
+	stz $F36A	; Originally located before the PLB, moved to fix it overwriting Heart Pieces at $F36B (fix by Conn)
+	rts

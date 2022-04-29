@@ -16,7 +16,7 @@ lorom			; Switch to LoROM mapping mode
 check title "THE LEGEND OF ZELDA  "
 
 !newgfx = 1		; New GFX
-!fastrom = 1		; FastROM compilation
+!fastrom = 0		; FastROM compilation
 !lorom = 1		; LoROM flag
 !hirom = 0		; HiROM flag
 !exhirom = 0		; ExHiROM flag
@@ -76,6 +76,7 @@ incsrc fixes/bugfixes.asm	; General bugfixes from Zeldix.net
 ;	Gameplay changes
 ;****************************************
 incsrc fixes/bunny_palette.asm	; Bunny palette fix (by rainponcho)
+incsrc fixes/vc_patches.asm	; Some photosensitivy changes made in the Virtual Console release, modified for Redux
 incsrc gameplay/max_consumables.asm 	; Implement "Max Consumables Fix" by Kasuto
 incsrc gameplay/misc.asm	; Miscellaneous gameplay changes
 incsrc gameplay/move_blocks_infinitely.asm	; Allows movement of blocks several times

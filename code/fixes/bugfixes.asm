@@ -68,8 +68,8 @@ org $1BC902	; 0x0DC902
 	jml $04ECA0	; 5C A0 EC 04
 
 ;----------------------------------------
-; Cane Fix (by Conn)
-; When having a trap door switch in a dungeon room with exit, and you use the cane somaria to keep the door open and leave the dungeon, the game breaks (e.g., skull wood dungeon, big key entrance).
+; Cane of Somaria Fix (by Conn)
+; When having a trap door switch in a dungeon room with exit, and you use the cane of somaria to keep the door open and leave the dungeon, the game breaks (e.g., skull wood dungeon, big key entrance).
 
 org $01C4B8	; 0x00C4B8
 	jsl $0EFCA1	; 22 A1 FC 0E
