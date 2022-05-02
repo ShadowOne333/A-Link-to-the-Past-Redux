@@ -1,5 +1,7 @@
 #! /bin/bash -e
 
+#-------------------------------------------------------------
+# Variables used for the script
 export	time=$(date +'%T %a %d/%b/%Y')
 export	asar=bin/asar-linux/asar-standalone
 export	file_base=Zelda3-Redux
@@ -10,6 +12,7 @@ export  patched_rom=$out_folder/$file_base.sfc
 export  asm_file=code/main.asm
 export	checksum=6d4f10a8b10e10dbe624cb23cf03b88bb8252973
 
+#-------------------------------------------------------------
 # Help section
 Help()
 {
@@ -33,7 +36,7 @@ Help()
 	./make.sh -o -r		./make.sh -o -g			./make.sh -o -s			./make.sh -o -c"
 }
 
-
+#-------------------------------------------------------------
 # Begin compilation
 Start()
 {
@@ -47,11 +50,13 @@ Start()
 		End;
 	fi
 
+#-------------------------------------------------------------
 # Copy base ROM into the /out/ folder
 	cd rom/ && cp Legend\ of\ Zelda\,\ The\ -\ A\ Link\ to\ the\ Past\ \(USA\).sfc Zelda3.sfc && cd ..
 	test ! -d "$out_folder" && mkdir "$out_folder"
 	test -f "$patched_rom" && rm "$patched_rom"
 
+#-------------------------------------------------------------
 # SHA-1 sum verification
 	if [ -f "$clean_rom" ]; then
 		echo; echo "Base ROM detected with proper name."
@@ -65,6 +70,7 @@ Start()
 
 	export	sha1=$(sha1sum "$clean_rom" | awk '{ print $1 }')
 
+#-------------------------------------------------------------
 # SHA-1 sum verified, begin patching...
 	if [ "$sha1" == "$checksum" ]; then
 		echo; echo "Base ROM SHA-1 checksum verified."
@@ -76,18 +82,23 @@ Start()
 		End;
 	fi
 
+#-------------------------------------------------------------
 # Copy clean ROM into a base used for patching to keep clean ROM intact
 	cp "$clean_rom" "$patched_rom"
 
+#-------------------------------------------------------------
 # Compress the graphics back into the base patch ROM
 	echo; echo "Compressing Redux graphics from $org$graphics.bin using zcompress..."
-	# Force a button press so zcompress exits on its own
-	xdotool key $(xdotool search --name "zcompress.exe") KP_Space
-	WINEDEBUG=-all wine bin/zcompress/zcompress.exe 1 87000 out/"$file_base".sfc code/gfx/$org$graphics.bin
-# Sadly, scompress doesn't work properly with New GFX, as it doesn't put the 2bpp graphics into the game properly
-	#bin/scompress/scompress iz out/"$file_base".sfc code/gfx/$graphics.bin
+
+	# Force a button press so zcompress exits on its own when using Wine+zcompress
+	#xdotool key $(xdotool search --name "zcompress.exe") KP_Space
+	#WINEDEBUG=-all wine bin/zcompress/zcompress.exe 1 87000 out/"$file_base".sfc code/gfx/$org$graphics.bin
+
+	# Using scompress
+	bin/scompress/scompress i out/"$file_base".sfc code/gfx/$org$graphics.bin
 	echo "Graphics compression finalized."
 
+#-------------------------------------------------------------
 # Start patching of the main.asm file and create IPS
 	$asar code/gfx/palettes/$graphics.asm $patched_rom	# Graphics changes
 	echo "Graphics & palettes compiled."; echo
@@ -96,11 +107,13 @@ Start()
 	$asar $asm_file $patched_rom		# Main code
 	bin/flips --create --ips "$clean_rom" "$patched_rom" "$patches_folder/$file_base.ips"
 
+#-------------------------------------------------------------
 # Finish script and jump to the "End" function
 	echo "Redux compilation finished at $time!"
 	End
 }
 
+#-------------------------------------------------------------
 # Error message
 Error()
 {
@@ -108,6 +121,7 @@ Error()
 	echo "ERROR: $error"
 }
 
+#-------------------------------------------------------------
 # Finish script
 End()
 {
@@ -116,7 +130,7 @@ End()
 	exit
 }
 
-
+#-------------------------------------------------------------
 # Get the options
 if [[ "$1" == "" ]];then
     Help;

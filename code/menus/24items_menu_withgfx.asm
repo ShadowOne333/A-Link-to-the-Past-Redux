@@ -669,9 +669,10 @@ org $0DF151	; 0x06F151
 	lda #$06	; Originally LDA #$68
 
 ;----------------------------------------
-
 ; Include the items names for the 24 Items Menu (New GFX)
 incsrc code/text/items.asm
+
+;----------------------------------------
 
 ; Continue with 24 Items code
 org $0DFB0B	; 0x06FB0B

@@ -218,9 +218,9 @@ somariaEnd:	; 0x06F3D9, $0DF3D9
 ;----------------------------------------
 org $DF3E9	; 0x06F3E9
 byrnaStart:
-	db !Blank,!Blank,"C_A_N_E_",!Blank,"O_"
+	db !Blank,"C_A_N_E_",!Blank,"O_F_"
 byrnaEnd:	; 0x06F3F9, $0DF3F9
-	db "F_",!Blank,"B_Y_R_N_A_",!Blank
+	db !Blank,"B_Y_R_N_A_",!Blank,!Blank
 ;----------------------------------------
 ; MAGIC CAPE
 ;----------------------------------------
@@ -357,10 +357,11 @@ mirrorEnd:	; 0x06F599, $0DF599
 ;----------------------------------------
 org $DF5C9	; 0x06F5C9
 arrowsStart:
-	db !Blank,"B_O_W_"
-	db !Blank,"A_N_D_"
+	db !Blank,!Blank,!Blank,!Blank
+	db !Bow,!Ampersand
 arrowsEnd:	; 0x06F5D9, $0DF5D9
-	db !Blank,"A_R_R_O_W_S_",!Blank
+	db !Arrows
+	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
 ; BOW 
 ;----------------------------------------

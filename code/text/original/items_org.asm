@@ -177,7 +177,7 @@ bugStart:
 	db $00,$24,$01,$24,$02,$24,$03,$24
 	db $04,$24,$05,$24,$06,$24,$07,$24
 bugEnd:	; 0x06F379, $0DF379
-	db $08,$24,$09,!Blank,!Blank
+	db $08,$24,$09,$24,!Blank,!Blank
 	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
 ; Book of Mudora
