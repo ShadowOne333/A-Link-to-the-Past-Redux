@@ -16,14 +16,21 @@ Help()
    # Display Help
    echo "Compile 'A Link to the Past Redux' with one of the following arguments:"
    echo
-   echo "Syntax: make.sh [-h|r|g|s|c]"
+   echo "Syntax: make.sh [option]"
    echo "Options:"
-   echo "	-h     Prints this menu."
-   echo "	-r     Compiles default Redux."
-   echo "	-g     Compiles Redux with Green Agahnim GFX."
-   echo "	-s     Compiles Redux with 'Triforce of the Gods' subtitle."
-   echo "	-c     Compiles Redux with Green Agahnim and Subtitle."
+   echo "	-h, --help	Prints this menu."
+   echo "	-o, --original	Original GFX menu (requires -r, -g, -s or -c as additional argument)."
+   echo "	-r, --redux	Compiles default Redux (New GFX)."
+   echo "	-g, --green	Compiles Redux with Green Agahnim GFX."
+   echo "	-s, --subtitle	Compiles Redux with 'Triforce of the Gods' subtitle."
+   echo "	-c, --combine	Compiles Redux with the combined Green Agahnim and Subtitle."
    echo
+   echo	"* To compile normal Redux (New GFX) with one of the graphical patches, use only one of the standalone syntaxes."
+   echo	"	Normal Redux:	Redux+Green Agahnim:	Redux+Subtitle:	Redux+Green Agahnim+Subtitle
+	./make.sh -r	./make.sh -g		./make.sh -s		./make.sh -c"
+   echo "* For Original GFX with one of the graphical patches, use the '-o' argument before the graphics you want"
+   echo	"	Original GFX Redux:	OG GFX Redux+Green Agahnim:	OG GFX Redux+Subtitle:	OG GFX Redux+Green Agahnim+Subtitle:
+	./make.sh -o -r		./make.sh -o -g			./make.sh -o -s			./make.sh -o -c"
 }
 
 
@@ -73,10 +80,10 @@ Start()
 	cp "$clean_rom" "$patched_rom"
 
 # Compress the graphics back into the base patch ROM
-	echo; echo "Compressing Redux graphics from $graphics.bin using zcompress..."
+	echo; echo "Compressing Redux graphics from $org$graphics.bin using zcompress..."
 	# Force a button press so zcompress exits on its own
 	xdotool key $(xdotool search --name "zcompress.exe") KP_Space
-	WINEDEBUG=-all wine bin/zcompress/zcompress.exe 1 87000 out/"$file_base".sfc code/gfx/$graphics.bin
+	WINEDEBUG=-all wine bin/zcompress/zcompress.exe 1 87000 out/"$file_base".sfc code/gfx/$org$graphics.bin
 # Sadly, scompress doesn't work properly with New GFX, as it doesn't put the 2bpp graphics into the game properly
 	#bin/scompress/scompress iz out/"$file_base".sfc code/gfx/$graphics.bin
 	echo "Graphics compression finalized."
@@ -111,33 +118,46 @@ End()
 
 
 # Get the options
-if [[ $1 == "" ]]; then
+if [[ "$1" == "" ]];then
     Help;
     exit;
 else
-	while getopts "hrgsc" option; do
-	case $option in
-		h) # Display Help
+	#while getopts "horgsc" option; do
+	#case $option in
+	while [ ! -z "$1" ]; do
+		case "$1" in
+		--help|-h) # Display Help
 			Help
 			exit;;
-		r) # Default Redux
-			export graphics=Redux
+		--original|-o) # Default Redux with Original GFX
+			export org='original/Original-'	;;
+		--redux|-r) # Default Redux with New GFX
+			shift
+			export graphics='Redux'
 			Start;;
-		g) # Redux with Green Agahnim
-			export graphics=GreenAgahnim
+		--green|-g) # Redux with Green Agahnim
+			shift
+			export graphics='GreenAgahnim'
 			Start;;
-		s) # Redux with Triforce of the Gods subtitle
-			export graphics=Subtitle
+		--subtitle|-s) # Redux with Triforce of the Gods subtitle
+			shift
+			export graphics='Subtitle'
 			Start;;
-		c) # Redux with Green Agahnim and Subtitle
-			export graphics=AgahnimSubtitle
+		--combine|-c) # Redux with Green Agahnim and Subtitle
+			shift
+			export graphics='AgahnimSubtitle'
 			Start;;
-		\?) # Invalid option
-			#echo "Error: Invalid option '$option'"
+		#\?) # Invalid option
+		*) # Invalid option
+			echo "Error: Invalid option '$1'"
 			Help
 			exit;;
-	esac
+		esac
+	shift
 	done
+
+	#shift $(($OPTIND - 1))
+	#echo "$@"
 fi
 
 

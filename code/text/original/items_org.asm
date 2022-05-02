@@ -5,7 +5,7 @@
 ;****************************************
 ; 	Table file
 ;****************************************
-incsrc "code/text/items.txt"
+incsrc "code/text/tbl/items.txt"
 
 ;****************************************
 ; 	Pointers for item entries
@@ -30,9 +30,9 @@ org $0DEC0D	; 0x06EC0D
 
 ; Pointer for Flute/Ocarina text
 org $0DEC7B	; 0x06EC7B
-	lda fluteStart,x	; BD 69 F5, LDA $F569,x
+	lda flute1Start,x	; BD 69 F5, LDA $F569,x
 	skip 3			; STA $122C,y
-	lda fluteEnd,x		; BD 79 F5, LDA $F579,x
+	lda flute1End,x		; BD 79 F5, LDA $F579,x
 
 ; Pointer for Mirror text
 org $0DEC44	; 0x06EC44
@@ -252,25 +252,25 @@ bottleEnd:	; 0x06F479, $0DF479
 ;----------------------------------------
 org $DF489	; 0x06F489
 lifeStart:
-	db "L_I_F_E_",!Blank,!Blank,!Blank,!Blank
+	db "R_E_D_",!Blank,!Blank,!Blank,!Blank,!Blank
 lifeEnd:	; 0x06F499, $0DF499
-	db "M_E_D_I_C_I_N_E_"
+	db !Blank,!Blank,"P_O_T_I_O_N_"
 ;----------------------------------------
 ; Magic Medicine
 ;----------------------------------------
 org $DF4A9	; 0x06F4A9
 magicStart:
-	db "M_A_G_I_C_",!Blank,!Blank,!Blank
+	db "G_R_E_E_N_",!Blank,!Blank,!Blank
 magicEnd:	; 0x06F4B9, $0DF4B9
-	db "M_E_D_I_C_I_N_E_"
+	db !Blank,!Blank,"P_O_T_I_O_N_"
 ;----------------------------------------
 ; Cure-All Medicine
 ;----------------------------------------
 org $DF4C9	; 0x06F4C9
 cureallStart:
-	db "C_U_R_E_-_A_L_L_"
+	db "B_L_U_E_",!Blank,!Blank,!Blank,!Blank
 cureallEnd:	; 0x06F4D9, $0DF4D9
-	db "M_E_D_I_C_I_N_E_"
+	db !Blank,!Blank,"P_O_T_I_O_N_"
 ;----------------------------------------
 ; Faerie
 ;----------------------------------------
@@ -279,7 +279,7 @@ faerieStart:
 	db !Blank,!Blank,!Blank,!Blank
 	db !Blank,!Blank,!Blank,!Blank
 faerieEnd:	; 0x06F4F9, $0DF4F9
-	db "F_A_E_R_I_E_",!Blank,!Blank
+	db "F_A_I_R_Y_",!Blank,!Blank,!Blank
 ;----------------------------------------
 ; Bee
 ;----------------------------------------
@@ -294,10 +294,9 @@ beeEnd:	; 0x06F519, $0DF519
 ;----------------------------------------
 org $DF529	; 0x06F529
 goodbeeStart:
-	db !Blank,!Blank,!Blank,!Blank
-	db !Blank,!Blank,!Blank,!Blank
+	db "G_O_L_D_E_N_",!Blank,!Blank
 goodbeeEnd:	; 0x06F539, $0DF539
-	db "G_O_O_D_",!Blank,"B_E_E_"
+	db !Blank,!Blank,!Blank,!Blank,!Blank,"B_E_E_"
 ;----------------------------------------
 ; Magic Powder
 ;----------------------------------------
@@ -314,7 +313,7 @@ flute1Start:
 	db !Blank,!Blank,!Blank,!Blank
 	db !Blank,!Blank,!Blank,!Blank
 flute1End:	; 0x06F579, $0DF579
-	db "F_L_U_T_E_",!Blank,!Blank,!Blank
+	db "O_C_A_R_I_N_A_",!Blank
 ;----------------------------------------
 ; Flute / Ocarina (2)
 ;----------------------------------------
@@ -323,7 +322,7 @@ flute2Start:
 	db !Blank,!Blank,!Blank,!Blank
 	db !Blank,!Blank,!Blank,!Blank
 flute2End:	; 0x06F599, $0DF599
-	db "F_L_U_T_E_",!Blank,!Blank,!Blank
+	db "O_C_A_R_I_N_A_",!Blank
 ;----------------------------------------
 ; Mirror
 ;----------------------------------------

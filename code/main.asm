@@ -15,7 +15,7 @@ lorom			; Switch to LoROM mapping mode
 ; This patch is only for A Link to the Past ROM
 check title "THE LEGEND OF ZELDA  "
 
-!newgfx = 1		; New GFX
+!newgfx = 0		; New GFX
 !fastrom = 0		; FastROM compilation
 !lorom = 1		; LoROM flag
 !hirom = 0		; HiROM flag
@@ -94,10 +94,10 @@ incsrc text/vwf.asm			; Variable width font modifications
 incsrc text/dialogue1.asm		; 1st dialogue table
 incsrc text/dialogue2.asm		; 2nd dialogue table
 
-; Item names text (Included in New GFX)
-;if !newgfx == 0
-;	incsrc text/items.asm
-;endif
+; Item names text (Check for items with Old or New GFX)
+if !newgfx == 0
+	incsrc text/original/items_org.asm
+endif
 
 ; Credits text
 incsrc text/credits.asm
