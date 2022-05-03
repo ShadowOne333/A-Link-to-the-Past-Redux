@@ -88,7 +88,7 @@ Start()
 
 #-------------------------------------------------------------
 # Compress the graphics back into the base patch ROM
-	echo; echo "Compressing Redux graphics from $org$graphics.bin using zcompress..."
+	echo; echo "Compressing Redux graphics from $org$graphics.bin using scompress..."
 
 	# Force a button press so zcompress exits on its own when using Wine+zcompress
 	#xdotool key $(xdotool search --name "zcompress.exe") KP_Space

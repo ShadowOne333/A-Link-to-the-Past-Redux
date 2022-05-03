@@ -16,10 +16,11 @@ lorom			; Switch to LoROM mapping mode
 check title "THE LEGEND OF ZELDA  "
 
 !newgfx = 1		; New GFX
-!fastrom = 0		; FastROM compilation
+!fastrom = 1		; FastROM compilation
 !lorom = 1		; LoROM flag
 !hirom = 0		; HiROM flag
 !exhirom = 0		; ExHiROM flag
+!subtitle = 0		; "TRIFORCE OF THE GODS" subtitle
 !houlihan = 0		; Change the Houlihan's room name
 !_snes_utils_inc = 1	; SNES Utils (by qwertymodo)
 
@@ -84,7 +85,11 @@ incsrc gameplay/move_blocks_infinitely.asm	; Allows movement of blocks several t
 ;****************************************
 ;	Map changes
 ;****************************************
-;incsrc layouts/overworld_layouts.asm	; Layout modifications to the overworld for Redux
+if !fastrom == 1
+	incsrc layouts/overworld_layouts.asm	; Layout modifications to the overworld for Redux for FastROM
+else
+	incsrc layouts/overworld_layouts_slowrom.asm	; Layout modifications to the overworld for Redux for SlowROM
+endif
 
 ;****************************************
 ;	Text changes
@@ -110,7 +115,12 @@ incsrc gfx/palettes.asm
 
 ; 24 Items Menu (New GFX)
 if !newgfx == 1
-	incsrc code/menus/new_gfx.asm		; Main file for New GFX
+	incsrc code/menus/new_gfx.asm	; Main file for New GFX
+endif
+
+; "TRIFORCE OF THE GODS" subtitle in the Title Screen
+if !subtitle == 1
+	incsrc code/gfx/subtitle.asm	; Change title screen subtitle
 endif
 
 ;****************************************

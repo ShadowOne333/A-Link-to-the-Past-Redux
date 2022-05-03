@@ -6306,16 +6306,16 @@ org $0AEFBA
 org $0AEFC9
 	jsl $00FDA7|$800000
 
-org $0BFFA8
+org $0BFFA8	; Map stuff
 	jsl $02A1C7|$800000
 
-org $0BFFAC
+org $0BFFAC	; Map stuff
 	jsl $02B929|$800000
 
-org $0BFFB0
+org $0BFFB0	; Map stuff
 	jsl $09C44E|$800000
 
-org $0BFFEE
+org $0BFFEE	; Map stuff
 	jsl $09AC6B|$800000
 
 org $0CC135

@@ -40,7 +40,7 @@ org $07E8F8
 org $08A4D6
 	jml $08A36E|$800000
 
-org $0BFFF2
+org $0BFFF2	; Map stuff
 	jml $07F1A3|$800000
 
 org $0CC296
