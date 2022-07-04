@@ -948,7 +948,7 @@ Well, !{you} !{can_}turn ar!{ound} !{and},!Line2
 	db !{4_}> I'll keep !{go}!{in}g,!Line3
 	db !{4_}!{3_}Bett!{er_}!{st}op,!Choose,!End
 
-!{4_}!{2_}-Spr!{ing_}!{of} Happ!{in}ess-,!Line2
+!{4_}!{2_}-Spr!{ing_}!{of} Good Lu!{ck}-,!Line2
 	db Throw !{in} !{so}!{me} r!{up}ees !{and_}!{you}r,!Line3
 	db w!{is}hes !{wi}ll su!{re}!{ly_}!{com}e !{tr}ue.,!WaitKey,!Scroll
 	db Will !{you} throw !{in} r!{up}ees?,!Scroll
@@ -1000,10 +1000,10 @@ My sw!{or}d !{go}t !{ev}!{en_}!{st}r!{on}g!{er},!Line2
 	db !{the} !{to}uch!{Dots}
 
 
-!{You}r !{ha}pp!{in}ess !{has} !{in}c!{re}a!{se}d,!Line2
-	db by !{Number03}!{Number02} r!{up}ees. Th!{at_}br!{in}gs !{you}r,!Line3
-	db !{to}tal !{to} !{Number01}!{Number00}.,!WaitKey,!Scroll
-	db !{You} feel a l!{it}tle !{ha}ppi!{er_}!{tha}n,!Scroll
+!{You}r lu!{ck} !{has} !{in}c!{re}a!{se}d by !{Number03}!{Number02},!Line2
+	db r!{up}ees. Th!{at_}br!{in}gs !{you}r !{to}tal,!Line3
+	db lu!{ck} !{to} !{Number01}!{Number00}.,!WaitKey,!Scroll
+	db !{You} feel a l!{it}tle lu!{ck}i!{er_}!{tha}n,!Scroll
 	db !{be}!{for}e.
 
 
