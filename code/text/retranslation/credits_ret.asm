@@ -484,9 +484,9 @@ credits_text:
 	db $62,$64,$00,length(23)
 	%yellow("venus") : db ", " : %yellow("queen") : db " " : %yellow("of") : db " " : %yellow("fairies")
 	db $62,$E6,$00,length(19)
-	db "SPRING OF HAPPINESS"	; SPRING OF LUCK
+	db "SPRING OF GOOD LUCK"
 	db $63,$06,$00,length(19)
-	%row("SPRING") : db " " : %row("OF") : db " " : %row("HAPPINESS")	; SPRING OF LUCK
+	%row("SPRING") : db " " : %row("OF") : db " " : %row("GOOD LUCK")
 
 .smithies:
 	db $62,$66,$00,length(19)
