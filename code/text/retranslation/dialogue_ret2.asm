@@ -48,18 +48,18 @@ dialogue_table2:
 	db "m!{ight_}!{be} !{the} key !{to} !{get}t!{in}g",!WaitKey,!Scroll
 	db "!{ba}!{ck} !{to} my !{or}ig!{in}al !{for}m.",!WaitKey,!Scroll
 	db "Grr, !{you} b!{ast}ard! !{You}'!{re}",!Scroll
-	db "!{get}t!{ing_}!{on} my l!{ast} n!{er}ve.",!Scroll
-	db "Get !{lo}!{st}! Shoo!",!End
+	db "!{get}t!{ing_}!{on} my l!{ast} n!{er}ve. Get",!Scroll
+	db "!{lo}!{st}! Shoo!",!End
 ;----------------------------------------
 .message_350:
 	db "Wh!{at}? !{You}r !{for}m !{di}dn't",!Line2
-	db "ch!{an}ge? !{You} !{go}t !{the}",!Line3
-	db "Mo!{on} P!{ear}l, eh?",!End
+	db "ch!{an}ge? !{You} !{go}t !{the} Mo!{on}",!Line3
+	db "P!{ear}l, eh?",!End
 ;----------------------------------------
 .message_351:
 	db "In such a d!{an}g!{er}ous w!{or}ld, !{you}",!Line2
-	db "!{ma}y ne!{ed_}a few !{thin}gs.",!Line3
-	db "Select !{wh}!{at}!{ev}!{er_}!{you} like.",!End
+	db "!{ma}y ne!{ed_}a few !{thin}gs. Select",!Line3
+	db "!{wh}!{at}!{ev}!{er_}!{you} like.",!End
 ;----------------------------------------
 .message_352:
 	db "Wel!{com}e! F!{or} 30 r!{up}ees, I'll let",!Line2
@@ -82,17 +82,17 @@ dialogue_table2:
 	db "!{che}!{st}s. !{The} ga!{me} !{is} ov!{er}.",!End
 ;----------------------------------------
 .message_356:
-	db "All right!",!Line2
-	db "Go op!{en_}w!{hi}!{che}v!{er_}!{you} like!",!End
+	db "All right! Go op!{en_}w!{hi}!{che}v!{er_}!{you}",!Line2
+	db "like!",!End
 ;----------------------------------------
 .message_357:
 	db "Wel!{com}e! Walk !{up} !{to} !{an} !{it}em !{you}",!Line2
 	db "!{wa}nt !{and_}p!{re}ss A !{to} buy !{it}!",!End
 ;----------------------------------------
 .message_358:
-	db "If !{you} buy !{tha}t, !{you}'ll !{have}",!Line2
-	db "no u!{se} !{for} !{it}.",!Line3
-	db "Why !{not} choo!{se} !{some}!{thin}g el!{se}?",!End
+	db "If !{you} buy !{tha}t, !{you}'ll !{have} ni",!Line2
+	db "u!{se} !{for} !{it}. Why !{not} choo!{se}",!Line3
+	db "!{some}!{thin}g el!{se}?",!End
 ;----------------------------------------
 .message_359:
 	db "!{Tha}nk !{you}! !{You} !{can_}al!{wa}ys",!Line2
@@ -118,8 +118,8 @@ dialogue_table2:
 	db "u!{se} !{it} !{for}.",!End
 ;----------------------------------------
 .message_364:
-	db "!{Tha}nk !{you}!",!Line2
-	db "!{Thi}s !{re}!{st}!{or}es !{on}e h!{ear}t.",!End
+	db "!{Tha}nk !{you}! !{Thi}s !{re}!{st}!{or}es !{on}e",!Line2
+	db "h!{ear}t.",!End
 ;----------------------------------------
 .message_365:
 	db "Uh oh!{Dots} !{You}'ll ne!{ed_}!{an} empty",!Line2
@@ -138,8 +138,8 @@ dialogue_table2:
 	db "Dark B!{is}hop Agahnim, t!{wi}ce no",!WaitKey,!Scroll
 	db "less!",!WaitKey,!Scroll
 	db "But !{ev}!{en_}!{so}, !{you} !{wi}ll n!{ev}!{er}",!Scroll
-	db "w!{re}!{st} !{the} Tri!{for}ce !{fro}m",!Scroll
-	db "my h!{and}s.",!WaitKey,!Scroll
+	db "w!{re}!{st} !{the} Tri!{for}ce !{fro}m my",!Scroll
+	db "h!{and}s.",!WaitKey,!Scroll
 	db "I !{wi}ll !{des}!{tr}oy !{you}, l!{it}tle br!{at},",!Scroll
 	db "!{and_}my w!{is}h !{to} rule !{the} w!{or}lds",!Scroll
 	db "!{of} l!{ight_}!{and_}darkness !{wi}ll",!WaitKey,!Scroll
@@ -274,8 +274,8 @@ dialogue_table2:
 	db "!{to} f!{in}d Sa!{has}rah!{la}.",!End
 ;----------------------------------------
 .message_379:
-	db "As I though!{tr}ah!{la},",!Line2
-	db "!{you} f!{ound} Sa!{has}rah!{la}",!End
+	db "As I though!{tr}ah!{la}, !{you} f!{ound}",!Line2
+	db "Sa!{has}rah!{la}",!End
 ;----------------------------------------
 .message_380:
 	db "I'm s!{or}ry, but !{you} !{do}n't",!Line2
@@ -303,8 +303,8 @@ dialogue_table2:
 	db "!{4_}!{4_} I'm outta h!{er}e",!Choose,!End
 ;----------------------------------------
 .message_383:
-	db "All right!!",!Line2
-	db "Op!{en_}!{the} !{che}!{st} !{you} like!",!End
+	db "All right!! Op!{en_}!{the} !{che}!{st} !{you}",!Line2
+	db "like!",!End
 ;----------------------------------------
 .message_384:
 	db "I !{se}e!{Dots} !{Tha}t!{s_}!{to}o !{ba}d. Well,",!Line2

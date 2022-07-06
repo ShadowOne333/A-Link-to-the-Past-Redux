@@ -666,65 +666,62 @@ dialogue_table1:
 	db "!{bo}ttles !{are_}full. Hehehe!",!End
 ;----------------------------------------
 .message_081:
-	db "!{You} !{go}t a L!{an}t!{er}n!",!Line2
-	db "Now !{you} !{can_}light t!{or}!{che}s",!Line3
-	db "by p!{re}ss!{ing_}Y!.",!End
+	db "I !{go}t a L!{an}t!{er}n! Now I !{can_}light",!Line2
+	db "t!{or}!{che}s by p!{re}ss!{ing_}Y!.",!End
 ;----------------------------------------
 .message_082:
-	db "It!{s_}a Boom!{er}!{an}g!",!Line2
-	db "!{You} !{can_}equip !{it} w!{it}h",!Line3
-	db "Start !{and_}!{give_}!{it} a !{tr}y!",!End
+	db "It!{s_}a Boom!{er}!{an}g! I'll equip !{it}",!Line2
+	db "w!{it}h Start !{and_}!{give_}!{it} a !{tr}y!",!End
 ;----------------------------------------
 .message_083:
-	db "!{You} f!{ound} a Bow!",!Line2
-	db "Now !{you} !{can_}!{sh}oot arrows!",!WaitKey,!Line3
-	db "Or !{at_}le!{ast} until !{you} run out.",!End
+	db "I f!{ound} a Bow! Now I !{can_}!{sh}oot",!Line2
+	db "arrows!",!WaitKey,!Line3
+	db "Or !{at_}le!{ast} until I run out.",!End
 ;----------------------------------------
 .message_084:
-	db "!{You} !{bo}rrow!{ed_}a Shovel!",!Line2
-	db "Ti!{me} !{to} f!{in}d a !{go}od",!Line3
-	db "p!{la}ce !{to} !{di}g holes.",!WaitKey,!Scroll
-	db " Let!{s_}!{get} !{di}gg!{in}g!",!End
+	db "I !{bo}rrow!{ed_}a Shovel! Ti!{me} !{to}",!Line2
+	db "f!{in}d a !{go}od p!{la}ce !{to} !{di}g",!Line3
+	db "holes. Let!{s_}!{get} !{di}gg!{in}g!",!End
 ;----------------------------------------
 .message_085:
-	db "Hey, !{it}!{s_}!{the} Magic Cape!",!Line2
-	db "!{You} c!{an} v!{an}!{is}h !{in}!{to}",!Line3
-	db "!{thin} air w!{it}h !{thi}s!",!WaitKey,!Scroll
-	db "But !{you} !{go}tta w!{at}ch !{you}r",!Scroll
-	db "!{ma}gic !{me}t!{er}!",!End
+	db "Hey, !{it}!{s_}!{the} Magic Cape! I c!{an}",!Line2
+	db "v!{an}!{is}h !{in}!{to} !{thin} air w!{it}h !{thi}s!",!WaitKey,!Line3
+	db "But I !{go}tta w!{at}ch my !{ma}gic",!Scroll
+	db "!{me}t!{er}!",!End
 ;----------------------------------------
 .message_086:
-	db "!{Thi}s !{is} Magic Powd!{er}!",!Line2
-	db "Try spr!{in}kl!{ing_}!{it} !{on} !{en}emies",!Line3
+	db "!{Thi}s !{is} Magic Powd!{er}! Let's",!Line2
+	db "try spr!{in}kl!{ing_}!{it} !{on} !{en}emies",!Line3
 	db "!{and_}various oth!{er_}!{thin}gs!",!End
 ;----------------------------------------
 .message_087:
-	db "!{You} !{bo}ught Z!{or}a!{s_}Flipp!{er}s!",!Line2
-	db "!{You} !{can_}s!{wi}m easi!{ly_}",!Line3
-	db "through deep w!{at}!{er_}now!",!End
+	db "I !{bo}ught Z!{or}a!{s_}Flipp!{er}s! I c!{an}",!Line2
+	db "s!{wi}m easi!{ly_}through deep w!{at}!{er}",!Line3
+	db "now!",!End
 ;----------------------------------------
 .message_088:
-	db "!{You} !{go}t !{the} Pow!{er_}G!{lo}ves!",!Line2
+	db "I !{go}t !{the} Pow!{er_}G!{lo}ves!",!Line2
 	db "S!{tr}!{en}gth !{is} s!{we}ll!{ing_}!{in} !{bo}th !{of}",!Line3
-	db "!{you}r arms.",!WaitKey,!Scroll
+	db "my arms.",!WaitKey,!Scroll
 	db "Lift!{ing_}!{up} !{st}!{on}es !{wi}ll !{be} a",!Scroll
 	db "b!{re}eze now!",!End
 ;----------------------------------------
 .message_089:
-	db "!{You}{go}t !{the} P!{en}d!{an}t !{of} Courage!",!Line2
+	db "I !{go}t !{the} P!{en}d!{an}t !{of} Courage!",!Line2
 	db "Let!{s_}!{sh}ow !{it} !{to} !{the} eld!{er}",!Line3
 	db "Sa!{has}rah!{la}.",!WaitKey,!Scroll
 	db "Two m!{or}e p!{en}d!{an}ts !{re}m!{ain}!",!End
 ;----------------------------------------
 .message_090:
-	db "!{You} !{go}t !{the} P!{en}d!{an}t !{of} W!{is}!{do}m!",!Line2
-	db "And !{you} sudd!{en}!{ly_}feel a b!{it}",!Line3
+	db "I !{go}t !{the} P!{en}d!{an}t !{of} W!{is}!{do}m!",!Line2
+	db "And I sudd!{en}!{ly_}feel a b!{it}",!Line3
 	db "!{st}r!{on}g!{er}!",!WaitKey,!Scroll
 	db "Ti!{me} !{to} !{go} !{for} !{the} f!{in}al",!Scroll
 	db "p!{en}d!{an}t.",!End
 ;----------------------------------------
 .message_091:
-	db "!{You} !{go}t !{the} P!{en}d!{an}t !{of} Pow!{er}!",!WaitKey,!Line2
+	db "I !{go}t !{the} P!{en}d!{an}t !{of} Pow!{er}!",!Line2
+	db "Yeah!",!WaitKey,!Line3
 	db "W!{it}h !{all_}th!{re}e p!{en}d!{an}ts, !{it}'s",!Scroll
 	db "ti!{me} !{to} head !{to} !{the} !{for}e!{st} !{and}",!Scroll
 	db "!{re}!{tr}i!{ev}e !{the} M!{ast}!{er_}Sw!{or}d!",!End
@@ -732,124 +729,121 @@ dialogue_table1:
 .message_092:
 	db "!{Thi}s Mu!{sh}room s!{me}lls like",!Line2
 	db "s!{we}et, rott!{en_}fru!{it}.",!WaitKey,!Line3
-	db "!{You} !{can_}!{give_}!{it} !{to} !{so}!{me}!{on}e by",!Scroll
+	db "I !{can_}!{give_}!{it} !{to} !{so}!{me}!{on}e by",!Scroll
 	db "p!{re}ss!{ing_}Y.",!End
 ;----------------------------------------
 .message_093:
-	db "!{Thi}s !{is} !{the} To!{me} !{of} Mu!{do}ra!",!Line2
-	db "!{You} !{can_}u!{se} !{it} !{to} deciph!{er_}",!Line3
-	db "!{the} !{an}ci!{ent} Hyli!{an} l!{an}guage!",!End
+	db "!{Thi}s !{is} !{the} To!{me} !{of} Mu!{do}ra! I",!Line2
+	db "!{can_}u!{se} !{it} !{to} deciph!{er_} !{the}",!Line3
+	db "!{an}ci!{ent} Hyli!{an} l!{an}guage!",!End
 ;----------------------------------------
 .message_094:
-	db "!{You} f!{ound} !{the} Mo!{on} P!{ear}l!",!Line2
-	db "It !{wi}ll !{pro}tect !{you}r !{bo}dy !{fro}m",!Line3
-	db "!{the} tw!{is}t!{ed_}effects !{of} !{the}",!WaitKey,!Scroll
-	db "Gold!{en} Pow!{er}.",!End
+	db "I f!{ound} !{the} Mo!{on} P!{ear}l! It",!Line2
+	db "!{wi}ll !{pro}tect my !{bo}dy !{fro}m !{the}",!Line3
+	db "tw!{is}t!{ed_}effects !{of} !{the} Gold!{en}",!WaitKey,!Scroll
+	db "Pow!{er}.",!End
 ;----------------------------------------
 .message_095:
-	db "!{You} f!{ound} !{the} Compass!",!Line2
-	db "Now, !{you} c!{an} p!{in}po!{in}t !{the}",!Line3
-	db "!{bo}ss m!{on}!{st}!{er}'s !{lo}c!{at}i!{on}!",!End
+	db "I f!{ound} !{the} Compass! Now, I c!{an}",!Line2
+	db "p!{in}po!{in}t !{the} !{bo}ss m!{on}!{st}!{er}'s",!Line3
+	db "!{lo}c!{at}i!{on}!",!End
 ;----------------------------------------
 .message_096:
-	db "!{You} !{go}t a !{ma}p!",!Line2
-	db "!{You} !{can_}p!{re}ss X !{to} !{se}e",!Line3
-	db "!{the} dunge!{on} !{la}y!{out_}!{and_}",!WaitKey,!Scroll
-	db "!{you}r !{lo}c!{at}i!{on}!",!End
+	db "I !{go}t a !{ma}p! I !{can_}p!{re}ss X !{to}",!Line2
+	db "!{se}e !{the} dunge!{on} !{la}y!{out_}!{and_}my",!Line3
+	db "!{lo}c!{at}i!{on}!",!End
 ;----------------------------------------
 .message_097:
-	db "!{You} f!{ound} !{the} Ice Rod!",!Line2
-	db "It s!{en}ds a s!{ha}rp c!{hi}ll",!Line3
-	db "cleav!{ing_}through !{the} air.",!WaitKey,!Scroll
-	db "But !{you} !{go}tta w!{at}ch !{you}r",!Scroll
-	db "!{ma}gic !{me}t!{er}!",!End
+	db "I f!{ound} !{the} Ice Rod! It s!{en}ds a",!Line2
+	db "s!{ha}rp c!{hi}ll cleav!{ing_}through",!Line3
+	db "!{the} air.",!WaitKey,!Scroll
+	db "But I !{go}tta w!{at}ch my !{ma}gic",!Scroll
+	db "!{me}t!{er}!",!End
 ;----------------------------------------
 .message_098:
-	db "!{You} f!{ound} !{the} Fi!{re_}Rod!",!Line2
-	db "It s!{en}ds crims!{on} f!{la}!{me}s",!Line3
-	db "!{sh}oot!{in}g through !{the} air.",!WaitKey,!Scroll
-	db "But !{you} !{go}tta w!{at}ch !{you}r",!Scroll
-	db "!{ma}gic !{me}t!{er}!",!End
+	db "I f!{ound} !{the} Fi!{re_}Rod! It s!{en}ds",!Line2
+	db "crims!{on} f!{la}!{me}s !{sh}oot!{in}g",!Line3
+	db "through !{the} air.",!WaitKey,!Scroll
+	db "But I !{go}tta w!{at}ch my !{ma}gic",!Scroll
+	db "!{me}t!{er}!",!End
 ;----------------------------------------
 .message_099:
-	db "!{Thi}s !{is} !{the} Eth!{er_}Medalli!{on}!",!Line2
-	db "Its !{ma}gic summ!{on}s icy w!{in}ds",!Line3
-	db "!{fro}m !{the} !{up}p!{er_}!{at}mosph!{er}e.",!WaitKey,!Scroll
-	db "!{Thi}s !{wi}ll !{re}al!{ly_}dr!{ain} !{you}r",!Scroll
-	db "!{ma}gic !{me}t!{er}!",!End
+	db "!{Thi}s !{is} !{the} Eth!{er_}Medalli!{on}! Its",!Line2
+	db "!{ma}gic summ!{on}s icy w!{in}ds !{fro}m",!Line3
+	db "!{the} !{up}p!{er_}!{at}mosph!{er}e.",!WaitKey,!Scroll
+	db "!{Thi}s !{wi}ll !{re}al!{ly_}dr!{ain} my !{ma}gic",!Scroll
+	db "!{me}t!{er}!",!End
 ;----------------------------------------
 .message_100:
 	db "!{Thi}s !{is} !{the} Bom!{bo}s Medalli!{on}!",!Line2
 	db "Its !{ma}gic !{ma}kes !{the} gr!{ound}",!Line3
 	db "!{er}!{up}t !{in} fi!{er}y exp!{lo}si!{on}s.",!WaitKey,!Scroll
-	db "!{Thi}s !{wi}ll !{re}al!{ly_}dr!{ain} !{you}r",!Scroll
-	db "!{ma}gic !{me}t!{er}!",!End
+	db "!{Thi}s !{wi}ll !{re}al!{ly_}dr!{ain} my !{ma}gic",!Scroll
+	db "!{me}t!{er}!",!End
 ;----------------------------------------
 .message_101:
-	db "!{Thi}s !{is} !{the} Quake Medalli!{on}!",!Line2
-	db "Its !{ma}gic cau!{se}s viol!{ent} t!{re}m!{or}s",!Line3
+	db "!{Thi}s !{is} !{the} Quake Medalli!{on}! Its",!Line2
+	db "!{ma}gic cau!{se}s viol!{ent} t!{re}m!{or}s",!Line3
 	db "!{and_}!{st}uns n!{ear}by !{en}emies.",!WaitKey,!Scroll
-	db "!{Thi}s !{wi}ll !{re}al!{ly_}dr!{ain} !{you}r",!Scroll
-	db "!{ma}gic !{me}t!{er}!",!End
+	db "!{Thi}s !{wi}ll !{re}al!{ly_}dr!{ain} my !{ma}gic",!Scroll
+	db "!{me}t!{er}!",!End
 ;----------------------------------------
 .message_102:
-	db "!{You} !{go}t !{the} Magic Hamm!{er}!",!Line2
-	db "Let's !{go} p!{ound} !{so}!{me} !{st}akes !{in}!{to}",!Line3
-	db "!{the} gr!{ound}.",!WaitKey,!Scroll
+	db "I !{go}t !{the} Magic Hamm!{er}! Let's",!Line2
+	db "!{go} p!{ound} !{so}!{me} !{st}akes !{in}!{to} !{the}",!Line3
+	db "gr!{ound}.",!WaitKey,!Scroll
 	db "He!{ck}, !{you} !{can_}p!{ound} !{ev}!{er}y!{thin}g!",!Scroll
 	db "Bam !{ba}m ti!{me}!",!End
 ;----------------------------------------
 .message_103:
-	db "Oh, h!{er}e!{s_}!{the} Ocar!{in}a!",!Line2
-	db "Its !{mu}sic su!{re}!{ly_}!{has}",!Line3
-	db "my!{st}!{er}ious !{pow}!{er}!",!End
+	db "Oh, h!{er}e!{s_}!{the} Ocar!{in}a! Its",!Line2
+	db "!{mu}sic su!{re}!{ly_}!{has} my!{st}!{er}ious",!Line3
+	db "!{pow}!{er}!",!End
 ;----------------------------------------
 .message_104:
-	db "!{You} f!{ound} !{the} C!{an}e !{of} So!{ma}ria!",!Line2
+	db "I f!{ound} !{the} C!{an}e !{of} So!{ma}ria!",!Line2
 	db "Wh!{at_}a my!{st}!{er}ious !{st}aff!{Dots}",!WaitKey,!Line3
-	db "!{Thi}s !{sh}ould !{be} a big help !{wh}!{en}",!Scroll
-	db "!{you} l!{ear}n how !{to} u!{se} !{it}!",!End
+	db "!{Thi}s !{sh}ould !{be} a big help !{wh}!{en_}I",!Scroll
+	db "l!{ear}n how !{to} u!{se} !{it}!",!End
 ;----------------------------------------
 .message_105:
-	db "BOING! !{Thi}s !{is} !{the} Hook!{sh}ot!",!Line2
-	db "It ext!{en}ds, !{it} c!{on}!{tr}acts, !{and}!{Dots}",!Line3
+	db "BOING! !{Thi}s !{is} !{the} Hook!{sh}ot! It",!Line2
+	db "ext!{en}ds, !{it} c!{on}!{tr}acts, !{and}!{Dots}",!Line3
 	db "BOING! ",!WaitKey,!Scroll
 	db "I'll grap!{ple} !{all_}k!{in}ds !{of} !{thin}gs!",!End
 ;----------------------------------------
 .message_106:
-	db "!{You} f!{ound} !{so}!{me} Bombs!",!Line2
-	db "Aft!{er_}p!{la}c!{ing_}a Bomb,",!Line3
-	db "!{you} !{can_}pi!{ck} !{it} !{up}",!WaitKey,!Scroll
+	db "I f!{ound} !{so}!{me} Bombs! Aft!{er}",!Line2
+	db "p!{la}c!{ing_}a Bomb, I !{can_}pi!{ck} !{it} !{up}",!Line3
 	db "w!{it}h A !{to} throw !{it}!",!End
 ;----------------------------------------
 .message_107:
-	db "!{You}'ve !{go}t a Bottle!",!Line2
-	db "!{You} !{can_}!{st}!{or}e m!{an}y !{di}ff!{er}!{ent}",!Line2
+	db "I've !{go}t a Bottle! I !{can_}!{st}!{or}e",!Line2
+	db "m!{an}y !{di}ff!{er}!{ent}",!Line2
 	db "!{thin}gs !{in}side !{and_}u!{se}",!Line3
 	db "!{the}m l!{at}!{er}!!",!End
 ;----------------------------------------
 .message_108:
-	db "!{You} f!{ound} !{the} Big Key!",!Line2
-	db "Now !{you} !{can_}un!{lo}!{ck} !{do}!{or}s",!Line3
-	db "!{and_}!{che}!{st}s !{tha}t !{do}!{nt_}op!{en_}",!WaitKey,!Scroll
-	db "w!{it}h n!{or}!{ma}l keys!",!End
+	db "I f!{ound} !{the} Big Key! Now I c!{an}",!Line2
+	db "un!{lo}!{ck} !{do}!{or}s !{and_}!{che}!{st}s !{tha}t",!Line3
+	db "!{do}!{nt_}op!{en_} w!{it}h n!{or}!{ma}l keys!",!End
 ;----------------------------------------
 .message_109:
-	db "!{You} !{go}t !{the} T!{it}!{an}!{s_}M!{it}ts!",!Line2
-	db "!{You} !{can_}now lift !{the} dark,",!Line3
-	db "heavy !{st}!{on}es th!{at_}w!{er}e",!WaitKey,!Scroll
-	db "impossi!{ble} !{to} budge!",!End
+	db "I !{go}t !{the} T!{it}!{an}!{s_}M!{it}ts! I c!{an}",!Line2
+	db "now lift !{the} dark, heavy",!Line3
+	db "!{st}!{on}es th!{at_}w!{er}e impossi!{ble} !{to}",!WaitKey,!Scroll
+	db "budge!",!End
 ;----------------------------------------
 .message_110:
-	db "!{You} !{re}ceiv!{ed_}!{the} Magic Mirr!{or}!",!Line2
+	db "I !{re}ceiv!{ed_}!{the} Magic Mirr!{or}!",!Line2
 	db "It!{s_}blue, cl!{ear} !{and_}!{be}autiful!{Dots}",!WaitKey,!Line3
-	db "Gaz!{ing_}!{in}!{to} !{it}, !{you} feel like",!Scroll
-	db "!{you}'!{re_}!{be}!{ing_}s!{wa}l!{lo}w!{ed_}!{up}",!Scroll
-	db "!{in}!{to} !{an}oth!{er_}w!{or}ld!{Dots}",!End
+	db "Gaz!{ing_}!{in}!{to} !{it}, !{you} feel like I'm",!Scroll
+	db "!{be}!{ing_}s!{wa}l!{lo}w!{ed_}!{up} !{in}!{to} !{an}oth!{er}",!Scroll
+	db "w!{or}ld!{Dots}",!End
 ;----------------------------------------
 .message_111:
 	db "!{Thi}s !{is} !{it}! !{The} M!{ast}!{er_}Sw!{or}d!",!WaitKey,!Line2
-	db "!{Dots}No, guess !{it}!{s_}!{not}. Too !{ba}d.",!End
+	db "!{Dots}No, I guess !{not}. Too !{ba}d.",!End
 ;----------------------------------------
 .message_112:
 	db !Window02,!Speed03
@@ -867,68 +861,65 @@ dialogue_table1:
 	db "count!{ing_}!{on} !{you}!{Dots}",!End
 ;----------------------------------------
 .message_113:
-	db "Hehe! Excell!{ent}.",!Line2
-	db "!{Thi}s !{is} !{the} Red Poti!{on}.",!WaitKey,!Line3
-	db "Dr!{in}k !{it} !{to} !{re}!{st}o!{re}",!Scroll
-	db "!{you}r health.",!End
+	db "Hehe! Excell!{ent}. !{Thi}s !{is} !{the} Red",!Line2
+	db "Poti!{on}. Dr!{in}k !{it} !{to} !{re}!{st}o!{re} !{you}r",!Line3
+	db "health.",!End
 ;----------------------------------------
 .message_114:
-	db "Hehe! Excell!{ent}.",!Line2
-	db "!{Thi}s !{is} !{the} G!{re}!{en_}Poti!{on}.",!WaitKey,!Line3
-	db "Dr!{in}k !{it} !{to} !{re}!{st}!{or}e",!Scroll
-	db "!{you}r !{ma}gic !{pow}!{er}.",!End
+	db "Hehe! Excell!{ent}. !{Thi}s !{is} !{the}",!Line2
+	db "G!{re}!{en_}Poti!{on}. Dr!{in}k !{it} !{to}",!Line3
+	db "!{re}!{st}!{or}e !{you}r !{ma}gic !{pow}!{er}.",!End
 ;----------------------------------------
 .message_115:
-	db "Hehe! Excell!{ent}.",!Line2
-	db "!{Thi}s !{is} !{the} Blue Poti!{on}.",!WaitKey,!Line3
-	db "Dr!{in}k !{it} !{to} !{re}!{st}o!{re_}!{you}r",!Scroll
-	db "health !{and_}!{ma}gic !{pow}!{er}.",!End
+	db "Hehe! Excell!{ent}. !{Thi}s !{is} !{the}",!Line2
+	db "Blue Poti!{on}. Dr!{in}k !{it} !{to} !{re}!{st}!{or}e",!Line3
+	db "!{you}r health !{and_}!{ma}gic !{pow}!{er}.",!End
 ;----------------------------------------
 .message_116:
-	db "!{You} !{bo}rrow!{ed_}a Bug-C!{at}c!{hi}ng Net!",!Line2
-	db "Hmm!{Dots} !{You} w!{on}d!{er_}if !{you} !{can_}c!{at}ch",!Line3
+	db "I !{bo}rrow!{ed_}a Bug-C!{at}c!{hi}ng Net!",!Line2
+	db "Hmm!{Dots} I w!{on}d!{er_}if I !{can_}c!{at}ch",!Line3
 	db "oth!{er_}!{thin}gs !{be}si!{des} !{in}!{se}cts.",!End
 ;----------------------------------------
 .message_117:
-	db "!{You} f!{ound} !{the} Blue Tunic!",!Line2
-	db "W!{ear}!{in}g !{thi}s dec!{re}a!{se}s !{the}",!Line3
-	db "da!{ma}ge !{you} take! V!{er}y cool!",!End
+	db "I f!{ound} !{the} Blue Tunic! W!{ear}!{in}g",!Line2
+	db "!{thi}s dec!{re}a!{se}s !{the} da!{ma}ge I",!Line3
+	db "take! V!{er}y cool!",!End
 ;----------------------------------------
 .message_118:
-	db "!{You} f!{ound} !{the} R!{ed_}Tunic!",!Line2
-	db "W!{ear}!{in}g !{thi}s dec!{re}a!{se}s !{the}",!Line3
-	db "da!{ma}ge !{you} take !{ev}!{en_}m!{or}e !{tha}n",!WaitKey,!Scroll
-	db "!{the} Blue Tunic!",!End
+	db "I f!{ound} !{the} R!{ed_}Tunic! W!{ear}!{in}g",!Line2
+	db "!{thi}s dec!{re}a!{se}s !{the} da!{ma}ge I",!Line3
+	db "take !{ev}!{en_}m!{or}e !{tha}n !{the} Blue",!WaitKey,!Scroll
+	db "Tunic!",!End
 ;----------------------------------------
 .message_119:
-	db "All right! !{You}r sw!{or}d !{just} !{go}t",!Line2
-	db "!{st}r!{on}g!{er}! !{You} feel !{it}s !{pow}!{er}",!Line3
-	db "f!{lo}w!{ing_}through !{you}r !{bo}dy!",!End
+	db "All right! My sw!{or}d !{just} !{go}t",!Line2
+	db "!{st}r!{on}g!{er}! I feel !{it}s !{pow}!{er}",!Line3
+	db "f!{lo}w!{ing_}through my !{bo}dy!",!End
 ;----------------------------------------
 .message_120:
-	db "!{You} f!{ound} !{the} Mirr!{or} S!{hi}eld!",!Line2
-	db "It !{can_}deflect !{be}ams !{you} couldn't",!Line3
-	db "b!{lo}!{ck} w!{it}h !{you}r old !{sh}ield.",!End
+	db "I f!{ound} !{the} Mirr!{or} S!{hi}eld! It",!Line2
+	db "!{can_}deflect !{be}ams I couldn't",!Line3
+	db "b!{lo}!{ck} w!{it}h my old !{sh}ield.",!End
 ;----------------------------------------
 .message_121:
-	db "!{You} !{go}t !{the} C!{an}e !{of} Byra!",!Line2
-	db "If !{you} !{wa}ve !{it} !{on}ce through !{the} air,",!Line3
-	db "a r!{ing_}!{of} l!{ight_}!{wi}ll !{pro}tect !{you}!",!End
+	db "I !{go}t !{the} C!{an}e !{of} Byra! If I",!Line2
+	db "!{wa}ve !{it} !{on}ce through !{the} air, a",!Line3
+	db "r!{ing_}!{of} l!{ight_}!{wi}ll !{pro}tect me!",!End
 ;----------------------------------------
 .message_122:
-	db "Eh? It!{s_}!{lo}!{ck}ed.",!Line2
-	db "If I !{ha}d !{the} Big Key, I m!{ight_}!{be}",!Line3
-	db "a!{ble} !{to} op!{en_}!{it}!",!End
+	db "Eh? It!{s_}!{lo}!{ck}ed. If I !{ha}d !{the}",!Line2
+	db "Big Key, I m!{ight_}!{be} a!{ble} !{to} op!{en}",!Line3
+	db "!{it}!",!End
 ;----------------------------------------
 .message_123:
-	db "!{You} !{do}!{nt_}!{have} !{en}ough !{ma}gic",!Line2
-	db "!{pow}!{er}. !{You} c!{an}'t u!{se} !{thi}s",!Line3
+	db "I !{do}!{nt_}!{have} !{en}ough !{ma}gic",!Line2
+	db "!{pow}!{er}. I guess I c!{an}'t u!{se} !{thi}s",!Line3
 	db "r!{ight_}now.",!End
 ;----------------------------------------
 .message_124:
-	db "!{You} !{go}t !{the} Pegasus Boots!",!Line2
-	db "If !{you} hold !{do}wn A, !{you} !{can_}ram",!Line3
-	db "!{in}!{to} !{en}emies w!{it}h a da!{sh} !{at}ta!{ck}!",!End
+	db "I !{go}t !{the} Pegasus Boots! If I",!Line2
+	db "hold !{do}wn A, I !{can_}ram !{in}!{to}",!Line3
+	db "!{en}emies w!{it}h a da!{sh} !{at}ta!{ck}!",!End
 ;----------------------------------------
 .message_125:
 	db "Wh!{at}? !{Tha}t!{s_}a!{ma}z!{in}g! I",!Line2
@@ -999,8 +990,8 @@ dialogue_table1:
 	db "!{4_}!{4_}I'm leav!{in}g",!Choose,!End
 ;----------------------------------------
 .message_134:
-	db "All right, !{go} ahead",!Line2
-	db "!{and_}take aim!",!End
+	db "All right, !{go} ahead !{and_}take",!Line2
+	db "aim!",!End
 ;----------------------------------------
 .message_135:
 	db "Well, !{you} !{can_}turn ar!{ound} !{and}",!Line2
@@ -1014,7 +1005,7 @@ dialogue_table1:
 	db "!{4_}!{3_}Bett!{er_}!{st}op",!Choose,!End
 ;----------------------------------------
 .message_137:	; Pond text
-	db "!{4_}!{2_}-Spr!{ing_}!{of} Happ!{in}ess-",!Line2
+	db "!{4_}!{2_}-Spr!{ing_}!{of} Good Lu!{ck}-",!Line2
 	db "Throw !{in} !{so}!{me} r!{up}ees !{and_}!{you}r",!Line3
 	db "w!{is}hes !{wi}ll su!{re}!{ly_}!{com}e !{tr}ue.",!WaitKey,!Scroll
 	db "Will !{you} throw !{in} r!{up}ees?",!Scroll
@@ -1032,8 +1023,8 @@ dialogue_table1:
 ;----------------------------------------
 .message_140:
 	db "I like h!{on}e!{st} peo!{ple}, !{so} I'll",!Line2
-	db "!{give_}!{you} !{some}!{thin}g !{be}tt!{er}",!Line3
-	db "!{in} !{re}turn.",!End
+	db "!{give_}!{you} !{some}!{thin}g !{be}tt!{er_}!{in}",!Line3
+	db "!{re}turn.",!End
 ;----------------------------------------
 .message_141:
 	db "A!{re_}!{you} su!{re_}!{thi}s !{is} !{not} !{you}rs?",!Line2
@@ -1041,40 +1032,40 @@ dialogue_table1:
 	db "!{4_}!{3_}It actual!{ly_}!{is}",!Choose,!End
 ;----------------------------------------
 .message_142:
-	db "!{You}'!{re_}a !{ba}ld-fac!{ed_}liar!",!Line2
-	db "Take !{thi}s !{ba}!{ck} !{at_}!{on}ce!",!End
+	db "!{You}'!{re_}a !{ba}ld-fac!{ed_}liar! Take",!Line2
+	db "!{thi}s !{ba}!{ck} !{at_}!{on}ce!",!End
 ;----------------------------------------
 .message_143:
-	db "!{You} !{go}t !{the} Magic Boom!{er}!{an}g!",!Line2
-	db "!{Thi}s !{on}e flies f!{ast}!{er_}!{and}",!Line3
-	db "far!{the}r !{tha}n !{you}r old !{on}e.",!End
+	db "I !{go}t !{the} Magic Boom!{er}!{an}g! !{Thi}s",!Line2
+	db "!{on}e flies f!{ast}!{er_}!{and_}far!{the}r",!Line3
+	db "!{tha}n !{you}r old !{on}e.",!End
 ;----------------------------------------
 .message_144:
-	db "!{You}r !{sh}ield !{just} !{go}t bigg!{er}!",!Line2
+	db "My !{sh}ield !{just} !{go}t bigg!{er}!",!Line2
 	db "Fi!{re}!{ba}lls wo!{nt_}!{be} a !{pro}!{ble}m",!Line3
 	db "!{an}ym!{or}e!",!End
 ;----------------------------------------
 .message_145:
 	db "!{The}!{se} !{are_}!{the} Silv!{er} Arrows!",!Line2
-	db "!{You} !{can_}u!{se} !{the}m !{to}",!Line3
-	db "f!{in}!{is}h !{of}f G!{an}!{on}!",!End
+	db "I'll u!{se} !{the}m !{to} f!{in}!{is}h",!Line3
+	db "!{of}f G!{an}!{on}!",!End
 ;----------------------------------------
 .message_146:
-	db "!{You}r !{bo}ttle !{go}t fill!{ed_}w!{it}h",!Line2
-	db "!{the} G!{re}!{en_}Poti!{on}!",!Line3
-	db "One he!{ck} !{of} a !{ba}rg!{ain}!",!End
+	db "My !{bo}ttle !{go}t fill!{ed_}w!{it}h !{the}",!Line2
+	db "G!{re}!{en_}Poti!{on}! One he!{ck} !{of} a",!Line3
+	db "!{ba}rg!{ain}!",!End
 ;----------------------------------------
 .message_147:
-	db "!{You}r sw!{or}d !{go}t !{ev}!{en}",!Line2
-	db "!{st}r!{on}g!{er_}!{tha}n !{be}!{for}e!",!Line3
-	db "It feels !{wa}rm !{to} !{the} !{to}uch!{Dots}",!End
+	db "My sw!{or}d !{go}t !{ev}!{en} !{st}r!{on}g!{er}",!Line2
+	db "!{tha}n !{be}!{for}e! It feels !{wa}rm !{to}",!Line3
+	db "!{the} !{to}uch!{Dots}",!End
 ;----------------------------------------
 .message_148:
-	db "!{You}r !{ha}pp!{in}ess !{has} !{in}c!{re}a!{se}d",!Line2
-	db "by !{Number03}!{Number02} r!{up}ees. Th!{at_}br!{in}gs !{you}r",!Line3
-	db "!{to}tal !{to} !{Number01}!{Number00}.",!WaitKey,!Scroll
-	db "!{You} feel a l!{it}tle !{ha}ppi!{er}",!Scroll
-	db "!{tha}n !{be}!{for}e.",!End
+	db "!{You}r lu!{ck} !{has} !{in}c!{re}a!{se}d by !{Number03}!{Number02}",!Line2
+	db "r!{up}ees. Th!{at_}br!{in}gs !{you}r !{to}tal",!Line3
+	db "lu!{ck} !{to} !{Number01}!{Number00}.",!WaitKey,!Scroll
+	db "!{You} feel a l!{it}tle lu!{ck}i!{er_}!{tha}n",!Scroll
+	db "!{be}!{for}e.",!End
 ;----------------------------------------
 .message_149:
 	db "I !{wi}ll gr!{an}t !{you} a w!{is}h.",!Line2
@@ -1085,15 +1076,15 @@ dialogue_table1:
 	db "!{The}n I'll !{in}c!{re}a!{se} !{you}r",!Line2
 	db "capac!{it}y, al!{lo}w!{ing_}!{you} !{to} carry",!Line3
 	db "a !{to}tal !{of} !{Number01}!{Number00} Bombs.",!WaitKey,!Scroll
-	db "!{Thi}s sm!{all_}!{ble}ss!{ing_}!{is} !{the}",!Scroll
-	db "le!{ast} I !{can_}!{do}.",!End
+	db "!{Thi}s sm!{all_}!{ble}ss!{ing_}!{is} !{the} le!{ast}",!Scroll
+	db "I !{can_}!{do}.",!End
 ;----------------------------------------
 .message_151:
 	db "!{The}n I'll !{in}c!{re}a!{se} !{you}r",!Line2
 	db "capac!{it}y, al!{lo}w!{ing_}!{you} !{to} carry",!Line3
 	db "a !{to}tal !{of} !{Number01}!{Number00} Arrows.",!WaitKey,!Scroll
-	db "!{Thi}s sm!{all_}!{ble}ss!{ing_}!{is} !{the}",!Scroll
-	db "le!{ast} I !{can_}!{do}.",!End
+	db "!{Thi}s sm!{all_}!{ble}ss!{ing_}!{is} !{the} le!{ast}",!Scroll
+	db "I !{can_}!{do}.",!End
 ;----------------------------------------
 .message_152:
 	db "!{You} !{are_}!{to}o !{st}r!{on}g !{for} !{me} !{to}",!Line2
@@ -1169,8 +1160,8 @@ dialogue_table1:
 	db "!{thi}s mount!{ain} !{to} !{re}!{tr}i!{ev}e !{an}",!Scroll
 	db "!{or}b call!{ed_}!{the} Mo!{on} P!{ear}l.",!WaitKey,!Scroll
 	db "All I !{can_}!{do} !{for} !{you} !{is} !{so}o!{the}",!Scroll
-	db "!{you}r w!{ear}!{in}ess!{Dots} Co!{me} !{ba}!{ck}",!Scroll
-	db "!{an}y ti!{me}.",!End
+	db "!{you}r w!{ear}!{in}ess!{Dots} Co!{me} !{ba}!{ck} !{an}y",!Scroll
+	db "ti!{me}.",!End
 ;----------------------------------------
 .message_159:
 	db "!{The} Mo!{on} P!{ear}l !{is} !{an} artifact",!Line2
@@ -1182,8 +1173,8 @@ dialogue_table1:
 	db "Now th!{at_}I !{se}e !{you} !{have}",!Scroll
 	db "obt!{ain}!{ed_}!{it}, !{you} !{mu}!{st} su!{re}!{ly_}!{be}",!Scroll
 	db "!{the} H!{er}o I !{wa}s !{wa}!{it}!{ing_}!{for}.",!WaitKey,!Scroll
-	db "Plea!{se}, !{go} !{and_}!{re}scue",!Scroll
-	db "!{the} !{ma}id!{en}s!",!End
+	db "Plea!{se}, !{go} !{and_}!{re}scue !{the}",!Scroll
+	db "!{ma}id!{en}s!",!End
 ;----------------------------------------
 .message_160:
 	db "Is th!{at_}!{you}, !{Name}? It !{se}ems",!Line2
@@ -1201,8 +1192,8 @@ dialogue_table1:
 	db "Gold!{en_}Pow!{er_}!{and_}n!{ev}!{er}",!Scroll
 	db "!{re}turned!{Dots}",!WaitKey,!Scroll
 	db "I w!{on}d!{er_}!{wh}!{er}e he !{is} !{and_}!{wh}!{at}",!Scroll
-	db "he!{s_}!{up} !{to} now!{Dots}",!Scroll
-	db "Zzzzz!{Dots} Zzzzz!{Dots}",!End
+	db "he!{s_}!{up} !{to} now!{Dots} Zzzzz!{Dots}",!Scroll
+	db "Zzzzz!{Dots}",!End
 ;----------------------------------------
 .message_162:
 	db "(!{mu}mbl!{ing_}sleepily) T-!{tha}t's",!Line2
@@ -1302,9 +1293,9 @@ dialogue_table1:
 	db "affected!{Dots}",!End
 ;----------------------------------------
 .message_179:
-	db "Hey !{you}! !{You}'!{re_}!{not} al!{lo}w!{ed_}",!Line2
-	db "!{in} !{the} c!{ast}le, kid.",!Line3
-	db "Go !{get} !{so}!{me} sleep!",!End
+	db "Hey !{you}! !{You}'!{re_}!{not} al!{lo}w!{ed_}!{in}",!Line2
+	db "!{the} c!{ast}le, kid. Go !{get} !{so}!{me}",!Line3
+	db "sleep!",!End
 ;----------------------------------------
 .message_180:
 	db !Window02
@@ -1473,21 +1464,21 @@ dialogue_table1:
 	db "!{be}t!{we}!{en_}us.",!End
 ;----------------------------------------
 .message_200:
-	db "!{You} caught a !{be}e!",!WaitKey,!Line2
-	db "Wh!{at_}!{sh}ould !{you} !{do}?",!Line3
-	db "!{4_}> Put !{it} !{in} a !{bo}ttle",!Scroll
+	db "I caught a !{be}e!",!WaitKey,!Line2
+	db "Wh!{at_}!{sh}ould I !{do}?",!Line3
+	db "!{4_}> I'll put !{it} !{in} a !{bo}ttle",!Scroll
 	db "!{4_}!{4_}Let!{s_}!{se}t !{it} f!{re}e",!Choose,!End
 ;----------------------------------------
 .message_201:
 	db "!{You} caught a fairy!",!WaitKey,!Line2
-	db "Wh!{at_}!{sh}ould !{you} !{do}?",!Line3
-	db "!{4_}> Put !{it} !{in} a !{bo}ttle",!Scroll
+	db "Wh!{at_}!{sh}ould I !{do}?",!Line3
+	db "!{4_}> I'll put !{it} !{in} a !{bo}ttle",!Scroll
 	db "!{4_}!{4_}Let!{s_}!{se}t !{it} f!{re}e",!Choose,!End
 ;----------------------------------------
 .message_202:
-	db "!{You} !{do}!{nt_}!{have} !{an}y empty",!Line2
-	db "!{bo}ttles. Oh !{we}ll!{Dots} !{You} !{be}tt!{er} ",!Line3
-	db "{se}t !{it} f!{re}e.",!End
+	db "I !{do}!{nt_}!{have} !{an}y empty",!Line2
+	db "!{bo}ttles. Oh !{we}ll!{Dots} I'll !{be}tt!{er} !{se}t",!Line3
+	db "!{it} f!{re}e.",!End
 ;----------------------------------------
 .message_203:
 	db "!{You}r ti!{me} !{wa}s !{Number03}!{Number02} m!{in}utes !{and}",!Line2
@@ -1708,8 +1699,8 @@ dialogue_table1:
 	db !Position01,!Speed03
 	db "Jo-m!{on}!{Dots} jo-m!{on}!{Dots}",!WaitKey,!Line2
 	db "!{The} b!{is}hop!{s_}!{bo}dy c!{an}!{not} !{be}",!Line3
-	db "!{ha}r!{me}d, !{ev}!{en_}by !{the}",!Scroll
-	db "M!{ast}!{er} Sw!{or}d.",!End
+	db "!{ha}r!{me}d, !{ev}!{en_}by !{the} M!{ast}!{er}",!Scroll
+	db "Sw!{or}d.",!End
 ;----------------------------------------
 .message_241:
 	db !Position01,!Speed03
@@ -1949,11 +1940,11 @@ dialogue_table1:
 	db "!{it}!{se}lf.",!Wait05,!NextPic,!NextPic,!Scroll
 	db "M!{an}y fought !{to} g!{ain} !{en}!{tr}y !{to}",!Scroll
 	db "!{the} Sacr!{ed_}Realm, yet n!{on}e !{wh}o",!Scroll
-	db "succeed!{ed_}w!{er}e h!{ear}d",!Wait03,!Scroll
-	db "!{fro}m ag!{ain}.",!Wait05,!Scroll
+	db "succeed!{ed_}w!{er}e h!{ear}d !{fro}m",!Wait03,!Scroll
+	db "ag!{ain}.",!Wait05,!Scroll
 	db "And w!{or}!{se}, a my!{st}!{er}ious !{ev}il",!Scroll
-	db "!{pow}!{er_}!{be}g!{an} !{to} f!{lo}w !{out_}",!Scroll
-	db "!{fro}m !{the}!{re}.",!Wait05,!NextPic,!NextPic,!Scroll
+	db "!{pow}!{er_}!{be}g!{an} !{to} f!{lo}w !{out_}!{fro}m",!Scroll
+	db "!{the}!{re}.",!Wait05,!NextPic,!NextPic,!Scroll
 	db "!{The} k!{ing_}!{of} Hyrule !{com}m!{and}ed",!Scroll
 	db "S!{ev}!{en_}Sages !{to} !{se}al !{of}f !{the}",!Scroll
 	db "passage !{to} !{the} Sacr!{ed_}Realm.",!Wait05,!NextPic,!NextPic,!Scroll
@@ -1969,7 +1960,7 @@ dialogue_table1:
 	db "t!{re}a!{che}ry !{of} a my!{st}!{er}ious",!Wait02,!Scroll
 	db "b!{is}hop !{know}n as Agahnim,",!Scroll
 	db "!{wh}o !{ha}d !{be}!{en_}p!{lo}tt!{ing_}!{the}",!Scroll
-	db "!{wh}ole ti!{me} !{to} b!{re}ak !{the} !{se}al.,!Wait04",!Wait05,!End
+	db "!{wh}ole ti!{me} !{to} b!{re}ak !{the} !{se}al.",!Wait04,!Wait05,!End
 ;----------------------------------------
 .message_276:	; Intro sequence (3)
 	db !Window02,!Color07,!Speed03,!Line1
@@ -1978,7 +1969,7 @@ dialogue_table1:
 	db "!{ma}id!{en}s !{des}c!{en}d!{ing_}!{fro}m !{the}",!Wait02,!Scroll
 	db "S!{ev}!{en_}Sages. !{The}!{se} girls w!{er}e",!Scroll
 	db "th!{en_}sacrificed, !{on}e aft!{er}",!Scroll
-	db "!{an}oth!{er}.,!Wait04",!Wait05,!End
+	db "!{an}oth!{er}.",!Wait04,!Wait05,!End
 ;----------------------------------------
 .message_277:	; Intro sequence (4)
 	db !Window02,!Color07,!Speed03,!Line1
@@ -2022,13 +2013,13 @@ dialogue_table1:
 	db "!{the}n! Kiki ki!",!End
 ;----------------------------------------
 .message_285:
-	db "Ki ki! !{Tha}t!{s_}!{the} spir!{it}!",!Line2
-	db "I'll take 100 r!{up}ees! Kiki ki!",!End
+	db "Ki ki! !{Tha}t!{s_}!{the} spir!{it}! I'll take",!Line2
+	db "100 r!{up}ees! Kiki ki!",!End
 ;----------------------------------------
 .message_286:
 	db "I'm Kiki !{the} m!{on}key! I !{lo}ve",!Line2
-	db "r!{up}ees m!{or}e !{tha}n !{an}y!{thin}g.",!Line3
-	db "C!{an} !{you} sp!{are_}10 r!{up}ees?",!WaitKey,!Scroll
+	db "r!{up}ees m!{or}e !{tha}n !{an}y!{thin}g. C!{an}",!Line3
+	db "!{you} sp!{are_}10 r!{up}ees?",!WaitKey,!Scroll
 	db "Wh!{at_}!{do} !{you} say?",!Scroll
 	db "!{4_}> H!{er}e!{s_}10 r!{up}ees",!Scroll
 	db "!{4_}!{4_}Not giv!{ing_}!{an}y!{thin}g",!Choose,!End
@@ -2084,14 +2075,14 @@ dialogue_table1:
 	db "!{and} !{pow}!{er}.",!WaitKey,!Scroll
 	db "If !{you} !{tr}u!{ly_}!{are_}courageous, !{go}",!Scroll
 	db "!{to} !{the} !{for}e!{st} !{and_}c!{la}im !{the}",!Scroll
-	db "sleep!{ing_}M!{ast}!{er_}Sw!{or}d as",!WaitKey,!Scroll
-	db "!{you}r own.",!End
+	db "sleep!{ing_}M!{ast}!{er_}Sw!{or}d as !{you}r",!WaitKey,!Scroll
+	db "own.",!End
 ;----------------------------------------
 .message_295:
 	db "A!{ha}! Th!{at_}!{is} !{the} To!{me} !{of}",!Line2
 	db "Mu!{do}ra! W!{it}h !{it}, !{you} c!{an}",!Line3
-	db "!{com}p!{re}h!{en}d !{the} l!{an}guage",!WaitKey,!Scroll
-	db "!{of} !{the} Hyli!{an}s.",!End
+	db "!{com}p!{re}h!{en}d !{the} l!{an}guage !{of}",!WaitKey,!Scroll
+	db "!{the} Hyli!{an}s.",!End
 ;----------------------------------------
 .message_296:
 	db "!{You} !{are_}!{the} H!{er}o, !{in}deed. I am",!Line2
@@ -2101,13 +2092,13 @@ dialogue_table1:
 .message_297:
 	db "Look !{at_}how !{you}'ve grown",!Line2
 	db "aft!{er_}!{you}r !{tr}ial !{in} !{the} !{des}!{er}t.",!Line3
-	db "!{You} !{are_}a v!{er}y !{pro}m!{is}!{in}g",!WaitKey,!Scroll
-	db "!{you}ng m!{an}.",!End
+	db "!{You} !{are_}a v!{er}y !{pro}m!{is}!{in}g !{you}ng",!WaitKey,!Scroll
+	db "m!{an}.",!End
 ;----------------------------------------
 .message_298:
 	db "Was !{it} !{you} !{wh}o !{di}!{st}ur!{be}d my",!Line2
-	db "nap? H!{er}e, take !{thi}s !{and}",!Line3
-	db "!{go} a!{wa}y.",!End
+	db "nap? H!{er}e, take !{thi}s !{and} !{go}",!Line3
+	db "a!{wa}y.",!End
 ;----------------------------------------
 .message_299:
 	db "I !{have} !{not}!{hi}ng el!{se} !{to} give",!Line2
@@ -2116,8 +2107,8 @@ dialogue_table1:
 .message_300:
 	db "Yo !{Name}! A !{st}r!{an}ge m!{is}t !{has}",!Line2
 	db "fall!{en_}ov!{er_}!{the} !{for}e!{st}. If",!Line3
-	db "!{you}'!{re_}head!{ing_}!{in}, !{ple}a!{se}",!WaitKey,!Scroll
-	db "!{be} ca!{re}ful.",!End
+	db "!{you}'!{re_}head!{ing_}!{in}, !{ple}a!{se} !{be}",!WaitKey,!Scroll
+	db "ca!{re}ful.",!End
 ;----------------------------------------
 .message_301:
 	db "!{Thi}s t!{re}e feels k!{in}da odd as !{we}",!Line2
@@ -2134,15 +2125,15 @@ dialogue_table1:
 	db "!{of}f !{the} !{do}!{or} !{to} !{hi}s room.",!End
 ;----------------------------------------
 .message_304:
-	db "So !{you} broke through !{the}",!Line2
-	db "!{wa}ll, eh?",!WaitKey,!Line3
+	db "So !{you} broke through !{the} !{wa}ll,",!Line2
+	db "eh?",!WaitKey,!Line3
 	db "Ah !{we}ll!{Dots} May!{be} I'll !{go} !{ma}ke !{up}",!Scroll
 	db "w!{it}h !{hi}m!{Dots}",!End
 ;----------------------------------------
 .message_305:
 	db "Hey !{Name}, !{di}d !{you} !{com}e !{fro}m",!Line2
-	db "my old!{er_}broth!{er}!{s_}room?",!Line3
-	db "Is he !{st}ill !{an}gry?",!End
+	db "my old!{er_}broth!{er}!{s_}room? Is he",!Line3
+	db "!{st}ill !{an}gry?",!End
 ;----------------------------------------
 .message_306:
 	db !Speed02,!Position01,!Window02
@@ -2355,8 +2346,8 @@ dialogue_table1:
 .message_315:
 	db "!{Name}, !{the} s!{ev}!{en_}!{of} us !{wi}ll",!Line2
 	db "now !{com}b!{in}e our !{pow}!{er}s !{to}",!Line3
-	db "b!{re}ach !{the} !{ba}rri!{er_}!{of}",!WaitKey,!Scroll
-	db "G!{an}!{on}!{s_}Tow!{er}!",!End
+	db "b!{re}ach !{the} !{ba}rri!{er_}!{of} G!{an}!{on}'s",!WaitKey,!Scroll
+	db "Tow!{er}!",!End
 ;----------------------------------------
 .message_316:
 	db !Speed02,!Position01,!Window02
@@ -2376,8 +2367,8 @@ dialogue_table1:
 	db "!{to} c!{at}ch !{hi}m.",!WaitKey,!Scroll
 	db "But if he !{re}m!{ain}s !{in}side !{thi}s",!Scroll
 	db "c!{lo}!{se}d-!{of}f !{re}alm, !{you} c!{an}",!Scroll
-	db "!{tr}a!{ck} !{hi}m !{do}wn !{wh}!{er}!{ev}!{er}",!WaitKey,!Scroll
-	db "he runs.",!WaitKey,!Scroll
+	db "!{tr}a!{ck} !{hi}m !{do}wn !{wh}!{er}!{ev}!{er_}he",!WaitKey,!Scroll
+	db "runs.",!WaitKey,!Scroll
 	db "How!{ev}!{er}, !{the}!{re} !{are_}!{st}ill",!Scroll
 	db "!{ma}id!{en}s !{in} ne!{ed_}!{of} !{you}r help.",!WaitKey,!Scroll
 	db "Once !{you} save !{all_}!{of} !{the}m,",!Scroll
@@ -2389,9 +2380,9 @@ dialogue_table1:
 	db "!{re}!{st}!{or}e peace !{to} our k!{in}g!{do}m.",!End
 ;----------------------------------------
 .message_317:
-	db "Ah, !{Name} !{the} !{ma}gnific!{ent}!",!Line2
-	db "I !{have} !{be}!{en_}!{wa}!{it}!{ing_}!{for} !{you}!"!Line3
-	db "Heh, heh heh!{Dots}",!WaitKey,!Scroll
+	db "Ah, !{Name} !{the} !{ma}gnific!{ent}! I",!Line2
+	db "!{have} !{be}!{en_}!{wa}!{it}!{ing_}!{for} !{you}! Heh,"!Line3
+	db "heh heh!{Dots}",!WaitKey,!Scroll
 	db "!{You} !{know}, I !{wa}s actual!{ly_}hop!{in}g",!Scroll
 	db "!{to} !{des}!{tr}oy Zelda r!{ight_}!{be}!{for}e",!Scroll
 	db "!{you}r eyes.",!WaitKey,!Scroll
@@ -2485,8 +2476,8 @@ dialogue_table1:
 .message_329:
 	db "Now, !{tha}t!{s_}a face I !{ha}v!{en}'t",!Line2
 	db "!{se}!{en_}ar!{ound}! I take !{it} !{you}'!{re}",!Line3
-	db "h!{er}e !{in} s!{ear}ch !{of} !{the}",!WaitKey,!Scroll
-	db "Gold!{en_}Pow!{er}.",!WaitKey,!Scroll
+	db "h!{er}e !{in} s!{ear}ch !{of} !{the} Gold!{en}",!WaitKey,!Scroll
+	db "Pow!{er}.",!WaitKey,!Scroll
 	db "Un!{for}tun!{at}ely, !{it} !{wi}ll !{on}!{ly_}o!{be}y",!Scroll
 	db "!{the} !{on}e !{wh}o fir!{st} !{to}u!{che}s !{it}.",!WaitKey,!Scroll
 	db "!{The} m!{an} !{wh}o c!{re}!{at}!{ed_}!{thi}s w!{or}ld",!Scroll
@@ -2523,8 +2514,8 @@ dialogue_table1:
 	db "Not !{go}nna !{do} !{it}!",!End
 ;----------------------------------------
 .message_333:
-	db "I'll !{re}turn !{thi}s !{to} !{you}, but",!Line2
-	db "DO NOT drop !{it} ag!{ain}!",!End
+	db "I'll !{re}turn !{thi}s !{to} !{you}, but DO",!Line2
+	db "NOT drop !{it} ag!{ain}!",!End
 ;----------------------------------------
 .message_334:
 	db "How m!{an}y r!{up}ees !{wi}ll !{you} !{to}ss?",!Line2
@@ -2564,26 +2555,26 @@ dialogue_table1:
 	db "!{to}day !{is}!{Dots}",!End
 ;----------------------------------------
 .message_341:
-	db "!{You} f!{ound} a Piece !{of} H!{ear}t!",!Line2
+	db "I f!{ound} a Piece !{of} H!{ear}t!",!Line2
 	db "!{4_}!{4_}!{4_}!{4_} ",!1HeartL,!1HeartR,!End
 ;----------------------------------------
 .message_342:
-	db "!{You} f!{ound} a Piece !{of} H!{ear}t!",!Line2
+	db "I f!{ound} a Piece !{of} H!{ear}t!",!Line2
 	db "!{4_}!{4_}!{4_}!{4_} ",!2HeartL,!1HeartR,!End
 ;----------------------------------------
 .message_343:
-	db "!{You} f!{ound} a Piece !{of} H!{ear}t!",!Line2
+	db "I f!{ound} a Piece !{of} H!{ear}t!",!Line2
 	db "!{4_}!{4_}!{4_}!{4_} ",!3HeartL,!3HeartR,!End
 ;----------------------------------------
 .message_344:
-	db "!{You} f!{ound} a Piece !{of} H!{ear}t!",!Line2
+	db "I f!{ound} a Piece !{of} H!{ear}t!",!Line2
 	db "!{4_}!{4_}!{4_}!{4_} ",!4HeartL,!4HeartR,!Line3
-	db "!{You}r h!{ear}t l!{ev}el !{in}c!{re}a!{se}d!",!End
+	db "My h!{ear}t l!{ev}el !{in}c!{re}a!{se}d!",!End
 ;----------------------------------------
 .message_345:
-	db "!{You} f!{ound} a H!{ear}t C!{on}t!{ain}!{er}!",!Line2
+	db "I f!{ound} a H!{ear}t C!{on}t!{ain}!{er}!",!Line2
 	db "!{4_}!{4_}!{4_}!{4_} ",!4HeartL,!4HeartR,!Line3
-	db "!{You}r h!{ear}t l!{ev}el !{in}c!{re}a!{se}d!",!End
+	db "My h!{ear}t l!{ev}el !{in}c!{re}a!{se}d!",!End
 ;----------------------------------------
 .message_346:
 	db "W!{ear}y !{tr}avel!{er}, !{com}e !{and_}let",!Line2

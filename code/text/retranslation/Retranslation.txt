@@ -1818,7 +1818,8 @@ Hey, !{you} j!{er}k! How d!{are_}!{you},!Line2
 
 
 ,!ScrollSpd00,!Color07
-	db !Speed03,!Window02,!NextPicL!{on}g a!{go}, !{in} !{the} !{be}autiful l!{and},!Line2
+	db !Speed03,!Window02,!NextPic
+	db L!{on}g a!{go}, !{in} !{the} !{be}autiful l!{and},!Line2
 	db !{of} Hyrule, surr!{ound}!{ed_}by,!Line3
 	db mount!{ain}s !{and_}!{for}e!{st}s, leg!{en}ds,!Wait03,!Scroll
 	db !{to}ld !{of} !{an} omnipot!{ent} !{and},!Scroll
@@ -2839,7 +2840,7 @@ Co!{me} !{ba}!{ck} !{an}oth!{er_}ti!{me}! I'll !{be},!Line2
 
 
 I wo!{nt_}!{get} !{in}!{to} !{the} details,,!Line2
-	db ibut !{it}!{s_}!{not} a !{go}od ti!{me}. Plea!{se},!Line3
+	db but !{it}!{s_}!{not} a !{go}od ti!{me}. Plea!{se},!Line3
 	db !{com}e !{ba}!{ck} l!{at}!{er}. S!{or}ry.
 
 
