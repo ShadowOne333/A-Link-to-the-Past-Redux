@@ -196,7 +196,7 @@ dialogue_table1:
 	db "!{not} !{be} !{an}xious.",!WaitKey,!Scroll
 	db "Do !{you} und!{er}!{st}!{and}?",!Scroll
 	db "!{4_}> Yes",!Scroll
-	db "!{4_}!{4_}Not !{at_}all",!Choose,!End
+	db "!{4_}!{3_}Not !{at_}all",!Choose,!End
 ;----------------------------------------
 .message_025:
 	db "If !{you} defe!{at_}!{the} b!{is}hop, !{the}",!Line2
@@ -317,7 +317,7 @@ dialogue_table1:
 	db "w!{it}h t!{er}rify!{ing_}!{pow}!{er}s.",!WaitKey,!Scroll
 	db "Do !{you} und!{er}!{st}!{and}?",!Scroll
 	db "!{4_}> Yes",!Scroll
-	db "!{4_}!   Not !{at_}all",!Choose,!End
+	db "!{4_}!{3_}Not !{at_}all",!Choose,!End
 ;----------------------------------------
 .message_038:
 	db "!{You} !{sh}ould fol!{lo}w !{the} !{ma}rk!{in}gs",!Line2
@@ -377,7 +377,7 @@ dialogue_table1:
 	db "!{ev}!{en_}!{to} !{thi}s day!{Dots}",!WaitKey,!Scroll
 	db "Do !{you} und!{er}!{st}!{and}?",!Scroll
 	db "!{4_}> Yes",!Scroll
-	db "!{4_}!{4_}Not !{at_}all",!Choose,!End
+	db "!{4_}!{3_}Not !{at_}all",!Choose,!End
 ;----------------------------------------
 .message_045:
 	db "In !{an}y ca!{se}, !{you} !{sh}ould !{se}ek",!Line2
@@ -427,7 +427,7 @@ dialogue_table1:
 	db "!{be}!{com}e !{it}s m!{ast}!{er}.",!WaitKey,!Scroll
 	db "Will !{you} accept !{thi}s c!{ha}ll!{en}ge?",!Scroll
 	db "!{4_}> Yeah!",!Scroll
-	db "!{4_}!{4_}Of Cour!{se}!",!Choose,!End
+	db "!{4_}!{3_}Of Cour!{se}!",!Choose,!End
 ;----------------------------------------
 .message_051:
 	db "Good. !{You} !{sh}ould fir!{st} obt!{ain}",!Line2
@@ -987,7 +987,7 @@ dialogue_table1:
 	db "big pr!{of}!{it}s!",!WaitKey,!Scroll
 	db "How a!{bo}ut !{it}, kid?",!Scroll
 	db "!{4_}> Let!{s_}p!{la}y",!Scroll
-	db "!{4_}!{4_}I'm leav!{in}g",!Choose,!End
+	db "!{4_}!{3_}I'm leav!{in}g",!Choose,!End
 ;----------------------------------------
 .message_134:
 	db "All right, !{go} ahead !{and_}take",!Line2
@@ -1010,7 +1010,7 @@ dialogue_table1:
 	db "w!{is}hes !{wi}ll su!{re}!{ly_}!{com}e !{tr}ue.",!WaitKey,!Scroll
 	db "Will !{you} throw !{in} r!{up}ees?",!Scroll
 	db "!{4_}> Su!{re}",!Scroll
-	db "!{4_}!{4_}I'd r!{at}h!{er_}!{not}",!Choose,!End
+	db "!{4_}!{3_}I'd r!{at}h!{er_}!{not}",!Choose,!End
 ;----------------------------------------
 .message_138:
 	db "Select !{an} !{it}em w!{it}h !{the} D-pad,",!Line2
@@ -1467,13 +1467,13 @@ dialogue_table1:
 	db "I caught a !{be}e!",!WaitKey,!Line2
 	db "Wh!{at_}!{sh}ould I !{do}?",!Line3
 	db "!{4_}> I'll put !{it} !{in} a !{bo}ttle",!Scroll
-	db "!{4_}!{4_}Let!{s_}!{se}t !{it} f!{re}e",!Choose,!End
+	db "!{4_}!{3_}Let!{s_}!{se}t !{it} f!{re}e",!Choose,!End
 ;----------------------------------------
 .message_201:
 	db "!{You} caught a fairy!",!WaitKey,!Line2
 	db "Wh!{at_}!{sh}ould I !{do}?",!Line3
 	db "!{4_}> I'll put !{it} !{in} a !{bo}ttle",!Scroll
-	db "!{4_}!{4_}Let!{s_}!{se}t !{it} f!{re}e",!Choose,!End
+	db "!{4_}!{3_}Let!{s_}!{se}t !{it} f!{re}e",!Choose,!End
 ;----------------------------------------
 .message_202:
 	db "I !{do}!{nt_}!{have} !{an}y empty",!Line2
@@ -1515,7 +1515,7 @@ dialogue_table1:
 	db "r!{up}ees.",!WaitKey,!Scroll
 	db "Wh!{at_}!{do} !{you} say?",!Scroll
 	db "!{4_}> I'll buy !{it}",!Scroll
-	db "!{4_}!{4_}D!{on}'t ne!{ed_}!{it}",!Choose,!End
+	db "!{4_}!{3_}D!{on}'t ne!{ed_}!{it}",!Choose,!End
 ;----------------------------------------
 .message_210:
 	db "!{Tha}nk !{you} !{for} !{you}r purc!{has}e.",!Line2
@@ -1551,12 +1551,12 @@ dialogue_table1:
 	db "!{you} ag!{ain}!",!WaitKey,!Line3
 	db "So, !{wh}!{at_}!{do} !{you} need?",!Scroll
 	db "!{4_}> Temp!{er_}my sw!{or}d",!Scroll
-	db "!{4_}!{4_}Ju!{st} dropp!{ing_}by",!Choose,!End
+	db "!{4_}!{3_}Ju!{st} dropp!{ing_}by",!Choose,!End
 ;----------------------------------------
 .message_217:
 	db "I'll !{give_}!{you} a big !{di}scount!",!Line2
-	db "!{4_}>H!{er}e!{s_}10 r!{up}ees",!Line3
-	db "!{4_}!{2_}Wa!{it} a m!{in}ute",!Choose,!End
+	db "!{4_}> H!{er}e!{s_}10 r!{up}ees",!Line3
+	db "!{4_}!{3_}Wa!{it} a m!{in}ute",!Choose,!End
 ;----------------------------------------
 .message_218:
 	db "Su!{re_}!{you} !{wa}nt !{it} temp!{er}ed?",!Line2
@@ -1632,7 +1632,7 @@ dialogue_table1:
 	db "!{se}eds.",!WaitKey,!Scroll
 	db "Will !{you} !{tr}y !{to} f!{in}d !{it} !{for} !{me}?",!Scroll
 	db "!{4_}> Yes",!Scroll
-	db "!{4_}!{4_}No !{wa}y",!Choose,!End
+	db "!{4_}!{3_}No !{wa}y",!Choose,!End
 ;----------------------------------------
 .message_230:
 	db "!{The}n I !{wi}ll l!{en}d !{you} my !{sh}ovel.",!Line2
@@ -1720,7 +1720,7 @@ dialogue_table1:
 	db "!{for}tune?",!WaitKey,!Scroll
 	db "I'll !{ma}ke !{it} !{che}ap!{Dots}",!Scroll
 	db "!{4_}> Read my !{for}tune",!Scroll
-	db "!{4_}!{4_}I'll pass",!Choose,!End
+	db "!{4_}!{3_}I'll pass",!Choose,!End
 ;----------------------------------------
 .message_244:
 	db !Position01
@@ -1785,7 +1785,7 @@ dialogue_table1:
 	db "!{on}!{ly_}20 r!{up}ees.",!WaitKey,!Line3
 	db "Wh!{at_}!{do} !{you} say?",!Scroll
 	db "!{4_}> H!{er}e!{s_}!{the} r!{up}ees",!Scroll
-	db "!{4_}!{4_}Not !{in}t!{er}e!{st}ed",!Choose,!End
+	db "!{4_}!{3_}Not !{in}t!{er}e!{st}ed",!Choose,!End
 ;----------------------------------------
 .message_255:
 	db "Heh heh. !{Tha}nks. !{You} !{know}, if",!Line2
@@ -2006,7 +2006,7 @@ dialogue_table1:
 	db "Kiki ki!",!WaitKey,!Scroll
 	db "Wh!{at_}!{do} !{you} say?",!Scroll
 	db "!{4_}> Op!{en_}!{it} !{up}",!Scroll
-	db "!{4_}!{4_}I'll !{tr}y !{it} my!{se}lf",!Choose,!End
+	db "!{4_}!{3_}I'll !{tr}y !{it} my!{se}lf",!Choose,!End
 ;----------------------------------------
 .message_284:
 	db "Ki ki! Hmph!{Dots} Do !{it} !{you}r!{se}lf,",!Line2
@@ -2022,7 +2022,7 @@ dialogue_table1:
 	db "!{you} sp!{are_}10 r!{up}ees?",!WaitKey,!Scroll
 	db "Wh!{at_}!{do} !{you} say?",!Scroll
 	db "!{4_}> H!{er}e!{s_}10 r!{up}ees",!Scroll
-	db "!{4_}!{4_}Not giv!{ing_}!{an}y!{thin}g",!Choose,!End
+	db "!{4_}!{3_}Not giv!{ing_}!{an}y!{thin}g",!Choose,!End
 ;----------------------------------------
 .message_287:
 	db "Ki ki! !{Tha}t!{s_}!{the} spir!{it}! I'll !{be}",!Line2
@@ -2340,8 +2340,8 @@ dialogue_table1:
 .message_314:
 	db !Speed02,!Position01,!Window02
 	db "Do !{you} und!{er}!{st}!{and}?",!Line2
-	db "!{4_}>!{2_}Yes",!Line3
-	db "!{4_}!{4_}Not !{at_}all",!Choose,!End
+	db "!{4_}> Yes",!Line3
+	db "!{4_}!{3_}Not !{at_}all",!Choose,!End
 ;----------------------------------------
 .message_315:
 	db "!{Name}, !{the} s!{ev}!{en_}!{of} us !{wi}ll",!Line2
@@ -2427,16 +2427,16 @@ dialogue_table1:
 ;----------------------------------------
 .message_322:
 	db "Heya! Wh!{at_}br!{in}gs !{you} ar!{ound}?",!Line2
-	db "!{4_}>!{2_}I !{wa}nt !{the} t!{re}asu!{re}",!Line3
-	db "!{4_}!{4_}Ju!{st} v!{is}!{it}!{in}g",!Choose,!End
+	db "!{4_}> I !{wa}nt !{the} t!{re}asu!{re}",!Line3
+	db "!{4_}!{3_}Ju!{st} v!{is}!{it}!{in}g",!Choose,!End
 ;----------------------------------------
 .message_323:	; Flippers cost
 	db "Oh yeah? !{You} c!{an}'t !{just} !{have}",!Line2
 	db "!{it} !{for} f!{re}e. How a!{bo}ut I !{se}ll",!Line3
 	db "!{it} !{for} 500 r!{up}ees?",!WaitKey,!Scroll
 	db "Wh!{at_}!{do} !{you} say?",!Scroll
-	db "!{4_}>!{2_}H!{er}e!{s_}!{the} r!{up}ees",!Scroll
-	db "!{4_}!{4_} N!{ev}!{er}m!{in}d",!Choose,!End
+	db "!{4_}> H!{er}e!{s_}!{the} r!{up}ees",!Scroll
+	db "!{4_}!{3_}N!{ev}!{er}m!{in}d",!Choose,!End
 ;----------------------------------------
 .message_324:
 	db "Wa!{ha}!{ha}! Right, h!{er}e!{s_}!{the}",!Line2
@@ -2505,7 +2505,7 @@ dialogue_table1:
 	db "Wo!{nt_}!{you} throw !{some}!{thin}g !{in}?",!WaitKey,!Line3
 	db "Wh!{at_}!{wi}ll !{you} !{do}?",!Scroll
 	db "!{4_}> I'll !{to}ss !{an} !{it}em",!Scroll
-	db "!{4_}!{4_}I'd r!{at}h!{er_}!{not}",!Choose,!End
+	db "!{4_}!{3_}I'd r!{at}h!{er_}!{not}",!Choose,!End
 ;----------------------------------------
 .message_331:
 	db "Not !{go}nna !{do} !{it}!",!End
