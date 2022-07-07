@@ -667,7 +667,7 @@ dialogue_table1:
 ;----------------------------------------
 .message_081:
 	db "I !{go}t a L!{an}t!{er}n! Now I !{can_}light",!Line2
-	db "t!{or}!{che}s by p!{re}ss!{ing_}Y!.",!End
+	db "t!{or}!{che}s by p!{re}ss!{ing_}Y!",!End
 ;----------------------------------------
 .message_082:
 	db "It!{s_}a Boom!{er}!{an}g! I'll equip !{it}",!Line2
