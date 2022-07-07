@@ -1304,7 +1304,7 @@ dialogue_table1:
 	db "!{The}!{re}!{s_}a t!{re}asu!{re_}!{in} !{thi}s",!Scroll
 	db "tem!{ple} !{you} !{can_}u!{se} !{to} defe!{at}",!Scroll
 	db "m!{on}!{st}!{er}s c!{la}d !{in} !{ev}!{en_}!{the}",!WaitKey,!Scroll
-	db "!{st}r!{on}ge!{st} arm!{or}. Be su!{re_}!{to}",!WaitKey,!Scroll
+	db "!{st}r!{on}ge!{st} arm!{or}. Be su!{re_}!{to}",!Scroll
 	db "obt!{ain} !{it}!",!End
 ;----------------------------------------
 .message_181:
