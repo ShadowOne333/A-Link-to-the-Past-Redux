@@ -555,7 +555,7 @@ dialogue_table1:
 .message_058:
 	db "100 r!{up}ees !{to} !{an}y!{on}e !{wh}o",!Line2
 	db "!{lo}c!{at}es a girl !{des}c!{en}d!{ing_}!{fro}m",!Line3
-	db "!{the} S!{ev}!{en_}Sages. - !{The} K!{in}g",!End
+	db "!{the} S!{ev}!{en_}Sages - !{The} K!{in}g",!End
 ;----------------------------------------
 .message_059:
 	db "!{3_}!{LinkL}!{LinkR}!{2_}WANTED!",!Line2
