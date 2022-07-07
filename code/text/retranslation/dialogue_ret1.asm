@@ -317,7 +317,7 @@ dialogue_table1:
 	db "w!{it}h t!{er}rify!{ing_}!{pow}!{er}s.",!WaitKey,!Scroll
 	db "Do !{you} und!{er}!{st}!{and}?",!Scroll
 	db "!{4_}> Yes",!Scroll
-	db "!{4_}!{4_}Not !{at_}all",!Choose,!End
+	db "!{4_}!   Not !{at_}all",!Choose,!End
 ;----------------------------------------
 .message_038:
 	db "!{You} !{sh}ould fol!{lo}w !{the} !{ma}rk!{in}gs",!Line2
