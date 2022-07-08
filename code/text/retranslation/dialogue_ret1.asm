@@ -819,9 +819,8 @@ dialogue_table1:
 ;----------------------------------------
 .message_107:
 	db "I've !{go}t a Bottle! I !{can_}!{st}!{or}e",!Line2
-	db "m!{an}y !{di}ff!{er}!{ent}",!Line2
-	db "!{thin}gs !{in}side !{and_}u!{se}",!Line3
-	db "!{the}m l!{at}!{er}!!",!End
+	db "m!{an}y !{di}ff!{er}!{ent} !{thin}gs !{in}side",!Line3
+	db "!{and_}u!{se} !{the}m l!{at}!{er}!",!End
 ;----------------------------------------
 .message_108:
 	db "I f!{ound} !{the} Big Key! Now I c!{an}",!Line2
