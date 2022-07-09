@@ -415,7 +415,7 @@ dialogue_table1:
 	db "I am !{in}de!{ed_}Sa!{has}rah!{la}, vil!{la}ge",!Line2
 	db "eld!{er_}!{and_}!{des}c!{en}d!{an}t !{of} !{the}",!Line3
 	db "S!{ev}!{en_}Sages.",!WaitKey,!Scroll
-	db "!{Dots}"!{Dots}Truly?",!WaitKey,!Scroll
+	db "!{Dots}Truly?",!WaitKey,!Scroll
 	db "!{Name}, I'm !{ast}!{on}!{is}hed th!{at}",!Scroll
 	db "a !{you}ng m!{an} like !{you} !{is}",!Scroll
 	db "s!{ear}c!{hi}ng !{for} !{the} sw!{or}d !{of}",!WaitKey,!Scroll

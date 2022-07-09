@@ -486,7 +486,7 @@ credits_text:
 	db $62,$E6,$00,length(19)
 	db "SPRING OF GOOD LUCK"
 	db $63,$06,$00,length(19)
-	%row("SPRING") : db " " : %row("OF") : db " " : %row("GOOD LUCK")
+	%row("SPRING") : db " " : %row("OF") : db " " : %row("GOOD") : db " " : %row("LUCK")
 
 .smithies:
 	db $62,$66,$00,length(19)

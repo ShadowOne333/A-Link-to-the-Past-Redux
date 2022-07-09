@@ -10,6 +10,4 @@ Pending things for Redux disassembly:
 	o First warp point relocation, so it no longer drops you at the very beginning of the Death Mountain, but rather at the left side of the Heart Container you obtain after your first travel to the Dark World for convenience sake.
 
 - Fix whatever is broken between Map/Object data and the FastROM implementation
-- Proper fix for the Max Consumables "Fairy/Rupees fix"
 - Tilemap for the "TRIFORCE OF THE GODS" optional patch
-- Proper implementation of the New GFX hack (24 items menu) with LR switching (unknown if the LR Item Switch from DX v1.6 would work on New GFX, pending check)
