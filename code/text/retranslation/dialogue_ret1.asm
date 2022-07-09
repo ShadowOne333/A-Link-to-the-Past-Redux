@@ -2580,7 +2580,7 @@ dialogue_table1:
 	db "!{me} !{so}o!{the} !{you}r a!{che}s !{and}",!Line3
 	db "p!{ain}s.",!WaitKey,!Scroll
 	db "Now, c!{lo}!{se} !{you}r eyes !{for} a",!Scroll
-	db "mom!{ent}!{Dots}}",!End
+	db "mom!{ent}!{Dots}",!End
 ;----------------------------------------
 .message_347:
 	db "Eep! I'm tir!{ed_}!{of} !{get}t!{ing_}ki!{ck}ed",!Line2
