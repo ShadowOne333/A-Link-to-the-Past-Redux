@@ -416,8 +416,8 @@ dialogue_table1:
 	db "eld!{er_}!{and_}!{des}c!{en}d!{an}t !{of} !{the}",!Line3
 	db "S!{ev}!{en_}Sages.",!WaitKey,!Scroll
 	db "!{Dots}"!{Dots}Truly?",!WaitKey,!Scroll
-	db "!{Name}, I'm !{ast}!{on}!{is}hed",!Scroll
-	db "th!{at_}a !{you}ng m!{an} like !{you} !{is}",!Scroll
+	db "!{Name}, I'm !{ast}!{on}!{is}hed th!{at}",!Scroll
+	db "a !{you}ng m!{an} like !{you} !{is}",!Scroll
 	db "s!{ear}c!{hi}ng !{for} !{the} sw!{or}d !{of}",!WaitKey,!Scroll
 	db "!{ev}il!{s_}b!{an}e.",!WaitKey,!Scroll
 	db "Not !{just} !{an}y!{on}e !{can_}!{wi}eld !{thi}s",!Scroll
