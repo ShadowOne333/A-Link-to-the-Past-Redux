@@ -415,7 +415,8 @@ dialogue_table1:
 	db "I am !{in}de!{ed_}Sa!{has}rah!{la}, vil!{la}ge",!Line2
 	db "eld!{er_}!{and_}!{des}c!{en}d!{an}t !{of} !{the}",!Line3
 	db "S!{ev}!{en_}Sages.",!WaitKey,!Scroll
-	db "!{Dots}Truly? !{Name}, I'm surpr!{is}ed",!Scroll
+	db "!{Dots}"!{Dots}Truly?",!WaitKey,!Scroll
+	db "!{Name}, I'm !{ast}!{on}!{is}hed",!Scroll
 	db "th!{at_}a !{you}ng m!{an} like !{you} !{is}",!Scroll
 	db "s!{ear}c!{hi}ng !{for} !{the} sw!{or}d !{of}",!WaitKey,!Scroll
 	db "!{ev}il!{s_}b!{an}e.",!WaitKey,!Scroll
@@ -427,7 +428,7 @@ dialogue_table1:
 	db "!{be}!{com}e !{it}s m!{ast}!{er}.",!WaitKey,!Scroll
 	db "Will !{you} accept !{thi}s c!{ha}ll!{en}ge?",!Scroll
 	db "!{4_}> Yeah!",!Scroll
-	db "!{4_}!{3_}Of Cour!{se}!",!Choose,!End
+	db "!{4_}!{3_}Of cour!{se}!",!Choose,!End
 ;----------------------------------------
 .message_051:
 	db "Good. !{You} !{sh}ould fir!{st} obt!{ain}",!Line2
