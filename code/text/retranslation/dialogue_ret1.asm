@@ -735,7 +735,7 @@ dialogue_table1:
 ;----------------------------------------
 .message_093:
 	db "!{Thi}s !{is} !{the} To!{me} !{of} Mu!{do}ra! I",!Line2
-	db "!{can_}u!{se} !{it} !{to} deciph!{er_} !{the}",!Line3
+	db "!{can_}u!{se} !{it} !{to} deciph!{er_}!{the}",!Line3
 	db "!{an}ci!{ent} Hyli!{an} l!{an}guage!",!End
 ;----------------------------------------
 .message_094:
