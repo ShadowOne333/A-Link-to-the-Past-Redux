@@ -580,7 +580,7 @@ dialogue_table1:
 .message_063:
 	db "Wel!{com}e !{to} !{the} Poti!{on} Shop.",!Line2
 	db "!{The} W!{at}!{er}f!{all_}!{of} W!{is}!{hi}ng !{is}",!Line3
-	db "!{just} ahead.!",!End
+	db "!{just} ahead.",!End
 ;----------------------------------------
 .message_064:
 	db "!{Thi}s cave leads !{ba}!{ck} !{to}",!Line2
