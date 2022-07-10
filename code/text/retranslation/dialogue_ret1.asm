@@ -1038,7 +1038,7 @@ dialogue_table1:
 .message_143:
 	db "I !{go}t !{the} Magic Boom!{er}!{an}g! !{Thi}s",!Line2
 	db "!{on}e flies f!{ast}!{er_}!{and_}far!{the}r",!Line3
-	db "!{tha}n !{you}r old !{on}e.",!End
+	db "!{tha}n my old !{on}e.",!End
 ;----------------------------------------
 .message_144:
 	db "My !{sh}ield !{just} !{go}t bigg!{er}!",!Line2
