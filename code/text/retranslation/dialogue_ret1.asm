@@ -1154,8 +1154,8 @@ dialogue_table1:
 .message_158:
 	db "!{The} b!{is}hop !{has} su!{re}!{ly_}deceived",!Line2
 	db "our k!{in}g, !{and_}he !{is} us!{ing_}!{ev}il",!Line3
-	db "!{ma}gic !{to} op!{en_}!{so}!{me} k!{in}d",!WaitKey,!Scroll
-	db "!{of} passage.",!WaitKey,!Scroll
+	db "!{ma}gic !{to} op!{en_}!{so}!{me} k!{in}d !{of}",!WaitKey,!Scroll
+	db "passage.",!WaitKey,!Scroll
 	db "!{You} !{mu}!{st} !{go} !{to} !{the} !{to}w!{er_}!{at}op",!Scroll
 	db "!{thi}s mount!{ain} !{to} !{re}!{tr}i!{ev}e !{an}",!Scroll
 	db "!{or}b call!{ed_}!{the} Mo!{on} P!{ear}l.",!WaitKey,!Scroll
