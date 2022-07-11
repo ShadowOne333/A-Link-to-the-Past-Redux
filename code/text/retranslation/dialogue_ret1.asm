@@ -2112,7 +2112,7 @@ dialogue_table1:
 ;----------------------------------------
 .message_301:
 	db "!{Thi}s t!{re}e feels k!{in}da odd as !{we}",!Line2
-	db "cut !{it}. Any!{wa}y, !{ba}!{ck} !{to} w!{or}k!}",!End
+	db "cut !{it}. Any!{wa}y, !{ba}!{ck} !{to} w!{or}k!",!End
 ;----------------------------------------
 .message_302:
 	db "Looks like !{the} !{for}e!{st} m!{is}t",!Line2
