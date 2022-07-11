@@ -270,12 +270,12 @@ dialogue_table2:
 	db "!{of}t!{en_}!{get} !{ma}gic jars?",!End
 ;----------------------------------------
 .message_378:
-	db "!{You} !{mu}!{st} s!{ear}chrah!{la}",!Line2
-	db "!{to} f!{in}d Sa!{has}rah!{la}.",!End
+	db "!{You} !{mu}!{st} s!{ear}chrah!{la} !{to} f!{in}d",!Line2
+	db "Sa!{has}rah!{la}.",!End
 ;----------------------------------------
 .message_379:
 	db "As I though!{tr}ah!{la}, !{you} f!{ound}",!Line2
-	db "Sa!{has}rah!{la}",!End
+	db "Sa!{has}rah!{la}.",!End
 ;----------------------------------------
 .message_380:
 	db "I'm s!{or}ry, but !{you} !{do}n't",!Line2
