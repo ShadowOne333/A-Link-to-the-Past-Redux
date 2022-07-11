@@ -837,7 +837,7 @@ dialogue_table1:
 .message_110:
 	db "I !{re}ceiv!{ed_}!{the} Magic Mirr!{or}!",!Line2
 	db "It!{s_}blue, cl!{ear} !{and_}!{be}autiful!{Dots}",!WaitKey,!Line3
-	db "Gaz!{ing_}!{in}!{to} !{it}, !{you} feel like I'm",!Scroll
+	db "Gaz!{ing_}!{in}!{to} !{it}, I feel like I'm",!Scroll
 	db "!{be}!{ing_}s!{wa}l!{lo}w!{ed_}!{up} !{in}!{to} !{an}oth!{er}",!Scroll
 	db "w!{or}ld!{Dots}",!End
 ;----------------------------------------
