@@ -1140,8 +1140,8 @@ dialogue_table1:
 	db "!{The} !{ma}id!{en}s !{wh}o w!{er}e",!Line2
 	db "sacrific!{ed_}!{ma}y !{st}ill !{be} alive",!Line3
 	db "!{so}!{me}!{wh}!{er}e. I've !{go}t !{to} !{be}li!{ev}e",!WaitKey,!Scroll
-	db "th!{at_}a H!{er}o !{wi}ll app!{ear}",!Scroll
-	db "!{to} !{re}scue !{the}m.",!WaitKey,!Scroll
+	db "th!{at_}a H!{er}o !{wi}ll app!{ear} !{to}",!Scroll
+	db "!{re}scue !{the}m.",!WaitKey,!Scroll
 	db "Oh my. I've c!{er}t!{ain}!{ly_}ram!{ble}d",!Scroll
 	db "!{on}, !{ha}v!{en}'t I? Any!{wa}y, !{tha}nk",!Scroll
 	db "!{you} !{for} !{sh}ow!{ing_}such k!{in}dness",!WaitKey,!Scroll
