@@ -1112,8 +1112,8 @@ dialogue_table1:
 	db "!{thi}s !{ma}d que!{st}. ",!End
 ;----------------------------------------
 .message_154:
-	db "By !{the} !{wa}y, !{the}!{re}!{s_}a h!{ear}t",!Line2
-	db "!{in}!{the} pot.",!End
+	db "By !{the} !{wa}y, !{the}!{re}!{s_}a h!{ear}t !{in}",!Line2
+	db "!{the} pot.",!End
 ;----------------------------------------
 .message_155:
 	db "Oh, turn r!{ight_}h!{er}e!{Dots}",!WaitKey,!Line2
