@@ -1097,9 +1097,9 @@ dialogue_table1:
 	db "my !{ble}ss!{ing_}as !{we}ll.",!End
 ;----------------------------------------
 .message_153:
-	db "Ah!{Dots} W!{at}ch !{you}r !{st}ep.",!Line2
-	db "!{The}!{re} !{are_}holes !{in} !{the} gr!{ound}.",!Line3
-	db "Could !{you} turn r!{ight_}h!{er}e?",!WaitKey,!Scroll
+	db "Ah!{Dots} W!{at}ch !{you}r !{st}ep. !{The}!{re}",!Line2
+	db "!{are_}holes !{in} !{the} gr!{ound}. Could",!Line3
+	db "!{you} turn r!{ight_}h!{er}e?",!WaitKey,!Scroll
 	db "By !{the} !{wa}y, !{do} !{you} !{ha}pp!{en_}!{to}",!Scroll
 	db "!{be} s!{ear}c!{hi}ng !{for} !{the} Gold!{en}",!Scroll
 	db "Pow!{er}? !{The} road ahead !{is} full",!WaitKey,!Scroll
