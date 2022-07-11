@@ -1133,8 +1133,8 @@ dialogue_table1:
 .message_156:
 	db "We !{ha}v!{en}'t !{me}t, but if !{you}'!{re}",!Line2
 	db "!{go}!{ing_}!{up} !{the} mount!{ain}, !{wi}ll !{you}",!Line3
-	db "take !{me} a!{lo}ng? I !{lo}!{st}",!WaitKey,!Scroll
-	db "my l!{an}t!{er}n.",!End
+	db "take !{me} a!{lo}ng? I !{lo}!{st} my",!WaitKey,!Scroll
+	db "l!{an}t!{er}n.",!End
 ;----------------------------------------
 .message_157:
 	db "!{The} !{ma}id!{en}s !{wh}o w!{er}e",!Line2
