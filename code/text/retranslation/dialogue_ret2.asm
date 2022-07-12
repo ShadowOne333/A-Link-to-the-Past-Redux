@@ -37,8 +37,8 @@ org $0EDF40	; 0x075F40
 dialogue_table2:
 ;----------------------------------------
 .message_349:
-	db "Hey! Wh!{at}!{s_}!{you}r !{pro}!{ble}m,",!Line2
-	db "ya damn rabb!{it}?",!WaitKey,!Line3
+	db "Hey! Wh!{at}!{s_}!{you}r !{pro}!{ble}m, ya",!Line2
+	db "damn rabb!{it}?",!WaitKey,!Line3
 	db "I ca!{me} h!{er}e !{lo}ok!{ing_}!{for} !{the}",!Scroll
 	db "Gold!{en_}Pow!{er}, but !{go}t ch!{an}ged",!Scroll
 	db "!{to} !{thi}s f!{re}ak!{is}h !{for}m !{and_}c!{an}'t",!WaitKey,!Scroll
