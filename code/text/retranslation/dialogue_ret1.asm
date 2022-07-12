@@ -739,10 +739,9 @@ dialogue_table1:
 	db "!{an}ci!{ent} Hyli!{an} l!{an}guage!",!End
 ;----------------------------------------
 .message_094:
-	db "I f!{ound} !{the} Mo!{on} P!{ear}l! It",!Line2
-	db "!{wi}ll !{pro}tect my !{bo}dy !{fro}m !{the}",!Line3
-	db "tw!{is}t!{ed_}effects !{of} !{the} Gold!{en}",!WaitKey,!Scroll
-	db "Pow!{er}.",!End
+	db "I f!{ound} !{the} Mo!{on} P!{ear}l! It !{wi}ll",!Line2
+	db "!{pro}tect my !{bo}dy !{fro}m !{the} tw!{is}t!{ed}",!Line3
+	db "effects !{of} !{the} Gold!{en} Pow!{er}.",!End
 ;----------------------------------------
 .message_095:
 	db "I f!{ound} !{the} Compass! Now, I c!{an}",!Line2
