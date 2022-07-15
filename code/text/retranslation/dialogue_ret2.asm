@@ -90,7 +90,7 @@ dialogue_table2:
 	db "!{wa}nt !{and_}p!{re}ss A !{to} buy !{it}!",!End
 ;----------------------------------------
 .message_358:
-	db "If !{you} buy !{tha}t, !{you}'ll !{have} ni",!Line2
+	db "If !{you} buy !{tha}t, !{you}'ll !{have} no",!Line2
 	db "u!{se} !{for} !{it}. Why !{not} choo!{se}",!Line3
 	db "!{some}!{thin}g el!{se}?",!End
 ;----------------------------------------

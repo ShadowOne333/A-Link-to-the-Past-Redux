@@ -484,7 +484,7 @@ dialogue_table1:
 ;----------------------------------------
 .message_055:
 	db "A helpful !{it}em !{is} !{hi}dd!{en_}!{in} a",!Line2
-	db "cave!{2_}e!{ast} !{of} Lake Hylia. Go",!Line3
+	db "cave e!{ast} !{of} Lake Hylia. Go",!Line3
 	db "!{get} !{it}!",!End
 ;----------------------------------------
 .message_056:
@@ -517,10 +517,11 @@ dialogue_table1:
 	db "I am !{in}de!{ed_}Sa!{has}rah!{la}, vil!{la}ge",!Line2
 	db "eld!{er_}!{and_}!{des}c!{en}d!{an}t !{of} !{the}",!Line3
 	db "S!{ev}!{en_}Sages.",!WaitKey,!Scroll
-	db "!{Dots}Truly? !{Name}, I'm",!Scroll
-	db "surpr!{is}!{ed_}th!{at_}a !{you}ng m!{an} like",!Scroll
-	db "!{you} !{is} s!{ear}c!{hi}ng !{for} !{the} sw!{or}d",!WaitKey,!Scroll
-	db "!{of} !{ev}il!{s_}b!{an}e.",!WaitKey,!Scroll
+	db "!{Dots}!{Dots}Truly?",!WaitKey,!Scroll
+	db "!{Name}, I'm !{ast}!{on}!{is}hed th!{at}",!Scroll
+	db "a !{you}ng m!{an} like !{you} !{is}",!Scroll
+	db "s!{ear}c!{hi}ng !{for} !{the} sw!{or}d !{of}",!WaitKey,!Scroll
+	db "!{ev}il!{s_}b!{an}e.",!WaitKey,!Scroll
 	db "Not !{just} !{an}y!{on}e !{can_}!{wi}eld !{thi}s",!Scroll
 	db "b!{la}de. We !{have} a leg!{en}d say!{in}g",!Scroll
 	db "th!{at_}!{on}!{ly_}a H!{er}o !{wh}o defe!{at}s",!WaitKey,!Scroll
@@ -559,7 +560,7 @@ dialogue_table1:
 	db "!{the} S!{ev}!{en_}Sages - !{The} K!{in}g",!End
 ;----------------------------------------
 .message_059:
-	db "!{3_}!{LinkL}!{LinkR}!{2_}WANTED!",!Line2
+	db "!{4_}!{4_}!{LinkL}!{LinkR}!{2_}WANTED!",!Line2
 	db "!{Thi}s !{is} !{Name}, !{the} crim!{in}al",!Line3
 	db "!{wh}o kidnapp!{ed_}Pr!{in}cess Zelda.",!WaitKey,!Scroll
 	db "C!{all_}a !{so}l!{di}!{er_}if !{you} !{se}e !{hi}m!",!End
@@ -570,8 +571,8 @@ dialogue_table1:
 	db "Mount!{ain} !{is} !{pro}!{hi}b!{it}ed.",!End
 ;----------------------------------------
 .message_061:
-	db "!{Thi}s !{wa}y !{Up}",!Line2
-	db "!{4_}!{4_} Lo!{st} Woods",!End
+	db "!{Thi}s !{wa}y",!Line2
+	db "!{4_}!{2_}!{Up} Lo!{st} Woods",!End
 ;----------------------------------------
 .message_062:
 	db "DANGER!",!Line2
@@ -587,26 +588,27 @@ dialogue_table1:
 	db "Kakariko Vil!{la}ge.",!End
 ;----------------------------------------
 .message_065:
-	db "!{Thi}s !{wa}y !{Down}",!Line2
-	db "!{4_}!{4_} Lake Hylia",!Line3
-	db "!{4_}!{4_} Shop",!End
+	db "!{Thi}s !{wa}y",!Line2
+	db "!{4_}!{2_}!{Down} Lake Hylia",!Line3
+	db "!{4_}!{2_}!{Down} Shop",!End
 ;----------------------------------------
 .message_066:
-	db "!{Thi}s !{wa}y !{Left}",!Line2
-	db "!{4_}!{4_} Kakariko Vil!{la}ge",!End
+	db "!{Thi}s !{wa}y",!Line2
+	db "!{4_}!{2_}!{Left} Kakariko Vil!{la}ge",!End
 ;----------------------------------------
 .message_067:
-	db "!{Thi}s !{wa}y !{Left}",!Line2
-	db "!{4_}!{4_} Des!{er}t !{of} My!{st}!{er}y",!End
+	db "!{Thi}s !{wa}y",!Line2
+	db "!{4_}!{2_} !{Left} Des!{er}t !{of} My!{st}!{er}y",!End
 ;----------------------------------------
 .message_068:
-	db "!{Thi}s !{wa}y !{Up} !{Right}",!Line2
-	db "!{4_}!{4_} Poti!{on} Shop",!Line3
-	db "!{4_}!{4_} W!{at}!{er}f!{all_}!{of} W!{is}!{hi}ng",!End
+	db "!{Thi}s !{wa}y",!Line2
+	db "!{4_}!{2_}!{Up} Poti!{on} Shop",!Line3
+	db "!{4_}!{2_}!{Right} W!{at}!{er}f!{all_}!{of} W!{is}!{hi}ng",!End
 ;----------------------------------------
 .message_069:
-	db "!{Thi}s !{wa}y !{Right} E!{ast}!{er}n Tem!{ple}",!Line3
-	db "!{Thi}s !{wa}y !{Left} Hyrule C!{ast}le",!End
+	db "!{Thi}s !{wa}y",!Line2
+	db "!{4_}!{2_}!{Right} E!{ast}!{er}n Tem!{ple}",!Line2
+	db "!{4_}!{2_}!{Left} Hyrule C!{ast}le",!End
 ;----------------------------------------
 .message_070:
 	db "Lake Hylia",!End
@@ -620,7 +622,7 @@ dialogue_table1:
 ;----------------------------------------
 .message_072:
 	db "Hou!{se} !{of} Lum!{be}rja!{ck}s",!Line2
-	db "Bun !{and_}Y!{an}",!End
+	db "!{3_}!{3_}Bun !{and_}Y!{an}",!End
 ;----------------------------------------
 .message_073:
 	db "!{Thi}s !{wa}y !{Down}",!Line2
@@ -740,8 +742,9 @@ dialogue_table1:
 ;----------------------------------------
 .message_094:
 	db "I f!{ound} !{the} Mo!{on} P!{ear}l! It !{wi}ll",!Line2
-	db "!{pro}tect my !{bo}dy !{fro}m !{the} tw!{is}t!{ed}",!Line3
-	db "effects !{of} !{the} Gold!{en} Pow!{er}.",!End
+	db "!{pro}tect my !{bo}dy !{fro}m !{the}",!Line3
+	db "tw!{is}ted effects !{of} !{the} Gold!{en}",!WaitKey,!Scroll
+	db "Pow!{er}.",!End
 ;----------------------------------------
 .message_095:
 	db "I f!{ound} !{the} Compass! Now, I c!{an}",!Line2
@@ -825,7 +828,7 @@ dialogue_table1:
 .message_108:
 	db "I f!{ound} !{the} Big Key! Now I c!{an}",!Line2
 	db "un!{lo}!{ck} !{do}!{or}s !{and_}!{che}!{st}s !{tha}t",!Line3
-	db "!{do}!{nt_}op!{en_} w!{it}h n!{or}!{ma}l keys!",!End
+	db "!{do}!{nt_}op!{en_}w!{it}h n!{or}!{ma}l keys!",!End
 ;----------------------------------------
 .message_109:
 	db "I !{go}t !{the} T!{it}!{an}!{s_}M!{it}ts! I c!{an}",!Line2
@@ -974,9 +977,9 @@ dialogue_table1:
 ;----------------------------------------
 .message_132:
 	db "!{You} !{go}t !{the} P!{en}d!{an}t !{of} W!{is}!{do}m!",!Line2
-	db "And !{you} sudd!{en}!{ly_}feel a b!{it} !{st}r!{on}g!{er}!",!WaitKey,!Line3
-	db "Ti!{me} !{to} !{go} !{for} !{the} f!{in}al",!Scroll
-	db "p!{en}d!{an}t.",!End
+	db "And !{you} sudd!{en}!{ly_}feel a b!{it}",!WaitKey,!Line3
+	db "!{st}r!{on}g!{er}! Ti!{me} !{to} !{go} !{for} !{the}",!Scroll
+	db "f!{in}al p!{en}d!{an}t.",!End
 ;----------------------------------------
 .message_133:
 	db "Well, let!{s_}!{get} !{to} !{it}! !{Thi}s !{is}",!Line2
@@ -1046,8 +1049,8 @@ dialogue_table1:
 ;----------------------------------------
 .message_145:
 	db "!{The}!{se} !{are_}!{the} Silv!{er} Arrows!",!Line2
-	db "I'll u!{se} !{the}m !{to} f!{in}!{is}h",!Line3
-	db "!{of}f G!{an}!{on}!",!End
+	db "I'll u!{se} !{the}m !{to} f!{in}!{is}h !{of}f",!Line3
+	db "G!{an}!{on}!",!End
 ;----------------------------------------
 .message_146:
 	db "My !{bo}ttle !{go}t fill!{ed_}w!{it}h !{the}",!Line2
@@ -1318,15 +1321,15 @@ dialogue_table1:
 	db "depart!{in}g. Do !{not} !{for}!{get}!{Dots}",!End
 ;----------------------------------------
 .message_182:
-	db "!{2_}!{Snake1}!{Snake2}!{Waves1}!{Waves2}!{Waves1}!{Waves2}"
+	db "!{4_}!{2_}!{Snake1}!{Snake2}!{Waves1}!{Waves2}!{Waves1}!{Waves2}"
 	db "!{3_}!{Snake1}!{Snake2}!{Waves1}!{Waves2}!{Waves1}!{Waves2}"
 	db "!{3_}!{Ankh1}!{Ankh2}!{Waves1}!{Waves2}!{Waves1}!{Waves2}",!Line2
 
-	db "!{4_}!{3_}!{Ankh1}!{Ankh2}"
+	db "!{4_}!{4_}!{2_}!{Ankh1}!{Ankh2}"
 	db "!{3_}!{Snake1}!{Snake2}!{Waves1}!{Waves2}!{Waves1}!{Waves2}!{Snake1}!{Snake2}"
 	db "!{3_}!{Ankh1}!{Ankh2}",!Line3
 
-	db "!{2_}!{Snake1}!{Snake2}!{Waves1}!{Waves2}!{Waves1}!{Waves2}"
+	db "!{3_}!{2_}!{Snake1}!{Snake2}!{Waves1}!{Waves2}!{Waves1}!{Waves2}"
 	db "!{3_}!{Ankh1}!{Ankh2}!{Snake1}!{Snake2}!{Snake1}!{Snake2}!{Ankh1}!{Ankh2}"
 	db "!{3_}!{Waves1}!{Waves2}!{Waves1}!{Waves2}!{Ankh1}!{Ankh2}",!End
 ;----------------------------------------
@@ -1373,11 +1376,11 @@ dialogue_table1:
 	db "!{or}d!{er_}!{to} op!{en_}!{the} !{wa}y !{for}!{wa}rd.",!End
 ;----------------------------------------
 .message_188:
-	db "!{4_}!{4_}!{2_}!{Snake1}!{Snake2}!{Snake1}!{Snake2}!{Ankh1}!{Ankh2}!{Waves1}!{Waves2}"
+	db "!{4_}!{4_}!{Snake1}!{Snake2}!{Snake1}!{Snake2}!{Ankh1}!{Ankh2}!{Waves1}!{Waves2}"
 	db "!{3_}!{Snake1}!{Snake2}!{Waves1}!{Waves2}!{Waves1}!{Waves2}!{Snake1}!{Snake2}",!Line2
-	db "!{4_}!{4_}!{4_}!{2_}!{Ankh1}!{Ankh2}"
+	db "!{4_}!{4_}!{3_}!{Ankh1}!{Ankh2}"
 	db "!{3_}!{Waves1}!{Waves2}!{Snake1}!{Snake2}!{Ankh1}!{Ankh2}!{Waves1}!{Waves2}",!Line3
-	db "!{4_}!{4_}!{2_}!{Waves1}!{Waves2}!{Waves1}!{Waves2}!{Snake1}!{Snake2}!{Waves1}!{Waves2}"
+	db "!{4_}!{4_}!{Waves1}!{Waves2}!{Waves1}!{Waves2}!{Snake1}!{Snake2}!{Waves1}!{Waves2}"
 	db "!{3_}!{Ankh1}!{Ankh2}!{Ankh1}!{Ankh2}!{Snake1}!{Snake2}!{Ankh1}!{Ankh2}",!End
 ;----------------------------------------
 .message_189:
@@ -1469,7 +1472,7 @@ dialogue_table1:
 	db "!{4_}!{3_}Let!{s_}!{se}t !{it} f!{re}e",!Choose,!End
 ;----------------------------------------
 .message_201:
-	db "!{You} caught a fairy!",!WaitKey,!Line2
+	db "I caught a fairy!",!WaitKey,!Line2
 	db "Wh!{at_}!{sh}ould I !{do}?",!Line3
 	db "!{4_}> I'll put !{it} !{in} a !{bo}ttle",!Scroll
 	db "!{4_}!{3_}Let!{s_}!{se}t !{it} f!{re}e",!Choose,!End
@@ -1600,7 +1603,7 @@ dialogue_table1:
 	db "I us!{ed_}!{to} live !{in} Kakariko",!Scroll
 	db "Vil!{la}ge, !{and_}I w!{on}d!{er_}how my",!Scroll
 	db "partn!{er_}!{is} !{do}!{ing_}!{the}!{re}",!WaitKey,!Scroll
-	db "w!{it}hout!{me}.",!WaitKey,!Scroll
+	db "w!{it}hout !{me}.",!WaitKey,!Scroll
 	db "C!{an} !{you} !{do} !{me} a fav!{or}? Plea!{se}",!Scroll
 	db "take !{me} !{to} !{hi}m! I'm count!{ing_}!{on}",!Scroll
 	db "!{you}!{Dots}",!End
@@ -1871,7 +1874,7 @@ dialogue_table1:
 	db "!{be}t!{we}!{en_}us.",!WaitKey,!Scroll
 	db "Do I !{have} !{you}r w!{or}d?",!Scroll
 	db "!{4_}> I !{pro}m!{is}e",!Scroll
-	db "!{4_}!{4_}I'll tell !{ev}!{er}y!{on}e",!Choose,!End
+	db "!{4_}!{3_}I'll tell !{ev}!{er}y!{on}e",!Choose,!End
 ;----------------------------------------
 .message_266:
 	db "OK, if !{tha}t!{s_}!{the} !{wa}y !{you} !{wa}nt",!Line2
@@ -1889,12 +1892,12 @@ dialogue_table1:
 	db "!{thi}s a !{se}c!{re}t.",!End
 ;----------------------------------------
 .message_269:
-	db "!{2_}!{Ankh1}!{Ankh2}!{Ankh1}!{Ankh2}"
+	db "!{4_}!{Ankh1}!{Ankh2}!{Ankh1}!{Ankh2}"
 	db "!{3_}!{Ankh1}!{Ankh2}!{Snake1}!{Snake2}!{Waves1}!{Waves2}!{Ankh1}!{Ankh2}!{Waves1}!{Waves2}"
 	db "!{3_}!{Waves1}!{Waves2}!{Snake1}!{Snake2}!{Waves1}!{Waves2}",!Line2
-	db "!{2_}!{Waves1}!{Waves2}!{Snake1}!{Snake2}!{Snake1}!{Snake2}"
+	db "!{4_}!{4_}!{Waves1}!{Waves2}!{Snake1}!{Snake2}!{Snake1}!{Snake2}"
 	db "!{3_}!{Waves1}!{Waves2}!{Snake1}!{Snake2}!{Snake1}!{Snake2}!{Waves1}!{Waves2}!{Ankh1}!{Ankh2}",!Line3
-	db "!{2_}!{Waves1}!{Waves2}!{Waves1}!{Waves2}!{Snake1}!{Snake2}!{Ankh1}!{Ankh2}!{Waves1}!{Waves2}"
+	db "!{3_}!{2_}!{Waves1}!{Waves2}!{Waves1}!{Waves2}!{Snake1}!{Snake2}!{Ankh1}!{Ankh2}!{Waves1}!{Waves2}"
 	db "!{3_}!{Snake1}!{Snake2}!{Waves1}!{Waves2}!{Ankh1}!{Ankh2}!{Ankh1}!{Ankh2}!{Snake1}!{Snake2}",!End
 ;----------------------------------------
 .message_270:
@@ -2054,7 +2057,7 @@ dialogue_table1:
 	db "S!{ev}!{en_}Sages.",!WaitKey,!Scroll
 	db "!{The}!{re} !{is} a !{pro}phecy !{of} a G!{re}!{at}",!Scroll
 	db "C!{at}aclysm th!{at_}!{the} S!{ev}!{en}",!Scroll
-	db "Sages pass!{ed_}!{do}wn !{to} !{the}ir,"!WaitKey,!Scroll
+	db "Sages pass!{ed_}!{do}wn !{to} !{the}ir",!WaitKey,!Scroll
 	db "Hyli!{an} !{des}c!{en}d!{ent}s.",!WaitKey,!Scroll
 	db "Part !{of} !{it} says, ""!{The} H!{er}o !{wi}ll",!Scroll
 	db "!{go} !{to} !{the} Des!{er}t !{of} My!{st}!{er}y,",!Scroll
@@ -2380,7 +2383,7 @@ dialogue_table1:
 ;----------------------------------------
 .message_317:
 	db "Ah, !{Name} !{the} !{ma}gnific!{ent}! I",!Line2
-	db "!{have} !{be}!{en_}!{wa}!{it}!{ing_}!{for} !{you}! Heh,"!Line3
+	db "!{have} !{be}!{en_}!{wa}!{it}!{ing_}!{for} !{you}! Heh",!Line3
 	db "heh heh!{Dots}",!WaitKey,!Scroll
 	db "!{You} !{know}, I !{wa}s actual!{ly_}hop!{in}g",!Scroll
 	db "!{to} !{des}!{tr}oy Zelda r!{ight_}!{be}!{for}e",!Scroll
@@ -2535,7 +2538,7 @@ dialogue_table1:
 ;----------------------------------------
 .message_336:
 	db !Line2
-	db "!{4_}!{4_}!{3_}G!{re}!{at_}!{ble}ss!{in}gs!.",!End
+	db "!{4_}!{4_}!{3_}G!{re}!{at_}!{ble}ss!{in}gs!",!End
 ;----------------------------------------
 .message_337:
 	db !Line2
