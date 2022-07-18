@@ -795,8 +795,8 @@ dialogue_table1:
 	db "I !{go}t !{the} Magic Hamm!{er}! Let's",!Line2
 	db "!{go} p!{ound} !{so}!{me} !{st}akes !{in}!{to} !{the}",!Line3
 	db "gr!{ound}.",!WaitKey,!Scroll
-	db "He!{ck}, !{you} !{can_}p!{ound} !{ev}!{er}y!{thin}g!",!Scroll
-	db "Bam !{ba}m ti!{me}!",!End
+	db "He!{ck}, I'll p!{ound} !{ev}!{er}y!{thin}g! Bam",!Scroll
+	db "!{ba}m ti!{me}!",!End
 ;----------------------------------------
 .message_103:
 	db "Oh, h!{er}e!{s_}!{the} Ocar!{in}a! Its",!Line2
@@ -812,7 +812,7 @@ dialogue_table1:
 .message_105:
 	db "BOING! !{Thi}s !{is} !{the} Hook!{sh}ot! It",!Line2
 	db "ext!{en}ds, !{it} c!{on}!{tr}acts, !{and}!{Dots}",!Line3
-	db "BOING! ",!WaitKey,!Scroll
+	db "BOING!",!WaitKey,!Scroll
 	db "I'll grap!{ple} !{all_}k!{in}ds !{of} !{thin}gs!",!End
 ;----------------------------------------
 .message_106:
