@@ -683,8 +683,8 @@ dialogue_table1:
 ;----------------------------------------
 .message_084:
 	db "I !{bo}rrow!{ed_}a Shovel! Ti!{me} !{to}",!Line2
-	db "f!{in}d a !{go}od p!{la}ce !{to} !{di}g",!Line3
-	db "holes. Let!{s_}!{get} !{di}gg!{in}g!",!End
+	db "f!{in}d a !{go}od p!{la}ce !{to} !{di}g holes.",!Line3
+	db "Let!{s_}!{get} !{di}gg!{in}g!",!End
 ;----------------------------------------
 .message_085:
 	db "Hey, !{it}!{s_}!{the} Magic Cape! I c!{an}",!Line2
