@@ -1246,8 +1246,9 @@ dialogue_table1:
 	db "!{go} !{to} !{the} !{go}al im!{me}!{di}!{at}ely!",!End
 ;----------------------------------------
 .message_168:
-	db "I !{of}f!{er_}a Piece !{of} H!{ear}t !{to} !{on}e",!Line2
-	db "w!{ear}!{ing_}a cape.",!End
+	db "To !{on}e w!{ear}!{ing_}a cape, a Piece",!Line2
+	db "!{of} H!{ear}t !{is} !{you}rs !{for} !{the}",!Line3
+	db "taking.",!End
 ;----------------------------------------
 .message_169:
 	db "C!{at}!{ast}rophe !{sh}!{all_}!{be}f!{all_}!{an}y",!Line2
