@@ -1251,7 +1251,7 @@ dialogue_table1:
 .message_169:
 	db "C!{at}!{ast}rophe !{sh}!{all_}!{be}f!{all_}!{an}y",!Line2
 	db "!{wh}o throw !{some}!{thin}g !{in}!{to} !{thi}s",!Line3
-	db "p!{on}d!",!End
+	db "p!{on}d.",!End
 ;----------------------------------------
 .message_170:
 	db "!{Thi}s !{wa}y !{Up} Skull Woods",!Line2
