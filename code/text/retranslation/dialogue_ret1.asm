@@ -1985,8 +1985,8 @@ dialogue_table1:
 	db "ar!{ound} !{for} now.",!End
 ;----------------------------------------
 .message_279:
-	db "100 r!{up}ees !{for} 30 Bombs!",!Line2
-	db "30 Bombs !{for} !{just} 100 r!{up}ees!",!Line3
+	db "100 r!{up}ees !{for} 30 Bombs! 30",!Line2
+	db "Bombs !{for} !{just} 100 r!{up}ees!",!Line3
 	db "Plea!{se} buy !{so}!{me}, m!{is}t!{er}!",!End
 ;----------------------------------------
 .message_280:
