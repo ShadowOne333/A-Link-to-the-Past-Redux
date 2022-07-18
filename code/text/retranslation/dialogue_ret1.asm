@@ -2169,7 +2169,7 @@ dialogue_table1:
 	db "oth!{er_}!{ma}id!{en}s.",!Sound2D,!WaitKey,!Scroll
 	db "I'm c!{er}t!{ain} !{you} !{wi}ll !{des}!{tr}oy",!Scroll
 	db "G!{an}!{on}, !{and_}!{we}'ll f!{in}al!{ly_}!{re}turn",!Scroll
-	db "!{to} our !{or}ig!{in}al !{for}ms.",!Sound2D,!End
+	db "!{to} our !{or}ig!{in}al !{for}ms.",!End
 ;----------------------------------------
 .message_307:
 	db !Speed02,!Position01,!Window02
