@@ -970,16 +970,17 @@ dialogue_table1:
 	db "!{st}op !{ha}rass!{ing_}us t!{re}es!",!End
 ;----------------------------------------
 .message_131:
-	db "{You} !{go}t !{the} P!{en}d!{an}t !{of} Pow!{er}!",!WaitKey,!Line2
-	db "W!{it}h !{all_}th!{re}e p!{en}d!{an}ts, !{it}'s",!Line3
+	db "I !{go}t !{the} P!{en}d!{an}t !{of} W!{is}!{do}m!",!WaitKey,!Line2
+	db "Yeah!",!WaitKey,!Line3
+	db "W!{it}h !{all_}th!{re}e p!{en}d!{an}ts, !{it}'s",!Scroll
 	db "ti!{me} !{to} head !{to} !{the} !{for}e!{st} !{and}",!Scroll
 	db "!{re}!{tr}i!{ev}e !{the} M!{ast}!{er_}Sw!{or}d!",!End
 ;----------------------------------------
 .message_132:
-	db "!{You} !{go}t !{the} P!{en}d!{an}t !{of} W!{is}!{do}m!",!Line2
-	db "And !{you} sudd!{en}!{ly_}feel a b!{it}",!WaitKey,!Line3
-	db "!{st}r!{on}g!{er}! Ti!{me} !{to} !{go} !{for} !{the}",!Scroll
-	db "f!{in}al p!{en}d!{an}t.",!End
+	db "I !{go}t !{the} P!{en}d!{an}t !{of} Pow!{er}! And",!Line2
+	db "I sudd!{en}!{ly_}feel a b!{it} !{st}r!{on}g!{er}!",!WaitKey,!Line3
+	db "Ti!{me} !{to} !{go} !{for} !{the} f!{in}al",!Scroll
+	db "p!{en}d!{an}t.",!End
 ;----------------------------------------
 .message_133:
 	db "Well, let!{s_}!{get} !{to} !{it}! !{Thi}s !{is}",!Line2
