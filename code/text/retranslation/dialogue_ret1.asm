@@ -607,7 +607,7 @@ dialogue_table1:
 ;----------------------------------------
 .message_069:
 	db "!{Thi}s !{wa}y",!Line2
-	db "!{4_}!{2_}!{Right} E!{ast}!{er}n Tem!{ple}",!Line2
+	db "!{4_}!{2_}!{Right} E!{ast}!{er}n Tem!{ple}",!Line3
 	db "!{4_}!{2_}!{Left} Hyrule C!{ast}le",!End
 ;----------------------------------------
 .message_070:
@@ -625,8 +625,8 @@ dialogue_table1:
 	db "!{3_}!{3_}Bun !{and_}Y!{an}",!End
 ;----------------------------------------
 .message_073:
-	db "!{Thi}s !{wa}y !{Down}",!Line2
-	db "!{4_}!{3_}Kakariko Vil!{la}ge",!End
+	db "!{Thi}s !{wa}y",!Line2
+	db "!{4_}!{2_}!{Down} Kakariko Vil!{la}ge",!End
 ;----------------------------------------
 .message_074:
 	db "Bubbl!{ing_}!{go}o!{Dots} Bubbl!{ing_}!{go}o!{Dots}",!Line2
@@ -1256,20 +1256,21 @@ dialogue_table1:
 	db "p!{on}d.",!End
 ;----------------------------------------
 .message_170:
-	db "!{Thi}s !{wa}y !{Up} Skull Woods",!Line2
-	db "!{Thi}s !{wa}y !{Down} Outc!{ast} Vil!{la}ge",!End
+	db "!{Thi}s !{wa}y",!Line2
+	db "!{4_}!{2_}!{Up} Skull Woods",!Line3
+	db "!{4_}!{2_}!{Down} Outc!{ast} Vil!{la}ge",!End
 ;----------------------------------------
 .message_171:
-	db !Line2
-	db "!{Thi}s !{wa}y !{Right} Cave",!End
+	db "!{Thi}s !{wa}y",!Line2
+	db "!{4_}!{2_}!{Right} Cave",!End
 ;----------------------------------------
 .message_172:
-	db !Line2
-	db "!{Thi}s !{wa}y !{Right} S!{ha}!{do}w Tem!{ple}",!End
+	db "!{Thi}s !{wa}y",!Line2
+	db "!{4_}!{2_}!{Right} S!{ha}!{do}w Tem!{ple}",!End
 ;----------------------------------------
 .message_173:
-	db !Line2
-	db "!{Thi}s !{wa}y !{Left} Bomb Shop",!End
+	db "!{Thi}s !{wa}y",!Line2
+	db "!{4_}!{2_}!{Left} Bomb Shop",!End
 ;----------------------------------------
 .message_174:
 	db "!{Left}!{2_}!{The} D!{ev}il!{s_}Bog",!Line2
@@ -1286,8 +1287,8 @@ dialogue_table1:
 	db "ar!{ound} !{the} c!{or}n!{er}.",!End
 ;----------------------------------------
 .message_177:
-	db "!{Thi}s !{wa}y !{Right}!{Up}",!Line2
-	db "Lake !{of} C!{at}!{ast}rophe",!End
+	db "!{Thi}s !{wa}y",!Line2
+	db "!{4_}!{2_}!{Right}!{Up} Lake !{of} C!{at}!{ast}rophe",!End
 ;----------------------------------------
 .message_178:
 	db "Ev!{er}y!{on}e !{has} !{be}!{en_}act!{in}g",!Line2

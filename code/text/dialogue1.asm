@@ -706,13 +706,13 @@ dialogue_table1:
 	db "Two P!{en}d!{an}ts !{re}m!{ain}!",!End
 ;----------------------------------------
 .message_090:
-	db "!{You} w!{on} !{the} P!{en}d!{an}t Of W!{is}!{do}m!",!Line2
+	db "!{You} w!{on} !{the} P!{en}d!{an}t Of Pow!{er}!",!Line2
 	db "!{You}r !{go}al !{of} f!{in}d!{ing_}th!{re}e",!Line3
 	db "P!{en}d!{an}ts !{is} !{in} sight!",!WaitKey,!Scroll
 	db "Go !{for} !{the} l!{ast} !{on}e!",!End
 ;----------------------------------------
 .message_091:
-	db "!{You} w!{on} !{the} P!{en}d!{an}t Of Pow!{er}!",!Line2
+	db "!{You} w!{on} !{the} P!{en}d!{an}t Of W!{is}!{do}m!",!Line2
 	db "W!{it}h !{thi}s, !{you} !{have} collected",!Line3
 	db "!{all_}th!{re}e P!{en}d!{an}ts!!{2_}Go now !{to}",!WaitKey,!Scroll
 	db "!{the} Lo!{st} Woods !{to} !{get}",!Scroll
