@@ -1984,8 +1984,8 @@ dialogue_table1:
 ;----------------------------------------
 .message_278:
 	db "It !{se}ems !{to} !{be} !{lo}!{ck}!{ed_}tight.",!Line2
-	db "Guess I'll !{just} carry !{it}",!Line3
-	db "ar!{ound} !{for} now.",!End
+	db "Guess I'll !{just} carry !{it} ar!{ound}",!Line3
+	db "!{for} now.",!End
 ;----------------------------------------
 .message_279:
 	db "100 r!{up}ees !{for} 30 Bombs! 30",!Line2
