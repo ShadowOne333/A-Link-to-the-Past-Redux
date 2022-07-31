@@ -1833,8 +1833,8 @@ dialogue_table1:
 .message_259:
 	db "Heh heh. !{Tha}nks. As a m!{at}t!{er}",!Line2
 	db "!{of} fact, !{the}!{re}!{s_}a m!{on}!{st}!{er}",!Line3
-	db "caus!{in}' !{the} r!{ain}!{st}!{or}m !{in}",!WaitKey,!Scroll
-	db "!{the} !{bo}g.",!WaitKey,!Scroll
+	db "caus!{in}' !{the} r!{ain}!{st}!{or}m !{in} !{the}",!WaitKey,!Scroll
+	db "!{bo}g.",!WaitKey,!Scroll
 	db "If !{the} w!{in}d !{st}art!{ed_}b!{lo}w!{in}'",!Scroll
 	db "!{st}r!{on}g !{en}ough, I !{be}t !{the} r!{ain}",!Scroll
 	db "m!{ight_}!{st}op.",!End
