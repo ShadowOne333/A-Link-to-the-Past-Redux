@@ -1374,8 +1374,8 @@ dialogue_table1:
 ;----------------------------------------
 .message_187:
 	db !Window02
-	db "{Name}, !{it} !{is} I, Sa!{has}rah!{la}.",!Line2
-	db "!{You} !{mu}!{st} ign!{it}e four t!{or}!{che}s !{in}",!Line3
+	db "!{Name}, !{it} !{is} I, Sa!{has}rah!{la}. !{You}",!Line2
+	db "!{mu}!{st} ign!{it}e four t!{or}!{che}s !{in}",!Line3
 	db "!{or}d!{er_}!{to} op!{en_}!{the} !{wa}y !{for}!{wa}rd.",!End
 ;----------------------------------------
 .message_188:
