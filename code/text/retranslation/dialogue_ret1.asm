@@ -1182,11 +1182,11 @@ dialogue_table1:
 .message_160:
 	db "Is th!{at_}!{you}, !{Name}? It !{se}ems",!Line2
 	db "!{the} b!{is}hop c!{on}nect!{ed_}!{the} two",!Line3
-	db "w!{or}lds !{so}!{me}!{wh}!{er}e n!{ear}",!WaitKey,!Scroll
-	db "!{the} c!{ast}le.",!WaitKey,!Scroll
+	db "w!{or}lds !{so}!{me}!{wh}!{er}e n!{ear} !{the}",!WaitKey,!Scroll
+	db "c!{ast}le.",!WaitKey,!Scroll
 	db "If !{you} !{are_}head!{ing_}!{to} !{the} Dark",!Scroll
-	db "W!{or}ld, th!{at_}!{sh}ould !{be} !{you}r next",!Scroll
-	db "!{des}t!{in}!{at}i!{on}.",!End
+	db "W!{or}ld, th!{at_}!{sh}ould !{be} !{you}r",!Scroll
+	db "next !{des}t!{in}!{at}i!{on}.",!End
 ;----------------------------------------
 .message_161:
 	db "(!{mu}mbl!{ing_}sleepily) My s!{on}",!Line2
