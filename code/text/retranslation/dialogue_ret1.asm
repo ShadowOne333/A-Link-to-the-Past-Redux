@@ -2335,7 +2335,7 @@ dialogue_table1:
 	db "!{wi}ll b!{re}ach !{it}s !{ba}rri!{er_}w!{it}h our",!WaitKey,!Scroll
 	db "!{com}b!{in}!{ed_}!{pow}!{er}s.",!Sound2D,!WaitKey,!Scroll
 	db "!{Name}!{Dots} It !{is} !{up} !{to} us !{to}",!Scroll
-	db "!{re}!{st}!{or}e peace !{to} our k!{in}g!{do}m.",!Sound2D,!End
+	db "!{re}!{st}!{or}e peace !{to} our k!{in}g!{do}m.",!End
 ;----------------------------------------
 .message_313:
 	db !Speed02,!Position01,!Window02
