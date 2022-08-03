@@ -1008,7 +1008,7 @@ dialogue_table1:
 	db "!{4_}!{3_}Bett!{er_}!{st}op",!Choose,!End
 ;----------------------------------------
 .message_137:	; Pond text
-	db "!{4_}!{2_}-Spr!{ing_}!{of} Good Lu!{ck}-",!Line2
+	db "!{4_}-Spr!{ing_}!{of} Good Fortune-",!Line2
 	db "Throw !{in} !{so}!{me} r!{up}ees !{and_}!{you}r",!Line3
 	db "w!{is}hes !{wi}ll su!{re}!{ly_}!{com}e !{tr}ue.",!WaitKey,!Scroll
 	db "Will !{you} throw !{in} r!{up}ees?",!Scroll
