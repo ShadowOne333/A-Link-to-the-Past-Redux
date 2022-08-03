@@ -409,10 +409,10 @@ credits_text:
 .priest:
 	db $62,$6A,$00,length(12)	; Length 14
 	%yellow("loyal") : db " " : %yellow("priest")	; Color 1, Yellow "the loyal sage"
-	db $62,$EB,$00,length(10)	; Length 9
-	db "THE CHAPEL"		; THE CHAPEL
-	db $63,$0B,$00,length(10)
-	%row("THE") : db " " : %row("CHAPEL")	; THE CHAPEL
+	db $62,$ED,$00,length(06)	; Length 9
+	db "CHAPEL"		; THE CHAPEL
+	db $63,$0D,$00,length(06)
+	%row("CHAPEL")	; THE CHAPEL
 
 .sahasralah:
 	db $62,$4F,$00,length(1)
@@ -433,11 +433,11 @@ credits_text:
 	%row("DESERT") : db " " : %row("TEMPLE")
 
 .tower:
-	db $62,$64,$00,length(24)
-	%yellow("the") : db " " : %yellow("bully") : db " " : %yellow("makes") : db " " : %yellow("a") : db " " : %yellow("friend")
-	db $62,$EA,$00,length(13)
+	db $62,$66,$00,length(20)
+	%yellow("bully") : db " " : %yellow("makes") : db " " : %yellow("a") : db " " : %yellow("friend")
+	db $62,$E9,$00,length(13)
 	db "TOWER OF HERA"
-	db $63,$0A,$00,length(13)
+	db $63,$09,$00,length(13)
 	%row("TOWER") : db " " : %row("OF") : db " " : %row("HERA")
 
 .house:
@@ -483,10 +483,12 @@ credits_text:
 .venus:
 	db $62,$64,$00,length(23)
 	%yellow("venus") : db ", " : %yellow("queen") : db " " : %yellow("of") : db " " : %yellow("fairies")
-	db $62,$E6,$00,length(19)
-	db "SPRING OF GOOD LUCK"
-	db $63,$06,$00,length(19)
-	%row("SPRING") : db " " : %row("OF") : db " " : %row("GOOD") : db " " : %row("LUCK")
+	db $62,$89,$00,length(01)
+	db $35		; Upper half of the comma
+	db $62,$E5,$00,length(22)
+	db "SPRING OF GOOD FORTUNE"
+	db $63,$05,$00,length(22)
+	%row("SPRING") : db " " : %row("OF") : db " " : %row("GOOD") : db " " : %row("FORTUNE")
 
 .smithies:
 	db $62,$66,$00,length(19)
@@ -508,9 +510,9 @@ credits_text:
 	db $62,$4A,$00,length(12)
 	%yellow("lost") : db " " : %yellow("old") : db " " : %yellow("man")
 	db $62,$E9,$00,length(14)
-	db "DEATH MOUNTAIN"	; HEBRA MOUNTAIN
+	db "HEBRA MOUNTAIN"	; HEBRA MOUNTAIN
 	db $63,$09,$00,length(14)
-	%row("DEATH") : db " " : %row("MOUNTAIN")	; HEBRA MOUNTAIN
+	%row("HEBRA") : db " " : %row("MOUNTAIN")	; HEBRA MOUNTAIN
 
 .thief:
 	db $62,$6A,$00,length(12)

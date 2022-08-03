@@ -400,9 +400,9 @@ org $0EBF4C	; 0x073F4C-0x074302
 credits_text:
 
 .king:
-	db $62,$65,$00,length(22)	; Length 22
+	db $62,$67,$00,length(22)	; Length 22
 	; Need to split up the spaces and special characters from the main text due to the macros not being able to have IF conditions to exclude $9F,$34 and $35 from the sum
-	%yellow("the") : db " " : %yellow("return") : db " " : %yellow("of") : db " " : %yellow("the") : db " " : %yellow("king")
+	%yellow("return") : db " " : %yellow("of") : db " " : %yellow("the") : db " " : %yellow("king")
 	db $62,$E9,$00,length(13)	; Length 13
 	db "HYRULE CASTLE"	; 1st row
 	db $63,$09,$00,length(13)	; Length 13
@@ -485,6 +485,8 @@ credits_text:
 .venus:
 	db $62,$64,$00,length(23)
 	%yellow("venus") : db ", " : %yellow("queen") : db " " : %yellow("of") : db " " : %yellow("fairies")
+	db $62,$89,$00,length(01)
+	db $35		; Upper half of the comma
 	db $62,$EA,$00,length(12)
 	db "WISHING WELL"	; SPRING OF LUCK
 	db $63,$0A,$00,length(12)
@@ -507,12 +509,12 @@ credits_text:
 	%row("KAKARIKO") : db " " : %row("VILLAGE")
 
 .old_man:
-	db $62,$48,$00,length(16)
-	%yellow("the") : db " " : %yellow("lost") : db " " : %yellow("old") : db " " : %yellow("man")
+	db $62,$4A,$00,length(16)
+	%yellow("lost") : db " " : %yellow("old") : db " " : %yellow("man")
 	db $62,$E9,$00,length(14)
-	db "DEATH MOUNTAIN"	; HEBRA MOUNTAIN
+	db "HEBRA MOUNTAIN"	; HEBRA MOUNTAIN
 	db $63,$09,$00,length(14)
-	%row("DEATH") : db " " : %row("MOUNTAIN")	; HEBRA MOUNTAIN
+	%row("HEBRA") : db " " : %row("MOUNTAIN")	; HEBRA MOUNTAIN
 
 .thief:
 	db $62,$6A,$00,length(12)
