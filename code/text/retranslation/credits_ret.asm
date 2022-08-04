@@ -5,8 +5,8 @@
 ;----------------------------------------
 ; 	Table files
 ;----------------------------------------
-incsrc "code/text/tbl/credits_small.txt"
-incsrc "code/text/tbl/credits_big.txt"
+incsrc "tbl/credits_small.txt"
+incsrc "tbl/credits_big.txt"
 
 ;----------------------------------------
 ;    Macros & Functions for credits text
@@ -171,7 +171,7 @@ org $0EBE54	; 0x073E54
 	lda credits_roll,y	; Originally LDA $B178,y
 ;----------------------------------------
 ; 2-byte pointers for the credits flyover scenes
-org $0EC2E1
+org $0EC2E1	; 0x0742E1
 	dw credits_text_king-credits_text
 	dw credits_text_priest-credits_text
 	dw credits_text_sahasralah-credits_text
@@ -192,7 +192,7 @@ org $0EC2E1
 warnpc $0EC303
 ;----------------------------------------
 ; 2-byte pointers for the credits roll scene
-org $0EB93D
+org $0EB93D	; 0x07393D
 	dw credits_roll_exec_producer-credits_roll	; 00
 	%new_line(3) ; 14
 	dw credits_roll_hiroshi1-credits_roll	; 15
@@ -535,7 +535,7 @@ credits_text:
 .text_end
 
 ;----------------------------------------
-padbyte $FF : pad $0EB93D
+padbyte $FF : pad $0EB93D	; Pad to 0x07393D
 
 warnpc $0EC2E1	; 0x0742E1
 

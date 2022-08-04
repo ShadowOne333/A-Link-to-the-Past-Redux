@@ -5,7 +5,7 @@
 ;****************************************
 ; 	Table file
 ;****************************************
-incsrc "code/text/tbl/items.txt"
+incsrc "tbl/items.txt"
 
 ;****************************************
 ; 	Pointers for item entries

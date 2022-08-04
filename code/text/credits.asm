@@ -836,12 +836,12 @@ credits_roll:
 	%yellow("tower") : db " " : %yellow("of") : db " " : %yellow("hera")	; Color 1, Yellow "mountain tower"
 
 .dark1
-	db $08,length(15)
-	db "1 SHADOW TEMPLE"	; "DARK PALACE"
+	db $08,length(13)
+	db "1 DARK TEMPLE"	; "DARK PALACE"
 .dark2
-	db $03,length(20)
+	db $03,length(18)
 	db "level"
-	%num("1") : db " " : %row("SHADOW") : db " " : %row("TEMPLE")	; Color 3, Red "DARK PALACE"
+	%num("1") : db " " : %row("DARK") : db " " : %row("TEMPLE")	; Color 3, Red "DARK PALACE"
 .swamp1
 	db $08,length(14)
 	db "2 SWAMP SHRINE"	; "SWAMP PALACE"

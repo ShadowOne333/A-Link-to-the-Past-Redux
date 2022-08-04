@@ -225,6 +225,14 @@ dialogue_table2:
 	db "!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{2_}",!Line3
 	db "!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{2_}"
 	db !Speed02,!Line1
+	db "Ho!{we}!{ver}, now !{tha}t G!{an}!{on} !{has}",!Line2
+	db "fall!{en}, h!{is} Dark W!{or}ld !{sh}!{all_}",!Line3
+	db "d!{is}app!{ear} as !{we}ll."
+	db !Speed01,!WaitKey,!Line1
+	db "!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{2_}",!Line2
+	db "!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{2_}",!Line3
+	db "!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{2_}"
+	db !Speed02,!Line1
 	db "!{The} Tri!{for}ce a!{wa}!{it}s a new",!Line2
 	db "m!{ast}!{er}. Its ""Gold!{en_}Pow!{er}"" !{is}",!Line3
 	db "!{in} !{you}r h!{and}s."
@@ -354,7 +362,7 @@ dialogue_table2:
 ;----------------------------------------
 .message_389:
 	db !Position00,!Speed00
-	db ">Start From !{Name}!{s_}Hou!{se}",!Line2
+	db ">Start !{fro}m !{Name}!{s_}Hou!{se}",!Line2
 	db "!{2_}Start !{fro}m !{the} C!{ha}pel",!Line3
 	db "!{2_}Start !{fro}m !{the} Mount!{ain} Cave",!Choose3,!End
 ;----------------------------------------
@@ -396,5 +404,5 @@ dialogue_table2:
 	db "but !{it}!{s_}!{not} a !{go}od ti!{me}. Plea!{se}",!Line3
 	db "!{com}e !{ba}!{ck} l!{at}!{er}. S!{or}ry.",!End
 ;----------------------------------------
-
+padbyte $FF : pad $0EF400
 warnpc $0EF400	; 0x077400
