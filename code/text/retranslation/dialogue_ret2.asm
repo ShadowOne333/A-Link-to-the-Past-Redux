@@ -225,9 +225,9 @@ dialogue_table2:
 	db "!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{2_}",!Line3
 	db "!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{2_}"
 	db !Speed02,!Line1
-	db "Ho!{we}!{ver}, now !{tha}t G!{an}!{on} !{has}",!Line2
-	db "fall!{en}, h!{is} Dark W!{or}ld !{sh}!{all_}",!Line3
-	db "d!{is}app!{ear} as !{we}ll."
+	db "But now !{tha}t G!{an}!{on} !{has} !{be}!{en}",!Line2
+	db "defe!{at}ed, !{the} Dark W!{or}ld !{wi}ll",!Line3
+	db "v!{an}!{is}h a!{lo}ng w!{it}h !{hi}m."
 	db !Speed01,!WaitKey,!Line1
 	db "!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{2_}",!Line2
 	db "!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{2_}",!Line3

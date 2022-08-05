@@ -5,8 +5,8 @@
 ;----------------------------------------
 ; 	Table files
 ;----------------------------------------
-incsrc "tbl/credits_small.txt"
-incsrc "tbl/credits_big.txt"
+incsrc "code/text/tbl/credits_small.txt"
+incsrc "code/text/tbl/credits_big.txt"
 
 ;----------------------------------------
 ;    Macros & Functions for credits text
