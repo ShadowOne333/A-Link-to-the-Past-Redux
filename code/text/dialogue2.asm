@@ -169,8 +169,8 @@ dialogue_table2:
 	db !Speed02,!Line1
 	db "If !{on}e w!{it}h a righteous h!{ear}t",!Line2
 	db "!{to}u!{che}s !{it}, a righteous w!{is}h",!Line3
-	db "!{wi}ll !{be} gr!{an}ted{Dots}",!WaitKey,!Scroll
-	db "But if !{on}e w!{it}h !{an} !{ev}il  h!{ear}t",!Scroll
+	db "!{wi}ll !{be} gr!{an}ted!{Dots}",!WaitKey,!Scroll
+	db "But if !{on}e w!{it}h !{an} !{ev}il h!{ear}t",!Scroll
 	db "!{to}u!{che}s !{it}, !{an} !{ev}il w!{is}h",!Scroll
 	db "!{wi}ll !{be} gr!{an}ted."
 	db !Speed01,!WaitKey,!Line1
@@ -255,7 +255,7 @@ dialogue_table2:
 .message_376:
 	db "!{You} !{can_}!{ear}n a !{lo}t !{of} R!{up}ees",!Line2
 	db "by defe!{at}!{ing_}!{en}emies.!{2_}It's",!Line3
-	db "!{the} !{se}c!{re}t !{of} my success!{Dots}",!WaitKey,!Scroll
+	db "!{the} !{se}c!{re}t !{of} my success!{Dots}",!End
 ;----------------------------------------
 .message_377:
 	db "!{Name}, !{di}d !{you} !{know} th!{at_}if",!Line2

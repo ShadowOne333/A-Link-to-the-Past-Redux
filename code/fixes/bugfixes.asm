@@ -57,7 +57,7 @@ org $02C4F2	; 0x0144F2
 ; As the name tells, use this hack only on NATIVE ALTTP. If you lift the teleport in Lake Hylia to access the ice dungeon you hear no chime. The reason is that the cave in the bottom-left corner is bombed open.
 ; This patch lets you hear a chime everytime you lift the stone (as you hear it for other teleports).
 
-org $04ECA0	; 0x026CA0
+org $04ECA0	; 0x026CA0 -> 0x027
 	cpx #$0035	; E0 35 00
 	bne +		; D0 04
 	jml $1BC90B	; 5C 0B C9 1B
@@ -65,7 +65,7 @@ org $04ECA0	; 0x026CA0
 	jml $1BC906	; 5C 06 C9 1B
 
 org $1BC902	; 0x0DC902
-	jml $04ECA0	; 5C A0 EC 04
+	jml $04ECA0	; 5C A0 EC 04 -> 5C 80 EB 03
 
 ;----------------------------------------
 ; Cane of Somaria Fix (by Conn)
