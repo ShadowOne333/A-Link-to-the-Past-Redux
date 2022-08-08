@@ -715,7 +715,7 @@ dialogue_table1:
 	db "Go !{for} !{the} l!{ast} !{on}e!",!End
 ;----------------------------------------
 .message_091:
-	db "!{You} w!{on} !{the} P!{en}d!{an}t of  Pow!{er}!",!Line2
+	db "!{You} w!{on} !{the} P!{en}d!{an}t of Pow!{er}!",!Line2
 	db "W!{it}h !{thi}s, !{you} !{have} collected",!Line3
 	db "!{all_}th!{re}e P!{en}d!{an}ts!!{2_}Go now !{to}",!WaitKey,!Scroll
 	db "!{the} Lo!{st} Woods !{to} !{get}",!Scroll
@@ -725,8 +725,8 @@ dialogue_table1:
 	db "!{Thi}s Mu!{sh}room s!{me}lls like s!{we}et",!Line2
 	db "rott!{en_}fru!{it}!{Dots}",!Line3
 	db "!{You} !{can_}!{give_}!{thi}s !{to} !{an}y!{on}e",!WaitKey,!Scroll
-	db "!{wh}o !{wa}nts !{it} by select{ing_}!{it}",!Scroll
-	db "!{and_}p!{re}ss{ing_}!{the} Y Butt!{on}.",!End
+	db "!{wh}o !{wa}nts !{it} by select!{ing_}!{it}",!Scroll
+	db "!{and_}p!{re}ss!{ing_}!{the} Y Butt!{on}.",!End
 ;----------------------------------------
 .message_093:
 	db "!{You} f!{ound} !{the} Tome !{of} Mu!{do}ra!",!Line2
@@ -839,7 +839,7 @@ dialogue_table1:
 .message_111:
 	db "!{Thi}s !{is} !{it}!!{2_}!{The} M!{ast}!{er_}Sw!{or}d!",!Line2
 	db "!{Dots}!{2_}!{Dots}!{2_}!{Dots}",!Line3
-	db "No, !{thi}s c!{an}'t !{be} !{it}{Dots}",!End
+	db "No, !{thi}s c!{an}'t !{be} !{it}!{Dots}",!End
 ;----------------------------------------
 .message_112:
 	db !Window02,!Speed03
@@ -971,7 +971,7 @@ dialogue_table1:
 	db "da!{sh} ar!{ound}!",!End
 ;----------------------------------------
 .message_131:
-	db "{You} !{go}t !{the} P!{en}d!{an}t of W!{is}!{do}m!",!Line2
+	db "!{You} !{go}t !{the} P!{en}d!{an}t of W!{is}!{do}m!",!Line2
 	db "!{You} !{have} now collect!{ed_}all",!Line3
 	db "th!{re}e P!{en}d!{an}ts!!{2_}Go !{for}th now",!WaitKey,!Scroll
 	db "!{to} !{the} Lo!{st} Woods !{for} !{the}",!Scroll
@@ -2515,7 +2515,7 @@ dialogue_table1:
 	db "!{the} Tri!{for}ce!{Dots}",!End
 ;----------------------------------------
 .message_330:
-	db "!{4_}{3_} -My!{st}!{er}ious P!{on}d-",!Line2
+	db "!{4_}!{4_}-My!{st}!{er}ious P!{on}d-",!Line2
 	db "Wo!{nt_}!{you} throw !{some}!{thin}g !{in}?",!Line3
 	db !WaitKey,!Scroll
 	db "Wh!{at_}!{wi}ll !{you} !{do}?",!Scroll
