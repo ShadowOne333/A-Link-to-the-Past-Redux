@@ -53,10 +53,11 @@ Possible_Items:
 ; "Get Item" ($FBD4)
 	jsl $8DBA71	; Get random number
 	and #$07	; Convert it to be between 0 and 7
-	tay		;Make it the Y variable
+	tay		; Make it the Y variable
 	lda Possible_Items,y	; $FBCC, Use your Y variable to choose an item from the list
 
-; The rest is more or less copied from the original. I changed 4 bytes to point to relocated "important references" table. I don't understand everything going on here, but it handles sprite behavior and sound effects.
+; The rest is more or less copied from the original. I changed 4 bytes to point to relocated "important references" table.
+; I don't understand everything going on here, but it handles sprite behavior and sound effects.
 	jsl $9DF65D
 	ldx #$00
 	lda $2F
@@ -95,6 +96,7 @@ Possible_Items:
 	lda #$30
 	jsl $8DBB8A
 
-; "Cleanup" ($FC34)	;changed code that allows all of the new code to work as a Branch instead of nested JSL
+; "Cleanup" ($FC34)
+; Changed code that allows all of the new code to work as a Branch instead of nested JSL
 	plb
 	rtl

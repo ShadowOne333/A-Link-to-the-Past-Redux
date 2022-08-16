@@ -78,10 +78,10 @@ incsrc fixes/bugfixes.asm	; General bugfixes from Zeldix.net
 ;****************************************
 incsrc fixes/bunny_palette.asm	; Bunny palette fix (by rainponcho)
 incsrc fixes/vc_patches.asm	; Some photosensitivy changes made in the Virtual Console release, modified for Redux
+incsrc fixes/title_skip.asm	; Skip the Title sequence by pressing any button (by PowerPanda)
 incsrc gameplay/max_consumables.asm 	; Implement "Max Consumables Fix" by Kasuto
 incsrc gameplay/misc.asm	; Miscellaneous gameplay changes
-incsrc gameplay/move_blocks_infinitely.asm	; Allows movement of blocks several times
-incsrc gameplay/shovel_treasures.asm	; Make items appear when digging with the shovel
+incsrc gameplay/shovel_treasures.asm	; Make items appear when digging with the shovel (by PowerPanda)
 
 ;****************************************
 ;	Map changes

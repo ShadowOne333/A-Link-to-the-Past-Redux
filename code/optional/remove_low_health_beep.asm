@@ -2,5 +2,5 @@
 ; 	Remove the low health beep
 ;*****************************************************************
 
-org $0DDCA1	; 0x06DCA1
-	db $00		; Originally $2B
+org $0DDCA0	; 0x06DCA0
+	lda #$00		; Originally LDA #$2B
