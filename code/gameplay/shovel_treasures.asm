@@ -1,83 +1,100 @@
-;*****************************************************************
-; 	Allow the shovel to dig up treasures in other places
-;		For New GFX (original code by Conn)
-;*****************************************************************
+;----------------------------------------------------------
+;		Shovel Treasures in Overworld
+;			by PowerPanda
+;----------------------------------------------------------
 
-;----------------------------------------
-; Hijack for the shovel treasures
-; Jump to unused region
-org $008793	; 0x000793
-	jmp shovel_treasures
-
-;----------------------------------------
-; NOP out restriction to only collect treasures in field:
-
-; Check if treasure hunt game is on
 org $07A3B2	; 0x03A3B2
+	jsl $0EFBA0	; Load new check (07/7BA0)
+	;bra $03		; Skip over the NOPs
+	;nop #3		; 3 empty bytes
 	nop #5
 
-; Check if you are in field coordinates
-org $1DFD65	; 0x0EFD65
-	nop #2
+org $0EFBA0	; 0x077BA0
+; Code originally from 03/A3B2, relocated so BEQ makes sense
+	lda $03FC	; Check if digging mini game is inactive
+	beq $05		; If it IS inactive, branch to new routine
+	jsl $1DFD4B	; Otherwise, load the original digging game routine as a JSL
+	rtl		; End this subroutine
 
-;----------------------------------------
+; The new digging routine
+	phb
+	phk
+	plb
+	jsl $8DBA71	; Get random number
+	and #$07	; Convert it to be between 0 and 7
+	tay		; Make it the Y variable
+	jsl $008781	; Treat the next portion of code as a jump table
 
-; Disable random Heart Container-piece dig-up:
-; 0E/FD7A: 90 FD -> 8F FD
-; You need to place this HC via HM to another location, since it isn't available anymore, also the treasure field is now obsolete
-;org $1DFD7A	; 0x0EFD7A
-;	db $8F
+; Jump Table
+	dw $FBD4	;Jump to "Get Item"
+	dw $FBD4	;Jump to "Get Item"
+	dw $FC34	;Jump to Cleanup (PLB + RTL)
+	dw $FC34	;Jump to Cleanup (PLB + RTL)
+	dw $FC34	;Jump to Cleanup (PLB + RTL)
+	dw $FC34	;Jump to Cleanup (PLB + RTL)
+	dw $FC34	;Jump to Cleanup (PLB + RTL)
+	dw $FC34	;Jump to Cleanup (PLB + RTL)
 
-;----------------------------------------
+; Important references
+	db $F0,$10	; X speeds
+	db $00,$13	; X offsets, these determine where and how items spawn
 
-org $0EFE30	; 0x077E30
-shovel_treasures:
-	sta $00                  
-	cmp #$FD8A	; Check if you digged     
-	beq $0B		; [$FE42]
-	cmp #$FD8F
-	beq $06
-	sep #$30
-	jmp $008797	;[$00:8797], If not digged, return
-	txy		; Storage of native X
-	sep #$30
+; Possible Items
+Possible_Items:
+	db $D8		; Heart
+	db $D8		; Heart
+	db $DF		; Small magic
+	db $DF		; Small magic
+	db $DF		; Small magic
+	db $D9		; 1 Ruppee
+	db $D9		; 1 Ruppee 
+	db $DA		; 5 Ruppees
+
+; "Get Item" ($FBD4)
+	jsl $8DBA71	; Get random number
+	and #$07	; Convert it to be between 0 and 7
+	tay		;Make it the Y variable
+	lda Possible_Items,y	; $FBCC, Use your Y variable to choose an item from the list
+
+; The rest is more or less copied from the original. I changed 4 bytes to point to relocated "important references" table. I don't understand everything going on here, but it handles sprite behavior and sound effects.
+	jsl $9DF65D
 	ldx #$00
-	lda $8A		; Load screen number
-	cmp $0EFED0,x	; Compare with table
-	beq $0A		; Branch if screen matches
+	lda $2F
+	cmp #$04
+	beq $01
 	inx
-	cpx #$08
-	bne $F5		; Loop if not until 8 screens are checked
+	lda $FBC8,x
+	sta $0D50,y
+	lda #$00
+	sta $0D40,y
+	lda #$18
+	sta $0F80,y
+	lda #$FF
+	sta $0B58,y
+	lda #$30
+	sta $0F10,y
+	lda $22
+	clc
+	adc $FBCA,x
+	and #$F0
+	sta $0D10,y
+	lda $23
+	adc #$00
+	sta $0D30,y
+	lda $20
+	clc
+	adc #$16
+	and #$F0
+	sta $0D00,y
+	lda $21
+	adc #$00
+	sta $0D20,y
+	lda #$00
+	sta $0F20,y
 	tyx
-	jmp $008797     ; Return if no screen matched
-	rep #$30
-	lda $0004	; Load coordinate
-	ldx #$0000
-	cmp $0EFEE0,x	; Compare coordinate with table
-	beq $0E		; Match proceed
-	inx #2
-	cpx #$0010	; If no match loop until checked 8 coordinates
-	bne $F3
-	sep #$30
-	tyx
-	jmp $008797	; Return if no coordinate matched
-	sep #$30
-	txa
-	lsr
-	tax
-	lda $0EFED8,x	; [$0E:FEEB], if coordinate matched, load treasure
-	tyx
-	jmp $1DFDAC	; Return and display treasure
+	lda #$30
+	jsl $8DBB8A
 
-; The table starts at 07/7ED0. The first 8 bytes are the screens you want to have the treasure hidden. The next 8 bytes (07/7ED8) are the treasure keys you can get from HM. I use default EB (Heart Piece). The next 16 bytes (07/EED0) are the coordinates.
-org $0EFED0	; 0x077ED0
-treasure_table:
-; Treasures table
-	db $00,$01,$02,$03,$04,$05,$06,$07
-	db $EB,$EB,$EB,$EB,$EB,$EB,$EB,$EB
-; Coordinates table
-	db $01,$00,$01,$01,$01,$02,$01,$03
-	db $01,$04,$01,$05,$01,$06,$01,$07
-
-;----------------------------------------
-
+; "Cleanup" ($FC34)	;changed code that allows all of the new code to work as a Branch instead of nested JSL
+	plb
+	rtl
