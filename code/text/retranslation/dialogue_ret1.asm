@@ -556,7 +556,7 @@ dialogue_table1:
 ;----------------------------------------
 .message_058:
 	db "100 r!{up}ees !{to} !{an}y!{on}e !{wh}o",!Line2
-	db "!{lo}c!{at}es a girl !{des}c!{en}d!{ing_}!{fro}m",!Line3
+	db "!{lo}c!{at}es a girl !{des}c!{en}d!{ed_}!{fro}m",!Line3
 	db "!{the} S!{ev}!{en_}Sages - !{The} K!{in}g",!End
 ;----------------------------------------
 .message_059:
@@ -1971,7 +1971,7 @@ dialogue_table1:
 	db !Window02,!Color07,!Speed03,!Line1
 	db "Agahnim m!{an}ipul!{at}!{ed_}!{the}",!Line2
 	db "c!{ast}le !{so}l!{di}!{er}s !{in}!{to} captur!{in}g",!Line3
-	db "!{ma}id!{en}s !{des}c!{en}d!{ing_}!{fro}m !{the}",!Wait02,!Scroll
+	db "!{ma}id!{en}s !{des}c!{en}d!{ed_}!{fro}m !{the}",!Wait02,!Scroll
 	db "S!{ev}!{en_}Sages. !{The}!{se} girls w!{er}e",!Scroll
 	db "th!{en_}sacrificed, !{on}e aft!{er}",!Scroll
 	db "!{an}oth!{er}.",!Wait04,!Wait05,!End
@@ -2227,7 +2227,7 @@ dialogue_table1:
 	db "!{ent}i!{re_}w!{or}ld !{wi}ll f!{all_}und!{er_}!{the}",!Scroll
 	db "!{sh}roud !{of} !{the} adv!{er}sary!{s_}!{ev}il",!WaitKey,!Scroll
 	db "h!{ear}t.",!WaitKey,!Scroll
-	db "On!{ly_}!{on}e !{des}c!{en}d!{ing_}!{fro}m !{the}",!Scroll
+	db "On!{ly_}!{on}e !{des}c!{en}d!{ed_}!{fro}m !{the}",!Scroll
 	db "Knights K!{in}sm!{en_}!{wh}o !{pro}tected",!Scroll
 	db "!{the} Hyli!{an} royal fami!{ly_}c!{an}",!WaitKey,!Scroll
 	db "!{be}!{com}e !{thi}s H!{er}o.",!WaitKey,!Scroll
