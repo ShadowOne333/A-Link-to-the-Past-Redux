@@ -1961,7 +1961,7 @@ dialogue_table1:
 .message_275:	; Intro sequence (2)
 	db !Window02,!Color07,!Speed03,!Line1
 	db "!{The} !{go}od k!{ing_}!{of} Hyrule !{wa}s",!Line2
-	db "elm!{in}!{at}!{ed_}through !{the}",!Line3
+	db "elim!{in}!{at}!{ed_}through !{the}",!Line3
 	db "t!{re}a!{che}ry !{of} a my!{st}!{er}ious",!Wait02,!Scroll
 	db "b!{is}hop !{know}n as Agahnim,",!Scroll
 	db "!{wh}o !{ha}d !{be}!{en_}p!{lo}tt!{ing_}!{the}",!Scroll
