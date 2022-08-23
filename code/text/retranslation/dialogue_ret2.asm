@@ -179,9 +179,9 @@ dialogue_table2:
 	db !Speed02,!Line1
 	db "!{The} Tri!{for}ce, al!{so} !{know}n as",!Line2
 	db "!{the} ""Gold!{en_}Pow!{er},"" !{wa}s",!Line3
-	db "!{be}!{st}ow!{ed_}by God, !{and_}fulfills",!WaitKey,!Scroll
-	db "!{the} h!{ear}t!{s_}!{des}i!{re_}!{of} !{an}y",!Scroll
-	db "!{wh}o !{to}uch !{it}."
+	db "!{be}!{st}ow!{ed_}by !{the} gods, !{and}",!WaitKey,!Scroll
+	db "fulfills !{the} h!{ear}t!{s_}!{des}i!{re_}!{of}",!Scroll
+	db "!{an}y !{wh}o !{to}uch !{it}."
 	db !Speed01,!WaitKey,!Line1
 	db "!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{2_}",!Line2
 	db "!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{4_}!{2_}",!Line3
