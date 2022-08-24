@@ -20,6 +20,7 @@ check title "THE LEGEND OF ZELDA  "
 !lorom = 1		; LoROM flag
 !hirom = 0		; HiROM flag
 !exhirom = 0		; ExHiROM flag
+!retranslation = 0	; Retranslation hack by Translation Quest
 !subtitle = 0		; "TRIFORCE OF THE GODS" subtitle
 !houlihan = 0		; Change the Houlihan's room name
 !_snes_utils_inc = 1	; SNES Utils (by qwertymodo)
@@ -86,27 +87,29 @@ incsrc gameplay/shovel_treasures.asm	; Make items appear when digging with the s
 ;****************************************
 ;	Map changes
 ;****************************************
-if !fastrom == 1
-	;incsrc layouts/overworld_layouts.asm	; Layout modifications to the overworld for Redux for FastROM
-else
-	;incsrc layouts/overworld_layouts_slowrom.asm	; Layout modifications to the overworld for Redux for SlowROM
-endif
+; All of the Map changes for Link to the Past seem to be incompatible with the FastROM hack due to the huge amount of data that is overwritten by Map editors for the game.
+
+; Instead, the way they will be handled is through IPS patches.
+; These will be made out of a fully functional FastROM hack first, and then all the Map changes will be redone over the FastROM hack.
+; From that FastROM hack with maps the edited, a diff patch will be made between it and the original FastROM hack to create an IPS that will contain only the Map modifications.
 
 ;****************************************
 ;	Text changes
 ;****************************************
 ; Main Redux script text
 incsrc text/vwf.asm			; Variable width font modifications 
-incsrc text/dialogue1.asm		; 1st dialogue table
-incsrc text/dialogue2.asm		; 2nd dialogue table
 
-; Item names text (Check for items with Old or New GFX)
-if !newgfx == 0
-	incsrc text/original/items_org.asm
+; Check if we enabled the Retranslation script for compilation
+if !retranslation == 0
+    ; Main Redux script
+    incsrc text/redux_script.asm
+
+elseif !retranslation == 1
+    ; Retranslation script
+    incsrc code/text/retranslation/retranslation_main.asm
+
 endif
 
-; Credits text
-incsrc text/credits.asm
 
 ;****************************************
 ;	Visual changes
@@ -117,6 +120,14 @@ incsrc gfx/palettes.asm
 ; 24 Items Menu (New GFX)
 if !newgfx == 1
 	incsrc code/menus/new_gfx.asm	; Main file for New GFX
+elseif !newgfx == 0
+	if !retranslation == 0
+		; Redux item names for Original GFX
+		incsrc code/text/items_org.asm
+	elseif !retranslation == 1
+		; Retranslation item names for Original GFX
+		incsrc code/text/retranslation/items_ret_org.asm
+	endif
 endif
 
 ;****************************************

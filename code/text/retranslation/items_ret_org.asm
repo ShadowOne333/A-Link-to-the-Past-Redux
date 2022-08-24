@@ -51,7 +51,7 @@ org $0DECB1	; 0x06ECB1
 ;****************************************
 
 ;----------------------------------------
-; Default description
+; Default description / BOW
 ;----------------------------------------
 ; Start of the item's text in the Pause Screen
 org $DF1C9	; 0x06F1C9
@@ -62,7 +62,7 @@ defaultEnd:	; 0x06F1D9, $0DF1D9
 	db $6B,$25,$6C,$25,!Blank,!Blank
 	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Boomerang
+; BOOMERANG
 ;----------------------------------------
 org $DF1E9	; 0x06F1E9
 boomerangStart:
@@ -71,7 +71,7 @@ boomerangStart:
 boomerangEnd:	; 0x06F1F9, $0DF1F9
 	db !Boomerang
 ;----------------------------------------
-; Hookshot
+; HOOKSHOT
 ;----------------------------------------
 org $DF209	; 0x06F209
 hookshotStart:
@@ -80,17 +80,17 @@ hookshotStart:
 hookshotEnd:	; 0x06F219, $0DF219
 	db "H_O_O_K_S_H_O_T_"
 ;----------------------------------------
-; Bomb / Bombs
+; BOMBS
 ;----------------------------------------
 org $DF229	; 0x06F229
 bombStart:
 	db !Blank,!Blank,!Blank,!Blank
 	db !Blank,!Blank,!Blank,!Blank
 bombEnd:	; 0x06F239, $0DF239
-	db "B_O_M_B_"
-	db !Blank,!Blank,!Blank,!Blank
+	db "B_O_M_B_S_"
+	db !Blank,!Blank,!Blank
 ;----------------------------------------
-; Mushroom
+; MUSHROOM
 ;----------------------------------------
 org $DF249	; 0x06F249
 mushroomStart:
@@ -99,25 +99,25 @@ mushroomStart:
 mushroomEnd:	; 0x06F259, $0DF259
 	db "M_U_S_H_R_O_O_M_"
 ;----------------------------------------
-; Firerod
+; FIRE ROD
 ;----------------------------------------
 org $DF269	; 0x06F269
 firerodStart:
 	db !Blank,!Blank,!Blank,!Blank
 	db !Blank,!Blank,!Blank,!Blank
 firerodEnd:	; 0x06F279, $0DF279
-	db "F_I_R_E_R_O_D_",!Blank
+	db "F_I_R_E_",!Blank,"R_O_D_"
 ;----------------------------------------
-; Icerod
+; ICE ROD
 ;----------------------------------------
 org $DF289	; 0x06F289
 icerodStart:
 	db !Blank,!Blank,!Blank,!Blank
 	db !Blank,!Blank,!Blank,!Blank
 icerodEnd:	; 0x06F299, $0DF299
-	db "I_C_E_R_O_D_",!Blank,!Blank
+	db "I_C_E_",!Blank,"R_O_D_",!Blank
 ;----------------------------------------
-; Bombos (Medallion)
+; BOMBOS (Medallion)
 ;----------------------------------------
 org $DF2A9	; 0x06F2A9
 bombosStart:
@@ -126,7 +126,7 @@ bombosStart:
 bombosEnd:	; 0x06F2B9, $0DF2B9
 	db "B_O_M_B_O_S_",!Blank,!Blank
 ;----------------------------------------
-; Ether (Medallion)
+; ETHER (Medallion)
 ;----------------------------------------
 org $DF2C9	; 0x06F2C9
 etherStart:
@@ -135,7 +135,7 @@ etherStart:
 etherEnd:	; 0x06F2D9, $0DF2D9
 	db "E_T_H_E_R_",!Blank,!Blank
 ;----------------------------------------
-; Quake (Medallion)
+; QUAKE (Medallion)
 ;----------------------------------------
 org $DF2E9	; 0x06F2E9
 quakeStart:
@@ -144,16 +144,16 @@ quakeStart:
 quakeEnd:	; 0x06F2F9, $0DF2F9
 	db "Q_U_A_K_E_",!Blank,!Blank,!Blank
 ;----------------------------------------
-; Lamp
+; LANTERN
 ;----------------------------------------
 org $DF309	; 0x06F309
 lampStart:
 	db !Blank,!Blank,!Blank,!Blank
 	db !Blank,!Blank,!Blank,!Blank
 lampEnd:	; 0x06F319, $0DF319
-	db "L_A_M_P_",!Blank,!Blank,!Blank,!Blank
+	db "L_A_N_T_E_R_N_",!Blank
 ;----------------------------------------
-; Magic Hammer
+; MAGIC HAMMER
 ;----------------------------------------
 org $DF329	; 0x06F329
 hammerStart:
@@ -161,7 +161,7 @@ hammerStart:
 hammerEnd:	; 0x06F339, $0DF339
 	db !Blank,!Blank,"H_A_M_M_E_R_"
 ;----------------------------------------
-; Shovel
+; SHOVEL
 ;----------------------------------------
 org $DF349	; 0x06F349
 shovelStart:
@@ -170,7 +170,7 @@ shovelStart:
 shovelEnd:	; 0x06F359, $0DF359
 	db "S_H_O_V_E_L_",!Blank,!Blank
 ;----------------------------------------
-; Bug-Catching Net
+; BUG-CATCHING NET
 ;----------------------------------------
 org $DF369	; 0x06F369
 bugStart:
@@ -180,15 +180,15 @@ bugEnd:	; 0x06F379, $0DF379
 	db $08,$24,$09,$24,!Blank,!Blank
 	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Book of Mudora
+; TOME OF MUDORA
 ;----------------------------------------
 org $DF389	; 0x06F389
 mudoraStart:
-	db "B_O_O_K_",!Blank,"O_F_",!Blank
+	db "T_O_M_E_",!Blank,"O_F_",!Blank
 mudoraEnd:	; 0x06F399, $0DF399
 	db "M_U_D_O_R_A_",!Blank,!Blank
 ;----------------------------------------
-; Mushroom (2)
+; MUSHROOM (2)
 ;----------------------------------------
 org $DF3A9	; 0x06F3A9
 mushroom2Start:
@@ -196,7 +196,7 @@ mushroom2Start:
 mushroom2End:	; 0x06F3B9, $0DF3B9
 	db "M_U_S_H_R_O_O_M_",!Blank
 ;----------------------------------------
-; Cane of Somaria
+; CANE OF SOMARIA
 ;----------------------------------------
 org $DF3C9	; 0x06F3C9
 somariaStart:
@@ -204,15 +204,15 @@ somariaStart:
 somariaEnd:	; 0x06F3D9, $0DF3D9
 	db !Blank,"S_O_M_A_R_I_A_"
 ;----------------------------------------
-; Cane of Byrna
+; CANE OF BYRNA
 ;----------------------------------------
 org $DF3E9	; 0x06F3E9
 byrnaStart:
 	db "C_A_N_E_",!Blank,"O_F_",!Blank
 byrnaEnd:	; 0x06F3F9, $0DF3F9
-	db !Blank,!Blank,!Blank,"B_Y_R_N_A_"
+	db !Blank,!Blank,!Blank,!Blank,"B_Y_R_A_"
 ;----------------------------------------
-; Magic Cape
+; MAGIC CAPE
 ;----------------------------------------
 org $DF409	; 0x06F409
 capeStart:
@@ -220,7 +220,7 @@ capeStart:
 capeEnd:	; 0x06F419, $0DF419
 	db !Blank,!Blank,!Blank,"C_A_P_E_",!Blank
 ;----------------------------------------
-; Blank
+; BLANK
 ;----------------------------------------
 org $DF429	; 0x06F429
 blankStart:
@@ -230,7 +230,7 @@ blankEnd:	; 0x06F439, $0DF439
 	db !Blank,!Blank,!Blank,!Blank
 	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Mushroom (3)
+; MUSHROOM (3)
 ;----------------------------------------
 org $DF449	; 0x06F449
 mushroom3Start:
@@ -239,7 +239,7 @@ mushroom3Start:
 mushroom3End:	; 0x06F459, $0DF459
 	db "M_U_S_H_R_O_O_M_",!Blank
 ;----------------------------------------
-; Bottle
+; BOTTLE
 ;----------------------------------------
 org $DF469	; 0x06F469
 bottleStart:
@@ -248,7 +248,7 @@ bottleStart:
 bottleEnd:	; 0x06F479, $0DF479
 	db "B_O_T_T_L_E_",!Blank,!Blank
 ;----------------------------------------
-; Life Medicine
+; RED POTION
 ;----------------------------------------
 org $DF489	; 0x06F489
 lifeStart:
@@ -256,7 +256,7 @@ lifeStart:
 lifeEnd:	; 0x06F499, $0DF499
 	db !Blank,!Blank,"P_O_T_I_O_N_"
 ;----------------------------------------
-; Magic Medicine
+; GREEN POTION
 ;----------------------------------------
 org $DF4A9	; 0x06F4A9
 magicStart:
@@ -264,7 +264,7 @@ magicStart:
 magicEnd:	; 0x06F4B9, $0DF4B9
 	db !Blank,!Blank,"P_O_T_I_O_N_"
 ;----------------------------------------
-; Cure-All Medicine
+; BLUE POTION
 ;----------------------------------------
 org $DF4C9	; 0x06F4C9
 cureallStart:
@@ -272,7 +272,7 @@ cureallStart:
 cureallEnd:	; 0x06F4D9, $0DF4D9
 	db !Blank,!Blank,"P_O_T_I_O_N_"
 ;----------------------------------------
-; Faerie
+; FAIRY
 ;----------------------------------------
 org $DF4E9	; 0x06F4E9
 faerieStart:
@@ -281,7 +281,7 @@ faerieStart:
 faerieEnd:	; 0x06F4F9, $0DF4F9
 	db "F_A_I_R_Y_",!Blank,!Blank,!Blank
 ;----------------------------------------
-; Bee
+; BEE
 ;----------------------------------------
 org $DF509	; 0x06F509
 beeStart:
@@ -290,7 +290,7 @@ beeStart:
 beeEnd:	; 0x06F519, $0DF519
 	db "B_E_E_",!Blank,!Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Good Bee
+; GOLDEN BEE
 ;----------------------------------------
 org $DF529	; 0x06F529
 goodbeeStart:
@@ -298,7 +298,7 @@ goodbeeStart:
 goodbeeEnd:	; 0x06F539, $0DF539
 	db !Blank,!Blank,!Blank,!Blank,!Blank,"B_E_E_"
 ;----------------------------------------
-; Magic Powder
+; MAGIC POWDER
 ;----------------------------------------
 org $DF549	; 0x06F549
 powderStart:
@@ -306,7 +306,7 @@ powderStart:
 powderEnd:	; 0x06F559, $0DF559
 	db !Blank,"P_O_W_D_E_R_",!Blank
 ;----------------------------------------
-; Flute / Ocarina (1)
+; OCARINA (1)
 ;----------------------------------------
 org $DF569	; 0x06F569
 flute1Start:
@@ -315,7 +315,7 @@ flute1Start:
 flute1End:	; 0x06F579, $0DF579
 	db "O_C_A_R_I_N_A_",!Blank
 ;----------------------------------------
-; Flute / Ocarina (2)
+; OCARINA (2)
 ;----------------------------------------
 org $DF589	; 0x06F589
 flute2Start:
@@ -324,7 +324,7 @@ flute2Start:
 flute2End:	; 0x06F599, $0DF599
 	db "O_C_A_R_I_N_A_",!Blank
 ;----------------------------------------
-; Mirror
+; MAGIC MIRROR
 ;----------------------------------------
 org $DF5A9	; 0x06F5A9
 mirrorStart:
@@ -332,7 +332,7 @@ mirrorStart:
 mirrorEnd:	; 0x06F599, $0DF599
 	db !Blank,!Blank,"M_I_R_R_O_R_"
 ;----------------------------------------
-; Bow & Arrows
+; BOW AND ARROWS
 ;----------------------------------------
 org $DF5C9	; 0x06F5C9
 arrowsStart:
@@ -341,7 +341,7 @@ arrowsStart:
 arrowsEnd:	; 0x06F5D9, $0DF5D9
 	db !Bow,!Ampersand,!Arrows
 ;----------------------------------------
-; Bow 
+; BOW 
 ;----------------------------------------
 org $DF5E9	; 0x06F5E9
 bowStart:
@@ -351,7 +351,7 @@ bowEnd:		; 0x06F5F9, $0DF5F9
 	db !Bow,!Blank,!Blank
 	db !Blank,!Blank,!Blank,!Blank
 ;----------------------------------------
-; Bow & Silver Arrows 
+; BOW & SILVER ARROWS
 ;----------------------------------------
 org $DF609	; 0x06F609
 silverStart:
@@ -360,4 +360,4 @@ silverEnd:	; 0x06F619, $0DF619
 	db !SilverArrows
 ;----------------------------------------
 
-warnpc $0DF630
+warnpc $0DF629

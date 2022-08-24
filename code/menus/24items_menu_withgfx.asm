@@ -670,7 +670,16 @@ org $0DF151	; 0x06F151
 
 ;----------------------------------------
 ; Include the items names for the 24 Items Menu (New GFX)
-incsrc code/text/items.asm
+
+; IF statement to check if we have Retranslation and New GFX
+if !retranslation == 0
+	; Redux item names
+	incsrc code/text/items.asm
+; Retranslation items text
+elseif !retranslation == 1
+	; Retranslation item names
+	incsrc code/text/retranslation/items_ret.asm
+endif
 
 ;----------------------------------------
 
