@@ -1,8 +1,0 @@
-=Title Skip=
-x64123
-Original:	C9 08	;CMP #$08
-Edited:		C9 04	;CMP #$04
-
-(This CMP blocks input on any screen indexed lower than 8, which includes the
-spinning triforce, sword, and castle backgrounds. By lowering it to 4, those
-screen indexes accept inputs.)

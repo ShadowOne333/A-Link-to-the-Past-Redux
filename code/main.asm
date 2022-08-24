@@ -87,9 +87,9 @@ incsrc gameplay/shovel_treasures.asm	; Make items appear when digging with the s
 ;	Map changes
 ;****************************************
 if !fastrom == 1
-	incsrc layouts/overworld_layouts.asm	; Layout modifications to the overworld for Redux for FastROM
+	;incsrc layouts/overworld_layouts.asm	; Layout modifications to the overworld for Redux for FastROM
 else
-	incsrc layouts/overworld_layouts_slowrom.asm	; Layout modifications to the overworld for Redux for SlowROM
+	;incsrc layouts/overworld_layouts_slowrom.asm	; Layout modifications to the overworld for Redux for SlowROM
 endif
 
 ;****************************************
@@ -117,11 +117,6 @@ incsrc gfx/palettes.asm
 ; 24 Items Menu (New GFX)
 if !newgfx == 1
 	incsrc code/menus/new_gfx.asm	; Main file for New GFX
-endif
-
-; "TRIFORCE OF THE GODS" subtitle in the Title Screen
-if !subtitle == 1
-	incsrc code/gfx/subtitle.asm	; Change title screen subtitle
 endif
 
 ;****************************************

@@ -285,7 +285,7 @@ dialogue_table1:
 ;----------------------------------------
 .message_034:
 	db "!{Thi}s !{di}sp!{la}y !{sh}ould !{be}",!Line2
-	db "movea!{ble}. Do !{you} !{have} a",!Line3
+	db "mova!{ble}. Do !{you} !{have} a",!Line3
 	db "L!{an}t!{er}n? It!{s_}p!{it}ch b!{la}!{ck}",!WaitKey,!Scroll
 	db "!{in}side, !{and_}!{you} c!{an}'t !{se}e",!Scroll
 	db "w!{it}h!{out_}!{on}e.",!WaitKey,!Scroll
@@ -1547,7 +1547,7 @@ dialogue_table1:
 	db "!{thi}s !{st}uff !{for} !{it}!",!End
 ;----------------------------------------
 .message_215:
-	db "Yo !{Name}! !{You} !{se}em !{to} !{be} !{in}",!Line2
+	db "Yo, !{Name}! !{You} !{se}em !{to} !{be} !{in}",!Line2
 	db "a heap !{of} !{tr}ou!{ble}, but !{thi}s !{is}",!Line3
 	db "!{all_}I !{can_}!{give_}!{you}.",!End
 ;----------------------------------------
@@ -2110,7 +2110,7 @@ dialogue_table1:
 	db "!{you}, !{so} take !{thi}s !{in}!{st}ead!",!End
 ;----------------------------------------
 .message_300:
-	db "Yo !{Name}! A !{st}r!{an}ge m!{is}t !{has}",!Line2
+	db "Yo, !{Name}! A !{st}r!{an}ge m!{is}t !{has}",!Line2
 	db "fall!{en_}ov!{er_}!{the} !{for}e!{st}. If",!Line3
 	db "!{you}'!{re_}head!{ing_}!{in}, !{ple}a!{se} !{be}",!WaitKey,!Scroll
 	db "ca!{re}ful.",!End

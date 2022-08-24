@@ -21,6 +21,21 @@ org $01CBAC	; 0x00CBAC
 
 ; Note: in some cases the fix will not work since the rom is bugged to much
 
+
+; SIDE NOTE:
+; Modifying the title screen with Hyrule Magic has the unintended behaviour of changing an LDA address to point to bugged data, causing the very first key door in Swamp Palace to get locked back if you exit the dungeon. This can cause a softlock if the player leaves the dungeon before finishing it.
+
+; To fix it in case it happens again:
+; 7EF051 is the room data containing the first door in the Swamp Palace. That code is responsible for flooding the room when you pull the lever in the floodgates
+
+; org $01CBA0	; 0x00CBA0
+	;lda $7EF051
+	;ora #$01
+	;sta $7EF051
+
+; When the lda target gets corrupted, it loads a 0, clearing the door unlocked flag, then sets the room flooded flag and stores that back.
+; However the flag saying you opened the chest containing the small key is 7EF050, so that DOESN'T get cleared, the chest stays opened, you can't grab the key again, and you're softlocked.
+
 ;----------------------------------------
 ; Modify the power of the Sword-Beam:
 

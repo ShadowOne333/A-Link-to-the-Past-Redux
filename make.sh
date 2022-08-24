@@ -4,6 +4,8 @@
 # Variables used for the script
 export	time=$(date +'%T %a %d/%b/%Y')
 export	asar=bin/asar-linux/asar-standalone
+export	flips=bin/flips
+export	scompress=bin/scompress/scompress
 export	file_base=Zelda3-Redux
 export  out_folder=out
 export	patches_folder=patches
@@ -11,6 +13,8 @@ export  clean_rom=rom/Zelda3.sfc
 export  patched_rom=$out_folder/$file_base.sfc
 export  asm_file=code/main.asm
 export	checksum=6d4f10a8b10e10dbe624cb23cf03b88bb8252973
+export	subtitle_layout=code/layouts/subtitle_layout.ips
+#export	maps_layout=code/layouts/map_layouts.ips
 
 #-------------------------------------------------------------
 # Help section
@@ -95,7 +99,7 @@ Start()
 	#WINEDEBUG=-all wine bin/zcompress/zcompress.exe 1 87000 out/"$file_base".sfc code/gfx/$org$graphics.bin
 
 	# Using scompress
-	bin/scompress/scompress i out/"$file_base".sfc code/gfx/$org$graphics.bin
+	$scompress i out/"$file_base".sfc code/gfx/$org$graphics.bin
 	echo "Graphics compression finalized."
 
 #-------------------------------------------------------------
@@ -103,9 +107,17 @@ Start()
 	$asar code/gfx/palettes/$graphics.asm $patched_rom	# Graphics changes
 	echo "Graphics & palettes compiled."; echo
 
+	# Compile the assembly code
 	echo "Beginning main assembly code compilation with Asar..."
 	$asar $asm_file $patched_rom		# Main code
-	bin/flips --create --ips "$clean_rom" "$patched_rom" "$patches_folder/$file_base.ips"
+
+	# Apply subtitle layout changes if specified through IPS
+	if [ "$graphics" == "Subtitle" ]; then
+		$flips $subtitle_layout $patched_rom
+	fi
+
+	# Create IPS
+	$flips --create --ips "$clean_rom" "$patched_rom" "$patches_folder/$file_base.ips"
 
 #-------------------------------------------------------------
 # Finish script and jump to the "End" function
