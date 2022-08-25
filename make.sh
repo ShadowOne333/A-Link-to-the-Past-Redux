@@ -144,7 +144,9 @@ Error()
 # Finish script
 End()
 {
-	rm $clean_rom
+	if [ -f "$clean_rom" ]; then
+		rm $clean_rom
+	fi
 	sleep 1
 	exit
 }
@@ -164,6 +166,24 @@ else
 	sed -i 's/!retranslation = 1/!retranslation = 0/g' $asm_file
 
 	while [ ! -z "$1" ]; do
+
+		# Check if Redux is used alongside Green, Subtitle or Combined
+		if [[ ( "$@" == *[r]* ) && ( "$@" == *[g]* || "$@" == *[s]* || "$@" == *[c]* ) ]]; then
+			export error="Don't combine -r with -g/-s/-c!"
+			Error;
+			echo "Use -g, -s or -c by themselves, and/or with either -o or -t instead."; echo
+			End;
+		fi
+
+		# Check if Green or Subtitle is used alongside Combined
+		if [[ (( "$@" == *[g]* || "$@" == *[s]* ) && ( "$@" == *[c]* )) || ("$@" == *[g]* && "$@" == *[s]*)]]; then
+			export error="Don't combine -g/-s with themselves, nor with -c!"
+			Error;
+			echo "If you want Green Agahnim + Subtitle, use -c alone instead."; echo
+			End;
+		fi
+
+		# Check each argument do determine action
 		case "$1" in
 		--help|-h) # Display Help
 			Help
