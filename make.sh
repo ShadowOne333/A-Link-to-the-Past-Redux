@@ -26,7 +26,8 @@ Help()
    echo "Syntax: make.sh [option]"
    echo "Options:"
    echo "	-h, --help	Prints this menu."
-   echo "	-o, --original	Original GFX menu (requires -r, -g, -s or -c as additional argument)."
+   echo "	-o, --original	Original GFX menu (requires -r, -t, -g, -s or -c as additional argument)."
+   echo "	-t, --retrans	Retranslation scrit (requires -r, -o, -g, -s or -c as additional argument)."
    echo "	-r, --redux	Compiles default Redux (New GFX)."
    echo "	-g, --green	Compiles Redux with Green Agahnim GFX."
    echo "	-s, --subtitle	Compiles Redux with 'Triforce of the Gods' subtitle."
@@ -108,15 +109,21 @@ Start()
 	echo "Graphics & palettes compiled."; echo
 
 	# Compile the assembly code
-	echo "Beginning main assembly code compilation with Asar..."
+	echo "Beginning main assembly code compilation with Asar..."; echo
 	$asar $asm_file $patched_rom		# Main code
 
 	# Apply subtitle layout changes if specified through IPS
-	if [ "$graphics" == "Subtitle" ]; then
-		$flips $subtitle_layout $patched_rom
+	if [ "$graphics" == "Subtitle" ] || [ "$graphics" == "AgahnimSubtitle" ]; then
+		echo "Patching subtitle tilemapping...";
+		$flips $subtitle_layout $patched_rom; echo
 	fi
 
+	# Apply map layout changes if specified through IPS
+	#echo "Applying Map layout changes...";
+	#$flips $map_layouts $patched_rom; echo
+
 	# Create IPS
+	echo "Creating Zelda3-Redux.ips patch...";
 	$flips --create --ips "$clean_rom" "$patched_rom" "$patches_folder/$file_base.ips"
 
 #-------------------------------------------------------------
@@ -150,13 +157,23 @@ if [[ "$1" == "" ]];then
 else
 	#while getopts "horgsc" option; do
 	#case $option in
+
+	# Force default settings at startup
+	sed -i 's/!newgfx = 0/!newgfx = 1/g' $asm_file
+	sed -i 's/!subtitle = 1/!subtitle = 0/g' $asm_file
+	sed -i 's/!retranslation = 1/!retranslation = 0/g' $asm_file
+
 	while [ ! -z "$1" ]; do
 		case "$1" in
 		--help|-h) # Display Help
 			Help
 			exit;;
+		--retrans|-t) # Retranslation Redux script
+			export script='Retranslation'
+			sed -i 's/!retranslation = 0/!retranslation = 1/g' $asm_file ;;
 		--original|-o) # Default Redux with Original GFX
-			export org='original/Original-'	;;
+			export org='original/Original-'	
+			sed -i 's/!newgfx = 1/!newgfx = 0/g' $asm_file ;;
 		--redux|-r) # Default Redux with New GFX
 			shift
 			export graphics='Redux'
@@ -168,10 +185,12 @@ else
 		--subtitle|-s) # Redux with Triforce of the Gods subtitle
 			shift
 			export graphics='Subtitle'
+			sed -i 's/!subtitle = 0/!subtitle = 1/g' $asm_file
 			Start;;
 		--combine|-c) # Redux with Green Agahnim and Subtitle
 			shift
 			export graphics='AgahnimSubtitle'
+			sed -i 's/!subtitle = 0/!subtitle = 1/g' $asm_file
 			Start;;
 		#\?) # Invalid option
 		*) # Invalid option
