@@ -2595,10 +2595,10 @@ dialogue_table1:
 	db "bunny, !{ha}v!{en}'t !{you}?",!WaitKey,!Scroll
 	db "!{Thi}s w!{or}ld !{and_}our w!{or}ld might",!Scroll
 	db "!{lo}ok simi!{la}r, but !{the}y a!{re}",!Scroll
-	db "!{re}al!{ly_}qu!{it}e !{di}ff!{er}!{ent}! Who!{ev}!{er}",!WaitKey,!Scroll
-	db "!{com}es h!{er}e ch!{an}ges !{to} a",!Scroll
-	db "!{di}ff!{er}!{ent} !{for}m !{re}flect!{ing_}!{the}ir",!Scroll
-	db "h!{ear}t. I turn!{ed_}!{in}!{to} a !{ba}ll",!WaitKey,!Scroll
+	db "!{re}al!{ly_}qu!{it}e !{di}ff!{er}!{ent}!",!WaitKey,!Scroll
+	db "Who!{ev}!{er} !{com}es h!{er}e ch!{an}ges !{to}",!Scroll
+	db "a !{di}ff!{er}!{ent} !{for}m !{re}flect!{ing_}",!Scroll
+	db "!{the}ir h!{ear}t. I turn!{ed_}!{in}!{to} a !{ba}ll",!WaitKey,!Scroll
 	db "!{be}cau!{se} I'm !{the} fir!{st} !{to} !{bo}unce",!Scroll
 	db "!{wh}!{en}!{ev}!{er_}!{the}!{re}!{s_}!{tr}ou!{ble}!{Dots}",!WaitKey,!Scroll
 	db "!{The}!{re}!{s_}!{an} !{or}b call!{ed_}!{the} Mo!{on}",!Scroll
