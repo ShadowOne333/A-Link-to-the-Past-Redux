@@ -132,7 +132,8 @@ org $1BB520	; 0x0DB520
 	lda #$00
 	rtl
 
-org $22E700	; 0x117600
+; Modify to avoid 2MB ROM!
+org $22E700	; 0x117700
 	sta $F6
 	sty $FA
 	rep #$30

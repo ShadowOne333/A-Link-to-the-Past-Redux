@@ -13,9 +13,18 @@
 
 * [**Patching and Usage Instructions**](#instructions)
 
+* [**Compilation**](#compilation)
+
 * [**Credits**](#credits)
 
 * [**Project Licence**](#license)
+
+-------------------
+
+* BEFORE PATCHING:
+
+    NOTE: Take into consideration that should ONLY patch either the "Link to the Past Redux.ips" patch OR the "Retranslation Redux.ips" patch.
+    DO NOT combine them. Retranslation Redux already contains all of the perks and features of normal Redux by default, so you don't need to apply one over the other!
 
 -------------------
 
@@ -29,11 +38,25 @@ Follow the GitHub repository for the full source code of the project:
 https://github.com/ShadowOne333/A-Link-to-the-Past-Redux
 
 
+### Retranslation Redux:
+
+	Additionally, and thanks to the incredible and in-depth work of the guys at Translation Quest (Chicken Knife, nejimakipiyo and Dattebayo), the entirety of the Zelda 3 script has been reworked to be more in-line with the original Japanese script.
+
+	Names, locations, items, religious references, all that is changed to make the script a much richer and refined product.
+NOTE: You DO NOT need to patch Redux first in order to apply this hack. You can apply this by its own over a vanilla/clean ALttP ROM, and then whatever optional patches the user might desire.
+
 -------------------
 
 ## Changelog
 
 * All of the features found in the "[A Link to the Past DX](https://www.romhacking.net/hacks/2234/)" project by Conn & qwertymodo
+* New inventory GFX starting from version 7.0, which gives individual slots to every item, including one per each bottle and the shovel is handled as a separate and permanent item. Ocarina and Golden Bee names have been fixed manually for this too. Additionally, you can even switch between items quickly with the press of the L or R buttons!
+* Max consumables for Bombs and Arrows are now 60 for Bombs and 99 for Arrows (v7.0 and onwards)
+* Permanent Shovel, as well as being able to dig up items with it in the overworld (by PowerPanda)
+* Skip the Title Screen sequence by pressing Start, you no longer have to wait until the Triforce and title screen finish their animation (by PowerPanda)
+* Virtual Console's flashing and colour modifications have been disassembled and ported over, so people with photosensitivity can enjoy the game without much risk.
+* More bugfixes, additional to those found in A Link to the Past DX (Some SFXs not triggering, Fairy restores 8 hearts, fixed Pendant drop position, Sword beam equal in damage to Master Sword, Dark World spawn fix, Whirl fix, Cane of Somaria fix, etc.)
+* MSU-1 playback included
 * Change Link’s hair and hat to closely match his original artwork.
 * Change Agahnim colours to match the original red robe and blue skin artwork.
 * Changed Uncle’s sprite to match official artwork.
@@ -41,21 +64,22 @@ https://github.com/ShadowOne333/A-Link-to-the-Past-Redux
 * Change the Good Bee’s name to Golden Bee.
 * Change Faerie to Fairy. This includes in-game text too.
 * Change Pegasus Shoes to Pegasus Boots. This includes in-game text too.
-* Change all the references of the “Wise Men” to “Sages”.
-* Change the layout of the Ice Palace to that of the GBA port. No more going around the entire palace just to get to the next room!
+* Change all the references of the “Wise Men” to “Sages”, Medicines to "Potions", Blue Pendant is now Wisdom while Red one is Power, and many other text and graphical changes to fit in line with the rest of the series.
 * King of Hyrule now has a red outfit instead of green to match the rest of the franchise’s Kings of Hyrule (Like Daphnes Nohansen Hyrule from WW). For v5.0, the palette being shared between green soldiers and King of Hyrule has been fixed. Thanks to Conn for this! 
-* Ice Palace now resembles the GBA version with a new layout. In v2.0 this room layout was fixed to have 3 movable blocks in the new section. There was one movable block unused in one other Dungeon layout found in Room 240. (Why was it there?) 
-* Star of David for the Eastern Palace restored (From the Japanese ROM)
-* New custom hieroglyphs to mimic those of the Japanese release.
-* Sanctuary doorway restored
-* Skull Statues restored. They appear in the Skull Woods Dungeon.
-* Unused Zora sign near Zora’s Domain entrance restored.
-* First warp point has been relocated, it no longer drops you at the very beginning of the Death Mountain, but rather at the left side of the Heart Container you obtain after your first travel to the Dark World for convenience sake.
-* Max consumables for Bombs and Arrows are now 99.
-* New inventory GFX (Optional patch), which gives individual slots to every item, including one per bottle and the shovel is handled as a separate item. Ocarina and Golden Bee names have been fixed manually for this release too.
+
+* Ice Palace now resembles the GBA version with a new layout. In v2.0 this room layout was fixed to have 3 movable blocks in the new section. There was one movable block unused in one other Dungeon layout found in Room 240. (Why was it there?)
+
+* Uncensored changes have been included too, as well as restoring some unused content. These changes focus on restoring censored content from A Link to the Past (J) and unused content for both ROMs (U and J). Some of the new content includes:
+
+	* Star of David for the Eastern Palace restored (From the Japanese ROM)
+	* New custom hieroglyphs to mimic those of the Japanese release.
+	* Sanctuary doorway restored
+	* Skull Statues restored. They appear in the Skull Woods Dungeon.
+	* Unused Zora sign near Zora’s Domain entrance restored.
+	* First warp point has been relocated, it no longer drops you at the very beginning of the Death Mountain, but rather at the left side of the Heart Container you obtain after your first travel to the Dark World for convenience sake.
 
 
-Please refer to the A Link to the Past DX hack page by qwertymodo and Conn for more information on additional ASM changes over the original A Link to the Past (including L/R Item Switch). 
+Please refer to the [A Link to the Past DX](https://www.romhacking.net/hacks/2234/) hack page by qwertymodo and Conn for more information on additional ASM changes over the original A Link to the Past (including L/R Item Switch). 
 
 
 -------------------
@@ -67,71 +91,50 @@ Please refer to the A Link to the Past DX hack page by qwertymodo and Conn for m
 	However, some people might not like this, as using the dash effectively makes you invincible while running straight with the sword at front, and being able to turn makes it even more of an overpowered feature to some.
 	With this patch, you can now easily disable said feature, and use the Pegasus Boots like they worked originally in A Link to the Past.
 
-
 2. **Enable FMV for MSU:**
-	These patches will enable the loading of the special FMV (Track 35) from the MSU files.
+	This patch will enable the loading of the special FMV (Track 35) from the MSU files.
 
-	Please note that the hack itself ALREADY includes MSU-1 track loading, this patch simply enables the loading
-	of that specific track #35 to avoid an issue with the game trying to always load the FMV, despite if the FMV 
-	itself exists or not in the same folder, which ends up in a 1~ minute black screen upon loading a new game.
+	Please note that the hack itself ALREADY includes MSU-1 track loading, this patch simply enables the loading of that specific track #35 to avoid an issue with the game trying to always load the FMV, despite if the FMV itself exists or not in the same folder, which ends up in a 1~ minute black screen upon loading a new game.
 	
-	Please use this patch ONLY if you will add the FMV video in your MSU files. If you don't want the FMV video
-	but still want to use MSU-1 audio, simply IGNORE this patch.
+	Please use this patch ONLY if you will add the FMV video in your MSU files. If you don't want the FMV video but still want to use MSU-1 audio, simply IGNORE this patch.
 
 	You can get the FMV files from these links by Qwertymodo and Conn, respectively:
 	
-	* The Legend of Zelda: A Link to the Past [Optional Video] (-21dB):
+	* The Legend of Zelda: A Link to the Past [Optional Video] (-21dB, normalized):
 	http://www.mediafire.com/?k9zz4wa7i9ka3ov
 
-	* MSU Opening Intro and Audio:
+	* MSU Opening Intro and Audio (Track 35 FMV not normalized):
 	http://dl.dropbox.com/s/9tfg549to1cpbrn/MSU%20Zelda%20Opening%20Intro%20and%20Audio.rar?dl=0
 
-3. **Redux (Original Menu GFX):**
-	These patches include all of the bonuses from Redux, with the default item screen and HUD from vanilla ALttP.
-	
-	* Additionally inside this folder, you'll find optional patches EXCLUSIVE for the original GFX hack:
 
-		a) Green Agahnim (Original GFX):
-		This set of patches are for use EXCLUSIVELY with Original GFX!
-		Using this will revert the color of Agahnim from Red+Blue to his original Green robe.
-
-		b) Green Agahnim+Triforce Subtitle (Original GFX):
-		This set of patches are for use EXCLUSIVELY with Original GFX!
-		Using this will revert the color of Agahnim from Red+Blue to his original Green robe, and also adds the new "TRIFORCE OF THE GODS" subtitle alongside it.
-
-		c) Triforce of the Gods Subtitle (Original GFX):
-		This set of patches are for use EXCLUSIVELY with Original GFX!
-		Using this will change the subtitle in the title screen from "A LINK TO THE PAST" to match the original Japanese subtitle of "TRIFORCE OF THE GODS".
-
-
-4. **Green Agahnim (New GFX):**
-	This set of patches are for use EXCLUSIVELY with New GFX!
+3. **Green Agahnim:**
 	Using this will revert the color of Agahnim from Red+Blue to his original Green robe.
 
-
-5. **Green Agahnim+Triforce Subtitle (New GFX):**
-	This set of patches are for use EXCLUSIVELY with New GFX!
+4. **Green Agahnim+Triforce Subtitle:**
 	Using this will revert the color of Agahnim from Red+Blue to his original Green robe, and also adds the new "TRIFORCE OF THE GODS" subtitle alongside it.
 
-
-6. **Kakariko Shortcut (by PowerPanda):**
+5. **Kakariko Shortcut (by PowerPanda):**
 	Adds a shortcut to the northwest of Link's house and southwest of Hyrule Castle that adds a lift-able rock that grants rapid access to Kakariko Village once the player obtains the Titan's Mitt. This shortcut is inspired by the same shortcut/change that was implemented in "A Link Between Worlds". (Both patches are compatible with either Original GFX or New GFX).
 
+6. **Mirror Works in Both Worlds:**
+	This patch allows the Mirror to travel from both the Light and Dark Worlds (Light - Dark & Dark - Light), making it so that Link can travel between them at will, instead of only being able to use the Mirror to travel from Dark - Light World. 
 
-7. **Original Pink Hair Link:**
+7. **Move Blocks Indefinitely:**
+	Gives Link the ability to move blocks (that can be moved) several times. 
+
+8. **Original Pink Hair Link:**
 	These patches revert Link's new blonde hair to the original pink hair he had.
 
+9. **Original Bomb-Arrows Amounts:**
+	This patch reverts Link default Bombs & Arrows minimum and maximum amounts to be those of the original ALttP, those being 10 to 50 for Bombs, and 30 to 70 for Arrows. 
 
-8. **Skip Title Screen (by PowerPanda):**
-	Applying this patch makes it so you can skip the title screen sequence with the press of a button, so you don't have to wait until it is finished to advance to the main File Select screen.
+10. **Remove Low Health Beep:**
+	Completely remove the constant beeping that plays when you’re low on hearts. 
 
-
-9. **Start at Full Hearts (by PowerPanda):**
+11. **Start at Full Hearts (by PowerPanda):**
 	Applying this patch will make you start your game at full hearts every time you load your game.
 
-
-10. **Triforce of the Gods Subtitle (New GFX):**
-	This set of patches are for use EXCLUSIVELY with New GFX!
+12. **Triforce of the Gods Subtitle):**
 	Using this will change the subtitle in the title screen from "A LINK TO THE PAST" to match the original Japanese subtitle of "TRIFORCE OF THE GODS".
 
 
@@ -186,6 +189,14 @@ NOTE: As mentioned with the "Enable FMV" optional patch, track #35 is the one wh
 
 -------------------
 
+## Compilation
+
+	The source code was developed entirely on Linux, using scompress and flips as sources for compiling both the graphics and the assembly code, respectively.
+
+For compilation on Windows, you'd most likely need something like CygWin
+
+-------------------
+
 ## Credits
 
 * **Conn & qwertymodo** - For their incredible work on the original project "A Link to the Past DX" which was used as a base with their permission, and additionally, for their bugfixes past the initial release and their permission to also use the source code of theirs for this GitHub repository.
@@ -193,9 +204,10 @@ NOTE: As mentioned with the "Enable FMV" optional patch, track #35 is the one wh
 * **PuzzleDude** - For his 24 item menu and additional hacks (keep Shovel and Flute fix)
 * **Kasuto** - For his Zelda 3 Max Consumables Fix Hack
 * **rainponcho** - For his help towards fixing the bug with the Bunny palette and also the glitch with the LR Item switch for New GFX.
-* **PowerPanda** - For his individual patches (Skip title, Start at Full Hearts and Kakariko Shortcut) which can be used as optional patches for Redux. 
 * **RPGHacker**'s repository for the [Asar](https://github.com/RPGHacker/asar) project which was used for the compilation of the source code in this repository.
 * **Skarsnik** - For his "scompress" project, which helped as a good tool for an open source solution to "zcompress": https://github.com/Skarsnik/sneshacking/tree/master/scompress
+* **PowerPanda** - For his individual patches (Kakariko Shortcut, Start with Full Hearts, Title Screen Skip and Reworked Shovel treasures hacks) which can be used as optional patches for Redux. 
+* **Translation Quest**	For their incredible work on the New Retranslation based on the original Japanese script
 
 
 -------------------

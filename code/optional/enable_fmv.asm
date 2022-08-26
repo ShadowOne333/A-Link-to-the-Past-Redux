@@ -12,6 +12,7 @@ org $0CCF7F	; 0x064F7F
 	jml $23F680
 
 ;----------------------------------------
+; Modify to avoid 2MB ROM!
 org $23F000	; 0x11F000
 	sep #$20
 	pha

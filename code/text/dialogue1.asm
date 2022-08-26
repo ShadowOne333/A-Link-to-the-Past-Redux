@@ -1012,7 +1012,7 @@ dialogue_table1:
 	db "!{4_}!{3_}Qu!{it}",!Choose,!End
 ;----------------------------------------
 .message_137:	; Pond text
-	db "!{4_}--WISHING WELL--",!Line2
+	db "!{3_}!{3_}!{3_}--WISHING WELL--",!Line2
 	db "Throw !{so}!{me} R!{up}ees !{in} !{and_}!{you}r",!Line3
 	db "w!{is}hes !{wi}ll su!{re}!{ly_}!{com}e !{tr}ue.",!WaitKey,!Scroll
 	db "Do !{you} !{wa}nt !{to} throw R!{up}ees?",!Scroll

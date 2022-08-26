@@ -29,6 +29,7 @@ org $1BEE1D	; 0x0DEE1D
 
 ;----------------------------------------
 
+; Modify to avoid 2MB ROM!
 org $3FFF00	; 0x1FFF00
 bunny_palette:
 	; Check bunny
