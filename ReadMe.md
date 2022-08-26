@@ -1,9 +1,6 @@
-
 # THE LEGEND OF ZELDA: A LINK TO THE PAST REDUX
 
-----------------------------------------------------------------------------------
-
-# **Index**
+## **Index**
 
 * [**A Link to the Past Redux Info**](#a-link-to-the-past-redux)
 
@@ -11,9 +8,9 @@
 
 * [**Optional Patches**](#optional-patches)
 
-* [**Patching and Usage Instructions**](#instructions)
-
 * [**Compilation**](#compilation)
+
+* [**Patch & Use Instructions**](#instructions)
 
 * [**Credits**](#credits)
 
@@ -21,7 +18,7 @@
 
 -------------------
 
-* BEFORE PATCHING:
+* _**BEFORE PATCHING**_:
 
     NOTE: Take into consideration that should ONLY patch either the "Link to the Past Redux.ips" patch OR the "Retranslation Redux.ips" patch.
     DO NOT combine them. Retranslation Redux already contains all of the perks and features of normal Redux by default, so you don't need to apply one over the other!
@@ -40,9 +37,9 @@ https://github.com/ShadowOne333/A-Link-to-the-Past-Redux
 
 ### Retranslation Redux:
 
-	Additionally, and thanks to the incredible and in-depth work of the guys at Translation Quest (Chicken Knife, nejimakipiyo and Dattebayo), the entirety of the Zelda 3 script has been reworked to be more in-line with the original Japanese script.
+Additionally, and thanks to the incredible and in-depth work of the guys at Translation Quest (Chicken Knife, nejimakipiyo and Dattebayo), the entirety of the Zelda 3 script has been reworked to be more in-line with the original Japanese script.
 
-	Names, locations, items, religious references, all that is changed to make the script a much richer and refined product.
+Names, locations, items, religious references, all that is changed to make the script a much richer and refined product.
 NOTE: You DO NOT need to patch Redux first in order to apply this hack. You can apply this by its own over a vanilla/clean ALttP ROM, and then whatever optional patches the user might desire.
 
 -------------------
@@ -140,6 +137,65 @@ Please refer to the [A Link to the Past DX](https://www.romhacking.net/hacks/223
 
 -------------------
 
+## Compilation
+
+### Linux
+
+The source code was developed entirely on Linux, using scompress and flips as sources for compiling both the graphics and the assembly code, respectively. I have compiled both scompress and flips as 32bit binaries and included them into the repository so the user can directly use these without worrying about compiling and creating the executable binaries for each one.
+
+To compile the ROM:
+
+1. Either download the source code as ZIP, or clone the repository by opening terminal and running `git clone https://github.com/ShadowOne333/A-Link-to-the-Past-Redux`. Put the downloaded files anywhere in your PC.
+2. Grab your ALttP ROM with the name "Legend of Zelda, The - A Link to the Past (USA).sfc" under the "/rom/" folder.
+3. Open terminal in your Linux distribution, browse to the same folder as the "make.sh" file, and modify its permissions to be an executable script file by doing the following:
+	`sudo chmod +x make.sh`
+4. Next, execute the script with the following argument if you want to compile _only_ Redux:
+	`./make.sh -r
+5. If you want to compile a custom version of ALttP Redux, you have to choose from a variety of arguments, here's the list of options so far:
+
+	`./make.sh -r` 	Compiles standalone ALttP Redux
+	
+	`./make.sh -g` 	Compiles Redux with the Green Agahnim graphics
+	
+	`./make.sh -s` 	Compiles Redux with the "TRIFORCE OF THE GODS" Title Screen Subtitle
+	
+	`./make.sh -c` 	Compiles Redux with both the Title Screen Subtitle & Green Agahnim graphics
+
+	`./make.sh -r -t` 	Compiles Redux with the Retranslation script
+	
+	`./make.sh -g -t` 	Compiles Redux with the Green Agahnim graphics & Retranslation script
+	
+	`./make.sh -s -t` 	Compiles Redux with the Subtitle graphics & Retranslation script
+	
+	`./make.sh -c -t` 	Compiles Redux with the combined Green Agahnim & Subtitle graphics, and Retranslation script
+
+	`./make.sh -o -r` 	Compiles Redux with the Original menu and HUD graphics
+
+	`./make.sh -o -g` 	Compiles Redux with the Original menu/menu & Green Agahnim graphics
+
+	`./make.sh -o -s` 	Compiles Redux with the Original menu/menu & Title Screen Subtitle graphics
+
+	`./make.sh -o -c` 	Compiles Redux with the Original menu/menu & both the Subtitle + Green Agahnim graphics
+
+	`./make.sh -o -r -t` 	Compiles Redux with the Original menu/HUD graphics and Retranslation script
+	
+	`./make.sh -o -g -t` 	Compiles Redux with the Original menu/HUD & Green Agahnim graphics, and Retranslation script
+	
+	`./make.sh -o -s -t` 	Compiles Redux with the Original menu/HUD & Subtitle graphics, and Retranslation script
+	
+	`./make.sh -o -c -t` 	Compiles Redux with the Original menu/HUD, Green Agahnim & Subtitle graphics, and Retranslation script
+
+6. If you want specific optional patches to be applied in your complation, open the `optional.asm` file inside /code/ and uncomment the `incsrc xxxx` file of the optional patch you desire to include during compilation.
+
+7. Enjoy the hack!
+
+
+### Windows
+For compilation on Windows, you need to download and install [CygWin](https://www.cygwin.com/).
+Once you have it installed, browse to the directory where you downloaded the source code, and start the same steps as the Linux compilation listed above.
+
+----
+
 ## Instructions
 
 To play The Legend of Zelda: A Link to the Past Redux, the following is required:
@@ -185,15 +241,6 @@ If you change the name of the ROM to anything else, you have to change each inst
 One thing you have to take into consideration is that the ROM should be in the same folder as the .msu and all the .pcm files.
 
 NOTE: As mentioned with the "Enable FMV" optional patch, track #35 is the one which contains the FMV, if you are going to patch Redux to enable the FMV, be sure that you have the 35.pcm file in there!
-
-
--------------------
-
-## Compilation
-
-	The source code was developed entirely on Linux, using scompress and flips as sources for compiling both the graphics and the assembly code, respectively.
-
-For compilation on Windows, you'd most likely need something like CygWin
 
 -------------------
 
