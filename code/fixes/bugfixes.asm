@@ -13,7 +13,7 @@ org $09F526	; 0x04F526
 ; So now you can collect the pendants in the dark world.
 
 ;----------------------------------------
-; Water Gate Gix
+; Water Gate Fix
 ; When you pull the switch in the Water Gate Room to unleash the water, the entire room is flooded instead just the corridor:
 
 org $01CBAC	; 0x00CBAC
