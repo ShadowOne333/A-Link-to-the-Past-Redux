@@ -1,13 +1,15 @@
-Pending things for Redux disassembly:
-
 - Map & Object data (Overworld and Dungeons)
-	o Ice Palace GBA
-	o Star of David for the Eastern Palace restored (From the Japanese ROM)
+
+(These one don't need adding since they're handled through the graphics and text)
 	o New custom hieroglyphs to mimic those of the Japanese release.
-	o Sanctuary doorway restored
-	o Skull Statues restored. They appear in the Skull Woods Dungeon.
-	o Unused Zora sign near Zora’s Domain entrance restored.
+	o Star of David for the Eastern Palace restored (From the Japanese ROM, Room 184). 
+
+Map editing required:
+	o Ice Palace GBA (Rooms 158 and 190)
+	o Sanctuary doorway restored (BG3, Entry type $2F)
+	o Skull Statues restored. They appear in the Skull Woods Dungeon. (Room 73, change blocks for unused Skull statues FE:B)
+	o Unused Zora sign near Zora’s Domain entrance restored. Simply restore the proper tiles
+	o Cannon Soldiers, add them to the Hyrule Castle Tower before Agahnim's fight (Room 208, change blue soldiers for Cannon Soldiers)
 	o First warp point relocation, so it no longer drops you at the very beginning of the Death Mountain, but rather at the left side of the Heart Container you obtain after your first travel to the Dark World for convenience sake.
 
-- Fix whatever is broken between Map/Object data and the FastROM implementation
-- Tilemap for the "TRIFORCE OF THE GODS" optional patch
+	o Kakariko Shortcut (Area $22). Smithy State and Hyrule Castle area. Modify accordingly.

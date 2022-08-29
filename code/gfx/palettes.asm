@@ -31,9 +31,5 @@ org $1BD308	; 0x0DD308
 org $0E9E90	; 0x071E90
 	db $37		; Originally $3B (Thanks, Conn!)
 
-; Modify a thief's palette in Lost Woods to not have such odd colors with the palette changes
-org $0DB41D	; 0x06B41D
-	db $09		; Originally $0D
-
 ;----------------------------------------
 

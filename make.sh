@@ -14,7 +14,7 @@ export  patched_rom=$out_folder/$file_base.sfc
 export  asm_file=code/main.asm
 export	checksum=6d4f10a8b10e10dbe624cb23cf03b88bb8252973
 export	subtitle_layout=code/layouts/subtitle_layout.ips
-#export	maps_layout=code/layouts/map_layouts.ips
+export	map_layouts=code/layouts/map_layouts.ips
 
 #-------------------------------------------------------------
 # Help section
@@ -119,8 +119,8 @@ Start()
 	fi
 
 	# Apply map layout changes if specified through IPS
-	#echo "Applying Map layout changes...";
-	#$flips $map_layouts $patched_rom; echo
+	echo "Applying Map layout changes...";
+	$flips $map_layouts $patched_rom; echo
 
 	# Create IPS
 	echo "Creating Zelda3-Redux.ips patch...";
