@@ -439,10 +439,10 @@ dialogue_table1:
 	db "!{for} !{the} tem!{ple}.",!End
 ;----------------------------------------
 .message_052:
-	db "!{The}!{re} !{ma}y !{be} oth!{er_}!{des}c!{en}d!{an}ts",!Line2
-	db "!{of} !{the} S!{ev}!{en_}Sages !{hi}d!{ing_}!{fro}m",!Line3
-	db "!{the} c!{ast}le !{so}l!{di}!{er}s. Seek !{the}m",!WaitKey,!Scroll
-	db "out.",!End
+	db "!{The}!{re} !{ma}y !{be} oth!{er_}",!Line2
+	db "!{des}c!{en}d!{an}ts !{of} !{the} S!{ev}!{en_}",!Line3
+	db "Sages !{hi}d!{ing_}!{fro}m !{the} c!{ast}le",!WaitKey,!Scroll
+	db "!{so}l!{di}!{er}s. Seek !{the}m out.",!End
 ;----------------------------------------
 .message_053:
 	db !Window02,!Speed03
@@ -621,8 +621,8 @@ dialogue_table1:
 	db "sign.",!End
 ;----------------------------------------
 .message_072:
-	db "Hou!{se} !{of} Lum!{be}rja!{ck}s",!Line2
-	db "!{3_}!{3_}Bun !{and_}Y!{an}",!End
+	db "!{4_}!{The} Hou!{se} !{of} Lum!{be}rja!{ck}s",!Line2
+	db "!{4_}!{3_}!{3_}!{3_}Bun !{and_}Y!{an}",!End
 ;----------------------------------------
 .message_073:
 	db "!{Thi}s !{wa}y",!Line2
@@ -1172,7 +1172,7 @@ dialogue_table1:
 	db "v!{ent}u!{re}s !{to} !{the} Sacr!{ed_}Realm.",!WaitKey,!Scroll
 	db "It !{wi}ll !{pro}tect !{hi}m !{fro}m !{the}",!Scroll
 	db "!{ma}gical !{pow}!{er_}th!{at_}ch!{an}ges",!Scroll
-	db "peo!{ple}s' !{for}ms.",!WaitKey,!Scroll
+	db "peo!{ple}'s !{for}ms.",!WaitKey,!Scroll
 	db "Now th!{at_}I !{se}e !{you} !{have}",!Scroll
 	db "obt!{ain}!{ed_}!{it}, !{you} !{mu}!{st} su!{re}!{ly_}!{be}",!Scroll
 	db "!{the} H!{er}o I !{wa}s !{wa}!{it}!{ing_}!{for}.",!WaitKey,!Scroll
@@ -1696,7 +1696,7 @@ dialogue_table1:
 ;----------------------------------------
 .message_239:
 	db !Position01,!Speed03
-	db "Jo-m!{on}!{Dots} jo-m!{on}!{Dots},!WaitKey",!Line2
+	db "Jo-m!{on}!{Dots} jo-m!{on}!{Dots}",!WaitKey,!Line2
 	db "S!{ear}ch !{for} !{the} Mo!{on} P!{ear}l !{in} a",!Line3
 	db "mount!{ain} !{to}w!{er}.",!End
 ;----------------------------------------
@@ -2385,7 +2385,7 @@ dialogue_table1:
 	db "!{re}!{st}!{or}e peace !{to} our k!{in}g!{do}m.",!End
 ;----------------------------------------
 .message_317:
-	db "Ah, !{Name} !{the} !{ma}gnific!{ent}! I",!Line2
+	db "Ah, !{Name} !{the} Magnific!{ent}! I",!Line2
 	db "!{have} !{be}!{en_}!{wa}!{it}!{ing_}!{for} !{you}! Heh",!Line3
 	db "heh heh!{Dots}",!WaitKey,!Scroll
 	db "!{You} !{know}, I !{wa}s actual!{ly_}hop!{in}g",!Scroll

@@ -74,7 +74,7 @@ dialogue_table2:
 	db "!{to} p!{la}y. Well, !{se}e ya ar!{ound}!",!End
 ;----------------------------------------
 .message_354:
-	db "Wa!{it} kid! !{You} !{have} !{to} pay",!Line2
+	db "Wa!{it}, kid! !{You} !{have} !{to} pay",!Line2
 	db "r!{up}ees !{be}!{for}e op!{en}!{ing_}!{che}!{st}s!",!End
 ;----------------------------------------
 .message_355:
@@ -304,14 +304,14 @@ dialogue_table2:
 ;----------------------------------------
 .message_382:
 	db "Let!{s_}!{se}e if !{you} !{can_}w!{in} r!{up}ees",!Line2
-	db "!{or} if !{you} !{lo}!{se} em. A s!{in}gle",!Line3
+	db "!{or} if !{you} !{lo}!{se} 'em. A s!{in}gle",!Line3
 	db "r!{ound} co!{st}s 20 r!{up}ees.",!WaitKey,!Scroll
 	db "Will !{you} !{tr}y !{you}r lu!{ck}?",!Scroll
 	db "!{4_}> I'll p!{la}y",!Scroll
 	db "!{4_}!{3_}I'm outta h!{er}e",!Choose,!End
 ;----------------------------------------
 .message_383:
-	db "All right!! Op!{en_}!{the} !{che}!{st} !{you}",!Line2
+	db "All right! Op!{en_}!{the} !{che}!{st} !{you}",!Line2
 	db "like!",!End
 ;----------------------------------------
 .message_384:

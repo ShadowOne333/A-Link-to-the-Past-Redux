@@ -30,7 +30,8 @@ org $1BEE1D	; 0x0DEE1D
 ;----------------------------------------
 
 ; Modify to avoid 2MB ROM!
-org $3FFF00	; 0x1FFF00
+; Moved from $3FFED0 (0x1FFED0) to $07FFB0 (0x03FFB0)
+org $07FFB0	; 0x03FFB0, 0x26 bytes
 bunny_palette:
 	; Check bunny
 	lda $02E0

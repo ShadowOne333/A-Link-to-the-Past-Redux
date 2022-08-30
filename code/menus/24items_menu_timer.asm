@@ -4,14 +4,14 @@
 ; Apply the patch after you inserted Euclid's code for a 24 items menu (do not apply the Parallel_Worlds_shovel.ips)
 
 org $0083E7	; 0x00003E7
-	jsl $22E700	; 22 00 E7 22
+	jsl subroutine1	; $22E700, 22 00 E7 22
 
 org $0CCFDC	; 0x064FDC
-	jsl $22E760	; 22 60 E7 22
+	jsl subroutine2	; $22E760, 22 60 E7 22
 	nop
 
 org $0DDF15	; 0x06DF15
-	jsl $22E780	; 22 80 E7 22
+	jsl subroutine3	; $22E780, 22 80 E7 22
 	nop
 
 org $0DE914	; 0x06E914
@@ -133,7 +133,9 @@ org $1BB520	; 0x0DB520
 	rtl
 
 ; Modify to avoid 2MB ROM!
-org $22E700	; 0x117700
+; Moved from $3FFF00 (0x1FFF00) to $07FE50 (0x03FE50)
+org $07FE50	; 0x03FE50, 0xED bytes
+subroutine1:
 	sta $F6
 	sty $FA
 	rep #$30
@@ -153,14 +155,14 @@ org $22E700	; 0x117700
 	sep #$30
 	rtl
 
-org $22E760	; 0x116760
+subroutine2:
 	lda #$0E10
 	sta $7EE000
 	ldy #$0000
 	ldx $00
 	rtl
 
-org $22E780	; 0x116780
+subroutine3:
 	rep #$30
 	ldy #$0000
 	lda $7EF339
@@ -193,7 +195,7 @@ org $22E780	; 0x116780
 	and #$000F
 	asl
 	tax
-	lda $22E860,x
+	lda.l timer_table,x	; $22E860,x
 	sta $1376
 	lda $00
 	and #$00F0
@@ -201,7 +203,7 @@ org $22E780	; 0x116780
 	lsr
 	lsr
 	tax
-	lda $22E860,X
+	lda.l timer_table,x	; $22E860,X
 	sta $1374
 	tya
 	ldy #$0000
@@ -224,7 +226,7 @@ org $22E780	; 0x116780
 	and #$000F
 	asl
 	tax
-	lda $22E860,x
+	lda.l timer_table,x	; $22E860,x
 	sta $1370
 	lda $00
 	and #$00F0
@@ -232,7 +234,7 @@ org $22E780	; 0x116780
 	lsr
 	lsr
 	tax
-	lda $22E860,x
+	lda.l timer_table,x	; $22E860,x
 	sta $136E
 	lda $7E0AE0
 	and #$00FF
@@ -249,7 +251,7 @@ org $22E780	; 0x116780
 	lda $F0
 	rtl
 
-org $22E860	; 0x116860
+timer_table:
 	dw $2414,$2415,$2416,$2417
 	dw $2418,$2424,$2424,$2426
 	dw $2427,$2428

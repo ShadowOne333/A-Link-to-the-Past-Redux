@@ -108,9 +108,9 @@ Start()
 	$asar code/gfx/palettes/$graphics.asm $patched_rom	# Graphics changes
 	echo "Graphics & palettes compiled."; echo
 
-	# Compile the assembly code
-	echo "Beginning main assembly code compilation with Asar..."; echo
-	$asar $asm_file $patched_rom		# Main code
+	# Apply map layout changes if specified through IPS
+	echo "Applying Map layout changes...";
+	$flips $map_layouts $patched_rom; echo
 
 	# Apply subtitle layout changes if specified through IPS
 	if [ "$graphics" == "Subtitle" ] || [ "$graphics" == "AgahnimSubtitle" ]; then
@@ -118,9 +118,9 @@ Start()
 		$flips $subtitle_layout $patched_rom; echo
 	fi
 
-	# Apply map layout changes if specified through IPS
-	echo "Applying Map layout changes...";
-	$flips $map_layouts $patched_rom; echo
+	# Compile the assembly code
+	echo "Beginning main assembly code compilation with Asar..."; echo
+	$asar $asm_file $patched_rom		# Main code
 
 	# Create IPS
 	echo "Creating Zelda3-Redux.ips patch...";
