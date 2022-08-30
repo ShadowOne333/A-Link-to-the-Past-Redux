@@ -1482,7 +1482,7 @@ dialogue_table1:
 ;----------------------------------------
 .message_202:
 	db "I !{do}!{nt_}!{have} !{an}y empty",!Line2
-	db "!{bo}ttles. Oh !{we}ll!{Dots} I'll !{be}tt!{er} !{se}t",!Line3
+	db "!{bo}ttles. Oh !{we}ll!{Dots} I guess I'll set !{se}t",!Line3
 	db "!{it} f!{re}e.",!End
 ;----------------------------------------
 .message_203:
