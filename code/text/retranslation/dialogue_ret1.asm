@@ -1463,9 +1463,8 @@ dialogue_table1:
 	db "!{not} !{for}!{get} !{it}!",!End
 ;----------------------------------------
 .message_199:	; Chris Houlihan room
-	db "My na!{me} !{is} Chr!{is} Houlih!{an}.",!WaitKey,!Line2
-	db "You've !{di}scov!{er}!{ed_}my !{hi}dd!{en}",!Line3
-	db "room. Keep !{thi}s a !{se}c!{re}t",!Scroll
+	db "You've !{di}scov!{er}!{ed_}my !{hi}dd!{en}",!Line2
+	db "room. Keep !{thi}s a !{se}c!{re}t",!Line3
 	db "!{be}t!{we}!{en_}us.",!End
 ;----------------------------------------
 .message_200:
