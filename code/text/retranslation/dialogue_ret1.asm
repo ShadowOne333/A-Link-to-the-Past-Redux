@@ -1336,13 +1336,13 @@ dialogue_table1:
 	db "!{3_}!{Ankh1}!{Ankh2}!{Snake1}!{Snake2}!{Snake1}!{Snake2}!{Ankh1}!{Ankh2}"
 	db "!{3_}!{Waves1}!{Waves2}!{Waves1}!{Waves2}!{Ankh1}!{Ankh2}",!End
 ;----------------------------------------
-.message_183:
-	db "!{The} H!{er}o!{s_}!{tr}iumph !{on}",!Line2
-	db "C!{at}aclysm!{s_}Eve w!{in}s th!{re}e",!Line3
-	db "sym!{bo}ls !{of} virtue.",!WaitKey,!Scroll
-	db "!{The} M!{ast}!{er_}Sw!{or}d, he !{wi}ll !{the}n",!Scroll
-	db "!{re}!{tr}i!{ev}e, keep!{ing_}!{the} knight's",!Scroll
-	db "l!{in}e !{tr}ue.",!End
+.message_183:	; Master Sword pedestal
+	db "In hour !{of} !{the} C!{at}!clysm,",!Line2
+	db "ar!{is}e a H!{er}o like !{the} dawn.",!WaitKey,!Line3
+	db "Of knight!{ly_}pe!{di}g!{re}e,",!Scroll
+	db "!{be}ar!{ing_}sigils th!{re}e,",!Scroll
+	db "by such h!{and}s !{wi}ll b!{la}de",!WaitKey,!Scroll
+	db "!{be} drawn.",!End
 ;----------------------------------------
 .message_184:
 	db !Window02

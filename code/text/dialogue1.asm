@@ -556,7 +556,7 @@ dialogue_table1:
 	db "C!{all_}a !{so}l!{di}!{er_}if !{you} !{se}e !{hi}m!",!End
 ;----------------------------------------
 .message_060:
-	db "!{4_} DANGER!",!Line2
+	db "!{4_}!{4_}!{4_}!{4_}DANGER!",!Line2
 	db "Do !{not} !{ent}!{er_}Hebra Mount!{ain}",!Line3
 	db "w!{it}h!{out_}!{the} K!{in}g!{s_}p!{er}m!{is}si!{on}!",!End
 ;----------------------------------------
@@ -565,7 +565,7 @@ dialogue_table1:
 	db "!{4_}!{2_}!{Up} Lo!{st} Woods",!End
 ;----------------------------------------
 .message_062:
-	db "!{4_}!{4_}!{3_}DANGER!",!Line2
+	db "!{4_}!{4_}!{4_}!{4_}DANGER!",!Line2
 	db "Bew!{are_}!{of} deep w!{at}!{er_}!{and_}Z!{or}a!",!End
 ;----------------------------------------
 .message_063:

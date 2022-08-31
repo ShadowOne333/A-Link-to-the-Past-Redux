@@ -92,8 +92,23 @@ Start()
 	cp "$clean_rom" "$patched_rom"
 
 #-------------------------------------------------------------
+# Apply map layout changes if specified through IPS
+	echo "Applying Map layout changes...";
+	$flips $map_layouts $patched_rom; echo
+
+# Apply subtitle layout changes if specified through IPS
+	if [ "$graphics" == "Subtitle" ] || [ "$graphics" == "AgahnimSubtitle" ]; then
+		echo "Patching subtitle tilemapping...";
+		$flips $subtitle_layout $patched_rom; echo
+	fi
+
+#-------------------------------------------------------------
+# Compile the main assembly code
+	echo "Beginning main assembly code compilation with Asar..."; echo
+	$asar $asm_file $patched_rom		# Main code
+
 # Compress the graphics back into the base patch ROM
-	echo; echo "Compressing Redux graphics from $org$graphics.bin using scompress..."
+	echo "Compressing Redux graphics from $org$graphics.bin using scompress..."
 
 	# Force a button press so zcompress exits on its own when using Wine+zcompress
 	#xdotool key $(xdotool search --name "zcompress.exe") KP_Space
@@ -103,24 +118,11 @@ Start()
 	$scompress i out/"$file_base".sfc code/gfx/$org$graphics.bin
 	echo "Graphics compression finalized."
 
-#-------------------------------------------------------------
 # Start patching of the main.asm file and create IPS
 	$asar code/gfx/palettes/$graphics.asm $patched_rom	# Graphics changes
-	echo "Graphics & palettes compiled."; echo
+	echo "Graphics & palettes compiled.";echo
 
-	# Apply map layout changes if specified through IPS
-	echo "Applying Map layout changes...";
-	$flips $map_layouts $patched_rom; echo
-
-	# Apply subtitle layout changes if specified through IPS
-	if [ "$graphics" == "Subtitle" ] || [ "$graphics" == "AgahnimSubtitle" ]; then
-		echo "Patching subtitle tilemapping...";
-		$flips $subtitle_layout $patched_rom; echo
-	fi
-
-	# Compile the assembly code
-	echo "Beginning main assembly code compilation with Asar..."; echo
-	$asar $asm_file $patched_rom		# Main code
+	echo "Main assembly code compilation succeded!"; echo
 
 	# Create IPS
 	echo "Creating Zelda3-Redux.ips patch...";
