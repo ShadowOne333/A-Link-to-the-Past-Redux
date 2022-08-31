@@ -12,9 +12,6 @@
 ; Start the game with full hearts
 ;incsrc code/optional/full_hearts.asm
 
-; Add a shortcut between north of Link's house and Kakariko Village, similar to the one in A Link Between Worlds
-;incsrc code/optional/kakariko_shortcut.asm
-
 ; Mirror works on both worlds
 ;incsrc code/optional/mirror_both_worlds.asm
 
