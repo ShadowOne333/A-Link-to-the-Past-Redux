@@ -16,7 +16,7 @@
 ;incsrc code/optional/mirror_both_worlds.asm
 
 ; Allows movement of blocks several times
-;incsrc gameplay/move_blocks_infinitely.asm
+;incsrc code/optional/move_blocks_infinitely.asm
 
 ; Restore the original Bomb & Arrows minimum and maximum amounts
 ;incsrc code/optional/original_bomb-arrow_amounts
