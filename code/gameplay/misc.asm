@@ -18,4 +18,18 @@ org $098C26	; 0x048C26
 	bra $15		; Originally BNE $15
 
 ;----------------------------------------
+; Red and Blue Tunic obtainable in each others' chests
 
+; Edits both armor chets to be Armor 2 with an Alternate of Armor 3. The first one you pick up will always be blue, and the second will always be red. Originally made by qwertymodo
+
+; Original address at $01EAD8 (0x00EAD8), (should be included in map_layouts.ips)
+org $01EA69	; 0x00EA69
+; Changes the Tower of Ganon chest from a Red Tunic to a Blue Tunic
+	db $22	; Originally $23
+
+; Original address at $07B54A (0x03B54A)
+; Changes the alt item received for the Blue Tunic from blank (FF) to a Red Tunic (23)
+org $07B54A	; 0x03B54A
+	db $23   ; Originally $FF
+
+;----------------------------------------

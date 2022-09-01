@@ -169,11 +169,11 @@ To compile the ROM:
 
 	`./make.sh -o -r` 	Compiles Redux with the Original menu and HUD graphics
 
-	`./make.sh -o -g` 	Compiles Redux with the Original menu/menu & Green Agahnim graphics
+	`./make.sh -o -g` 	Compiles Redux with the Original menu/HUD & Green Agahnim graphics
 
-	`./make.sh -o -s` 	Compiles Redux with the Original menu/menu & Title Screen Subtitle graphics
+	`./make.sh -o -s` 	Compiles Redux with the Original menu/HUD & Title Screen Subtitle graphics
 
-	`./make.sh -o -c` 	Compiles Redux with the Original menu/menu & both the Subtitle + Green Agahnim graphics
+	`./make.sh -o -c` 	Compiles Redux with the Original menu/HUD & both the Subtitle + Green Agahnim graphics
 
 	`./make.sh -o -r -t` 	Compiles Redux with the Original menu/HUD graphics and Retranslation script
 	
