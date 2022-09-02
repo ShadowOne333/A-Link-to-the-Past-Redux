@@ -92,6 +92,8 @@ Start()
 	cp "$clean_rom" "$patched_rom"
 
 #-------------------------------------------------------------
+# Apply IPS patches for subtitle tilemaps and map layouts
+
 # Apply map layout changes if specified through IPS
 	echo "Applying Map layout changes...";
 	$flips $map_layouts $patched_rom; echo

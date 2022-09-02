@@ -61,6 +61,7 @@ NOTE: You DO NOT need to patch Redux first in order to apply this hack. You can 
 * Change the Good Bee’s name to Golden Bee.
 * Change Faerie to Fairy. This includes in-game text too.
 * Change Pegasus Shoes to Pegasus Boots. This includes in-game text too.
+* Tunics order will always remain as Blue Tunic first, and Red Tunic second, despite if you get them out of order.
 * Change all the references of the “Wise Men” to “Sages”, Medicines to "Potions", Blue Pendant is now Wisdom while Red one is Power, and many other text and graphical changes to fit in line with the rest of the series.
 * King of Hyrule now has a red outfit instead of green to match the rest of the franchise’s Kings of Hyrule (Like Daphnes Nohansen Hyrule from WW). For v5.0, the palette being shared between green soldiers and King of Hyrule has been fixed. Thanks to Conn for this! 
 
@@ -226,10 +227,10 @@ Let's say your ROM is named "redux.sfc", this how everything else should go (all
 	...
 	redux-34.pcm
 
-If you change the name of the ROM to anything else, you have to change each instance of "redux" in EACH file to whatever you choose the name to be. The track names should be the EXACT same name of the ROM, and you add a dash and the number for each track accordingly. "loz-redux-1.pcm, loz-redux-2.pcm",etc. For example, I always name my ROM like "The Legend of Zelda - A Link to the Past.smc"
+If you change the name of the ROM to anything else, you have to change each instance of "redux" in EACH file to whatever you choose the name to be. The track names should be the EXACT same name of the ROM, and you add a dash and the number for each track accordingly. "loz-redux-1.pcm, loz-redux-2.pcm",etc. For example, I always name my ROM like "The Legend of Zelda - A Link to the Past.sfc"
 
 	The Legend of Zelda - A Link to the Past.msu
-	The Legend of Zelda - A Link to the Past.smc     <<------This one can be .sfc or .smc, doesn't matter.
+	The Legend of Zelda - A Link to the Past.sfc     <<------Should be an SFC extension for better compatibility with other emulators.
 	The Legend of Zelda - A Link to the Past-1.pcm
 	The Legend of Zelda - A Link to the Past-2.pcm
 	...
