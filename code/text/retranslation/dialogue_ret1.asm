@@ -1337,7 +1337,7 @@ dialogue_table1:
 	db "!{3_}!{Waves1}!{Waves2}!{Waves1}!{Waves2}!{Ankh1}!{Ankh2}",!End
 ;----------------------------------------
 .message_183:	; Master Sword pedestal
-	db "In hour !{of} !{the} C!{at}!clysm,",!Line2
+	db "In hour !{of} !{the} C!{at}clysm,",!Line2
 	db "ar!{is}e a H!{er}o like !{the} dawn.",!WaitKey,!Line3
 	db "Of knight!{ly_}pe!{di}g!{re}e,",!Scroll
 	db "!{be}ar!{ing_}sigils th!{re}e,",!Scroll

@@ -92,6 +92,7 @@ incsrc gameplay/shovel_treasures.asm	; Make items appear when digging with the s
 ; Instead, the way they will be handled is through IPS patches.
 ; These will be made out of a fully functional FastROM hack first, and then all the Map changes will be redone over the FastROM hack.
 ; From that FastROM hack with maps the edited, a diff patch will be made between it and the original FastROM hack to create an IPS that will contain only the Map modifications.
+; NOTE: It's possible that the issues between FastROM and the maps originally had could have been caused by wrongly repointed map graphics tiles, posibly re-injecting the GFX with scompress could have fixed it but it's unknown yet.
 
 ;****************************************
 ;	Text changes

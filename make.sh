@@ -79,7 +79,7 @@ Start()
 # SHA-1 sum verified, begin patching...
 	if [ "$sha1" == "$checksum" ]; then
 		echo; echo "Base ROM SHA-1 checksum verified."
-		echo "Commencing patching process..."
+		echo "Starting patching process..."
 	else
 		export error="Base ROM checksum is incorrect."
 		Error;

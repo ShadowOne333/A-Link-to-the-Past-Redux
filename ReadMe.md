@@ -12,6 +12,8 @@
 
 * [**Patch & Use Instructions**](#instructions)
 
+* [**FAQ**](#faq)
+
 * [**Credits**](#credits)
 
 * [**Project Licence**](#license)
@@ -160,13 +162,13 @@ To compile the ROM:
 	
 	`./make.sh -c` 	Compiles Redux with both the Title Screen Subtitle & Green Agahnim graphics
 
-	`./make.sh -r -t` 	Compiles Redux with the Retranslation script
+	`./make.sh -t -r` 	Compiles Redux with the Retranslation script
 	
-	`./make.sh -g -t` 	Compiles Redux with the Green Agahnim graphics & Retranslation script
+	`./make.sh -t -g` 	Compiles Redux with the Green Agahnim graphics & Retranslation script
 	
-	`./make.sh -s -t` 	Compiles Redux with the Subtitle graphics & Retranslation script
+	`./make.sh -t -s` 	Compiles Redux with the Subtitle graphics & Retranslation script
 	
-	`./make.sh -c -t` 	Compiles Redux with the combined Green Agahnim & Subtitle graphics, and Retranslation script
+	`./make.sh -t -c` 	Compiles Redux with the combined Green Agahnim & Subtitle graphics, and Retranslation script
 
 	`./make.sh -o -r` 	Compiles Redux with the Original menu and HUD graphics
 
@@ -176,13 +178,13 @@ To compile the ROM:
 
 	`./make.sh -o -c` 	Compiles Redux with the Original menu/HUD & both the Subtitle + Green Agahnim graphics
 
-	`./make.sh -o -r -t` 	Compiles Redux with the Original menu/HUD graphics and Retranslation script
+	`./make.sh -o -t -r` 	Compiles Redux with the Original menu/HUD graphics and Retranslation script
 	
-	`./make.sh -o -g -t` 	Compiles Redux with the Original menu/HUD & Green Agahnim graphics, and Retranslation script
+	`./make.sh -o -t -g` 	Compiles Redux with the Original menu/HUD & Green Agahnim graphics, and Retranslation script
 	
-	`./make.sh -o -s -t` 	Compiles Redux with the Original menu/HUD & Subtitle graphics, and Retranslation script
+	`./make.sh -o -t -s` 	Compiles Redux with the Original menu/HUD & Subtitle graphics, and Retranslation script
 	
-	`./make.sh -o -c -t` 	Compiles Redux with the Original menu/HUD, Green Agahnim & Subtitle graphics, and Retranslation script
+	`./make.sh -o -t -c` 	Compiles Redux with the Original menu/HUD, Green Agahnim & Subtitle graphics, and Retranslation script
 
 6. If you want specific optional patches to be applied in your complation, open the `optional.asm` file inside /code/ and uncomment the `incsrc xxxx` file of the optional patch you desire to include during compilation.
 
@@ -240,6 +242,23 @@ If you change the name of the ROM to anything else, you have to change each inst
 One thing you have to take into consideration is that the ROM should be in the same folder as the .msu and all the .pcm files.
 
 NOTE: As mentioned with the "Enable FMV" optional patch, track #35 is the one which contains the FMV, if you are going to patch Redux to enable the FMV, be sure that you have the 35.pcm file in there!
+
+-------------------
+
+## FAQ
+
+* Why are both the Map Layouts and the "TRIFORCE OF THE GODS" Subtitle Tilemapping handled through IPS patches instead of a proper ASM disassembly?
+
+A Link to the Past is well known for using compression for almost everything in the game, and also a great number of assets in the game quite limited and almost at the top of their maximum limit.
+
+The entirety of the graphics are compressed in the game, and the map, dungeon and room data have very strict limits when it comes to adding new objects or items in any of them. Heck, even the text format itself is compressed, it uses some sort of "dictionary" that detects certain combination of letters and outputs a single  byte that corresponds to 2 or 3 charaters at a time.
+
+Adding to this, the FastROM hack was giving some really iffy problems when attempting a map modification through assembly with a lot of rooms being broken with blocks of random stuff (possibly badly repointed data).
+
+Due to all of these points, it was decided to create diff patches for both the Map Layouts and the Subtitle tilemap.
+
+The way these were created was by compiling a fresh Redux ROM without any of the map or tilemap changes, with all of the coding and graphics injected, and then using that ROM as a base for editing the maps and tilemaps through [ZScream](https://github.com/Zarby89/ZScreamDungeon). 
+Then, applying the patches first before any other changes, and then patching in the Redux code and injecting the graphics last would output a correct and fully functional Redux ROM with all of the map and subtitle changes working. Thi exact order of compilation was needed, or else, any other combination would give a borked ROM on output.
 
 -------------------
 
