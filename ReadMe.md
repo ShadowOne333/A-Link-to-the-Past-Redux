@@ -23,7 +23,7 @@
 * _**BEFORE PATCHING**_:
 
     NOTE: Take into consideration that should ONLY patch either the "Link to the Past Redux.ips" patch OR the "Retranslation Redux.ips" patch.
-    DO NOT combine them. Retranslation Redux already contains all of the perks and features of normal Redux by default, so you don't need to apply one over the other!
+    **DO NOT** combine them. Retranslation Redux already contains all of the perks and features of normal Redux by default, so you don't need to apply one over the other!
 
 -------------------
 
@@ -247,7 +247,7 @@ NOTE: As mentioned with the "Enable FMV" optional patch, track #35 is the one wh
 
 ## FAQ
 
-* Why are both the Map Layouts and the "TRIFORCE OF THE GODS" Subtitle Tilemapping handled through IPS patches instead of a proper ASM disassembly?
+* **Why are both the Map Layouts and the "TRIFORCE OF THE GODS" Subtitle Tilemapping handled through IPS patches instead of a proper ASM disassembly?**
 
 A Link to the Past is well known for using compression for almost everything in the game, and also a great number of assets in the game quite limited and almost at the top of their maximum limit.
 
@@ -265,6 +265,7 @@ Then, applying the patches first before any other changes, and then patching in 
 ## Credits
 
 * **Conn & qwertymodo** - For their incredible work on the original project "A Link to the Past DX" which was used as a base with their permission, and additionally, for their bugfixes past the initial release and their permission to also use the source code of theirs for this GitHub repository.
+* **Zarby89 & Jared Brian** - For their work on [ZScream](https://github.com/Zarby89/ZScreamDungeon), which has far outdone Hyrule Magic for Zelda 3 hacking in a full open-source project, and without having to worry about your ROM getting corrupted all of the sudden.
 * **SCD** - For his uncensoring and localization changes contribution, to bring back portions of the game previously removed in the Japanese-US conversion.
 * **PuzzleDude** - For his 24 item menu and additional hacks (keep Shovel and Flute fix)
 * **Kasuto** - For his Zelda 3 Max Consumables Fix Hack
