@@ -140,11 +140,23 @@ Please refer to the [A Link to the Past DX](https://www.romhacking.net/hacks/223
 
 ## Compilation
 
+
+### Windows
+
+For compilation on Windows, you need to download and install [CygWin](https://www.cygwin.com/).
+
+When installing Cygwin, be sure to also install `git` from the list of packages available, or you won't be able to clone the repository from the source.
+
+Once you have it installed, browse to the directory where you downloaded the source code, and start the same steps as the Linux compilation.
+
+(I recompiled the scompress Windows EXE in Cygwin so it works properly with the Windows compilation)
+
+
 ### Linux
 
 The source code was developed entirely on Linux, using scompress and flips as sources for compiling both the graphics and the assembly code, respectively. I have compiled both scompress and flips as 32bit binaries and included them into the repository so the user can directly use these without worrying about compiling and creating the executable binaries for each one.
 
-To compile the ROM:
+* Compiling the ROM:
 
 1. Either download the source code as ZIP, or clone the repository by opening terminal and running `git clone https://github.com/ShadowOne333/A-Link-to-the-Past-Redux`. Put the downloaded files anywhere in your PC.
 2. Grab your ALttP ROM with the name "Legend of Zelda, The - A Link to the Past (USA).sfc" under the "/rom/" folder.
@@ -190,10 +202,6 @@ To compile the ROM:
 
 7. Enjoy the hack!
 
-
-### Windows
-For compilation on Windows, you need to download and install [CygWin](https://www.cygwin.com/).
-Once you have it installed, browse to the directory where you downloaded the source code, and start the same steps as the Linux compilation listed above.
 
 ----
 
