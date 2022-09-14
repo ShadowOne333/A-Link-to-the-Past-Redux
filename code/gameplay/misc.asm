@@ -33,3 +33,39 @@ org $07B54A	; 0x03B54A
 	db $23   ; Originally $FF
 
 ;----------------------------------------
+; Change the direction of the sword when swinging
+org $079AC7    ; 0x039AC7
+; Originally STZ $02E3 : LDA $0301 (9C E3 02 AD 01 03)
+  	jsl NewSwordCode    ; $3D8000, 22 00 80 3D
+	nop #2        ; EA EA
+
+org $3D8000    ; 1E8000, new code by Zarby
+NewSwordCode:
+; Prevent sword from changing direction when charging a spin
+	lda $3C : and #$0A : bne ++
+
+; Sword swing direction change
+	lda $F0 : and #$01 : beq +        ; F0 06
+	; Right
+	lda #$06 : sta $2F
+	bra ++
++
+	lda $F0 : and #$02 : beq +
+	; Left
+	lda #$04 : sta $2F
+	bra ++    ; $14
++
+	lda $F0 : and #$04 : beq +
+	; Down
+	lda #$02 : sta $2F
+	bra ++    ; $08
++
+	lda $F0 : and #$08 : beq ++    ; $02
+	; Up
+	stz $2F
+++
+	stz $02E3
+	lda $0301
+	rtl
+
+;----------------------------------------
