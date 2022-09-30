@@ -12,6 +12,9 @@
 ; Start the game with full hearts
 ;incsrc code/optional/full_hearts.asm
 
+; Change the maximum Bomb & Arrows amounts to 99 for both
+;incsrc code/optional/max_bomb-arrow_amounts.asm
+
 ; Mirror works on both worlds
 ;incsrc code/optional/mirror_both_worlds.asm
 
@@ -19,7 +22,7 @@
 ;incsrc code/optional/move_blocks_infinitely.asm
 
 ; Restore the original Bomb & Arrows minimum and maximum amounts
-;incsrc code/optional/original_bomb-arrow_amounts
+;incsrc code/optional/original_bomb-arrow_amounts.asm
 
 ; Restore original pink hair for Link
 ;incsrc code/optional/original_pink_hair.asm
