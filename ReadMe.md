@@ -114,25 +114,28 @@ Please refer to the [A Link to the Past DX](https://www.romhacking.net/hacks/223
 4. **Green Agahnim+Triforce Subtitle:**
 	Using this will revert the color of Agahnim from Red+Blue to his original Green robe, and also adds the new "TRIFORCE OF THE GODS" subtitle alongside it.
 
-5. **Mirror Works in Both Worlds:**
+5. **Max Bomb-Arrows Amounts:**
+	This patch changes Link default Bombs & Arrows minimum and maximum amounts to be 20 to 99 for Bombs, and 30 to 99 for Arrows. 
+
+6. **Mirror Works in Both Worlds:**
 	This patch allows the Mirror to travel from both the Light and Dark Worlds (Light - Dark & Dark - Light), making it so that Link can travel between them at will, instead of only being able to use the Mirror to travel from Dark - Light World. 
 
-6. **Move Blocks Indefinitely:**
+7. **Move Blocks Indefinitely:**
 	Gives Link the ability to move blocks (that can be moved) several times. 
-
-7. **Original Pink Hair Link:**
-	These patches revert Link's new blonde hair to the original pink hair he had.
 
 8. **Original Bomb-Arrows Amounts:**
 	This patch reverts Link default Bombs & Arrows minimum and maximum amounts to be those of the original ALttP, those being 10 to 50 for Bombs, and 30 to 70 for Arrows. 
 
-9. **Remove Low Health Beep:**
+9. **Original Pink Hair Link:**
+	These patches revert Link's new blonde hair to the original pink hair he had.
+
+10. **Remove Low Health Beep:**
 	Completely remove the constant beeping that plays when you’re low on hearts. 
 
-10. **Start at Full Hearts (by PowerPanda):**
+11. **Start at Full Hearts (by PowerPanda):**
 	Applying this patch will make you start your game at full hearts every time you load your game.
 
-11. **Triforce of the Gods Subtitle):**
+12. **Triforce of the Gods Subtitle):**
 	Using this will change the subtitle in the title screen from "A LINK TO THE PAST" to match the original Japanese subtitle of "TRIFORCE OF THE GODS".
 
 
