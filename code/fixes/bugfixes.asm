@@ -28,7 +28,7 @@ org $01CBAC	; 0x00CBAC
 ; To fix it in case it happens again:
 ; 7EF051 is the room data containing the first door in the Swamp Palace. That code is responsible for flooding the room when you pull the lever in the floodgates
 
-; org $01CBA0	; 0x00CBA0
+; %fseek($01CBA0)	; 0x00CBA0
 	;lda $7EF051
 	;ora #$01
 	;sta $7EF051
@@ -72,43 +72,43 @@ org $02C4F2	; 0x0144F2
 ; As the name tells, use this hack only on NATIVE ALTTP. If you lift the teleport in Lake Hylia to access the ice dungeon you hear no chime. The reason is that the cave in the bottom-left corner is bombed open.
 ; This patch lets you hear a chime everytime you lift the stone (as you hear it for other teleports).
 
-org $04ECA0	; 0x026CA0 -> 0x027
+%fseek($04ECA0)	; 0x026CA0 -> 0x027
 	cpx #$0035	; E0 35 00
 	bne +		; D0 04
 	jml $1BC90B	; 5C 0B C9 1B
 +	lda $7EF280,x	; BF 80 F2 7E
 	jml $1BC906	; 5C 06 C9 1B
 
-org $1BC902	; 0x0DC902
+%fseek($1BC902)	; 0x0DC902
 	jml $04ECA0	; 5C A0 EC 04 -> 5C 80 EB 03
 
 ;----------------------------------------
 ; Cane of Somaria Fix (by Conn)
 ; When having a trap door switch in a dungeon room with exit, and you use the cane of somaria to keep the door open and leave the dungeon, the game breaks (e.g., skull wood dungeon, big key entrance).
 
-org $01C4B8	; 0x00C4B8
+%fseek($01C4B8)	; 0x00C4B8
 	jsl $0EFCA1	; 22 A1 FC 0E
 
-org $01C501	; 0x00C501
+%fseek($01C501)	; 0x00C501
 	jsl $0EFCA1	; 22 A1 FC 0E
 
-org $01C592	; 0x00C592
+%fseek($01C592)	; 0x00C592
 	jsl $0EFCA1	; 22 A1 FC 0E
 
-org $01C65F	; 0x00C65F
+%fseek($01C65F)	; 0x00C65F
 	jsl $0EFCA1	; 22 A1 FC 0E
 
-org $02B7BB	; 0x0137BB
+%fseek($02B7BB)	; 0x0137BB
 	jsl $8EFC70	; 22 70 FC 8E
 
-org $0EFC70	; 0x077C70
+%fseek($0EFC70)	; 0x077C70
 	lda #$0F	; A9 0F
 	sta $10		; 85 10
 	lda #$01	; A9 01
 	sta $0468	; 8D 68 04
 	rtl
 
-org $0EFCA1	; 0x077CA1
+%fseek($0EFCA1)	; 0x077CA1
 	lda $10		; A5 10
 	cmp #$0F	; C9 0F
 	bne +		; D0 04
@@ -121,12 +121,12 @@ org $0EFCA1	; 0x077CA1
 
 ;----------------------------------------
 ; Moldrum Bounce SFX (by Conn)
-; Originally it was thought to hear a bounce back sfx when hitting Moldrum's head. The malcode by Nintendo can cause noise in hacks, so better apply it
+; Originally it was thought to hear a bounce back SFX when hitting Moldrum's head. The malcode by Nintendo can cause noise in hacks, so better apply it
 
-org $06F35C	; 0x03735C
+%fseek($06F35C)	; 0x03735C
 	jsl $0DBB8A	; 22 A1 BB 0D, Originally JSL $0DBBA1
 
-org $1DD7B8	; 0x0ED7B8
+%fseek($1DD7B8)	; 0x0ED7B8
 	jsl $0DBB8A	; 22 A1 BB 0D, Originally JSL $0DBBA1
 
 

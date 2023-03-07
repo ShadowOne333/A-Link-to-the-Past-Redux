@@ -34,12 +34,12 @@ org $07B54A	; 0x03B54A
 
 ;----------------------------------------
 ; Change the direction of the sword when swinging by Zarby89
-org $079AC7    ; 0x039AC7
+%fseek($079AC7)    ; 0x039AC7
 ; Originally STZ $02E3 : LDA $0301 (9C E3 02 AD 01 03)
   	jsl NewSwordCode    ; $3D8000, 22 00 80 3D
 	nop #2        ; EA EA
 
-org $07FA60	; 0x03FA60, changed to free space
+%fseek($07FA60)	; 0x03FA60, changed to free space
 ; Originally written at org $3D8000 (0x1E8000)
 NewSwordCode:
 ; Prevent sword from changing direction when charging a spin

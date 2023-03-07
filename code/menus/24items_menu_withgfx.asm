@@ -72,7 +72,7 @@ org $0DE3DB	; 0x06E3DB
 	ora #$4000
 	sta $11FC,x	; Originally STA $11A6,X
 
-org $0DE415	; 0x06E415
+%fseek($0DE415)	; 0x06E415
 	ldy #$001B	; Originally LDY #$0010
 	lda #$2C82  	
 	and $00

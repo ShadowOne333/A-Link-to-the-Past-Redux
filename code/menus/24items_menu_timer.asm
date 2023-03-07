@@ -3,18 +3,19 @@
 ;****************************************************************
 ; Apply the patch after you inserted Euclid's code for a 24 items menu (do not apply the Parallel_Worlds_shovel.ips)
 
-org $0083E7	; 0x00003E7
+;org $0083E7	; 0x00003E7
+%fseek($0083E7)
 	jsl subroutine1	; $22E700, 22 00 E7 22
 
-org $0CCFDC	; 0x064FDC
-	jsl subroutine2	; $22E760, 22 60 E7 22
+%fseek($0CCFDC)	; 0x064FDC
+	jsl subroutine2|$800000	; $22E760, 22 60 E7 22
 	nop
 
-org $0DDF15	; 0x06DF15
-	jsl subroutine3	; $22E780, 22 80 E7 22
+%fseek($0DDF15)	; 0x06DF15
+	jsl subroutine3|$800000	; $22E780, 22 80 E7 22
 	nop
 
-org $0DE914	; 0x06E914
+%fseek($0DE914)	; 0x06E914
 	dw $2C1B
 	dw $2C19
 	dw $2C19
@@ -35,7 +36,7 @@ org $0DE914	; 0x06E914
 	dw $255B
 	dw $2562
 
-org $0DE9D5	; 0x06E9D5
+%fseek($0DE9D5)	; 0x06E9D5
 	lda #$2C1B
 	sta $13AA
 	lda #$2C19
@@ -59,7 +60,7 @@ org $0DE9D5	; 0x06E9D5
 	jsr $FFD0
 	nop
 
-org $0DFFD0	; 0x06FFD0
+%fseek($0DFFD0)	; 0x06FFD0
 	sta $13F4
 	lda #$255D
 	sta $13F6
@@ -69,7 +70,7 @@ org $0DFFD0	; 0x06FFD0
 	sta $13FA
 	rts
 
-org $1BB520	; 0x0DB520
+%fseek($1BB520)	; 0x0DB520
 	lda $0303
 	cmp #$07
 	bne +		; D0 13
@@ -134,7 +135,7 @@ org $1BB520	; 0x0DB520
 
 ; Modify to avoid 2MB ROM!
 ; Moved from $3FFF00 (0x1FFF00) to $07FE50 (0x03FE50)
-org $07FE50	; 0x03FE50, 0xED bytes
+%fseek($07FE50)	; 0x03FE50, 0xED bytes
 subroutine1:
 	sta $F6
 	sty $FA

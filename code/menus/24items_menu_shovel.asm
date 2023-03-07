@@ -3,7 +3,7 @@
 ;****************************************************************
 ; Apply the patch after you inserted Euclid's code for a 24 items menu (do not apply the Parallel_Worlds_shovel.ips)
 
-org $06B05A	; 0x3305A
+%fseek($06B05A)	; 0x3305A
 ; Moved for compatibility with the ALTTP DX namespaces codes
 	jsl $07FFE0	; Originally $07FBD0, 22 D0 FB 07
 	nop #2		; EA EA
@@ -14,19 +14,19 @@ org $079AF9	; 0x039AF9
 org $07A166	; 0x03A166
 	lda $7F5020	; AF 20 50 7F
 
-org $07A313	; 0x03A313
+%fseek($07A313)	; 0x03A313
 	jml $0DE520	; 5C 20 E5 0D
 
-org $07A344	; 0x03A344
+%fseek($07A344)	; 0x03A344
 	jsl $0DEDB8	; 22 B8 ED 0D
 	nop
 
-org $07A3CF	; 0x03A3CF
+%fseek($07A3CF)	; 0x03A3CF
 	jsl $0DEDC1	; 22 C1 ED 0D
 	nop
 
 ; Moved for compatibility with the ALTTP DX namespaces codes
-org $07FFE0	; 0x03FFE0 - Originally $07FBD0, 0x03FBD0
+%fseek($07FFE0)	; 0x03FFE0 - Originally $07FBD0, 0x03FBD0
 	lda $7EF34C	; AF 4C F3 7E
 	and #$03	; 29 03
 	cmp #$00	; C9 00
@@ -39,7 +39,7 @@ org $09850E	; 0x04850E
 ; A table of sorts?
 	db $4F
 
-org $0CCDCC	; 0x064DCC
+%fseek($0CCDCC)	; 0x064DCC
 	jsl $0DEDA8	; 22 A8 ED 0D
 	nop
 
@@ -56,7 +56,7 @@ org $0DE475	; 0x06E475
 ; Another table?
 	db $11
 
-org $0DE51D	; 0x06E51D
+%fseek($0DE51D)	; 0x06E51D
 	jmp $ED39	; 4C 39 ED
 	lda $7F5021	; AF 21 50 7F
 	cmp #$00	; C9 00
@@ -69,8 +69,8 @@ org $0DE51D	; 0x06E51D
 	jml $07A31D	; 5C 1D A3 07
 +	lda $7EF34F 	; AF 4F F3 7E
 	cmp #$00	; C9 00
+	jml $07A312	; 5C 12 A3 07
 	bne +		; D0 04
-	jml $07A312 	; 5C 12 A3 07
 +	cmp #$01	; C9 01
 	bne +		; D0 04
 	jml $07A32C	; 5C 2C A3 07
@@ -86,7 +86,7 @@ org $0DED2E	; 0x06ED2E
 	jsr $EE98	; 20 98 EE
 	nop #04		; EA EA EA EA
 
-org $0DED57	; 0x06ED57
+%fseek($0DED57)	; 0x06ED57
 	txy		; 9B
 	tax		; AA
 	lda $7F5021	; AF 21 50 7F
@@ -140,23 +140,23 @@ org $0DED57	; 0x06ED57
 	stz $0112	; 9C 12 01
 	rtl
 
-org $0DEDD9	; 0x06EDD9
+%fseek($0DEDD9)	; 0x06EDD9
 	jmp $ED57	; 4C 57 ED
 	nop
 
-org $0DEDE3	; 0x06EDE3
+%fseek($0DEDE3)	; 0x06EDE3
 	jsr $7F50	; 20 50 7F
 	and #$00FF	; 29 FF 00
 	tax		; AA
 	jsr $EE8D	; 20 8D EE
 
-org $0DEDFF	; 0x06EDFF
+%fseek($0DEDFF)	; 0x06EDFF
 	db $80
 
-org $0DEE17	; 0x06EE17
+%fseek($0DEE17)	; 0x06EE17
 	jsr $7F50	; 20 50 7F
 
-org $0DEE8D	; 0x06EE8D
+%fseek($0DEE8D)	; 0x06EE8D
 	lda #$0001	; A9 01 00
 	sta $7F5021	; 8F 21 50 7F
 	lda #$0010	; A9 10 00
@@ -175,9 +175,9 @@ org $0DEE8D	; 0x06EE8D
 	adc #$14	; 69 14
 	rts
 
-org $0DFB60	; 0x06FB60
+%fseek($0DFB60)	; 0x06FB60
 	jsr $ED93	; 20 93 ED
 
-org $1EDD01	; 0x0F5D01
+%fseek($1EDD01)	; 0x0F5D01
 	lda $7F5020	; AF 20 50 7F
 

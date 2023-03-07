@@ -3,13 +3,13 @@
 ;			by PowerPanda
 ;----------------------------------------------------------
 
-org $07A3B2	; 0x03A3B2
+%fseek($07A3B2)	; 0x03A3B2
 	jsl $0EFBA0	; Load new check (07/7BA0)
 	;bra $03		; Skip over the NOPs
 	;nop #3		; 3 empty bytes
 	nop #5
 
-org $0EFBA0	; 0x077BA0
+%fseek($0EFBA0)	; 0x077BA0
 ; Code originally from 03/A3B2, relocated so BEQ makes sense
 	lda $03FC	; Check if digging mini game is inactive
 	beq $05		; If it IS inactive, branch to new routine
