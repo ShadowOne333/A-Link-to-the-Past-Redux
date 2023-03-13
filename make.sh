@@ -151,6 +151,15 @@ End()
 	if [ -f "$clean_rom" ]; then
 		rm $clean_rom
 	fi
+
+	if [ "$script" == "Retranslation" ]; then
+		cp "patches/$file_base.ips" "patches/Retranslation Redux.ips"
+		rm "patches/$file_base.ips"
+	else
+		cp "patches/$file_base.ips" "patches/Link to the Past Redux.ips"
+		rm "patches/$file_base.ips"
+	fi
+
 	sleep 1
 	exit
 }

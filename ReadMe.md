@@ -159,6 +159,13 @@ Once you have it installed, browse to the directory where you downloaded the sou
 
 The source code was developed entirely on Linux, using scompress and flips as sources for compiling both the graphics and the assembly code, respectively. I have compiled both scompress and flips as 32bit binaries and included them into the repository so the user can directly use these without worrying about compiling and creating the executable binaries for each one.
 
+Remember to give the proper permissions for the binaries inside the /bin/ folder to executables with `chmod +x asar-standalone` and `chmod +x flips`. In the dire case that trying to compile with the included binaries does not work, you'd have to compile both Flips and Asar from source:
+
+	* Asar: https://github.com/RPGHacker/asar/tree/asar_2_beta
+	For Asar, you have to switch the branch to `asar_2_beta` with `git checkout asar_2_beta`, and then `cmake src && make` to compile the correct version, or else you'll get errors with some of the macros from the Credits files.
+
+	* Flips: https://github.com/Alcaro/Flips
+
 * Compiling the ROM:
 
 1. Either download the source code as ZIP, or clone the repository by opening terminal and running `git clone https://github.com/ShadowOne333/A-Link-to-the-Past-Redux`. Put the downloaded files anywhere in your PC.
