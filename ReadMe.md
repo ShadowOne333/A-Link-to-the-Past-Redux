@@ -166,6 +166,11 @@ Remember to give the proper permissions for the binaries inside the /bin/ folder
 
 	* Flips: https://github.com/Alcaro/Flips
 
+	* scompress: To compile scompress, enter the directory `/bin/scompress/scompress-master/scompress/`, open terminal in this directory and then do the following:
+	`cmake . && make`
+
+	Afterwards, you should a freshly generated `scompress` binary in the same folder, that should be the correct one to use.
+
 * Compiling the ROM:
 
 1. Either download the source code as ZIP, or clone the repository by opening terminal and running `git clone https://github.com/ShadowOne333/A-Link-to-the-Past-Redux`. Put the downloaded files anywhere in your PC.
