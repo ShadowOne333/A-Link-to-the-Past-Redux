@@ -127,7 +127,7 @@ Start()
 	echo "Main assembly code compilation succeded!"; echo
 
 	# Create IPS
-	echo "Creating Zelda3-Redux.ips patch...";
+	echo "Creating $file_base.ips patch...";
 	$flips --create --ips "$clean_rom" "$patched_rom" "$patches_folder/$file_base.ips"
 
 #-------------------------------------------------------------
