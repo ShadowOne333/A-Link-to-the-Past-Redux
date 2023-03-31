@@ -69,8 +69,8 @@ org $0DE475	; 0x06E475
 	jml $07A31D	; 5C 1D A3 07
 +	lda $7EF34F 	; AF 4F F3 7E
 	cmp #$00	; C9 00
-	jml $07A312	; 5C 12 A3 07
 	bne +		; D0 04
+	jml $07A312	; 5C 12 A3 07
 +	cmp #$01	; C9 01
 	bne +		; D0 04
 	jml $07A32C	; 5C 2C A3 07
