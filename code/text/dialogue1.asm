@@ -507,7 +507,7 @@ dialogue_table1:
 .message_057:
 	db "!{You} !{are_}c!{or}!{re}ct, !{you}ng m!{an}!",!Line2
 	db "I am Sa!{has}rah!{la}, !{the} vil!{la}ge",!Line3
-	db "eld!{er_}!{and_}a !{des}c!{en}d!{ent} !{of} !{the},!WaitKey",!Scroll
+	db "eld!{er_}!{and_}a !{des}c!{en}d!{ent} !{of} !{the}",!WaitKey,!Scroll
 	db "s!{ev}!{en_}sages.",!Scroll
 	db "!{Dots} !{Dots} !{Dots} Wh!{at}?",!Scroll
 	db "!{Name}, I'm surpr!{is}!{ed_}a !{you}ng",!WaitKey,!Scroll
@@ -955,14 +955,14 @@ dialogue_table1:
 	db "!{ma}gic !{tr}!{an}sp!{or}t!{er}!{Dots}",!WaitKey,!Scroll
 	db "!{The} !{pow}!{er_}!{of} !{the} Dark W!{or}ld",!Scroll
 	db "qui!{ck}!{ly_}turn!{ed_}!{me} !{in}!{to} !{thi}s",!Scroll
-	db "t!{re}e s!{ha}pe!{Dots},!WaitKey",!Scroll
+	db "t!{re}e s!{ha}pe!{Dots}",!WaitKey,!Scroll
 	db "I guess !{the} two !{for}e!{st}s a!{re}",!Scroll
 	db "c!{on}nect!{ed_}w!{it}h each oth!{er}!{Dots}",!End
 ;----------------------------------------
 .message_129:
 	db "I h!{ear}d th!{at_}us!{ing_}Bombs !{is} !{the}",!Line2
 	db "!{be}!{st} !{wa}y !{to} defe!{at_}!{the}",!Line3
-	db "!{on}e-ey!{ed_}gi!{an}ts.,!WaitKey",!Scroll
+	db "!{on}e-ey!{ed_}gi!{an}ts.",!WaitKey,!Scroll
 	db "!{Tha}t!{s_}!{all_}I !{know}!",!End
 ;----------------------------------------
 .message_130:
@@ -1636,7 +1636,7 @@ dialogue_table1:
 .message_229:
 	db "Aft!{er_}w!{and}!{er}!{ing_}!{in}!{to} !{thi}s w!{or}ld",!Line2
 	db "I turn!{ed_}!{in}!{to} !{thi}s s!{ha}pe.",!Line3
-	db "!{Dots}!{2_}!{Dots}!{2_}!{Dots},!WaitKey",!Scroll
+	db "!{Dots}!{2_}!{Dots}!{2_}!{Dots}",!WaitKey,!Scroll
 	db "I !{en}joy!{ed_}p!{la}y!{ing_}!{the}",!Scroll
 	db "ocar!{in}a !{in} !{the} !{or}ig!{in}al w!{or}ld!{Dots}",!Scroll
 	db "!{Dots}!{2_}!{Dots}!{2_}!{Dots}",!WaitKey,!Scroll
