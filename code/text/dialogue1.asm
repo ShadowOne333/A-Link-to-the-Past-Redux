@@ -709,7 +709,7 @@ dialogue_table1:
 	db "Two m!{or}e P!{en}d!{an}ts !{re}m!{ain}!",!End
 ;----------------------------------------
 .message_090:
-	db "!{You} w!{on} !{the} P!{en}d!{an}t of W!{is}!{do}m}!",!Line2
+	db "!{You} w!{on} !{the} P!{en}d!{an}t of W!{is}!{do}m!",!Line2
 	db "!{You}r !{go}al !{of} f!{in}d!{ing_}th!{re}e",!Line3
 	db "P!{en}d!{an}ts !{is} !{in} sight!",!WaitKey,!Scroll
 	db "Go !{for} !{the} l!{ast} !{on}e!",!End
