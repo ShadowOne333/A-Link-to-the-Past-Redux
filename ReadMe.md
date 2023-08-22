@@ -159,10 +159,10 @@ Once you have it installed, browse to the directory where you downloaded the sou
 
 The source code was developed entirely on Linux, using scompress and flips as sources for compiling both the graphics and the assembly code, respectively. I have compiled both scompress and flips as 32bit binaries and included them into the repository so the user can directly use these without worrying about compiling and creating the executable binaries for each one.
 
-Remember to give the proper permissions for the binaries inside the /bin/ folder to executables with `chmod +x asar-standalone` and `chmod +x flips`. In the dire case that trying to compile with the included binaries does not work, you'd have to compile both Flips and Asar from source:
+Remember to give the proper permissions for the binaries inside the /bin/ folder to executables with `chmod +x asar-standalone` and `chmod +x flips`. In the dire case that trying to compile with the included binaries does not work, or if you get an "Exec format error" or "File not found" error, you'd have to compile both Flips and Asar from source manually:
 
 	* Asar: https://github.com/RPGHacker/asar/tree/asar_2_beta
-	For Asar, you have to switch the branch to `asar_2_beta` with `git checkout asar_2_beta`, and then `cmake src && make` to compile the correct version, or else you'll get errors with some of the macros from the Credits files.
+	For Asar, you have to switch the branch to `asar_2_beta` with `git checkout asar_2_beta`, and then `cmake src && make` to compile the correct version, or else you'll get errors with some of the macros from the Credits files. You'll also need cmake v3.15 or above to compile Asar properly
 
 	* Flips: https://github.com/Alcaro/Flips
 
