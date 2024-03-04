@@ -2588,22 +2588,21 @@ dialogue_table1:
 	db "mom!{ent}!{Dots}",!End
 ;----------------------------------------
 .message_347:
-	db "Eep! I'm tir!{ed_}!{of} !{get}t!{ing_}ki!{ck}ed",!Line2
-	db "ar!{ound} like !{thi}s.",!WaitKey,!Line3
-	db "Looks like !{you}'ve turn!{ed_}!{in}!{to} a",!Scroll
+	db "Whee! Roll!{ing_}ar!{ound} !{is} fun!",!WaitKey,!Line2
+	db "Looks like !{you}'ve turn!{ed_}!{in}!{to} a",!Line3
 	db "bunny, !{ha}v!{en}'t !{you}?",!WaitKey,!Scroll
 	db "!{Thi}s w!{or}ld !{and_}our w!{or}ld might",!Scroll
 	db "!{lo}ok simi!{la}r, but !{the}y a!{re}",!Scroll
 	db "!{re}al!{ly_}qu!{it}e !{di}ff!{er}!{ent}!",!WaitKey,!Scroll
 	db "Who!{ev}!{er} !{com}es h!{er}e ch!{an}ges !{to}",!Scroll
 	db "a !{di}ff!{er}!{ent} !{for}m !{re}flect!{ing_}",!Scroll
-	db "!{the}ir h!{ear}t. I turn!{ed_}!{in}!{to} a !{ba}ll",!WaitKey,!Scroll
-	db "!{be}cau!{se} I'm !{the} fir!{st} !{to} !{bo}unce",!Scroll
-	db "!{wh}!{en}!{ev}!{er_}!{the}!{re}!{s_}!{tr}ou!{ble}!{Dots}",!WaitKey,!Scroll
+	db "!{the}ir h!{ear}t. I'm al!{wa}ys",!WaitKey,!Scroll
+	db "!{bo}unc!{ing_}!{fro}m !{on}e !{thin}g !{to}",!Scroll
+	db "!{an}oth!{er}, !{so} I turn!{ed_}!{in}!{to} a !{ba}ll!",!WaitKey,!Scroll
 	db "!{The}!{re}!{s_}!{an} !{or}b call!{ed_}!{the} Mo!{on}",!Scroll
 	db "P!{ear}l th!{at_}m!{ight_}al!{lo}w !{you} !{to}",!Scroll
 	db "!{re}t!{ain} !{you}r !{or}ig!{in}al !{for}m.",!WaitKey,!Scroll
-	db "Ahh! H!{er}e he !{com}es ag!{ain}!{Dots}",!End
+	db "Good lu!{ck}! Whee!",!End
 ;----------------------------------------
 .message_348:
 	db "Eep! Oh, wow! !{You}r !{for}m !{di}dn't",!Line2
