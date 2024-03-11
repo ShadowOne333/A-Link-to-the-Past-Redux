@@ -82,6 +82,7 @@ incsrc fixes/vc_patches.asm	; Some photosensitivy changes made in the Virtual Co
 incsrc fixes/title_skip.asm	; Skip the Title sequence by pressing any button (by PowerPanda)
 incsrc gameplay/max_consumables.asm 	; Implement "Max Consumables Fix" by Kasuto
 incsrc gameplay/misc.asm	; Miscellaneous gameplay changes
+incsrc layouts/ocarina_warp.asm	; Change Ocarina Warp #1 location in overworld map
 incsrc gameplay/shovel_treasures.asm	; Make items appear when digging with the shovel (by PowerPanda)
 
 ;****************************************
