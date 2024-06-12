@@ -20,7 +20,7 @@ check title "THE LEGEND OF ZELDA  "
 !lorom = 1		; LoROM flag
 !hirom = 0		; HiROM flag
 !exhirom = 0		; ExHiROM flag
-!retranslation = 0	; Retranslation hack by Translation Quest
+!retranslation = 1	; Retranslation hack by Translation Quest
 !subtitle = 0		; "TRIFORCE OF THE GODS" subtitle
 !houlihan = 0		; Change the Houlihan's room name
 !_snes_utils_inc = 1	; SNES Utils (by qwertymodo)
