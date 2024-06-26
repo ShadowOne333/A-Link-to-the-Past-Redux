@@ -2605,7 +2605,7 @@ dialogue_table1:
 	db "Good lu!{ck}! Whee!",!End
 ;----------------------------------------
 .message_348:
-	db "Eep! Oh, wow! !{You}r !{for}m !{di}dn't",!Line2
+	db "Oh, wow! !{You}r !{for}m !{di}dn't",!Line2
 	db "ch!{an}ge! !{You}'!{re_}no !{or}!{di}nary guy,",!Line3
 	db "!{are_}!{you}?",!End
 ;----------------------------------------

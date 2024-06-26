@@ -154,6 +154,10 @@ End()
 	if [ -f "$clean_rom" ]; then
 		rm $clean_rom
 	fi
+	
+	if [ -f "code/layouts/map_layouts.sfc" ]; then
+		rm code/layouts/map_layouts.sfc
+	fi
 
 	if [ "$script" == "Retranslation" ]; then
 		cp "patches/$file_base.ips" "patches/Retranslation Redux.ips"
