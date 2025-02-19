@@ -38,7 +38,7 @@ Help()
 	./make.sh -r	./make.sh -g		./make.sh -s		./make.sh -c"
    echo	"* For Retranslation Redux (New GFX) with graphical patches, use only one of the standalone syntaxes."
    echo	"	Retranslation Redux:	Retran.+Green Agahnim:	Retran.+Subtitle:	Retran.+Green Agahnim+Subtitle
-	./make.sh -t -r	./make.sh -t -g		./make.sh -t -s		./make.sh -t -c"
+	./make.sh -t -r		./make.sh -t -g		./make.sh -t -s		./make.sh -t -c"
    echo "* For Original GFX with one of the graphical patches, use '-o' argument before the graphics you want (and '-o -t' if you want it with Retranslation)"
    echo	"	Original GFX Redux:	OG GFX Redux+Green Agahnim:	OG GFX Redux+Subtitle:	OG GFX Redux+Green Agahnim+Subtitle:
 	./make.sh -o -r		./make.sh -o -g			./make.sh -o -s			./make.sh -o -c"
