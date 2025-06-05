@@ -92,7 +92,10 @@ Please refer to the [A Link to the Past DX](https://www.romhacking.net/hacks/223
 	However, some people might not like this, as using the dash effectively makes you invincible while running straight with the sword at front, and being able to turn makes it even more of an overpowered feature to some.
 	With this patch, you can now easily disable said feature, and use the Pegasus Boots like they worked originally in A Link to the Past.
 
-2. **Enable FMV for MSU:**
+2. **Dashing Stops on Screen Transition:**
+	ALttP DX added a feature that enables the player to keep dashing even when the screen transitions. Applying this patch undoes that feature so it behaves like the original ALttP, and dashing stops whenever there's a screen transition in-game.
+
+3. **Enable FMV for MSU:**
 	This patch will enable the loading of the special FMV (Track 35) from the MSU files.
 
 	Please note that the hack itself ALREADY includes MSU-1 track loading, this patch simply enables the loading of that specific track #35 to avoid an issue with the game trying to always load the FMV, despite if the FMV itself exists or not in the same folder, which ends up in a 1~ minute black screen upon loading a new game.
@@ -108,34 +111,34 @@ Please refer to the [A Link to the Past DX](https://www.romhacking.net/hacks/223
 	http://dl.dropbox.com/s/9tfg549to1cpbrn/MSU%20Zelda%20Opening%20Intro%20and%20Audio.rar?dl=0
 
 
-3. **Green Agahnim:**
+4. **Green Agahnim:**
 	Using this will revert the color of Agahnim from Red+Blue to his original Green robe.
 
-4. **Green Agahnim+Triforce Subtitle:**
+5. **Green Agahnim+Triforce Subtitle:**
 	Using this will revert the color of Agahnim from Red+Blue to his original Green robe, and also adds the new "TRIFORCE OF THE GODS" subtitle alongside it.
 
-5. **Max Bomb-Arrows Amounts:**
+6. **Max Bomb-Arrows Amounts:**
 	This patch changes Link default Bombs & Arrows minimum and maximum amounts to be 20 to 99 for Bombs, and 30 to 99 for Arrows. 
 
-6. **Mirror Works in Both Worlds:**
+7. **Mirror Works in Both Worlds:**
 	This patch allows the Mirror to travel from both the Light and Dark Worlds (Light - Dark & Dark - Light), making it so that Link can travel between them at will, instead of only being able to use the Mirror to travel from Dark - Light World. 
 
-7. **Move Blocks Indefinitely:**
+8. **Move Blocks Indefinitely:**
 	Gives Link the ability to move blocks (that can be moved) several times. 
 
-8. **Original Bomb-Arrows Amounts:**
+9. **Original Bomb-Arrows Amounts:**
 	This patch reverts Link default Bombs & Arrows minimum and maximum amounts to be those of the original ALttP, those being 10 to 50 for Bombs, and 30 to 70 for Arrows. 
 
-9. **Original Pink Hair Link:**
+10. **Original Pink Hair Link:**
 	These patches revert Link's new blonde hair to the original pink hair he had.
 
-10. **Remove Low Health Beep:**
+11. **Remove Low Health Beep:**
 	Completely remove the constant beeping that plays when you’re low on hearts. 
 
-11. **Start at Full Hearts (by PowerPanda):**
+12. **Start at Full Hearts (by PowerPanda):**
 	Applying this patch will make you start your game at full hearts every time you load your game.
 
-12. **Triforce of the Gods Subtitle):**
+13. **Triforce of the Gods Subtitle):**
 	Using this will change the subtitle in the title screen from "A LINK TO THE PAST" to match the original Japanese subtitle of "TRIFORCE OF THE GODS".
 
 
