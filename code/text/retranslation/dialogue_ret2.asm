@@ -336,7 +336,7 @@ dialogue_table2:
 	db "!{la}ke full !{of} Z!{or}a n!{ear} !{the}",!WaitKey,!Scroll
 	db "!{so}urce !{of} !{the} riv!{er}.",!WaitKey,!Scroll
 	db "I h!{ear}d tho!{se} Z!{or}a !{have} !{so}!{me}",!Scroll
-	db "k!{in}d !{of} X-r!{at}!{ed_}t!{re}asu!{re}. Heh",!Scroll
+	db "k!{in}d !{of} !{for}bidd!{en_}t!{re}asu!{re}. Heh",!Scroll
 	db "heh heh. I'd !{re}al!{ly_}!{lo}ve a !{lo}ok",!WaitKey,!Scroll
 	db "!{at_}!{it}.",!End
 ;----------------------------------------
