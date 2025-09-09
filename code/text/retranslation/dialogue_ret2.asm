@@ -336,9 +336,9 @@ dialogue_table2:
 	db "!{la}ke full !{of} Z!{or}a n!{ear} !{the}",!WaitKey,!Scroll
 	db "!{so}urce !{of} !{the} riv!{er}.",!WaitKey,!Scroll
 	db "I h!{ear}d tho!{se} Z!{or}a !{have} !{so}!{me}",!Scroll
-	db "k!{in}d !{of} !{for}bidd!{en_}t!{re}asu!{re}. Heh",!Scroll
-	db "heh heh. I'd !{re}al!{ly_}!{lo}ve a !{lo}ok",!WaitKey,!Scroll
-	db "!{at_}!{it}.",!End
+	db "k!{in}d !{of} !{for}bidd!{en_}t!{re}asu!{re}.",!Scroll
+	db "Heh heh heh. I'd !{re}al!{ly_}!{lo}ve a",!WaitKey,!Scroll
+	db "!{lo}ok !{at_}!{it}.",!End
 ;----------------------------------------
 .message_387:
 	db "I'm gr!{at}eful !{for} !{the} v!{is}!{it}. It",!Line2

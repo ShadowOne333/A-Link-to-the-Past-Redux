@@ -13,8 +13,8 @@ export  clean_rom=rom/Zelda3.sfc
 export  patched_rom=$out_folder/$file_base.sfc
 export  asm_file=code/main.asm
 export	checksum=6d4f10a8b10e10dbe624cb23cf03b88bb8252973
-export	subtitle_layout=code/layouts/subtitle_layout.ips
-export	map_layouts=code/layouts/map_layouts.ips
+export	subtitle_layouts=code/layouts/subtitle_layouts
+export	map_layouts=code/layouts/map_layouts
 
 #-------------------------------------------------------------
 # Help section
@@ -99,12 +99,14 @@ Start()
 
 # Apply map layout changes if specified through IPS
 	echo "Applying Map layout changes...";
-	$flips $map_layouts $patched_rom; echo
+	$flips $map_layouts.ips $patched_rom; echo
+	mv $map_layouts.sfc $patched_rom
 
 # Apply subtitle layout changes if specified through IPS
 	if [ "$graphics" == "Subtitle" ] || [ "$graphics" == "AgahnimSubtitle" ]; then
 		echo "Patching subtitle tilemapping...";
-		$flips $subtitle_layout $patched_rom; echo
+		$flips $subtitle_layouts.ips $patched_rom; echo
+		mv $subtitle_layouts.sfc $patched_rom
 	fi
 
 #-------------------------------------------------------------
@@ -157,6 +159,10 @@ End()
 	
 	if [ -f "code/layouts/map_layouts.sfc" ]; then
 		rm code/layouts/map_layouts.sfc
+	fi
+
+	if [ -f "code/layouts/subtitle_layouts.sfc" ]; then
+		rm code/layouts/subtitle_layouts.sfc
 	fi
 
 	if [ "$script" == "Retranslation" ]; then
