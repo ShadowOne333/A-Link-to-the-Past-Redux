@@ -1319,7 +1319,7 @@ Off!{er_}a pray!{er_}!{be}!{for}e !{thi}s,!Line2
 	db !{be} !{wa}!{it}!{in}g!{Dots}
 
 
-	db !Window02,"!{Name}, !{it} !{is} I, Sa!{ha}rsah!{la}.,!Line2
+	db !Window02,"!{Name}, !{it} !{is} I, Sa!{has}rah!{la}.,!Line2
 	db Be su!{re_}!{to} acqui!{re_}!{all_}!{the},!Line3
 	db t!{re}asu!{re}s !{in} each m!{on}!{st}!{er}'s,!WaitKey,!Scroll
 	db !{la}ir.

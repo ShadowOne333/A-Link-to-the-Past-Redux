@@ -1411,7 +1411,7 @@ dialogue_table1:
 ;----------------------------------------
 .message_192:
 	db !Window02
-	db "!{Name}, !{it} !{is} I, Sa!{ha}rsah!{la}.",!Line2
+	db "!{Name}, !{it} !{is} I, Sa!{has}rah!{la}.",!Line2
 	db "Be su!{re_}!{to} acqui!{re_}!{all_}!{the}",!Line3
 	db "t!{re}asu!{re}s !{in} each m!{on}!{st}!{er}'s",!WaitKey,!Scroll
 	db "!{la}ir.",!End

@@ -20,7 +20,7 @@ int	main(int ac, char* ag[])
   read(fd, buffer, 24);
   tile = unpack_bpp3_tile(buffer, 0);
   
-  palette* pal = palette_create(8, 0);
+  r_palette* pal = palette_create(8, 0);
   
   for (unsigned int i = 0; i < 8; i++)
   {
