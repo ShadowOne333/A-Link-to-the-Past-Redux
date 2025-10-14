@@ -1481,8 +1481,8 @@ dialogue_table1:
 ;----------------------------------------
 .message_202:
 	db "I !{do}!{nt_}!{have} !{an}y empty",!Line2
-	db "!{bo}ttles. Oh !{we}ll!{Dots} I guess I'll set !{se}t",!Line3
-	db "!{it} f!{re}e.",!End
+	db "!{bo}ttles. Oh !{we}ll!{Dots}",!Line3
+	db "I guess I'll set !{se}t !{it} f!{re}e.",!End
 ;----------------------------------------
 .message_203:
 	db "!{You}r ti!{me} !{wa}s !{Number03}!{Number02} m!{in}utes !{and}",!Line2
