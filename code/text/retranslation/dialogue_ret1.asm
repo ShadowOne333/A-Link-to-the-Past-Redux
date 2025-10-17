@@ -461,7 +461,7 @@ dialogue_table1:
 	db "take pos!{se}ssi!{on} !{of} !{the}",!Scroll
 	db "Gold!{en_}Pow!{er}!",!WaitKey,!Scroll
 	db "Beg!{in} by !{re}scu!{ing_}!{the} s!{ev}!{en}",!Scroll
-	db "!{ma}id!{en}s !{des}c!{en}d!{ing_}!{fro}m !{the}",!Scroll
+	db "!{ma}id!{en}s !{des}c!{en}d!{ed_}!{fro}m !{the}",!Scroll
 	db "S!{ev}!{en_}Sages. !{The}ir !{pow}!{er_}!{wi}ll",!WaitKey,!Scroll
 	db "su!{re}!{ly_}aid !{you}.",!WaitKey,!Scroll
 	db "!{The} !{ma}id!{en}s !{are_}c!{on}f!{in}!{ed_}!{in} !{the}",!Scroll
