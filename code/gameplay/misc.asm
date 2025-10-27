@@ -23,7 +23,7 @@ org $098C26	; 0x048C26
 ; Edits both armor chets to be Armor 2 with an Alternate of Armor 3. The first one you pick up will always be blue, and the second will always be red. Originally made by qwertymodo
 
 ; Original address at $01EAD8 (0x00EAD8), (should be included in map_layouts.ips)
-org $01EAD8	; Originally 0x00EA69, now 0x00EAD8 in Redux
+org $01EA69	; Originally 0x00EA69 with map changes, it can be 0x00EAD8 without map changes, verify in case the Tunics are wrong
 ; Changes the Tower of Ganon chest from a Red Tunic to a Blue Tunic
 	db $22	; Originally $23
 

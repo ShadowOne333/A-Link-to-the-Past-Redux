@@ -4,10 +4,11 @@
 
 ;----------------------------------------
 ; Dark World Spawn Fix
-; If you go into the dark world, when you are collecting pendants and you are defeated outside, you will spawn in light world. But if you are defeated inside, the game will bug out, since it assumes you are in the light world (when infact you are in the dark world). This can result in heavy buggs when crossing the overworld. Fix is:
+; If you go into the dark world, when you are collecting pendants and you are defeated outside, you will spawn in light world. But if you are defeated inside, the game will bug out, since it assumes you are in the light world (when infact you are in the dark world). This can result in heavy bugs when crossing the overworld. Fix is:
 
-org $09F526	; 0x04F526
-	bra $10		; Originally BCS $10
+; NOT NEEDED IN REDUX, CAUSES BUNNY LINK TO APPEAR IN THE PYRAMID IF THE PLAYER SAVES WHEN THEY GAIN CONTROL OF HIM IN THE DARK WORLD
+;org $09F526	; 0x04F526
+	;bra $10		; Originally BCS $10
 
 ; This will spawn the player at Pyramid exit.
 ; So now you can collect the pendants in the dark world.
