@@ -4,8 +4,10 @@
 
 ;----------------------------------------
 ; Restore Dungeon Boss Icon positions in Dungeon Maps when obtaining the Compass
-org $0AEE87	; 0x056E87
-	db $FF
+org $0AEE79	; 0x056E79
+	dw $FFFF,$FFFF,$0001,$0001
+	dw $0006,$00FF,$00FF,$00FF,$00FE,$00F9
+	dw $0005,$00FF,$00FD,$0006
 
 ;----------------------------------------
 ; Make all fairies restore 8 hearts
