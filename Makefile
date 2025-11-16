@@ -12,7 +12,7 @@
 # For detailed project information, see README.md
 # ================================================================
 
-.SHELL := /bin/sh
+SHELL=/bin/bash
 .ONESHELL:
 .SHELLFLAGS := -eu -o pipefail -c
 
@@ -202,7 +202,7 @@ _build:
 	$(eval NINJA := $(shell command -v ninja 2>/dev/null || true))
 
 	ASAR="$(ASAR)"
-	FLIPS="$(FLIPS)"	
+	FLIPS="$(FLIPS)"
 	SCOMPRESS="$(SCOMPRESS)"
 	CMAKE="$(CMAKE)"
 	NINJA="$(NINJA)"
