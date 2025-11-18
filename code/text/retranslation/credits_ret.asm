@@ -174,7 +174,7 @@ org $0EBE54	; 0x073E54
 org $0EC2E1	; 0x0742E1
 	dw credits_text_king-credits_text
 	dw credits_text_priest-credits_text
-	dw credits_text_sahasralah-credits_text
+	dw credits_text_sahasrahla-credits_text
 	dw credits_text_desert-credits_text
 	dw credits_text_tower-credits_text
 	dw credits_text_house-credits_text
@@ -414,11 +414,11 @@ credits_text:
 	db $63,$0D,$00,length(06)
 	%row("CHAPEL")	; THE CHAPEL
 
-.sahasralah:
+.sahasrahla:
 	db $62,$4F,$00,length(1)
 	db ","
 	db $62,$65,$00,length(23)
-	%yellow("sahasralah") : db "'" : %yellow("s") : db " " : %yellow("homecoming")
+	%yellow("sahasrahla") : db "'" : %yellow("s") : db " " : %yellow("homecoming")
 	db $62,$E9,$00,length(16)
 	db "KAKARIKO VILLAGE"
 	db $63,$09,$00,length(16)
