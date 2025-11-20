@@ -12,6 +12,52 @@
 # For detailed project information, see README.md
 # ================================================================
 
+# ------------------------------------------------
+# Detect Operating System
+# ------------------------------------------------
+
+OS := $(shell uname -s)
+
+# ------------------------------------------------
+# Default tool locations (for fallback)
+# ------------------------------------------------
+# Initialize variables for fallback binaries
+FALLBACK_ASAR := bin/asar-linux/asar-standalone
+FALLBACK_FLIPS := bin/flips
+FALLBACK_SCOMPRESS := bin/scompress/scompress
+
+ifeq ($(OS),Linux)
+    # Check for package managers
+    PACKAGE_MANAGER := $(shell command -v apt-get >/dev/null 2>&1 && echo "apt" || command -v emerge >/dev/null 2>&1 && echo "portage" || echo "none")
+
+    ifeq ($(PACKAGE_MANAGER),apt)
+        # Ubuntu/Debian-based
+        FALLBACK_ASAR := bin/asar-linux/asar-aptitude
+        FALLBACK_FLIPS := bin/flips/flips-aptitude
+        FALLBACK_SCOMPRESS := bin/scompress/scompress-aptitude
+    else ifeq ($(PACKAGE_MANAGER),portage)
+        # Gentoo-based
+        FALLBACK_ASAR := bin/asar-linux/asar-portage
+        FALLBACK_FLIPS := bin/flips/flips-portage
+        FALLBACK_SCOMPRESS := bin/scompress/scompress-portage
+    else
+        $(error Unsupported Linux distribution or package manager)
+    endif
+else ifeq ($(OS),Darwin)
+    $(error macOS is not supported)
+else
+    # Assumed to be Windows (including MSYS2/Termux)
+    FALLBACK_ASAR        := bin/asar-windows/asar.exe
+    FALLBACK_FLIPS       := bin/flips/flips.exe
+    FALLBACK_SCOMPRESS   := bin/scompress/scompress.exe
+endif
+
+SCOMPRESS_SRC_DIR    := bin/scompress/scompress-master/scompress
+
+# ------------------------------------------------
+# Force Bash as compilation Shell
+# ------------------------------------------------
+
 SHELL=/bin/bash
 .ONESHELL:
 .SHELLFLAGS := -eu -o pipefail -c
@@ -29,14 +75,6 @@ PATCHED_ROM     := $(OUT_FOLDER)/$(FILE_BASE).sfc
 MAP_LAYOUTS     := code/layouts/map_layouts
 SUBTITLE_LAYOUTS:= code/layouts/subtitle_layouts
 CHECKSUM        := 6d4f10a8b10e10dbe624cb23cf03b88bb8252973
-
-# ------------------------------------------------
-# Default tool locations (for fallback)
-# ------------------------------------------------
-FALLBACK_ASAR        := bin/asar-linux/asar-standalone
-FALLBACK_FLIPS       := bin/flips
-FALLBACK_SCOMPRESS   := bin/scompress/scompress
-SCOMPRESS_SRC_DIR    := bin/scompress/scompress-master/scompress
 
 # ------------------------------------------------
 # Internal variables (populated during build)

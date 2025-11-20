@@ -67,7 +67,7 @@ NOTE: You DO NOT need to patch Redux first in order to apply this hack. You can 
 * Change all the references of the “Wise Men” to “Sages”, Medicines to "Potions", Blue Pendant is now Wisdom while Red one is Power, and many other text and graphical changes to fit in line with the rest of the series.
 * King of Hyrule now has a red outfit instead of green to match the rest of the franchise’s Kings of Hyrule (Like Daphnes Nohansen Hyrule from WW). For v5.0, the palette being shared between green soldiers and King of Hyrule has been fixed. Thanks to Conn for this! 
 
-* Ice Palace now resembles the GBA version with a new layout. In v2.0 this room layout was fixed to have 3 movable blocks in the new section. There was one movable block unused in one other Dungeon layout found in Room 019 of ZScream (why was it there?). The modified rooms are 09E, 0BE and 0CE in ZScream (convert to decimal for Hyrule Magic room numbers).
+* Ice Palace now resembles the GBA version with a new layout. In v2.0 this room layout was fixed to have 3 movable blocks in the new section. There was one movable block unused in one other Dungeon layout found in Room 019 of ZScream (why was it there?). The modified rooms are 09E and 0BE in ZScream (room 0CE doesn't need changes, the status pull lever is used to re-open the door).
 
 * Uncensored changes have been included too, as well as restoring some unused content. These changes focus on restoring censored content from A Link to the Past (J) and unused content for both ROMs (U and J). Some of the new content includes (Room values are in Hex for ZScream, convert to decimal for Hyrule Magic):
 
@@ -75,8 +75,11 @@ NOTE: You DO NOT need to patch Redux first in order to apply this hack. You can 
 	* New custom hieroglyphs to mimic those of the Japanese release.
 	* Sanctuary doorway restored (room 12). Added a 4th door on top of the bottom one (3rd) with the unused Sactuary door graphics (door 0A) to keep the original entrance working
 	* Skull Statues restored. They appear in the Skull Woods Dungeon in room 049 of Zscream (Upper left room), replacing the previous small blocks
-	* Unused Zora sign near Zora’s Domain entrance restored (Placed to the right of the crab sprite position)
+	* Unused Zora sign near Zora’s Domain entrance restored (Placed above the crab sprite and to the right of the heart item)
+	* Two caves in Death/Hebra's Mountain (entrances 1E and 1F iirc), were wrongly swapped on development, these have been corrected (flipped over) so 1F and B1 correspond to the right exits/entrances according to their layout.
 	* First warp point has been relocated, it no longer drops you at the very beginning of the Death Mountain, but rather at the left side of the Heart Container you obtain after your first travel to the Dark World for convenience sake.
+
+* Restored the unused Cannonball Soldier enemy (enemy 6B) to one room in Ganon's Tower (room 0B0 in ZScream), replacing the original Red Spear guard (enemy 43) that dropped the Small Key with the unused Cannonball soldier.
 
 * A shortcut northwest of Link's house and southwest of Hyrule Castle has been added (courtesy of PowerPanda) that adds a lift-able rock that grants rapid access to Kakariko Village once the player obtains the Titan's Mitt. This shortcut is inspired by the same shortcut/change that was implemented in "A Link Between Worlds".
 
