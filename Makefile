@@ -27,8 +27,18 @@ FALLBACK_FLIPS := bin/flips
 FALLBACK_SCOMPRESS := bin/scompress/scompress
 
 ifeq ($(OS),Linux)
+    # Initialize PACKAGE_MANAGER
+    PACKAGE_MANAGER := none
+
     # Check for package managers
-    PACKAGE_MANAGER := $(shell command -v apt-get >/dev/null 2>&1 && echo "apt" || command -v emerge >/dev/null 2>&1 && echo "portage" || echo "none")
+    ifeq ($(shell command -v apt-get >/dev/null 2>&1 && echo "true"),true)
+        PACKAGE_MANAGER := apt
+    else ifeq ($(shell command -v emerge >/dev/null 2>&1 && echo "true"),true)
+        PACKAGE_MANAGER := portage
+    endif
+
+    $(info Detected OS: $(OS))
+    $(info Detected Package Manager: $(PACKAGE_MANAGER))
 
     ifeq ($(PACKAGE_MANAGER),apt)
         # Ubuntu/Debian-based
