@@ -2612,4 +2612,4 @@ dialogue_table1:
 	db !BankEnd
 ;----------------------------------------
 padbyte $FF : pad $1D8000
-warnpc $1D8000	; 0x0E8000
+assert pc() <= $1D8000	; 0x0E8000

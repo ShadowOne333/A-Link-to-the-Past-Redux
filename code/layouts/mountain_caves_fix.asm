@@ -4,9 +4,6 @@
 ; There's a couple of cave entrances/exits in the West of Death Mountain (Rooms 00EF and 00FF), where their entrances don't match their floor layouts inside (1F/B1).
 ; Flipping them fixes this oversight.
 
-arch snes.cpu		; Set processor architecture (SNES)
-lorom			; Switch to LoROM mapping mode
-
 ;-------------------------------------
 ; Change Death Mountain Exits 00EF <-> 00FF
 ;-------------------------------------

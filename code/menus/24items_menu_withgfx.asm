@@ -850,7 +850,7 @@ org $0DFE77	; 0x06FE77 up to 0x06FFC0
 	dw $207F,$207F,$207F,$207F
 	dw $207F
 
-warnpc $0DFFC1
+assert pc() <= $0DFFC1
 
 ; Graphics go here, but they're already imported through zcompress' script
 

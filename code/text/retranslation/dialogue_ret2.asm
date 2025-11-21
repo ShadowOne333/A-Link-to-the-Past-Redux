@@ -405,4 +405,4 @@ dialogue_table2:
 	db "!{com}e !{ba}!{ck} l!{at}!{er}. S!{or}ry.",!End
 ;----------------------------------------
 padbyte $FF : pad $0EF400
-warnpc $0EF400	; 0x077400
+assert pc() <= $0EF400	; 0x077400

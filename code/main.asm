@@ -6,7 +6,7 @@
 ;****************************************
 ;	Rom info
 ;****************************************
-arch snes.cpu		; Set processor architecture (SNES)
+arch 65816		; Set processor architecture (SNES)
 lorom			; Switch to LoROM mapping mode
 
 ;****************************************
@@ -49,7 +49,7 @@ else
 	db $20		; ROM layout / Map mode ($20 for SlowROM)
 endif
 	db $02		; Cartridge type
-	db $0A		; ROM size
+	db $0B		; ROM size ($0A in vanilla)
 	db $03		; RAM size (SRAM size)
 	db $01		; Country code (NTSC here)
 	db $01		; Licensee (Nintendo here)
@@ -60,7 +60,7 @@ endif
 	;dw $AF0D	; Game image inverse checksum
 }
 
-warnpc $018000
+assert pc() <= $018000
 
 ;****************************************
 ;	Expand ROM to 2MB

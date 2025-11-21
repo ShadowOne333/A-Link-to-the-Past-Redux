@@ -384,4 +384,4 @@ silverEnd:
 	; Portion of the "Silver Arrows" text goes here
 ;----------------------------------------
 
-warnpc $0DF629
+assert pc() <= $0DF629

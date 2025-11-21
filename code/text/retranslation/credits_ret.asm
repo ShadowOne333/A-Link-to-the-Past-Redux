@@ -189,7 +189,7 @@ org $0EC2E1	; 0x0742E1
 	dw credits_text_thief-credits_text
 	dw credits_text_master_sword-credits_text
 	dw credits_text_text_end-credits_text
-warnpc $0EC303
+assert pc() <= $0EC303
 ;----------------------------------------
 ; 2-byte pointers for the credits roll scene
 org $0EB93D	; 0x07393D
@@ -379,7 +379,7 @@ org $0EB93D	; 0x07393D
 	dw credits_roll_total2-credits_roll	; 737
 
 ; Unknown what the 6 two-byte pointers from 73C51-73C5C are for
-warnpc $0EBC51
+assert pc() <= $0EBC51
 
 ;***************************************************
 ; 		Main credits text
@@ -537,7 +537,7 @@ credits_text:
 ;----------------------------------------
 padbyte $FF : pad $0EB93D	; Pad to 0x07393D
 
-warnpc $0EC2E1	; 0x0742E1
+assert pc() <= $0EC2E1	; 0x0742E1
 
 ;----------------------------------------
 ;		Epilogue
@@ -916,4 +916,4 @@ credits_roll:
 ; If there's free space afterwards, pad it out with $FF
 padbyte $FF : pad $0EB93D
 
-warnpc $0EB93D	; 0x07393D
+assert pc() <= $0EB93D	; 0x07393D
