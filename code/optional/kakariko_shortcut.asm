@@ -111,7 +111,7 @@ world_kakariko_map:
 	dl $0B8004, $0B8004, $0B8004, $0B8004
 	dl $0CBFB1, $0CB580, $0CB4CD, $0CB644
 
-warnpc $02FD0D	; 0x017D0D
+assert pc() <= $02FD0D	; 0x017D0D
 
 org $02FF80	; 0x017F80
 	db $21
@@ -122,11 +122,11 @@ org $02FF90	; 0x017F90
 ; Almost the entire bank sections get changed when using those programs, so screw it, binary it is
 org $0BA1FE	; 0x05A1FE
 	incbin map_data.bin
-warnpc $0C8000
+assert pc() <= $0C8000
 
 org $0C8000	; 0x060000
 	incbin map_data2.bin
-warnpc $0CC10D
+assert pc() <= $0CC10D
 
 org $0CC118	; 0x064118
 	db $66,$FE,$05,$00,$8D,$40
@@ -140,5 +140,5 @@ org $1BC78A	; 0x0DC78A
 ; Object data
 org $1F8000	; 0x0F8001
 	incbin object_data.bin
-warnpc $208000	; 0x100000
+assert pc() <= $208000	; 0x100000
 

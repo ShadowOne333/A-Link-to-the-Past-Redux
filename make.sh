@@ -3,8 +3,8 @@
 #-------------------------------------------------------------
 # Variables used for the script
 export	time=$(date +'%T %a %d/%b/%Y')
-export	asar=bin/asar-linux/asar-standalone
-export	flips=bin/flips
+export	asar=bin/asar-linux/asar-aptitude
+export	flips=bin/flips/flips
 export	scompress=bin/scompress/scompress
 export	file_base=Zelda3-Redux
 export  out_folder=out

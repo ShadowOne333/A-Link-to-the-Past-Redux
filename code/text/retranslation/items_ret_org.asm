@@ -360,4 +360,4 @@ silverEnd:	; 0x06F619, $0DF619
 	db !SilverArrows
 ;----------------------------------------
 
-warnpc $0DF629
+assert pc() <= $0DF629

@@ -399,4 +399,4 @@ namespace off
 
 ;----------------------------------------
 
-;warnpc $FFFFF0	; 0x3FFFF0
+;assert pc() <= $FFFFF0	; 0x3FFFF0
