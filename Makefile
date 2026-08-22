@@ -341,19 +341,20 @@ _build:
 
 	printf "\nMain assembly code compilation succeded!\n"
 
-	printf "\nCreating IPS patch...\n"
-	$$FLIPS --create --ips "$(CLEAN_ROM)" "$(PATCHED_ROM)" "$(PATCHES_FOLDER)/$(FILE_BASE).ips"
+#	printf "\nCreating IPS patch...\n"
+#	$$FLIPS --create --ips "$(CLEAN_ROM)" "$(PATCHED_ROM)" "$(PATCHES_FOLDER)/$(FILE_BASE).ips"
 	printf "Creating BPS patch...\n"
-	$$FLIPS --create --ips "$(CLEAN_ROM)" "$(PATCHED_ROM)" "$(PATCHES_FOLDER)/$(FILE_BASE).bps"
+	$$FLIPS --create --bps "$(CLEAN_ROM)" "$(PATCHED_ROM)" "$(PATCHES_FOLDER)/$(FILE_BASE).bps"
 
 	if [ "$$FLAG_RETRANS" -eq 1 ]; then
-		mv "$(PATCHES_FOLDER)/$(FILE_BASE).ips" "$(PATCHES_FOLDER)/Retranslation Redux.ips"
+#		mv "$(PATCHES_FOLDER)/$(FILE_BASE).ips" "$(PATCHES_FOLDER)/Retranslation Redux.ips"
 		mv "$(PATCHES_FOLDER)/$(FILE_BASE).bps" "$(PATCHES_FOLDER)/Retranslation Redux.bps"
 	else
-		mv "$(PATCHES_FOLDER)/$(FILE_BASE).ips" "$(PATCHES_FOLDER)/Link to the Past Redux.ips"
+#		mv "$(PATCHES_FOLDER)/$(FILE_BASE).ips" "$(PATCHES_FOLDER)/Link to the Past Redux.ips"
 		mv "$(PATCHES_FOLDER)/$(FILE_BASE).bps" "$(PATCHES_FOLDER)/Link to the Past Redux.bps"
 	fi
-	rm -f "$(PATCHES_FOLDER)/$(FILE_BASE).ips"
+#	rm -f "$(PATCHES_FOLDER)/$(FILE_BASE).ips"
+	rm -f "$(PATCHES_FOLDER)/$(FILE_BASE).bps"
 	rm -f "$(MAP_LAYOUTS).sfc" "$(SUBTITLE_LAYOUTS).sfc" || true
 
 	printf "\nBuild finished successfully.\n"

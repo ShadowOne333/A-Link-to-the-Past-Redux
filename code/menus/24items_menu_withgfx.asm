@@ -731,27 +731,58 @@ org $0DFC09	; 0x06FC09
 	ldx #$00
 	txa
 	cmp $FDEF,y
-	beq $0E
-	lda #$5E
+	beq .skip_top_horizontal_magic_line
+	lda #$5E	; Full magic horizontal white line tile
 	sta $7EC788,x
 	sta $7EC7C8,x
 	inx #2
 	bra $EC
+
+.skip_top_horizontal_magic_line
 	iny
 	lda $FDEF,y
 	sta $7EC788,x
 	sta $7EC7C8,x
 	inx #2
 	cpx #$10
-	beq $0E
-	lda #$4F
+	beq .skip_bottom_horizontal_magic_line
+	lda #$4F	; Empty magic horizontal white line tile
 	sta $7EC788,x
 	sta $7EC7C8,x
 	inx #2
 	bra $EE
+
+.skip_bottom_horizontal_magic_line:
 	rep #$30
+
+	jsr HalfMagicCheck
 	
-	nop #10
+	nop #7
+	;nop #10
+
+org $0DE690	; 0x06E690 (Free space)
+HalfMagicCheck:
+	; Check if the player has obtained the Magic upgrade, if not, then exit
+	lda $7EF37B : and #$00FF : cmp #$0001 : bcc .normalMagicMeter
+	sep #$30	; 8-bit mode
+
+	; Changes the colour of the Magic meter to blue when we obtain the 1/2 upgrade
+	ldx #$00	; Initiate loop at 0
+	ldy #$08	; Use Y to know when the max limit has been reached
+.loop_colour:
+	lda #$2C	; Top half attribute palette colour, originally $3C
+	sta $7EC789,x
+	lda #$AC	; Top half attribute palette colour, originally $BC
+	sta $7EC7C9,x
+	inx #2		; Increment X by 2 (C789+2 = C78B, Next palette byte and so on)
+	dey		; Decrement Y (08 -> 07 -> 06, etc.)
+	bne .loop_colour	; Loop until Y = 0
+	rep #$30	; Restore 16-bit mode
+
+	; If you want a "x2" indicator to appear instead of the blue meter, remove the above code (after the SEP #$30) and keep this single line instead
+	;lda #$3C51 : sta $7EC786	; Use this to print the x2 tile over the meter.
+.normalMagicMeter:
+	rts
 
 org $0DFC68	; 0x06FC68
 	sta $7EC75C	; Originally STA $7EC750
