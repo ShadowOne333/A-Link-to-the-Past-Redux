@@ -1,11 +1,20 @@
-#! /bin/bash -e
+#!/bin/bash -e
 
 #-------------------------------------------------------------
 # Variables used for the script
 export	time=$(date +'%T %a %d/%b/%Y')
-export	asar=bin/asar-linux/asar-aptitude
-export	flips=bin/flips/flips
-export	scompress=bin/scompress/scompress
+case "$(uname -s)" in
+	MINGW*|MSYS*|CYGWIN*)
+		export	asar=bin/asar-windows/asar.exe
+		export	flips=bin/flips/flips.exe
+		export	scompress=bin/scompress/scompress.exe
+		;;
+	*)
+		export	asar=bin/asar-linux/asar-standalone
+		export	flips=bin/flips/flips
+		export	scompress=bin/scompress/scompress
+		;;
+esac
 export	file_base=Zelda3-Redux
 export  out_folder=out
 export	patches_folder=patches
@@ -15,6 +24,18 @@ export  asm_file=code/main.asm
 export	checksum=6d4f10a8b10e10dbe624cb23cf03b88bb8252973
 export	subtitle_layouts=code/layouts/subtitle_layouts
 export	map_layouts=code/layouts/map_layouts
+
+#-------------------------------------------------------------
+# Make sure the bundled tools are actually executable. On Linux, cloning a
+# repo that was created/zipped on Windows (or checked out with the wrong
+# git core.filemode setting) can silently strip the +x bit, which makes the
+# binaries fail with "Permission denied" instead of running.
+case "$(uname -s)" in
+	MINGW*|MSYS*|CYGWIN*) : ;;
+	*)
+		chmod +x "$asar" "$flips" "$scompress" 2>/dev/null || true
+		;;
+esac
 
 #-------------------------------------------------------------
 # Help section
@@ -99,20 +120,20 @@ Start()
 
 # Apply map layout changes if specified through IPS
 	echo "Applying Map layout changes...";
-	$flips $map_layouts.ips $patched_rom; echo
-	mv $map_layouts.sfc $patched_rom
+	"$flips" --apply "$map_layouts.ips" "$patched_rom" "$patched_rom.tmp"; echo
+	mv "$patched_rom.tmp" "$patched_rom"
 
 # Apply subtitle layout changes if specified through IPS
 	if [ "$graphics" == "Subtitle" ] || [ "$graphics" == "AgahnimSubtitle" ]; then
 		echo "Patching subtitle tilemapping...";
-		$flips $subtitle_layouts.ips $patched_rom; echo
-		mv $subtitle_layouts.sfc $patched_rom
+		"$flips" --apply "$subtitle_layouts.ips" "$patched_rom" "$patched_rom.tmp"; echo
+		mv "$patched_rom.tmp" "$patched_rom"
 	fi
 
 #-------------------------------------------------------------
 # Compile the main assembly code
 	echo "Beginning main assembly code compilation with Asar..."; echo
-	$asar $asm_file $patched_rom		# Main code
+	"$asar" "$asm_file" "$patched_rom"		# Main code
 
 # Compress the graphics back into the base patch ROM
 	echo "Compressing Redux graphics from $org$graphics.bin using scompress..."
@@ -122,18 +143,18 @@ Start()
 	#WINEDEBUG=-all wine bin/zcompress/zcompress.exe 1 87000 out/"$file_base".sfc code/gfx/$org$graphics.bin
 
 	# Using scompress
-	$scompress i out/"$file_base".sfc code/gfx/$org$graphics.bin
+	"$scompress" i "out/$file_base.sfc" "code/gfx/$org$graphics.bin"
 	echo "Graphics compression finalized."
 
 # Start patching of the main.asm file and create IPS
-	$asar code/gfx/palettes/$graphics.asm $patched_rom	# Graphics changes
+	"$asar" "code/gfx/palettes/$graphics.asm" "$patched_rom"	# Graphics changes
 	echo "Graphics & palettes compiled.";echo
 
 	echo "Main assembly code compilation succeded!"; echo
 
 	# Create IPS
 	echo "Creating $file_base.ips patch...";
-	$flips --create --ips "$clean_rom" "$patched_rom" "$patches_folder/$file_base.ips"
+	"$flips" --create --ips "$clean_rom" "$patched_rom" "$patches_folder/$file_base.ips"
 
 #-------------------------------------------------------------
 # Finish script and jump to the "End" function
@@ -154,15 +175,15 @@ Error()
 End()
 {
 	if [ -f "$clean_rom" ]; then
-		rm $clean_rom
+		rm "$clean_rom"
 	fi
 	
 	if [ -f "code/layouts/map_layouts.sfc" ]; then
-		rm code/layouts/map_layouts.sfc
+		rm "code/layouts/map_layouts.sfc"
 	fi
 
 	if [ -f "code/layouts/subtitle_layouts.sfc" ]; then
-		rm code/layouts/subtitle_layouts.sfc
+		rm "code/layouts/subtitle_layouts.sfc"
 	fi
 
 	if [ "$script" == "Retranslation" ]; then
@@ -250,5 +271,3 @@ else
 	#shift $(($OPTIND - 1))
 	#echo "$@"
 fi
-
-
