@@ -27,5 +27,8 @@
 ; Restore original pink hair for Link
 ;incsrc code/optional/original_pink_hair.asm
 
+; Pikit enemies cannot steal any shield
+;incsrc code/optional/pikit_cannot_steal_shields.asm
+
 ; Remove the low health beeping
 ;incsrc code/optional/remove_low_health_beep.asm
